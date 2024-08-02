@@ -1,0 +1,72 @@
+# add .tex conversion and (and .pdf rendering of .tex file) to a pull request that adds/modifies a cgel tree.
+# currently assumes cgel file(s) in datasets/oneoff.
+
+name: Create tree .tex and .pdf 
+
+permissions:
+  contents: write
+  pull-requests: write
+  repository-projects: write
+
+on:
+  pull_request:
+    paths:
+      - datasets/oneoff/*.cgel
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
+      - uses: Ana06/get-changed-files@v2.3.0
+        id: files
+        with:
+          format: space-delimited
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check out the pull request
+        run: gh pr checkout ${{ github.event.pull_request.number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      - name: Install cgel dependencies
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python -m pip install --upgrade pip
+          pip install -r cgel/requirements.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install texlive
+        run: sudo apt-get install texlive-latex-extra
+          
+      - name: Generate .tex and .pdf files and commit
+        run: |
+          mkdir -p datasets/oneoff/tex
+          mkdir -p datasets/oneoff/pdf
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ "$changed_file" == **.cgel ]]; then
+              # make .tex
+              filename=$(basename "$changed_file")
+              tree_name="${filename%.cgel}"
+              python cgel/tree2tex.py ${changed_file} > datasets/oneoff/tex/$tree_name.tex
+              git add datasets/oneoff/tex/$tree_name.tex
+              git commit -m "generated tex file for $filename"
+              # make .pdf 
+              pdflatex -output-directory=datasets/oneoff/pdf datasets/oneoff/tex/$tree_name.tex
+              git add datasets/oneoff/pdf/$tree_name.pdf
+              git commit -m "generated pdf file for $filename"
+            fi
+          done   
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
