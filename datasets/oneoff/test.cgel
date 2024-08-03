@@ -5,7 +5,7 @@
         :Det (DP
             :Head (D :t "The"))
         :Head (Nom
-            :Head (N :t "cat")))
+            :Head (N :t "dog")))
     :Head (VP
         :Head (V :t "sat" :xpos "VBD")
         :Comp (PP
