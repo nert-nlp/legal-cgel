@@ -4,10 +4,9 @@
 name: Create tree .tex and .pdf 
 
 on:
-  pull_request:
+  push:
     paths:
       - datasets/oneoff/*.cgel
-    branches: [ "main" ]
 
 jobs:
   render:
@@ -19,6 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.ref }}
           submodules: true
           
       # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
@@ -27,11 +27,10 @@ jobs:
         with:
           format: space-delimited
           
-      - name: Check out the pull request
+      - name: Config github actions bot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          gh pr checkout ${{ github.event.pull_request.number }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -74,6 +73,6 @@ jobs:
               git commit -m "generated tex and pdf files for $filename"
             fi
           done   
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
