@@ -1,0 +1,3 @@
+[submodule "cgel"]
+	path = cgel
+	url = https://github.com/nert-nlp/cgel
