@@ -3,11 +3,6 @@
 
 name: Create tree .tex and .pdf 
 
-permissions:
-  contents: write
-  pull-requests: write
-  repository-projects: write
-
 on:
   pull_request:
     paths:
