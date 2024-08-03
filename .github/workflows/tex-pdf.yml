@@ -58,11 +58,11 @@ jobs:
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
               # make .tex
-              python cgel/tree2tex.py "${changed_file}" > datasets/oneoff/tex/"$tree_name".tex
-              git add datasets/oneoff/tex/"$tree_name".tex
+              python cgel/tree2tex.py "${changed_file}" > "datasets/oneoff/tex/$tree_name.tex"
+              git add "datasets/oneoff/tex/$tree_name.tex"
               # make .pdf 
-              pdflatex -output-directory=datasets/oneoff/pdf datasets/oneoff/tex/"$tree_name".tex
-              git add datasets/oneoff/pdf/"$tree_name".pdf
+              pdflatex -output-directory=datasets/oneoff/pdf "datasets/oneoff/tex/$tree_name.tex"
+              git add "datasets/oneoff/pdf/$tree_name.pdf"
               git commit -m "generated tex and pdf files for $filename"
             fi
           done   
