@@ -21,7 +21,7 @@ jobs:
         with:
           submodules: true
       # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
-      - uses: Ana06/get-changed-files@v2.3.0
+      - uses: Ana06/get-changed-files@25f79e676e7ea1868813e21465014798211fad8c
         id: files
         with:
           format: space-delimited
@@ -55,16 +55,15 @@ jobs:
           mkdir -p datasets/oneoff/pdf
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ "$changed_file" == **.cgel ]]; then
-              # make .tex
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
-              python cgel/tree2tex.py ${changed_file} > datasets/oneoff/tex/$tree_name.tex
-              git add datasets/oneoff/tex/$tree_name.tex
-              git commit -m "generated tex file for $filename"
+              # make .tex
+              python cgel/tree2tex.py "${changed_file}" > datasets/oneoff/tex/"$tree_name".tex
+              git add datasets/oneoff/tex/"$tree_name".tex
               # make .pdf 
-              pdflatex -output-directory=datasets/oneoff/pdf datasets/oneoff/tex/$tree_name.tex
-              git add datasets/oneoff/pdf/$tree_name.pdf
-              git commit -m "generated pdf file for $filename"
+              pdflatex -output-directory=datasets/oneoff/pdf datasets/oneoff/tex/"$tree_name".tex
+              git add datasets/oneoff/pdf/"$tree_name".pdf
+              git commit -m "generated tex and pdf files for $filename"
             fi
           done   
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
