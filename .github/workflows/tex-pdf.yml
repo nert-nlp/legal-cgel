@@ -22,7 +22,13 @@ jobs:
         with:
           ref: ${{ github.ref }}
           submodules: true
-          
+
+      - name: Update to make sure we have a newly created branch
+        run: |
+          git fetch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
       - uses: Ana06/get-changed-files@25f79e676e7ea1868813e21465014798211fad8c
         id: files
