@@ -25,7 +25,7 @@ jobs:
 
       - name: Update to make sure we have a newly created branch
         run: |
-          git fetch
+          git branch -v
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
