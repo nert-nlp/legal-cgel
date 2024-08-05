@@ -1,6 +1,7 @@
 # text = Rule 2002(a) and this rule currently require notice to all creditors of a hearing on dismissal of a voluntary chapter 7 case for the debtor's failure to file a list of creditors, schedules, and statement of financial affairs within the time provided in §707(a)(3) of the Code.
 # sent = Rule 2002(a) and this rule currently require notice to all creditors of a hearing on dismissal of a voluntary chapter 7 case for the debtor's failure to file a list of creditors schedules and statement of financial affairs within the time provided in §707(a)(3) of the Code
 # tree_by = nschneid
+# note = hi
 (Clause
     :Subj (Coordination
         :Coordinate (NP
