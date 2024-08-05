@@ -3,6 +3,7 @@
 # sent = Sections 1 3 and 4 of this Act related to consolidation of claims permitted and the limit of acreage prohibition against unlawful trusts etc. and contents of patents respectively and are not classified to the Code 
 # source = U.S. Code
 # tree_by = nschneid
+# note = hi
 (Clause
     :Subj (NP
         :Head (Nom
