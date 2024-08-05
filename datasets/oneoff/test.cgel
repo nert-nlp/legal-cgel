@@ -1,11 +1,11 @@
-# text = The cat sat on the mat.
-# sent = The cat sat on the mat
+# text = The dog sat on the mat.
+# sent = The dog sat on the mat
 (Clause
     :Subj (NP
         :Det (DP
             :Head (D :t "The"))
         :Head (Nom
-            :Head (N :t "cat")))
+            :Head (N :t "dog")))
     :Head (VP
         :Head (V :t "sat" :xpos "VBD")
         :Comp (PP
