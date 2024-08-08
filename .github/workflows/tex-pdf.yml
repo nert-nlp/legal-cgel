@@ -29,11 +29,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
-      - uses: Ana06/get-changed-files@25f79e676e7ea1868813e21465014798211fad8c
-        id: files
-        with:
-          format: space-delimited
+      # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
+      - name: Get changed files
+            export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
+            echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
+          echo "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+      # # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
+      # - uses: Ana06/get-changed-files@25f79e676e7ea1868813e21465014798211fad8c
+      #   id: files
+      #   with:
+      #     format: space-delimited
           
       - name: Config github actions bot
         run: |
@@ -59,7 +67,7 @@ jobs:
         run: |
           mkdir -p datasets/oneoff/tex
           mkdir -p datasets/oneoff/pdf
-          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+          for changed_file in ${{ steps.getfile.outputs.files }}; do
             if [[ "$changed_file" == **.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
@@ -72,7 +80,7 @@ jobs:
 
       - name: Commit and push .tex and .pdf files 
         run: |
-          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+          for changed_file in ${{ steps.getfile.outputs.files }}; do
             if [[ "$changed_file" == **.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
