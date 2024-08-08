@@ -29,6 +29,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Get name of branch's parent branch
+        run: |
+          echo 'PARENT_BRANCH=$(git for-each-ref --format="%(refname:short)" refs/heads/ | while read branch; do
+            echo "$(git merge-base HEAD $branch) $branch"
+          done | sort -r | head -n 1 | awk "{print $2}")' >> $GITHUB_ENV
+
       # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
       - name: Get changed files
         run: |
@@ -36,7 +42,6 @@ jobs:
             # if not, then diff with the parent branch
             # if yes, then diff with the HEAD @ prevous commit
             if [[ -z "${{ github.event.before_ref }}" ]] ; then
-              export PARENT_BRANCH=$(git reflog show --pretty=%gD | grep 'checkout:' | tail -1)
               export DIFF=$( git diff --name-only $PARENT_BRANCH ${{ github.sha }} )
               echo "Diff between $PARENT_BRANCH and ${{ github.sha }} "
             else
