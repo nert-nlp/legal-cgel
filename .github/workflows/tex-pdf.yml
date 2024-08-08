@@ -32,12 +32,19 @@ jobs:
       # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
       - name: Get changed files
         run: |
-            export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
-            echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
+            # check to see if there's a previous commit on the branch
+            # if not, then diff with the common ancestor of HEAD and origin/main
+            # if yes, then diff with the HEAD @ prevous commit
+            if [[ -z "${{ github.event.before_ref }}" ]] ; then
+              MERGE_BASE_SHA=$(git merge-base origin/main ${{ github.sha }})
+              export DIFF=$( git diff --name-only ${{ MERGE_BASE_SHA }} ${{ github.sha }} )
+              echo "Diff between ${{ MERGE_BASE_SHA }} and ${{ github.sha }} "
+            else
+              export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
+              echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
+            fi
             echo "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  
+
       # # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
       # - uses: Ana06/get-changed-files@25f79e676e7ea1868813e21465014798211fad8c
       #   id: files
