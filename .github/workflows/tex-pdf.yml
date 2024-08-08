@@ -33,7 +33,7 @@ jobs:
         run: |
           echo "PARENT_BRANCH=$(git for-each-ref --format=\"%(refname:short)\" refs/heads/ | while read branch; do
             echo \"$(git merge-base HEAD $branch) $branch\"
-          done | sort -r | head -n 1 | awk \"{print $2}\")" >> $GITHUB_ENV"
+          done | sort -r | head -n 1 | awk \"{print $2}\")" >> $GITHUB_ENV
 
       # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
       - name: Get changed files
