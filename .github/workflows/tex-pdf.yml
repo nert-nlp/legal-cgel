@@ -33,12 +33,12 @@ jobs:
       - name: Get changed files
         run: |
             # check to see if there's a previous commit on the branch
-            # if not, then diff with the upstream branch
+            # if not, then diff with the parent branch
             # if yes, then diff with the HEAD @ prevous commit
             if [[ -z "${{ github.event.before_ref }}" ]] ; then
-              export UPSTREAM_BRANCH=$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
-              export DIFF=$( git diff --name-only $UPSTREAM_BRANCH ${{ github.sha }} )
-              echo "Diff between $UPSTREAM_BRANCH and ${{ github.sha }} "
+              export PARENT_BRANCH=$(git reflog show --pretty=%gD | grep 'checkout:' | tail -1)
+              export DIFF=$( git diff --name-only $PARENT_BRANCH ${{ github.sha }} )
+              echo "Diff between $PARENT_BRANCH and ${{ github.sha }} "
             else
               export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
               echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
