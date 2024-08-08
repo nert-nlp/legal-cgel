@@ -36,9 +36,9 @@ jobs:
             # if not, then diff with the common ancestor of HEAD and origin/main
             # if yes, then diff with the HEAD @ prevous commit
             if [[ -z "${{ github.event.before_ref }}" ]] ; then
-              MERGE_BASE_SHA=$(git merge-base origin/main ${{ github.sha }})
-              export DIFF=$( git diff --name-only ${{ MERGE_BASE_SHA }} ${{ github.sha }} )
-              echo "Diff between ${{ MERGE_BASE_SHA }} and ${{ github.sha }} "
+              export MERGE_BASE_SHA=$(git merge-base origin/main ${{ github.sha }})
+              export DIFF=$( git diff --name-only $MERGE_BASE_SHA ${{ github.sha }} )
+              echo "Diff between $MERGE_BASE_SHA and ${{ github.sha }} "
             else
               export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
               echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
