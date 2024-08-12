@@ -12,16 +12,6 @@ on:
 
 jobs:
 
-  init:
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: none
-
-    steps:
-      - name: run a trivial bash command 
-        run: echo "initializing conversion"  
-    
   render:
     runs-on: ubuntu-latest
 
@@ -40,13 +30,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Get name of parent branch
-      #   run: |
-      #     PARENT_BRANCH=$(git for-each-ref --format="%(refname:short)" refs/heads/ | while read branch; do
-      #       echo "$(git merge-base HEAD $branch) $branch"
-      #     done | sort -r | head -n 1 | awk '{print $2}')
-      #     echo "PARENT_BRANCH=$PARENT_BRANCH" >> $GITHUB_ENV
-
       # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
       - name: Get changed files
         run: |
@@ -61,13 +44,7 @@ jobs:
               export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
               echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
             fi
-            echo "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
-
-      # # https://github.com/Ana06/get-changed-files/releases/tag/v1.2
-      # - uses: Ana06/get-changed-files@25f79e676e7ea1868813e21465014798211fad8c
-      #   id: files
-      #   with:
-      #     format: space-delimited
+            "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/ /g' )"
           
       - name: Config github actions bot
         run: |
