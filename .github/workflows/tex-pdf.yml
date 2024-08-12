@@ -36,8 +36,8 @@ jobs:
             # check to see if there's a previous commit on the branch
             # if not, then diff with origin/main
             # if yes, then diff with the HEAD @ prevous commit
-            git fetch --depth=1 origin main
             if [[ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]] ; then
+              git fetch --depth=1 origin main
               export DIFF=$( git diff --name-only origin/main ${{ github.sha }} )
               echo "Diff between origin/main and ${{ github.sha }} "
             else
