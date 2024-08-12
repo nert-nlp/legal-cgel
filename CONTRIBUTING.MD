@@ -5,7 +5,7 @@ This file documents the procedure for contributing trees to the legal-cgel treeb
 These instructions assume that you've been assigned one-off sentences to annotate, and that a project contributor with write privileges to `main` has added "stubs" of your annotations to the oneoff folder. A stub is a .cgel file with populated fields `# sent_id`, `# text`, `# sent`, and `# tree_by`. As of right now, assume one stub per tree. Here's an example stub: 
 
 ```
-# sent_id = `60-3`
+# sent_id = 60-3
 # text = The professor who taught me linear algebra is very kind.
 # sent = the professor who -- taught me linear algebra is very kind
 # tree_by = joe_annotator (YYYY-MM-DD)
@@ -18,7 +18,7 @@ The above stub relates to a sentence assigned to Joe Annotator; the `# tree_by` 
 In our example, Joe Annotator makes his contribution by adding his CGELBank tree to the stub. (This can be achieved in the GitHub, this can be achieved by navigating to the stub file and clicking the pen icon in the righthand corner). Joe Annotator then updates the date in the `# tree_by` field. The abridged result is as follows:
 
 ```
-# sent_id = `60-3`
+# sent_id = 60-3
 # text = The professor who taught me linear algebra is very kind.
 # sent = the professor who -- taught me linear algebra is very kind
 # tree_by = joe_annotator (2024-08-12)
