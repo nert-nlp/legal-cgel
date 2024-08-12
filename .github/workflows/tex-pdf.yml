@@ -40,12 +40,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Get name of parent branch
-      #   run: |
-      #     PARENT_BRANCH=$(git for-each-ref --format="%(refname:short)" refs/heads/ | while read branch; do
-      #       echo "$(git merge-base HEAD $branch) $branch"
-      #     done | sort -r | head -n 1 | awk '{print $2}')
-      #     echo "PARENT_BRANCH=$PARENT_BRANCH" >> $GITHUB_ENV
+      - name: Get name of parent branch
+        run: |
+          PARENT_BRANCH=$(git for-each-ref --format="%(refname:short)" refs/heads/ | while read branch; do
+            echo "$(git merge-base HEAD $branch) $branch"
+          done | sort -r | head -n 1 | awk '{print $2}')
+          echo "PARENT_BRANCH=$PARENT_BRANCH" >> $GITHUB_ENV
 
       # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
       - name: Get changed files
@@ -54,8 +54,8 @@ jobs:
             # if not, then diff with the parent branch
             # if yes, then diff with the HEAD @ prevous commit
             if [[ -z "${{ github.event.before_ref }}" ]] ; then
-              export DIFF=$( git diff --name-only ${{ github.sha }}^ ${{ github.sha }} )
-              echo "Diff between ${{ github.sha }}^ and ${{ github.sha }} "
+              export DIFF=$( git diff --name-only ${{ PARENT_BRANCH }}~ ${{ github.sha }} )
+              echo "Diff between ${{ PARENT_BRANCH }}~ and ${{ github.sha }} "
             else
               export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
               echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
