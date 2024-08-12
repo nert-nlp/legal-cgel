@@ -70,7 +70,7 @@ jobs:
         run: |
           mkdir -p datasets/oneoff/tex
           mkdir -p datasets/oneoff/pdf
-          for changed_file in ${{ steps.getfile.outputs.files }}; do
+          for changed_file in ${{ DIFF_FILES }}; do
             if [[ "$changed_file" == **.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
@@ -83,7 +83,7 @@ jobs:
 
       - name: Commit and push .tex and .pdf files 
         run: |
-          for changed_file in ${{ steps.getfile.outputs.files }}; do
+          for changed_file in ${{ DIFF_FILES }}; do
             if [[ "$changed_file" == **.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
