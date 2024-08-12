@@ -8,10 +8,10 @@ These instructions assume that you've been assigned one-off sentences to annotat
 # sent_id = `60-3`
 # text = The professor who taught me linear algebra is very kind.
 # sent = the professor who -- taught me linear algebra is very kind
-# tree_by = joe_annotator (YYYY/MM/DD)
+# tree_by = joe_annotator (YYYY-MM-DD)
 ```
 
-The above stub relates to a sentence assigned to Joe Annotator; the `# tree_by` field includes Joe's GitHub username and the string `(YYYY/MM/DD)`, which Joe will update with the date Joe adds a CGELBank tree to the stub. The `# text` field includes the sentence string prior to any tokenization performed by Joe; `# sent` is the sentence after tokenization. Note that all tokens are lowercased (even if sentence-initial), unless the token is conventionally capitalized regardless of sentence position. Note as well that gaps are notated in this field as `--` (which is different than the gap token `_.` we currently assume for annotation in activedop). Currently, `# sent_id` is a sequence of the form `N-M` where `N` and `M` are integers. (Soon, these IDs will be updated, but for now, just enter the `N-M` sequence that came with the sentence when it was assigned for annotation). 
+The above stub relates to a sentence assigned to Joe Annotator; the `# tree_by` field includes Joe's GitHub username and the string `(YYYY-MM-DD)`, which Joe will update with the date Joe adds a CGELBank tree to the stub. The `# text` field includes the sentence string prior to any tokenization performed by Joe; `# sent` is the sentence after tokenization. Note that all tokens are lowercased (even if sentence-initial), unless the token is conventionally capitalized regardless of sentence position. Note as well that gaps are notated in this field as `--` (which is different than the gap token `_.` we currently assume for annotation in activedop). Currently, `# sent_id` is a sequence of the form `N-M` where `N` and `M` are integers. (Soon, these IDs will be updated, but for now, just enter the `N-M` sequence that came with the sentence when it was assigned for annotation). 
 
 ## 1. Annotator adds the CGELBank tree to the stub
 
@@ -21,7 +21,7 @@ In our example, Joe Annotator makes his contribution by adding his CGELBank tree
 # sent_id = `60-3`
 # text = The professor who taught me linear algebra is very kind.
 # sent = the professor who -- taught me linear algebra is very kind
-# tree_by = joe_annotator (2024/08/12)
+# tree_by = joe_annotator (2024-08-12)
 (Clause
     :Subj (NP
         :Det (DP
@@ -52,5 +52,5 @@ If necessary, the reviewer will request changes to the annotator's work. In that
 Before doing so, reviewer updates `# tree_by` to identify the reviewer and date of the review, e.g.:
 
 ```
-# tree_by = joe_annotator (2024/08/12) rev. bwaldon (2024-08-12)
+# tree_by = joe_annotator (2024-08-12) rev. bwaldon (2024-08-12)
 ```
