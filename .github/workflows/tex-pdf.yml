@@ -47,42 +47,13 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Cache CGEL Dependencies
-        id: cache-cgel
-        uses: actions/cache@v3
-        with: 
-          #cgel cache files are stored in `~/.cache/cgel`
-          path: ~/.cache/cgel
-          key: ${{ runner.os }}-cgel-${{ hashFiles('**/cgel/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-cgel-
+      - name: Install cgel dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r cgel/requirements.txt
 
-      - if: ${{ steps.cache-cgel.outputs.cache-hit != 'true' }}
-        name: Install CGEL packages
-        continue-on-error: true
-        run: pip install -r cgel/requirements.txt
-      
-  #  - name: Install cgel dependencies
-      # run: |
-      #  python -m pip install --upgrade pip
-      #  pip install -r cgel/requirements.txt
-      
-      - name: Cache LaTeX
-        id: cache-latex
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/texworks
-          key: ${{ runner.os }}-latex-test
-          restore-keys: |
-            ${{ runner.os }}-latex-
-
-      - if: ${{ steps.cache-latex.outputs.cache-hit != 'true' }}
-        name: Install texlive
-        continue-on-error: true
+      - name: Install texlive
         run: sudo apt-get install texlive-latex-extra
-        
-    # - name: Install texlive
-      # run: sudo apt-get install texlive-latex-extra
           
       - name: Generate .tex and .pdf files
         run: |
