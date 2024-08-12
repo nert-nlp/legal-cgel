@@ -8,9 +8,20 @@ on:
     paths:
       - datasets/oneoff/*.cgel
     branches-ignore:
-      - main
+      - main      
 
 jobs:
+
+  init:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: none
+
+    steps:
+      - name: run a trivial bash command 
+        run: echo "initializing conversion"  
+    
   render:
     runs-on: ubuntu-latest
 
