@@ -44,7 +44,7 @@ jobs:
               export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
               echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
             fi
-            "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/ /g' )"
+            echo "DIFF_FILES=$(echo $DIFF | tr '\n' ' ')" >> $GITHUB_ENV
           
       - name: Config github actions bot
         run: |
