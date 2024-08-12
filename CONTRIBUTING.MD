@@ -39,7 +39,7 @@ In our example, Joe Annotator makes his contribution by adding his CGELBank tree
 
 After editing the tree, click the green "Commit changes..." button. In the popup window, select the option "Create a **new branch** for this commit and start a pull request". There is no need to alter the "Commit message", "Extended description", or branch name fields fields; just click the "Propose changes" button to make a pull request on the main branch. Just before clicking "Propose changes", Joe's popup window looks like this: 
 
-![Propose Changes](propose-changes.png)
+![Propose Changes](propose-changes.png){width=50%}
 
 The .tex and .pdf conversions of the tree are automatically added to this branch as a new git commit. (This may take a couple minutes).
 
