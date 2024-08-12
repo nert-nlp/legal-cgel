@@ -23,6 +23,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
           submodules: true
+          fetch-depth: 0
 
       - name: Update to make sure we have a newly created branch
         run: |
