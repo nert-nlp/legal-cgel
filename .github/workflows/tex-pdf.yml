@@ -60,9 +60,18 @@ jobs:
           python-version: "3.10"
           cache: "pip"
       - run: pip install -r cgel/requirements.txt
-      
-      - name: Install texlive
-        run: sudo apt-get install texlive-latex-extra
+
+      - name: Setup TeX Live
+        uses: teatimeguest/setup-texlive-action@v3
+        with:
+          packages: |
+            scheme-basic
+            hyperref
+            microtype
+            pdflatex
+
+      #- name: Install texlive
+       # run: sudo apt-get install texlive-latex-extra
           
       - name: Generate .tex and .pdf files
         run: |
