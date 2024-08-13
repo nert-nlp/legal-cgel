@@ -46,7 +46,7 @@ If an annotator's analysis depends on analyzing a sequence of tokens as a term o
     url={https://arxiv.org/abs/2305.17347}, 
 }
 @book{sieg,
-    title={A student's introduction to English grammar},
+    title={A student's introduction to English grammar, 2nd edition},
     author={Huddleston, Rodney and Pullum, Geoffrey K and Reynolds, Brett},
     year={2021},
     publisher={Cambridge University Press}
