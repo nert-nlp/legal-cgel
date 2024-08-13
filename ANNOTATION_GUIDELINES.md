@@ -24,7 +24,7 @@ On reading (1), *the request* takes place in a removal proceeding. On reading (2
 Annotators can ignore (3)-like cases but should note when there are multiple plausible analyses. Best practices in cases of unresolvable ambiguity are as follows:
 
 - The annotator's CGELBank tree should reflect one of the plausible analyses.
-- In a `:note` tag on the tree, describe the ambiguity in enough detail that another reader could understand what is going on. **Make sure the string `#AMBIG#` appears somewhere in the tag.**
+- In a `:note` tag on the tree, describe the ambiguity in enough detail that another reader could understand what is going on. **Make sure the string `[AMBIG]` appears somewhere in the tag.**
 - If the annotator believes that not all plausible analyses are *equally* plausible, add this to the `:note` tag with a brief explanation. (In this case, the annotator's tree should ideally reflect what the annotator takes to be the *most* plausible analysis). 
 
 ## Dealing with legal terms of art
