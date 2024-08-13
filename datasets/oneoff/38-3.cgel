@@ -1,4 +1,99 @@
 # sent_id = 38-3
 # text = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26.
 # sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26
-# tree_by = mebwells (YYYY-MM-DD)
+# tree_by = mebwells (2024-08-12)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "The"))
+        :Head (Nom
+            :Head (N :t "Attorney")
+            :Mod (AdjP
+                :Head (Adj :t "General"))))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "may")
+            :Mod (AdvP
+                :Head (Adv :t "not")))
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "award")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (N :t "grant")
+                        :Mod (PP
+                            :Head (P :t "under" :note "Attaching low for now. Consitiuency seems wrong. Is this mod or comp? Should it attach low or be quaternary branching? Seems like it should go higher with 'may not'?")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "this"))
+                                :Head (Nom
+                                    :Head (N :t "subchapter"))))))
+                :Comp (PP
+                    :Head (P :t "to")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "a"))
+                        :Head (Nom
+                            :Head (x / Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "nonprofit"))
+                                :Head (N :t "organization"))
+                            :Mod (Clause_rel
+                                :Marker (Sdr :t "that")
+                                :Head (Clause_rel
+                                    :Subj (x / GAP)
+                                    :Head (VP
+                                        :Head (VP
+                                            :Head (VP
+                                                :Head (V :t "holds")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "money"))))
+                                            :Mod (PP
+                                                :Head (P :t "in")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "offshore"))
+                                                        :Head (N :t "accounts")))))
+                                        :Mod (PP
+                                            :Head (P :t "for")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "purpose")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Comp (Clause
+                                                            :Head (VP
+                                                                :Head (V :t "avoiding")
+                                                                :Comp (Clause
+                                                                    :Head (VP
+                                                                        :Head (V :t "paying")
+                                                                        :Obj (NP
+                                                                            :Det (DP
+                                                                                :Head (D :t "the"))
+                                                                            :Head (Nom
+                                                                                :Head (y / N :t "tax")
+                                                                                :Mod (Clause_rel
+                                                                                    :Head (VP
+                                                                                        :Head (VP
+                                                                                            :Head (V :t "described")
+                                                                                            :Obj (y / GAP))
+                                                                                        :Mod (PP
+                                                                                            :Head (P :t "in")
+                                                                                            :Obj (NP
+                                                                                                :Head (Nom
+                                                                                                    :Head (Nom
+                                                                                                        :Flat (N :t "section" :note "parent Nom should be N")
+                                                                                                        :Flat (N :t "511(a" :p ")"))
+                                                                                                    :Mod (PP
+                                                                                                        :Head (P :t "of")
+                                                                                                        :Obj (NP
+                                                                                                            :Head (Nom
+                                                                                                                :Head (Nom
+                                                                                                                    :Flat (N :t "title" :note "parent Nom should be N")
+                                                                                                                    :Flat (N :t "26" :p "."))))))))))))))))))))))))))))))
