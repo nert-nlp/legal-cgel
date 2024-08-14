@@ -14,7 +14,7 @@
                         :Head (Adj :t "adverse"))
                     :Head (N :t "party")))
             :Head (VP
-                :Head (V :t "is" :l "be" :xpos "VBZ")
+                :Head (V :t "is")
                 :PredComp (NP
                     :Det (DP
                         :Head (D :t "a"))
@@ -41,10 +41,10 @@
                                                 :Head (Nom
                                                     :Head (N :t "award")))
                                             :Head (VP
-                                                :Head (V_aux :t "was" :l "be" :xpos "VBD")
+                                                :Head (V_aux :t "was")
                                                 :Comp (Clause
                                                     :Head (VP
-                                                        :Head (V :t "made" :l "make" :xpos "VBN" :p ",")
+                                                        :Head (V :t "made" :p ",")
                                                         :Obj (x / GAP))))))))))))))
     :Head (Clause
         :Subj (NP
@@ -53,14 +53,14 @@
             :Head (Nom
                 :Head (N :t "service")))
         :Head (VP
-            :Head (V_aux :t "shall" :l "shall" :xpos "MD")
+            :Head (V_aux :t "shall")
             :Comp (Clause
                 :Head (VP
-                    :Head (V_aux :t "be" :l "be" :xpos "VB")
+                    :Head (V_aux :t "be")
                     :Comp (Clause
                         :Head (VP
                             :Head (VP
-                                :Head (V :t "made" :l "make" :xpos "VBN")
+                                :Head (V :t "made")
                                 :Comp (PP
                                     :Head (P :t "upon")
                                     :Obj (Coordination
@@ -82,7 +82,7 @@
                                 :Head (Adv :t "as")
                                 :Comp (Clause
                                     :Head (VP
-                                        :Head (V :t "prescribed" :l "prescribe" :xpos "VBN")
+                                        :Head (V :t "prescribed")
                                         :Mod (PP
                                             :Head (P :t "by")
                                             :Obj (NP
@@ -119,3 +119,4 @@
                                                                                                                 :Mod (AdjP
                                                                                                                     :Head (Adj :t "same"))
                                                                                                                 :Head (N :t "court" :p ".")))))))))))))))))))))))))))))
+
