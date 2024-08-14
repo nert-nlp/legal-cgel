@@ -51,7 +51,7 @@
 
 % # sent_id = 38-3
 % # text = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26.
-% # sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26
+% # sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that _. holds money in offshore accounts for the purpose of avoiding paying the tax described _. in section 511(a) of title 26
 % # tree_by = mebwells (2024-08-12)
 
         \begin{forest}
@@ -146,18 +146,18 @@
                                                                                             [\Node{Head}{P},edge={line width=1pt}[in]]
                                                                                             [\Node{Obj}{NP}
                                                                                                 [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                                    [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                                        [\Node{Flat}{N} \hlgreen{\Info}[section]]
-                                                                                                        [\Node{Flat}{N}[511(a,label={right:\p{)}}]]]
+                                                                                                    [\Node{Head}{N},edge={line width=1pt}
+                                                                                                        [\Node{Flat}{N}[section]]
+                                                                                                        [\Node{Flat}{N} \hlgreen{\Info}[511(a)]]]
                                                                                                     [\Node{Mod}{PP}
                                                                                                         [\Node{Head}{P},edge={line width=1pt}[of]]
                                                                                                         [\Node{Obj}{NP}
                                                                                                             [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                                                [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                                                    [\Node{Flat}{N} \hlgreen{\Info}[title]]
+                                                                                                                [\Node{Head}{N},edge={line width=1pt}
+                                                                                                                    [\Node{Flat}{N}[title]]
                                                                                                                     [\Node{Flat}{N}[26,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 \node at (current bounding box.south)[yshift=-1cm]{
-(1) Attaching low for now. Consitiuency seems wrong. Is this mod or comp? Should it attach low or be quaternary branching? Seems like it should go higher with \textquotesingle{}may not\textquotesingle{}?; (2) parent Nom should be N; (3) parent Nom should be N};
+(1) Needs review. Attaching low for now by convention. Unclear where this PP belongs. Perhaps it should go higher with \textquotesingle{}award\textquotesingle{} or \textquotesingle{}may not\textquotesingle{}; (2) The compound constuction of this number may merit review of the CD tag};
         \end{forest}
         
 
