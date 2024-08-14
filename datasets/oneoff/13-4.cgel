@@ -16,7 +16,7 @@
                         :Head (Adj :t "interested"))
                     :Head (N :t "party")))
             :Head (VP
-                :Head (V :t "presents")
+                :Head (V :t "presents" :l "present" :xpos "VBZ")
                 :Obj (NP
                     :Det (DP
                         :Head (D :t "the"))
@@ -34,7 +34,7 @@
             :Subj (NP
                 :Det (NP
                     :Head (Nom
-                        :Head (N_pro :t "its")))
+                        :Head (N_pro :t "its" :l "it")))
                 :Head (NP
                     :Mod (AdjP
                         :Head (Adj :t "prompt"))
@@ -48,10 +48,10 @@
                                 :Head (Nom
                                     :Head (N :t "court")))))))
             :Head (VP
-                :Head (V_aux :t "will")
+                :Head (V_aux :t "will" :l "will" :xpos "MD")
                 :Comp (Clause
                     :Head (VP
-                        :Head (V :t "determine")
+                        :Head (V :t "determine" :l "determine" :xpos "VB")
                         :Obj (NP
                             :Det (DP
                                 :Head (D :t "the"))
@@ -77,17 +77,17 @@
                             :Head (VP
                                 :Marker (Sdr :t "to")
                                 :Head (VP
-                                    :Head (V :t "conduct")
+                                    :Head (V :t "conduct" :l "conduct" :xpos "VB")
                                     :Obj (NP
                                         :Det (DP
                                             :Head (D :t "the"))
                                         :Head (Nom
                                             :Head (N :t "election"))))))))
                 :Head (VP
-                    :Head (V_aux :t "may")
+                    :Head (V_aux :t "may" :l "may" :xpos "MD")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V_aux :t "be")
+                            :Head (V_aux :t "be" :l "be" :xpos "VB")
                             :Comp (Clause
                                 :Head (VP
-                                    :Head (V :t "avoided" :p "."))))))))))
+                                    :Head (V :t "avoided" :l "avoid" :xpos "VBN" :p "."))))))))))
