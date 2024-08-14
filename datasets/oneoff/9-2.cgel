@@ -52,7 +52,7 @@
                                     :Head (Nom
                                         :Head (N :t "determination")))))
                         :Mod (PP
-                            :Head (P :t "in" :note "#AMBIG# does the review take place in a removal proceeding [this analysis], or does the request occur in a removal proceeding [higher attachment of PP]?")
+                            :Head (P :t "in" :note "[AMBIG] does the review take place in a removal proceeding [this analysis], or does the request occur in a removal proceeding [higher attachment of PP]?")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "a"))
