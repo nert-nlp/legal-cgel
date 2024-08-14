@@ -30,9 +30,9 @@
                                     :Head (P :t "under")
                                     :Obj (NP
                                         :Head (Nom
-                                            :Head (N :t "paragraph")
                                             :Mod (Nom
-                                                :Head (N :p "(" :t "1" :xpos "CD" :p ")"))))))))))))
+                                                :Head (N :t "paragraph"))
+                                            :Head (N :p "(" :t "1" :xpos "CD" :p ")")))))))))))
     :Head (VP
         :Head (V_aux :t "may" :xpos "MD")
         :Comp (Clause
@@ -52,7 +52,7 @@
                                     :Head (Nom
                                         :Head (N :t "determination")))))
                         :Mod (PP
-                            :Head (P :t "in" :note "[AMBIG] does the review take place in a removal proceeding [this analysis], or does the request occur in a removal proceeding [higher attachment of PP]?")
+                            :Head (P :t "in" :note "#AMBIG# does the review take place in a removal proceeding [this analysis], or does the request occur in a removal proceeding [higher attachment of PP]?")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "a"))
@@ -68,4 +68,3 @@
                                                         :Head (D :t "the"))
                                                     :Head (Nom
                                                         :Head (N :t "alien" :p ".")))))))))))))))
-                                                        
