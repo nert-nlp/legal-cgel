@@ -37,7 +37,7 @@
                         :Head (VP
                             :Marker (Sdr :t "to")
                             :Head (VP
-                                :Head (V :t "comply")
+                                :Head (V :t "comply" :l "comply" :xpos "VB")
                                 :Comp (PP
                                     :Head (P :t "with")
                                     :Obj (NP
@@ -47,17 +47,17 @@
                                             :Head (N :t "provisions" :p ",")))))))))))
     :Head (VP
         :Head (VP
-            :Head (V_aux :t "may")
+            :Head (V_aux :t "may" :l "may" :xpos "MD")
             :Mod (AdvP
                 :Head (Adv :t "not")))
         :Comp (Clause
             :Head (VP
-                :Head (V_aux :t "be")
+                :Head (V_aux :t "be" :l "be" :xpos "VB")
                 :Comp (Clause
                     :Head (VP
                         :Head (VP
                             :Head (VP
-                                :Head (V :t "used")
+                                :Head (V :t "used" :l "use" :xpos "VBN")
                                 :Mod (PP
                                     :Head (P :t "by")
                                     :Obj (NP
@@ -71,11 +71,11 @@
                                     :Head (VP
                                         :Head (Coordination
                                             :Coordinate (VP
-                                                :Head (V :t "attack"))
+                                                :Head (V :t "attack" :l "attack" :xpos "VB"))
                                             :Coordinate (VP
                                                 :Marker (Coordinator :t "or")
                                                 :Head (VP
-                                                    :Head (V :t "defeat"))))
+                                                    :Head (V :t "defeat" :l "defeat" :xpos "VB"))))
                                         :Obj (NP
                                             :Det (DP
                                                 :Head (D :t "any"))
@@ -93,10 +93,10 @@
                                     :Head (Nom
                                         :Head (N_pro :t "it")))
                                 :Head (VP
-                                    :Head (V_aux :t "is")
+                                    :Head (V_aux :t "is" :l "be" :xpos "VBZ")
                                     :Comp (Clause
                                         :Head (VP
-                                            :Head (V :t "conveyed")
+                                            :Head (V :t "conveyed" :l "convey" :xpos "VBN")
                                             :Mod (PP
                                                 :Head (P :t "by")
                                                 :Obj (NP
