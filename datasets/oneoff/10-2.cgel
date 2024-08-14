@@ -37,18 +37,19 @@
                                     :Head (P :t "of")
                                     :Obj (NP
                                         :Head (Nom
-                                            :Flat (N :t "June")
-                                            :Flat (N :t "10" :p ",")
-                                            :Flat (N :t "1958" :p ",")))))))))))
+                                            :Head (N
+                                                :Flat (N :t "June")
+                                                :Flat (N :t "10" :xpos "CD" :p ",")
+                                                :Flat (N :t "1958" :xpos "CD" :p ","))))))))))))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :l "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V_aux :t "be")
+                :Head (V_aux :t "be" :l "be" :"VB")
                 :Comp (Clause
                     :Head (VP
                         :Head (VP
-                            :Head (V :t "enforced")
+                            :Head (V :t "enforced" :l "enforce" :xpos "VBN")
                             :Mod (PP
                                 :Head (P :t "in")
                                 :Obj (NP
