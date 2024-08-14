@@ -1,7 +1,7 @@
 # sent_id = 9_2
 # text = Any alien whose permanent resident status is terminated under paragraph (1) may request a review of such determination in a proceeding to remove the alien.
 # sent = any alien whose permanent resident status -- is terminated under paragraph 1 may request a review of such determination in a proceeding to remove the alien
-# tree_by = bwaldon (2024-08-13)
+# tree_by = bwaldon (2024-08-13) rev. nschneid (2024-08-13)
 (Clause
     :Subj (NP
         :Det (DP
