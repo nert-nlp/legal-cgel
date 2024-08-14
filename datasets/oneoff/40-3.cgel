@@ -10,12 +10,12 @@
             :Head (N :t "subsection")))
     :Head (VP
         :Head (VP
-            :Head (V_aux :t "does")
+            :Head (V_aux :t "does" :l "do" :xpos "VBZ")
             :Mod (AdvP
                 :Head (Adv :t "not")))
         :Comp (Clause
             :Head (VP
-                :Head (V :t "prevent")
+                :Head (V :t "prevent" :l "prevent" :xpos "VB")
                 :Obj (NP
                     :Det (DP
                         :Head (D :t "the"))
@@ -45,7 +45,7 @@
                                                 :Head (N :t "amount")
                                                 :Mod (Clause
                                                     :Head (VP
-                                                        :Head (V :t "approved")
+                                                        :Head (V :t "approved" :l "approve" :xpos "VBN")
                                                         :Mod (PP
                                                             :Head (P :t "by")
                                                             :Obj (NP
