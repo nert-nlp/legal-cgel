@@ -1,6 +1,6 @@
 # sent_id = 38-3
 # text = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26.
-# sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26
+# sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that _. holds money in offshore accounts for the purpose of avoiding paying the tax described _. in section 511(a) of title 26
 # tree_by = mebwells (2024-08-12)
 (Clause
     :Subj (NP
@@ -12,19 +12,19 @@
                 :Head (Adj :t "General"))))
     :Head (VP
         :Head (VP
-            :Head (V_aux :t "may")
+            :Head (V_aux :t "may" :l "may" :xpos "MD")
             :Mod (AdvP
                 :Head (Adv :t "not")))
         :Comp (Clause
             :Head (VP
-                :Head (V :t "award")
+                :Head (V :t "award" :l "award" :xpos "VB")
                 :Obj (NP
                     :Det (DP
                         :Head (D :t "a"))
                     :Head (Nom
                         :Head (N :t "grant")
                         :Mod (PP
-                            :Head (P :t "under" :note "Attaching low for now. Consitiuency seems wrong. Is this mod or comp? Should it attach low or be quaternary branching? Seems like it should go higher with 'may not'?")
+                            :Head (P :t "under" :note "Needs review. Attaching low for now by convention. Unclear where this PP belongs. Perhaps it should go higher with 'award' or 'may not'")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "this"))
@@ -47,7 +47,7 @@
                                     :Head (VP
                                         :Head (VP
                                             :Head (VP
-                                                :Head (V :t "holds")
+                                                :Head (V :t "holds" :l "hold" :xpos "VBZ")
                                                 :Obj (NP
                                                     :Head (Nom
                                                         :Head (N :t "money"))))
@@ -69,10 +69,10 @@
                                                         :Head (P :t "of")
                                                         :Comp (Clause
                                                             :Head (VP
-                                                                :Head (V :t "avoiding")
+                                                                :Head (V :t "avoiding" :l "avoid" :xpos "VBG")
                                                                 :Comp (Clause
                                                                     :Head (VP
-                                                                        :Head (V :t "paying")
+                                                                        :Head (V :t "paying" :l "pay" :xpos "VBG")
                                                                         :Obj (NP
                                                                             :Det (DP
                                                                                 :Head (D :t "the"))
@@ -81,19 +81,19 @@
                                                                                 :Mod (Clause_rel
                                                                                     :Head (VP
                                                                                         :Head (VP
-                                                                                            :Head (V :t "described")
+                                                                                            :Head (V :t "described" :l "describe" :xpos "VBN")
                                                                                             :Obj (y / GAP))
                                                                                         :Mod (PP
                                                                                             :Head (P :t "in")
                                                                                             :Obj (NP
                                                                                                 :Head (Nom
-                                                                                                    :Head (Nom
-                                                                                                        :Flat (N :t "section" :note "parent Nom should be N")
-                                                                                                        :Flat (N :t "511(a" :p ")"))
+                                                                                                    :Head (N
+                                                                                                        :Flat (N :t "section")
+                                                                                                        :Flat (N :t "511(a)" :xpos "CD" :note "The compound constuction of this number may merit review of the CD tag"))
                                                                                                     :Mod (PP
                                                                                                         :Head (P :t "of")
                                                                                                         :Obj (NP
                                                                                                             :Head (Nom
-                                                                                                                :Head (Nom
-                                                                                                                    :Flat (N :t "title" :note "parent Nom should be N")
-                                                                                                                    :Flat (N :t "26" :p "."))))))))))))))))))))))))))))))
+                                                                                                                :Head (N
+                                                                                                                    :Flat (N :t "title")
+                                                                                                                    :Flat (N :t "26" :xpos "CD" :p "."))))))))))))))))))))))))))))))
