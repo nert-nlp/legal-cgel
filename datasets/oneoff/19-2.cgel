@@ -1,4 +1,64 @@
 # sent_id = 19-2
 # text = A closed circuit wire system that only originates programs and does not carry television broadcast signals would not come within the definition.
 # sent = a closed circuit wire system that only originates programs and does not carry television broadcast signals would not come within the definition
-# tree_by = m3ru (YYYY-MM-DD)
+# tree_by = m3ru (2024-08-15)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "A"))
+        :Head (Nom
+            :Head (x / Nom
+                :Mod (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "closed"))
+                    :Head (N :t "circuit"))
+                :Head (Nom
+                    :Mod (Nom
+                        :Head (N :t "wire"))
+                    :Head (N :t "system")))
+            :Mod (Clause_rel
+                :Marker (Sdr :t "that")
+                :Head (Clause_rel
+                    :Subj (x / GAP)
+                    :Head (VP
+                        :Head (Coordination
+                            :Coordinate (VP
+                                :Mod (AdvP
+                                    :Head (Adv :t "only"))
+                                :Head (VP
+                                    :Head (V :t "originates")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N :t "programs")))))
+                            :Coordinate (VP
+                                :Marker (Coordinator :t "and")
+                                :Head (VP
+                                    :Head (VP
+                                        :Head (V_aux :t "does")
+                                        :Mod (AdvP
+                                            :Head (Adv :t "not")))
+                                    :Comp (Clause
+                                        :Head (VP
+                                            :Head (V :t "carry")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Mod (Nom
+                                                            :Head (N :t "television"))
+                                                        :Head (N :t "broadcast"))
+                                                    :Head (N :t "signals")))))))))))))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "would")
+            :Mod (AdvP
+                :Head (Adv :t "not")))
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "come")
+                :Comp (PP
+                    :Head (P :t "within")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "definition"))))))))
