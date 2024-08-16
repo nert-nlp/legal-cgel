@@ -5,7 +5,7 @@
 (Clause
     :Subj (NP
         :Det (DP
-            :Head (D :t "The"))
+            :Head (D :t "the"))
         :Head (Nom
             :Head (N :t "court")))
     :Head (VP
@@ -14,7 +14,7 @@
             :Head (VP
                 :Head (V :t "inquire" :l "inquire" :xpos "VB")
                 :Comp (PP
-                    :Head (P :t "as_to")
+                    :Head (P :t "as to")
                     :Obj (NP
                         :Det (DP
                             :Head (D :t "the"))
@@ -23,7 +23,7 @@
                                 :Mod (AdjP
                                     :Head (Adj :t "good"))
                                 :Head (N :t "faith"))
-                            :Comp (PP
+                            :Mod (PP
                                 :Head (P :t "of")
                                 :Obj (NP
                                     :Det (DP
@@ -52,37 +52,38 @@
                                     :Head (VP
                                         :Head (V_aux :t "is" :l "be" :xpos "VBZ")
                                         :Mod (AdvP
-                                            :Head (Adv :t "not")
-                                            :Mod (AdvP
-                                                :Head (Adv :t "merely"))))
+                                            :Head (Adv :t "not")))
                                     :PredComp (NP
-                                        :Det (DP
-                                            :Head (D :t "a"))
-                                        :Head (Nom
-                                            :Head (N :t "subterfuge")
-                                            :Mod (Clause
-                                                :Head (VP
-                                                    :Marker (Sdr :t "to")
+                                        :Mod (AdvP
+                                            :Head (Adv :t "merely"))
+                                        :Head (NP
+                                            :Det (DP
+                                                :Head (D :t "a"))
+                                            :Head (Nom
+                                                :Head (N :t "subterfuge")
+                                                :Mod (Clause
                                                     :Head (VP
-                                                        :Head (V :t "gather" :l "gather" :xpos "VB")
-                                                        :Obj (NP
-                                                            :Head (Nom
-                                                                :Head (N :t "evidence")
-                                                                :Mod (AdjP
-                                                                    :Head (Adj :t "unattainable")
-                                                                    :Mod (PP
-                                                                        :Head (P :t "by")
-                                                                        :Obj (NP
-                                                                            :Head (Nom
-                                                                                :Head (N :t "means")
-                                                                                :Mod (AdjP
-                                                                                    :Head (Adj :t "other")
-                                                                                    :Mod (PP
-                                                                                        :Head (P :t "than")
-                                                                                        :Obj (NP
-                                                                                            :Det (DP
-                                                                                                :Head (D :t "the"))
-                                                                                            :Head (Nom
-                                                                                                :Mod (AdjP
-                                                                                                    :Head (Adj :t "grand"))
-                                                                                                :Head (N :t "jury" :p ".")))))))))))))))))))))))))
+                                                        :Marker (Sdr :t "to")
+                                                        :Head (VP
+                                                            :Head (V :t "gather" :l "gather" :xpos "VB")
+                                                            :Obj (NP
+                                                                :Head (Nom
+                                                                    :Head (N :t "evidence")
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "unattainable")
+                                                                        :Mod (PP
+                                                                            :Head (P :t "by")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "means")
+                                                                                    :Mod (AdjP
+                                                                                        :Head (Adj :t "other")
+                                                                                        :Mod (PP
+                                                                                            :Head (P :t "than")
+                                                                                            :Obj (NP
+                                                                                                :Det (DP
+                                                                                                    :Head (D :t "the"))
+                                                                                                :Head (Nom
+                                                                                                    :Mod (AdjP
+                                                                                                        :Head (Adj :t "grand"))
+                                                                                                    :Head (N :t "jury" :p "."))))))))))))))))))))))))))
