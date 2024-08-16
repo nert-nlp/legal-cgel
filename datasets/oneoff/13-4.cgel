@@ -4,7 +4,7 @@
 # tree_by = mebwells (2024-08-12)
 (Clause
     :Supplement (AdvP
-        :Head (Adv :t "Thus" :p ","))
+        :Head (Adv :t "thus" :p ","))
     :Mod (PP
         :Head (P :t "when")
         :Comp (Clause
@@ -40,7 +40,7 @@
                         :Head (Adj :t "prompt"))
                     :Head (Nom
                         :Head (N :t "resolution")
-                        :Mod (PP
+                        :Comp (PP
                             :Head (P :t "by" :note "two possible attachment sites for the PP - attaching low by convention, negligible meaning change")
                             :Obj (NP
                                 :Det (DP
