@@ -5,7 +5,7 @@
 (Clause
     :Subj (NP
         :Det (DP
-            :Head (D :t "This"))
+            :Head (D :t "this"))
         :Head (Nom
             :Head (N :t "subsection")))
     :Head (VP
@@ -15,7 +15,7 @@
                 :Head (Adv :t "not")))
         :Comp (Clause
             :Head (VP
-                :Head (V :t "prevent" :l "prevent" :xpos "VB")
+                :Head (V :t "prevent" :xpos "VB")
                 :Obj (NP
                     :Det (DP
                         :Head (D :t "the"))
