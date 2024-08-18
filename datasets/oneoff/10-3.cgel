@@ -4,7 +4,7 @@
 # tree_by = mebwells (2024-08-14)
 (Clause
     :Mod (PP
-        :Head (P :t "If")
+        :Head (P :t "if")
         :Comp (Clause
             :Subj (NP
                 :Det (DP
@@ -53,10 +53,10 @@
             :Head (Nom
                 :Head (N :t "service")))
         :Head (VP
-            :Head (V_aux :t "shall" :l "shall" :xpos "MD")
+            :Head (V_aux :t "shall" :xpos "MD")
             :Comp (Clause
                 :Head (VP
-                    :Head (V_aux :t "be" :l "be" :xpos "VB")
+                    :Head (V_aux :t "be" :xpos "VB")
                     :Comp (Clause
                         :Head (VP
                             :Head (VP
