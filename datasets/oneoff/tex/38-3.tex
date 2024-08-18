@@ -51,7 +51,7 @@
 
 % # sent_id = 38-3
 % # text = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26.
-% # sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that _. holds money in offshore accounts for the purpose of avoiding paying the tax described _. in section 511(a) of title 26
+% # sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that _. holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26
 % # tree_by = mebwells (2024-08-12)
 
         \begin{forest}
@@ -136,28 +136,26 @@
                                                                             [\Node{Det}{DP}
                                                                                 [\Node{Head}{D},edge={line width=1pt}[the]]]
                                                                             [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                [\Node{Head}{N\idx{y}},edge={line width=1pt}[tax]]
-                                                                                [\Node{Mod}{Clause\textsubscript{rel}}
+                                                                                [\Node{Head}{N},edge={line width=1pt}[tax]]
+                                                                                [\Node{Mod}{Clause}
                                                                                     [\Node{Head}{VP},edge={line width=1pt}
-                                                                                        [\Node{Head}{VP},edge={line width=1pt}
-                                                                                            [\Node{Head}{V},edge={line width=1pt}[described]]
-                                                                                            [\Node{Obj}{GAP\idx{y}}[--]]]
+                                                                                        [\Node{Head}{V},edge={line width=1pt}[described]]
                                                                                         [\Node{Mod}{PP}
                                                                                             [\Node{Head}{P},edge={line width=1pt}[in]]
                                                                                             [\Node{Obj}{NP}
                                                                                                 [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                                    [\Node{Head}{N},edge={line width=1pt}
-                                                                                                        [\Node{Flat}{N}[section]]
-                                                                                                        [\Node{Flat}{N} \hlgreen{\Info}[511(a)]]]
-                                                                                                    [\Node{Mod}{PP}
-                                                                                                        [\Node{Head}{P},edge={line width=1pt}[of]]
-                                                                                                        [\Node{Obj}{NP}
-                                                                                                            [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                                                [\Node{Head}{N},edge={line width=1pt}
-                                                                                                                    [\Node{Flat}{N}[title]]
-                                                                                                                    [\Node{Flat}{N}[26,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+                                                                                                    [\Node{Mod}{Nom}
+                                                                                                        [\Node{Head}{N},edge={line width=1pt}[section]]]
+                                                                                                    [\Node{Head}{N} \hlgreen{\Info},edge={line width=1pt}[511(a)]]]
+                                                                                                [\Node{Mod}{PP}
+                                                                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                                                    [\Node{Obj}{NP}
+                                                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                                            [\Node{Mod}{Nom}
+                                                                                                                [\Node{Head}{N},edge={line width=1pt}[title]]]
+                                                                                                            [\Node{Head}{N},edge={line width=1pt}[26,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 \node at (current bounding box.south)[yshift=-1cm]{
-(1) Needs review. Attaching low for now by convention. Unclear where this PP belongs. Perhaps it should go higher with \textquotesingle{}award\textquotesingle{} or \textquotesingle{}may not\textquotesingle{}; (2) The compound constuction of this number may merit review of the CD tag};
+(1) [AMBIG] Attach @ grant = the grant would be defined by the subchapter. Attach @ award = this subchapter does not license the award of a grant. (possibly) attach @ may = this subchapter prohibits any award of a grant?; (2) The compound constuction of this number may merit review of the CD tag};
         \end{forest}
         
 
