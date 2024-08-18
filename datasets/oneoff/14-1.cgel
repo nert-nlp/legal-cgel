@@ -6,7 +6,7 @@
     :Subj (Coordination
         :Coordinate (NP
             :Det (DP
-                :Head (D :t "The"))
+                :Head (D :t "the"))
             :Head (Nom
                 :Head (N :t "provisions")
                 :Comp (PP
@@ -37,7 +37,7 @@
                         :Head (VP
                             :Marker (Sdr :t "to")
                             :Head (VP
-                                :Head (V :t "comply" :l "comply" :xpos "VB")
+                                :Head (V :t "comply" :xpos "VB")
                                 :Comp (PP
                                     :Head (P :t "with")
                                     :Obj (NP
@@ -47,12 +47,12 @@
                                             :Head (N :t "provisions" :p ",")))))))))))
     :Head (VP
         :Head (VP
-            :Head (V_aux :t "may" :l "may" :xpos "MD")
+            :Head (V_aux :t "may" :xpos "MD")
             :Mod (AdvP
                 :Head (Adv :t "not")))
         :Comp (Clause
             :Head (VP
-                :Head (V_aux :t "be" :l "be" :xpos "VB")
+                :Head (V_aux :t "be" :xpos "VB")
                 :Comp (Clause
                     :Head (VP
                         :Head (VP
@@ -71,11 +71,11 @@
                                     :Head (VP
                                         :Head (Coordination
                                             :Coordinate (VP
-                                                :Head (V :t "attack" :l "attack" :xpos "VB"))
+                                                :Head (V :t "attack" :xpos "VB"))
                                             :Coordinate (VP
                                                 :Marker (Coordinator :t "or")
                                                 :Head (VP
-                                                    :Head (V :t "defeat" :l "defeat" :xpos "VB"))))
+                                                    :Head (V :t "defeat" :xpos "VB"))))
                                         :Obj (NP
                                             :Det (DP
                                                 :Head (D :t "any"))
