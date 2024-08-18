@@ -42,10 +42,10 @@
                                                 :Flat (N :t "10" :xpos "CD" :p ",")
                                                 :Flat (N :t "1958" :xpos "CD" :p ","))))))))))))
     :Head (VP
-        :Head (V_aux :t "shall" :l "shall" :xpos "MD")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V_aux :t "be" :l "be" :"VB")
+                :Head (V_aux :t "be" :"VB")
                 :Comp (Clause
                     :Head (VP
                         :Head (VP
