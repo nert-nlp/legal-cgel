@@ -9,10 +9,10 @@
         :Head (Nom
             :Head (N :t "court")))
     :Head (VP
-        :Head (V_aux :t "may" :l "may" :xpos "MD")
+        :Head (V_aux :t "may" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V :t "inquire" :l "inquire" :xpos "VB")
+                :Head (V :t "inquire" :xpos "VB")
                 :Comp (PP
                     :Head (P :t "as to")
                     :Obj (NP
@@ -36,7 +36,7 @@
                 :Head (VP
                     :Marker (Sdr :t "to")
                     :Head (VP
-                        :Head (V :t "ensure" :l "ensure" :xpos "VB")
+                        :Head (V :t "ensure" :xpos "VB")
                         :Comp (Clause
                             :Marker (Sdr :t "that")
                             :Head (Clause
@@ -65,7 +65,7 @@
                                                     :Head (VP
                                                         :Marker (Sdr :t "to")
                                                         :Head (VP
-                                                            :Head (V :t "gather" :l "gather" :xpos "VB")
+                                                            :Head (V :t "gather" :xpos "VB")
                                                             :Obj (NP
                                                                 :Head (Nom
                                                                     :Head (N :t "evidence")
