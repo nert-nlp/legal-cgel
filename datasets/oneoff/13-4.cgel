@@ -48,10 +48,10 @@
                                 :Head (Nom
                                     :Head (N :t "court")))))))
             :Head (VP
-                :Head (V_aux :t "will" :l "will" :xpos "MD")
+                :Head (V_aux :t "will" :xpos "MD")
                 :Comp (Clause
                     :Head (VP
-                        :Head (V :t "determine" :l "determine" :xpos "VB")
+                        :Head (V :t "determine" :xpos "VB")
                         :Obj (NP
                             :Det (DP
                                 :Head (D :t "the"))
@@ -77,17 +77,17 @@
                             :Head (VP
                                 :Marker (Sdr :t "to")
                                 :Head (VP
-                                    :Head (V :t "conduct" :l "conduct" :xpos "VB")
+                                    :Head (V :t "conduct" :xpos "VB")
                                     :Obj (NP
                                         :Det (DP
                                             :Head (D :t "the"))
                                         :Head (Nom
                                             :Head (N :t "election"))))))))
                 :Head (VP
-                    :Head (V_aux :t "may" :l "may" :xpos "MD")
+                    :Head (V_aux :t "may" :xpos "MD")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V_aux :t "be" :l "be" :xpos "VB")
+                            :Head (V_aux :t "be" :xpos "VB")
                             :Comp (Clause
                                 :Head (VP
                                     :Head (V :t "avoided" :l "avoid" :xpos "VBN" :p "."))))))))))
