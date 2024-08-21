@@ -1,4 +1,97 @@
 # sent_id = 13-2
 # text = Such filings present a significant opportunity for the efficient administration of large cases, but the rule includes restrictions on the use of these omnibus objections to ensure the protection of the due process rights of the claimants.
 # sent = such filings present a significant opportunity for the efficient administration of large cases but the rule includes restrictions on the use of these omnibus objections to ensure the protection of the due process rights of the claimants
-# tree_by = devika-tiwari (YYYY-MM-DD)
+# tree_by = devika-tiwari (2024-08-21)
+(Coordination
+    :Coordinate (Clause
+        :Subj (NP
+            :Head (Nom
+                :Mod (AdjP
+                    :Head (Adj :t "Such"))
+                :Head (N :t "filings")))
+        :Head (VP
+            :Head (V :t "present")
+            :Obj (NP
+                :Det (DP
+                    :Head (D :t "a"))
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "significant"))
+                    :Head (Nom
+                        :Head (N :t "opportunity")
+                        :Comp (PP
+                            :Head (P :t "for")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "efficient"))
+                                    :Head (Nom
+                                        :Head (N :t "administration")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "large"))
+                                                    :Head (N :t "cases" :p ",")))))))))))))
+    :Coordinate (Clause
+        :Marker (Coordinator :t "but")
+        :Head (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (N :t "rule")))
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "includes")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "restrictions")
+                            :Comp (PP
+                                :Head (P :t "on")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "use")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "these"))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "omnibus"))
+                                                    :Head (N :t "objections"))))))))))
+                :Mod (Clause
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (V :t "ensure")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "protection")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "due"))
+                                                        :Head (N :t "process"))
+                                                    :Head (N :t "rights"))
+                                                :Mod (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Head (N :t "claimants" :p "."))))))))))))))))
