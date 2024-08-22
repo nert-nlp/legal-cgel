@@ -1,4 +1,66 @@
 # sent_id = 57-3
 # text = Any vacancy occurring in the membership of the Commission shall be filled in the same manner as in the case of the original appointment.
 # sent = any vacancy occurring in the membership of the Commission shall be filled in the same manner as in the case of the original appointment
-# tree_by = devika-tiwari+m3ru (YYYY-MM-DD)
+# tree_by = devika-tiwari+m3ru (2024-08-22)
+(Clause
+    :Supplement (NP
+        :Head (Nom
+            :Head (N :p "(" :t "D" :p ")")))
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "Any"))
+        :Head (Nom
+            :Head (N :t "vacancy")
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "occurring")
+                    :Comp (PP
+                        :Head (P :t "in")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "membership")
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "Commission")))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "filled")
+                        :Mod (PP
+                            :Head (P :t "in")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "same"))
+                                        :Head (N :t "manner"))
+                                    :Comp_ind (PP
+                                        :Head (P :t "as")
+                                        :Comp (PP
+                                            :Head (P :t "in")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "case")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Mod (AdjP
+                                                                    :Head (Adj :t "original"))
+                                                                :Head (N :t "appointment" :p ".")))))))))))))))))
