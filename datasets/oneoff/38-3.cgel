@@ -5,7 +5,7 @@
 (Clause
     :Subj (NP
         :Det (DP
-            :Head (D :t "The"))
+            :Head (D :t "the"))
         :Head (Nom
             :Head (N :t "Attorney")
             :Mod (AdjP
