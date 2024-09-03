@@ -2,6 +2,20 @@
 
 This document provides guidance on particular aspects of the legal-cgel annotation procedure. A list of more general resources on CGEL/CGELBank can be found at the end of the document.
 
+## Metadata tags
+
+- Provide lemma `:l` tags only when the lemma form and surface form differ (e.g., inflected verb forms and plural nouns).
+   * Exception: omit for determinatives (`D`) and pronouns (`N_pro`), as these are closed classes.
+- Provide part-of-speech `:xpos` tags for verbs (see https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html), modal verbs (`MD`), and cardinal numbers (always `CD`).
+- Provide punctuation tags following the CGELBank Annotation Manual (Section 6.2.4 in version 1.1). 
+
+We also follow the annotation manual for marking typographical errors in sentences. (The following is from Section 6.2 in version 1.1):  
+
+> Where there is a clear error, both the original form and the corrected form are included in
+the tree: the original form with a :t value (for "token" or "terminal"), and the corrected
+form with a `:correct` value. The lemma should reflect the correct version of the word,
+and must be indicated explicitly if it differs from the `:correct` value.
+
 ## Making note of unresolvable ambiguities
 
 A sentence may exhibit structural ambiguities that can't be resolved out of context. Consider, e.g.:
