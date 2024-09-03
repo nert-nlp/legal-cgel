@@ -1,7 +1,7 @@
 # sent_id = 13-4
 # text = Thus, when an interested party presents the dispute to the court, its prompt resolution by the court will determine the dispute and a new or adjourned meeting to conduct the election may be avoided.
 # sent = thus when an interested party presents the dispute to the court its prompt resolution by the court will determine the dispute and a new or adjourned meeting to conduct the election may be avoided
-# tree_by = mebwells (2024-08-12)
+# tree_by = mebwells (2024-08-12) rev. bwaldon+nschneid (2024-09-03)
 (Clause
     :Supplement (AdvP
         :Head (Adv :t "thus" :p ","))
