@@ -1,4 +1,93 @@
 # sent_id = 13-4
 # text = Thus, when an interested party presents the dispute to the court, its prompt resolution by the court will determine the dispute and a new or adjourned meeting to conduct the election may be avoided.
 # sent = thus when an interested party presents the dispute to the court its prompt resolution by the court will determine the dispute and a new or adjourned meeting to conduct the election may be avoided
-# tree_by = mebwells (YYYY-MM-DD)
+# tree_by = mebwells (2024-08-12)
+(Clause
+    :Supplement (AdvP
+        :Head (Adv :t "thus" :p ","))
+    :Mod (PP
+        :Head (P :t "when")
+        :Comp (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "an"))
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "interested"))
+                    :Head (N :t "party")))
+            :Head (VP
+                :Head (V :t "presents" :l "present" :xpos "VBZ")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Head (N :t "dispute")))
+                :Comp (PP
+                    :Head (P :t "to")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "court" :p ",")))))))
+    :Head (Coordination
+        :Coordinate (Clause
+            :Subj (NP
+                :Det (NP
+                    :Head (Nom
+                        :Head (N_pro :t "its" :l "it")))
+                :Head (NP
+                    :Mod (AdjP
+                        :Head (Adj :t "prompt"))
+                    :Head (Nom
+                        :Head (N :t "resolution")
+                        :Comp (PP
+                            :Head (P :t "by" :note "two possible attachment sites for the PP - attaching low by convention, negligible meaning change")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "court")))))))
+            :Head (VP
+                :Head (V_aux :t "will" :xpos "MD")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "determine" :xpos "VB")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "dispute")))))))
+        :Coordinate (Clause
+            :Marker (Coordinator :t "and")
+            :Head (Clause
+                :Subj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Mod (Coordination
+                                :Coordinate (AdjP
+                                    :Head (Adj :t "new"))
+                                :Coordinate (AdjP
+                                    :Marker (Coordinator :t "or")
+                                    :Head (AdjP
+                                        :Head (Adj :t "adjourned"))))
+                            :Head (N :t "meeting"))
+                        :Mod (Clause
+                            :Head (VP
+                                :Marker (Sdr :t "to")
+                                :Head (VP
+                                    :Head (V :t "conduct" :xpos "VB")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "election"))))))))
+                :Head (VP
+                    :Head (V_aux :t "may" :xpos "MD")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V_aux :t "be" :xpos "VB")
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (V :t "avoided" :l "avoid" :xpos "VBN" :p "."))))))))))
