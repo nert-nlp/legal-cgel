@@ -83,7 +83,7 @@
                                 :Comp (Clause
                                     :Head (VP
                                         :Head (V :t "prescribed" :l "prescribe" :xpos "VBN")
-                                        :Mod (PP
+                                        :Comp (PP
                                             :Head (P :t "by")
                                             :Obj (NP
                                                 :Head (Nom
