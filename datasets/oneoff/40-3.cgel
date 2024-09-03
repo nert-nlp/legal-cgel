@@ -46,7 +46,7 @@
                                                 :Mod (Clause
                                                     :Head (VP
                                                         :Head (V :t "approved" :l "approve" :xpos "VBN")
-                                                        :Mod (PP
+                                                        :Comp (PP
                                                             :Head (P :t "by")
                                                             :Obj (NP
                                                                 :Det (DP
