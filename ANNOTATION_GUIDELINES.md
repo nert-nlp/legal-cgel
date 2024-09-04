@@ -51,7 +51,7 @@ Even if a sentence is consistent with multiple possible syntactic analyses, the 
 3. shall [ be [ enforced [ in United States courts ] [ in accordance with this chapter ] ] ]
 ```
 
-Does the PP *in accordance with this subchapter* modify the modal *shall* (1), the auxiliary *be* (2), or the verb *enforced* (3)? It's not clear that these three resolutions of the PP attachment ambiguity give rise to appreciably distinct readings. In cases like this, the default strategy is to attach low (3), and there is no need to make note of the ambiguity. 
+Does the PP *in accordance with this subchapter* modify the modal *shall* (1), the auxiliary *be* (2), or the verb *enforced* (3)? It's not clear that these three resolutions of the PP attachment ambiguity give rise to appreciably distinct readings. In cases like this, the default preference is for low right attachment (3), and there is no need to make note of the ambiguity. 
 
 ## Dealing with legal terms of art
 
