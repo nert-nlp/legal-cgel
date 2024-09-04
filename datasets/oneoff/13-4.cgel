@@ -64,25 +64,25 @@
                     :Det (DP
                         :Head (D :t "a"))
                     :Head (Nom
+                        :Mod (Coordination
+                            :Coordinate (AdjP
+                                :Head (Adj :t "new"))
+                            :Coordinate (AdjP
+                                :Marker (Coordinator :t "or")
+                                :Head (AdjP
+                                    :Head (Adj :t "adjourned"))))
                         :Head (Nom
-                            :Mod (Coordination
-                                :Coordinate (AdjP
-                                    :Head (Adj :t "new"))
-                                :Coordinate (AdjP
-                                    :Marker (Coordinator :t "or")
-                                    :Head (AdjP
-                                        :Head (Adj :t "adjourned"))))
-                            :Head (N :t "meeting"))
-                        :Mod (Clause
-                            :Head (VP
-                                :Marker (Sdr :t "to")
+                            :Head (N :t "meeting")
+                            :Mod (Clause
                                 :Head (VP
-                                    :Head (V :t "conduct" :xpos "VB")
-                                    :Obj (NP
-                                        :Det (DP
-                                            :Head (D :t "the"))
-                                        :Head (Nom
-                                            :Head (N :t "election"))))))))
+                                    :Marker (Sdr :t "to")
+                                    :Head (VP
+                                        :Head (V :t "conduct" :xpos "VB")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "election")))))))))
                 :Head (VP
                     :Head (V_aux :t "may" :xpos "MD")
                     :Comp (Clause
