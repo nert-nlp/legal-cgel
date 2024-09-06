@@ -20,7 +20,7 @@
                         :Head (D :t "a"))
                     :Head (Nom
                         :Head (N :t "resident")
-                        :Mod (PP
+                        :Comp (PP
                             :Head (P :t "of")
                             :Obj (NP
                                 :Det (DP
@@ -82,41 +82,42 @@
                                 :Head (Adv :t "as")
                                 :Comp (Clause
                                     :Head (VP
-                                        :Head (V :t "prescribed" :l "prescribe" :xpos "VBN")
-                                        :Comp (PP
-                                            :Head (P :t "by")
-                                            :Obj (NP
-                                                :Head (Nom
-                                                    :Head (N :t "law")
-                                                    :Mod (PP
-                                                        :Head (P :t "for")
-                                                        :Obj (NP
-                                                            :Head (Nom
-                                                                :Head (N :t "service")
-                                                                :Mod (PP
-                                                                    :Head (P :t "of")
-                                                                    :Obj (NP
-                                                                        :Head (Nom
-                                                                            :Head (N :t "notice")
-                                                                            :Mod (PP
-                                                                                :Head (P :t "of")
-                                                                                :Obj (NP
-                                                                                    :Head (Nom
-                                                                                        :Head (N :t "motion")
-                                                                                        :Mod (PP
-                                                                                            :Head (P :t "in")
-                                                                                            :Obj (NP
-                                                                                                :Det (DP
-                                                                                                    :Head (D :t "an"))
-                                                                                                :Head (Nom
-                                                                                                    :Head (N :t "action")
-                                                                                                    :Mod (PP
-                                                                                                        :Head (P :t "in")
-                                                                                                        :Obj (NP
-                                                                                                            :Det (DP
-                                                                                                                :Head (D :t "the"))
-                                                                                                            :Head (Nom
-                                                                                                                :Mod (AdjP
-                                                                                                                    :Head (Adj :t "same"))
-                                                                                                                :Head (N :t "court" :p ".")))))))))))))))))))))))))))))
+                                        :Head (VP
+                                            :Head (V :t "prescribed" :l "prescribe" :xpos "VBN")
+                                            :Comp (PP
+                                                :Head (P :t "by")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "law")))))
+                                    :Mod (PP
+                                        :Head (P :t "for")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "service")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Head (Nom
+                                                            :Head (N :t "notice")
+                                                            :Comp (PP
+                                                                :Head (P :t "of")
+                                                                :Obj (NP
+                                                                    :Head (Nom
+                                                                        :Head (N :t "motion")
+                                                                        :Mod (PP
+                                                                            :Head (P :t "in")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "an"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "action")
+                                                                                    :Mod (PP
+                                                                                        :Head (P :t "in")
+                                                                                        :Obj (NP
+                                                                                            :Det (DP
+                                                                                                :Head (D :t "the"))
+                                                                                            :Head (Nom
+                                                                                                :Mod (AdjP
+                                                                                                    :Head (Adj :t "same"))
+                                                                                                :Head (N :t "court" :p "."))))))))))))))))))))))))))
 
