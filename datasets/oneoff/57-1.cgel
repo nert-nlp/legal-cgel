@@ -17,7 +17,7 @@
                 :Obj (NP
                     :Det (NP
                         :Head (Nom
-                            :Head (N_pro :t "its")))
+                            :Head (N_pro :t "its" :l "it")))
                     :Head (Nom
                         :Head (N :t "direction"))))
             :Head (NP
@@ -25,13 +25,13 @@
                     :Head (D :t "the"))
                 :Head (Nom
                     :Mod (VP
-                        :Head (V :t "voting"))
+                        :Head (V :t "voting" :l "vote" :xpos "VBG"))
                     :Head (N :t "referee" :p ",")))))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V :t "issue")
+                :Head (V :t "issue" :xpos "VB")
                 :Obj (y / GAP)
                 :Comp (PP
                     :Head (P :t "to")
@@ -45,7 +45,7 @@
                                     :Mod (AdvP
                                         :Head (Adv :t "so"))
                                     :Head (VP
-                                        :Head (V :t "declared")
+                                        :Head (V :t "declared" :l "declare" :xpos "VBN")
                                         :Comp (AdjP
                                             :Head (Adj :t "qualified")))))))))
             :Postnucleus (y / NP
@@ -55,7 +55,7 @@
                     :Head (N :t "certificate")
                     :Mod (Clause
                         :Head (VP
-                            :Head (V :t "identifying")
+                            :Head (V :t "identifying" :l "identify" :xpos "VBG")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "the"))
