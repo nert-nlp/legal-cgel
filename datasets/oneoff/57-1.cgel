@@ -76,3 +76,4 @@
                                         :Comp (AdvP
                                             :Head (Adv :t "so"))
                                         :Head (Adj :t "qualified" :p ".")))))))))))
+
