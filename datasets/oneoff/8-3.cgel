@@ -2,7 +2,6 @@
 # text = Upon a timely request for a hearing under section 6996(b) of this title, an appellant shall have the right to have a hearing by the Division on the adverse decision within 45 days after the date of the receipt of the request for the hearing.
 # sent = upon a timely request for a hearing under section 6996(b) of this title an appellant shall have the right to have a hearing by the division on the adverse decision within 45 days after the date of the receipt of the request for the hearing
 # tree_by = mebwells (2024-09-10)
-
 (Clause
     :Mod (PP
         :Head (P :t "upon")
