@@ -2,3 +2,124 @@
 # text = Not later than 270 days after the commencement of the study required by paragraph (1), the Secretary of Commerce shall, in consultation with the Secretary of Energy and the Director of the Office of Science and Technology Policy, submit to Congress a report on such study.
 # sent = not later than 270 days after the commencement of the study required by paragraph (1) the Secretary of Commerce shall in consultation with the Secretary of Energy and the Director of the Office of Science and Technology Policy, submit to Congress a report on such study
 # tree_by = mebwells (YYYY-MM-DD)
+(Clause
+    :Mod (AdjP
+        :Head (AdjP
+            :Mod (AdvP
+                :Head (Adv :t "not"))
+            :Head (Adj :t "later"))
+        :Comp (PP
+            :Head (P :t "than")
+            :Obj (NP
+                :Det (DP
+                    :Head (D :t "270"))
+                :Head (Nom
+                    :Head (N :t "days")
+                    :Mod (PP
+                        :Head (P :t "after")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "commencement")
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "study")
+                                            :Mod (Clause
+                                                :Head (VP
+                                                    :Head (V :t "required" :l "require" :xpos "VBN")
+                                                    :Mod (PP
+                                                        :Head (P :t "by")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Mod (Nom
+                                                                    :Head (N :t "paragraph"))
+                                                                :Head (N :p "(" :t "1" :p ")" :p ","))))))))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (Nom
+                    :Head (N :t "Secretary")
+                    :Comp (PP
+                        :Head (P :t "of")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "Commerce")))))
+                :Mod (y / GAP)))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD" :p ",")
+            :Comp (Clause
+                :Postnucleus (y / PP
+                    :Head (P :t "in")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "consultation"))
+                        :Mod (PP
+                            :Head (P :t "with")
+                            :Obj (Coordination
+                                :Coordinate (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "Secretary")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "Energy"))))))
+                                :Coordinate (NP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "Director")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "Office")
+                                                        :Comp (PP
+                                                            :Head (P :t "of")
+                                                            :Obj (NP
+                                                                :Mod (Coordination
+                                                                    :Coordinate (NP
+                                                                        :Head (Nom
+                                                                            :Head (N :t "Science")))
+                                                                    :Coordinate (NP
+                                                                        :Marker (Coordinator :t "and")
+                                                                        :Head (NP
+                                                                            :Head (Nom
+                                                                                :Head (N :t "Technology")))))
+                                                                :Head (Nom
+                                                                    :Head (N :t "Policy" :p ","))))))))))))))
+                :Head (Clause
+                    :Head (Clause
+                        :Head (VP
+                            :Head (V :t "submit" :xpos "VB")
+                            :Comp (z / GAP)
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (N :t "Congress"))))))
+                    :Postnucleus (z / NP
+                        :Det (DP
+                            :Head (D :t "a"))
+                        :Head (Nom
+                            :Head (N :t "report")
+                            :Mod (PP
+                                :Head (P :t "on")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "such"))
+                                        :Head (N :t "study" :p ".")))))))))))
