@@ -1,7 +1,7 @@
 # sent_id = 57-1
 # text = The court, or at its direction the voting referee, shall issue to each applicant so declared qualified a certificate identifying the holder thereof as a person so qualified.
 # sent = the court or at its direction the voting referee shall issue to each applicant so declared qualified a certificate identifying the holder thereof as a person so qualified
-# tree_by = mebwells (2024-09-10)
+# tree_by = mebwells (2024-09-10) rev. bwaldon (2024-09-13)
 (Clause
     :Subj (Coordination
         :Coordinate (NP
