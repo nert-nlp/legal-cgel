@@ -60,55 +60,57 @@
                                                 :Det (DP
                                                     :Head (D :t "a"))
                                                 :Head (Nom
-                                                    :Head (N :t "hearing")
-                                                    :Mod (PP
-                                                        :Head (P :t "by")
+                                                    :Head (Nom
+                                                        :Head (N :t "hearing")
+                                                        :Mod (PP
+                                                            :Head (P :t "by")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "Division")))))
+                                                    :Comp (PP
+                                                        :Head (P :t "on")
                                                         :Obj (NP
                                                             :Det (DP
                                                                 :Head (D :t "the"))
                                                             :Head (Nom
-                                                                :Head (N :t "Division")
-                                                                :Comp (PP
-                                                                    :Head (P :t "on")
-                                                                    :Obj (NP
-                                                                        :Det (DP
-                                                                            :Head (D :t "the"))
-                                                                        :Head (Nom
-                                                                            :Mod (AdjP
-                                                                                :Head (Adj :t "adverse"))
-                                                                            :Head (N :t "decision"))))))))))
+                                                                :Mod (AdjP
+                                                                    :Head (Adj :t "adverse"))
+                                                                :Head (N :t "decision"))))))
                                         :Mod (PP
                                             :Head (P :t "within")
                                             :Obj (NP
-                                                :Det (DP
-                                                    :Head (D :t "45" :xpos "CD"))
-                                                :Head (Nom
-                                                    :Head (N :t "days")
-                                                    :Mod (PP
-                                                        :Head (P :t "after")
-                                                        :Obj (NP
-                                                            :Det (DP
-                                                                :Head (D :t "the"))
-                                                            :Head (Nom
-                                                                :Head (N :t "date")
-                                                                :Comp (PP
-                                                                    :Head (P :t "of")
-                                                                    :Obj (NP
-                                                                        :Det (DP
-                                                                            :Head (D :t "the"))
-                                                                        :Head (Nom
-                                                                            :Head (N :t "receipt")
-                                                                            :Comp (PP
-                                                                                :Head (P :t "of")
-                                                                                :Obj (NP
-                                                                                    :Det (DP
-                                                                                        :Head (D :t "the"))
-                                                                                    :Head (Nom
-                                                                                        :Head (N :t "request")
-                                                                                        :Mod (PP
-                                                                                            :Head (P :t "for")
-                                                                                            :Obj (NP
-                                                                                                :Det (DP
-                                                                                                    :Head (D :t "the"))
-                                                                                                :Head (Nom
-                                                                                                    :Head (N :t "hearing" :p "."))))))))))))))))))))))))))
+                                                :Head (NP
+                                                    :Det (DP
+                                                        :Head (D :t "45" :xpos "CD"))
+                                                    :Head (Nom
+                                                        :Head (N :t "days")))
+                                                :Mod (PP
+                                                    :Head (P :t "after")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Head (N :t "date")
+                                                            :Comp (PP
+                                                                :Head (P :t "of")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "the"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "receipt")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "of")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "the"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "request")
+                                                                                    :Mod (PP
+                                                                                        :Head (P :t "for")
+                                                                                        :Obj (NP
+                                                                                            :Det (DP
+                                                                                                :Head (D :t "the"))
+                                                                                            :Head (Nom
+                                                                                                :Head (N :t "hearing" :p ".")))))))))))))))))))))))))
