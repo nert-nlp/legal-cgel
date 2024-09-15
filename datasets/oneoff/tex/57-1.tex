@@ -52,7 +52,7 @@
 % # sent_id = 57-1
 % # text = The court, or at its direction the voting referee, shall issue to each applicant so declared qualified a certificate identifying the holder thereof as a person so qualified.
 % # sent = the court or at its direction the voting referee shall issue to each applicant so declared qualified a certificate identifying the holder thereof as a person so qualified
-% # tree_by = mebwells (2024-09-10) rev. bwaldon (2024-09-13)
+% # tree_by = mebwells (2024-09-10) rev. bwaldon (2024-09-13) revised mebwells (2024-09-15)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -62,13 +62,12 @@
           }{%								% no false conditions, so empty
           },
         [Clause
-    [\Node{Subj}{Coordination}
-        [\Node{Coordinate}{NP}
-            [\Node{Det}{DP}
-                [\Node{Head}{D},edge={line width=1pt}[the]]]
-            [\Node{Head}{Nom},edge={line width=1pt}
-                [\Node{Head}{N},edge={line width=1pt}[court,label={right:\p{{,}}}]]]]
-        [\Node{Coordinate}{NP}
+    [\Node{Subj}{NP}
+        [\Node{Det}{DP}
+            [\Node{Head}{D},edge={line width=1pt}[the]]]
+        [\Node{Head}{Nom},edge={line width=1pt}
+            [\Node{Head}{N},edge={line width=1pt}[court,label={right:\p{{,}}}]]]
+        [\Node{Supplement}{NP}
             [\Node{Marker}{Coordinator}[or]]
             [\Node{Supplement}{PP}
                 [\Node{Head}{P},edge={line width=1pt}[at]]
@@ -123,17 +122,15 @@
                                         [\Node{Head}{P},edge={line width=1pt}[thereof]]]]]
                             [\Node{Comp}{PP}
                                 [\Node{Head}{P},edge={line width=1pt}[as]]
-                                [\Node{Obj}{NP}
-                                    [\Node{Head}{NP},edge={line width=1pt}
-                                        [\Node{Det}{DP}
-                                            [\Node{Head}{D},edge={line width=1pt}[a]]]
-                                        [\Node{Head}{Nom},edge={line width=1pt}
-                                            [\Node{Mod}{GAP\idx{x}}[--]]
-                                            [\Node{Head}{N},edge={line width=1pt}[person]]]]
-                                    [\Node{Postnucleus}{AdjP\idx{x}}
-                                        [\Node{Comp}{AdvP}
-                                            [\Node{Head}{Adv},edge={line width=1pt}[so]]]
-                                        [\Node{Head}{Adj},edge={line width=1pt}[qualified,label={right:\p{.}}]]]]]]]]]]]]
+                                [\Node{PredComp}{NP}
+                                    [\Node{Det}{DP}
+                                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N},edge={line width=1pt}[person]]
+                                        [\Node{Mod}{AdjP}
+                                            [\Node{Comp}{AdvP}
+                                                [\Node{Head}{Adv},edge={line width=1pt}[so]]]
+                                            [\Node{Head}{Adj},edge={line width=1pt}[qualified,label={right:\p{.}}]]]]]]]]]]]]]
         \end{forest}
         
 
