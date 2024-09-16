@@ -53,6 +53,10 @@ Even if a sentence is consistent with multiple possible syntactic analyses, the 
 
 Does the PP *in accordance with this subchapter* modify the modal *shall* (1), the auxiliary *be* (2), or the verb *enforced* (3)? It's not clear that these three resolutions of the PP attachment ambiguity give rise to appreciably distinct readings. In cases like this, the default preference is for low right attachment (3), and there is no need to make note of the ambiguity. 
 
+## Making note 
+
+If a difficult analytical choice is justified in part by appealing to an authoritative CGEL resource (e.g., _CGEL_ itself or _SIEG_), please make a `:note` with a reference to the relevant portion of that resource. 
+
 ## Dealing with legal terms of art
 
 Legal terms of art should be analyzed as constituents. Terms of art consisting of multiple tokens include: *adversary proceeding*, *due process rights*, *Attorney General*.
