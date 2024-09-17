@@ -1,7 +1,7 @@
 # sent_id = 14-1
 # text = The provisions of this section, or any failure by the Corporation to comply with such provisions, may not be used by any person to attack or defeat any title to property after it is conveyed by the Corporation.
 # sent = the provisions of this section or any failure _. by the corporation to comply with such provisions may not be used by any person to attack or defeat any title to property after it is conveyed by the corporation
-# tree_by = mebwells (2024-08-14)
+# tree_by = mebwells (2024-08-14) rev. bwaldon (2024-09-17)
 (Clause
     :Subj (Coordination
         :Coordinate (NP
