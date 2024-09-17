@@ -1,15 +1,14 @@
 # sent_id = 57-1
 # text = The court, or at its direction the voting referee, shall issue to each applicant so declared qualified a certificate identifying the holder thereof as a person so qualified.
 # sent = the court or at its direction the voting referee shall issue to each applicant so declared qualified a certificate identifying the holder thereof as a person so qualified
-# tree_by = mebwells (2024-09-10) rev. bwaldon (2024-09-13)
+# tree_by = mebwells (2024-09-10) rev. bwaldon (2024-09-13) revised mebwells (2024-09-15)
 (Clause
-    :Subj (Coordination
-        :Coordinate (NP
-            :Det (DP
-                :Head (D :t "the"))
-            :Head (Nom
-                :Head (N :t "court" :p ",")))
-        :Coordinate (NP
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "court" :p ","))
+        :Supplement (NP
             :Marker (Coordinator :t "or")
             :Supplement (PP
                 :Head (P :t "at")
@@ -64,15 +63,12 @@
                                         :Head (P :t "thereof"))))
                             :Comp (PP
                                 :Head (P :t "as")
-                                :Obj (NP
-                                    :Head (NP
-                                        :Det (DP
-                                            :Head (D :t "a"))
-                                        :Head (Nom
-                                            :Mod (x / GAP)
-                                            :Head (N :t "person")))
-                                    :Postnucleus (x / AdjP
-                                        :Comp (AdvP
-                                            :Head (Adv :t "so"))
-                                        :Head (Adj :t "qualified" :p ".")))))))))))
-
+                                :PredComp (NP
+                                    :Det (DP
+                                        :Head (D :t "a"))
+                                    :Head (Nom
+                                        :Head (N :t "person")
+                                        :Mod (AdjP
+                                            :Comp (AdvP
+                                                :Head (Adv :t "so"))
+                                            :Head (Adj :t "qualified" :p "."))))))))))))
