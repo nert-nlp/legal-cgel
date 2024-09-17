@@ -32,7 +32,7 @@
                                     :Head (Nom
                                         :Mod (AdjP
                                             :Head (Adj :t "Arbitral"))
-                                        :Head (N :t "Awards")))
+                                        :Head (N :t "Awards" :l "award")))
                                 :Comp (PP
                                     :Head (P :t "of")
                                     :Obj (NP
@@ -59,7 +59,7 @@
                                                 :Mod (AdjP
                                                     :Head (Adj :t "United"))
                                                 :Head (N :t "States")))
-                                        :Head (N :t "courts")))))
+                                        :Head (N :t "courts" :l "court")))))
                         :Mod (PP
                             :Head (P :t "in")
                             :Obj (NP
