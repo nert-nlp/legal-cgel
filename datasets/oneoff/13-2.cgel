@@ -7,10 +7,10 @@
         :Subj (NP
             :Head (Nom
                 :Mod (AdjP
-                    :Head (Adj :t "Such"))
-                :Head (N :t "filings")))
+                    :Head (Adj :t "such"))
+                :Head (N :t "filings" :l "filing")))
         :Head (VP
-            :Head (V :t "present")
+            :Head (V :t "present" :xpos "VBP")
             :Obj (NP
                 :Det (DP
                     :Head (D :t "a"))
@@ -35,7 +35,7 @@
                                                 :Head (Nom
                                                     :Mod (AdjP
                                                         :Head (Adj :t "large"))
-                                                    :Head (N :t "cases" :p ",")))))))))))))
+                                                    :Head (N :t "cases" :p "," :l "case")))))))))))))
     :Coordinate (Clause
         :Marker (Coordinator :t "but")
         :Head (Clause
@@ -46,10 +46,10 @@
                     :Head (N :t "rule")))
             :Head (VP
                 :Head (VP
-                    :Head (V :t "includes")
+                    :Head (V :t "includes" :l "include" :xpos "VBZ")
                     :Obj (NP
                         :Head (Nom
-                            :Head (N :t "restrictions")
+                            :Head (N :t "restrictions" :l "restriction")
                             :Comp (PP
                                 :Head (P :t "on")
                                 :Obj (NP
@@ -65,12 +65,12 @@
                                                 :Head (Nom
                                                     :Mod (AdjP
                                                         :Head (Adj :t "omnibus"))
-                                                    :Head (N :t "objections"))))))))))
+                                                    :Head (N :t "objections" :l "objection"))))))))))
                 :Mod (Clause
                     :Head (VP
                         :Marker (Sdr :t "to")
                         :Head (VP
-                            :Head (V :t "ensure")
+                            :Head (V :t "ensure" :xpos "VB")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "the"))
@@ -87,11 +87,11 @@
                                                         :Mod (AdjP
                                                             :Head (Adj :t "due"))
                                                         :Head (N :t "process"))
-                                                    :Head (N :t "rights"))
+                                                    :Head (N :t "rights" :l "right"))
                                                 :Mod (PP
                                                     :Head (P :t "of")
                                                     :Obj (NP
                                                         :Det (DP
                                                             :Head (D :t "the"))
                                                         :Head (Nom
-                                                            :Head (N :t "claimants" :p "."))))))))))))))))
+                                                            :Head (N :t "claimants" :p "." :l "claimant"))))))))))))))))
