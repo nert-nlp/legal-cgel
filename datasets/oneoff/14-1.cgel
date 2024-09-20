@@ -1,14 +1,14 @@
 # sent_id = 14-1
 # text = The provisions of this section, or any failure by the Corporation to comply with such provisions, may not be used by any person to attack or defeat any title to property after it is conveyed by the Corporation.
 # sent = the provisions of this section or any failure _. by the corporation to comply with such provisions may not be used by any person to attack or defeat any title to property after it is conveyed by the corporation
-# tree_by = mebwells (2024-08-14) rev. bwaldon (2024-09-17)
+# tree_by = mebwells (2024-08-14) rev. bwaldon (2024-09-17) ed. mewbwells (2024-09-20)
 (Clause
     :Subj (Coordination
         :Coordinate (NP
             :Det (DP
                 :Head (D :t "the"))
             :Head (Nom
-                :Head (N :t "provisions")
+                :Head (N :t "provisions" :l "provision")
                 :Comp (PP
                     :Head (P :t "of")
                     :Obj (NP
@@ -23,9 +23,7 @@
                     :Head (D :t "any"))
                 :Head (Nom
                     :Head (Nom
-                        :Head (Nom
-                            :Head (N :t "failure")
-                            :Comp (x / GAP))
+                        :Head (N :t "failure")
                         :Comp (PP
                             :Head (P :t "by")
                             :Obj (NP
@@ -33,7 +31,7 @@
                                     :Head (D :t "the"))
                                 :Head (Nom
                                     :Head (N :t "Corporation")))))
-                    :Postnucleus (x / Clause
+                    :Comp (Clause
                         :Head (VP
                             :Marker (Sdr :t "to")
                             :Head (VP
@@ -44,7 +42,7 @@
                                         :Head (Nom
                                             :Mod (AdjP
                                                 :Head (Adj :t "such"))
-                                            :Head (N :t "provisions" :p ",")))))))))))
+                                            :Head (N :t "provisions" :l "provision" :p ",")))))))))))
     :Head (VP
         :Head (VP
             :Head (V_aux :t "may" :xpos "MD")
@@ -64,7 +62,7 @@
                                         :Head (D :t "any"))
                                     :Head (Nom
                                         :Head (N :t "person")))))
-                        :Mod (Clause
+                        :Comp (Clause
                             :Head (VP
                                 :Marker (Sdr :t "to")
                                 :Head (VP
