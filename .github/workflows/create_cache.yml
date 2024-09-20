@@ -6,6 +6,8 @@ on:
       - .github/workflows/TEXLIVE_INIT_CACHE
     branches:
       - main
+      
+permissions: {}
 
 jobs:
   cache:
