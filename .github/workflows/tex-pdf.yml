@@ -14,7 +14,8 @@ jobs:
 
   render:
     runs-on: ubuntu-latest
-    
+    permissions: 
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,7 +51,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
         with:
@@ -63,21 +64,7 @@ jobs:
         with:
           packages: |
             scheme-full
-  build:
-    needs: render
-    runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
-    steps:
-
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-          submodules: true
-          fetch-depth: 0
-          
       - name: Generate .tex and .pdf files
         run: |
           mkdir -p datasets/oneoff/tex
