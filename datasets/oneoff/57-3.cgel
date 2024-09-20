@@ -3,17 +3,14 @@
 # sent = any vacancy occurring in the membership of the Commission shall be filled in the same manner as in the case of the original appointment
 # tree_by = devika-tiwari+m3ru (2024-08-22)
 (Clause
-    :Supplement (NP
-        :Head (Nom
-            :Head (N :p "(" :t "D" :p ")")))
     :Subj (NP
         :Det (DP
-            :Head (D :t "Any"))
+            :Head (D :t "any"))
         :Head (Nom
             :Head (N :t "vacancy")
             :Mod (Clause
                 :Head (VP
-                    :Head (V :t "occurring")
+                    :Head (V :t "occurring" :l "occur" :xpos "VBG")
                     :Comp (PP
                         :Head (P :t "in")
                         :Obj (NP
@@ -29,13 +26,13 @@
                                         :Head (Nom
                                             :Head (N :t "Commission")))))))))))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V_aux :t "be")
+                :Head (V_aux :t "be" :xpos "VB")
                 :Comp (Clause
                     :Head (VP
-                        :Head (V :t "filled")
+                        :Head (V :t "filled" :l "fill" :xpos "VBN")
                         :Mod (PP
                             :Head (P :t "in")
                             :Obj (NP
