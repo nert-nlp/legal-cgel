@@ -6,7 +6,7 @@
     :Mod (AdjP
         :Head (AdjP
             :Mod (AdvP
-                :Head (Adv :t "Not"))
+                :Head (Adv :t "not"))
             :Head (Adj :t "later"))
         :Comp (PP
             :Head (P :t "than")
