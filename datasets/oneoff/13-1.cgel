@@ -21,7 +21,7 @@
                                     :Head (Adj :t "actual"))
                                 :Head (N :t "dispute" :p ","))
                             :Supplement (PP
-                                :Head (P :t "other-than")
+                                :Head (P :t "other than")
                                 :Obj (NP
                                     :Det (DP
                                         :Head (D :t "an"))
@@ -44,7 +44,7 @@
                 :Head (D :t "the"))
             :Head (Nom
                 :Head (N :t "litigation")
-                :Comp (Clause
+                :Comp (Clause :note "Does this clause affect the nature of the litigation? Decided on Comp over Mod"
                     :Head (VP
                         :Marker (Sdr :t "to")
                         :Head (VP
