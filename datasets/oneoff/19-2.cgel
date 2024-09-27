@@ -26,7 +26,7 @@
                                 :Mod (AdvP
                                     :Head (Adv :t "only"))
                                 :Head (VP
-                                    :Head (V :t "originates")
+                                    :Head (V :t "originates" :l "originate" :xpos "VBZ")
                                     :Obj (NP
                                         :Head (Nom
                                             :Head (N :t "programs")))))
@@ -34,12 +34,12 @@
                                 :Marker (Coordinator :t "and")
                                 :Head (VP
                                     :Head (VP
-                                        :Head (V_aux :t "does")
+                                        :Head (V_aux :t "does" :l "do" :xpos "VBZ")
                                         :Mod (AdvP
                                             :Head (Adv :t "not")))
                                     :Comp (Clause
                                         :Head (VP
-                                            :Head (V :t "carry")
+                                            :Head (V :t "carry" :xpos "VB")
                                             :Obj (NP
                                                 :Head (Nom
                                                     :Mod (Nom
@@ -49,16 +49,16 @@
                                                     :Head (N :t "signals")))))))))))))
     :Head (VP
         :Head (VP
-            :Head (V_aux :t "would")
+            :Head (V_aux :t "would" :xpos "VBZ")
             :Mod (AdvP
                 :Head (Adv :t "not")))
         :Comp (Clause
             :Head (VP
-                :Head (V :t "come")
+                :Head (V :t "come" :xpos "VB")
                 :Comp (PP
                     :Head (P :t "within")
                     :Obj (NP
                         :Det (DP
                             :Head (D :t "the"))
                         :Head (Nom
-                            :Head (N :t "definition"))))))))
+                            :Head (N :t "definition" :p "."))))))))
