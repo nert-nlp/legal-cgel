@@ -5,7 +5,7 @@
 (Clause
     :Subj (NP
         :Det (DP
-            :Head (D :t "A"))
+            :Head (D :t "a"))
         :Head (Nom
             :Head (x / Nom
                 :Mod (Nom
