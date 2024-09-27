@@ -4,7 +4,7 @@
 # tree_by = m3ru (2024-08-15)
 (Clause
     :Mod (PP
-        :Head (P :t "Whenever")
+        :Head (P :t "whenever")
         :Comp (Clause
             :Subj (NP
                 :Head (Nom
