@@ -44,13 +44,12 @@
             :Det (DP
                 :Head (D :t "the"))
             :Head (Nom
-                :Head (Nom
-                    :Head (N :t "Secretary")
-                    :Comp (PP
-                        :Head (P :t "of")
-                        :Obj (NP
-                            :Head (Nom
-                                :Head (N :t "Commerce")))))))
+                :Head (N :t "Secretary")
+                :Comp (PP
+                    :Head (P :t "of")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "Commerce"))))))
         :Head (VP
             :Head (V_aux :t "shall" :xpos "MD" :p ",")
             :Supplement (PP
