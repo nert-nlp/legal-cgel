@@ -18,16 +18,16 @@
                         :Head (Nom
                             :Mod (Nom
                                 :Head (N :t "district"))
-                            :Head (N :t "court")))
-                    :Mod (AdjP
-                        :Head (Adj :t "pursuant")
-                        :Comp (PP
-                            :Head (P :t "to")
-                            :Obj (NP
-                                :Head (Nom
-                                    :Mod (Nom
-                                        :Head (N :t "subsection"))
-                                    :Head (N :p "(" :t "f" :p ")")))))))
+                            :Head (N :t "court")))))
+            :Supplement (PP
+                :Head (P :t "pursuant")
+                :Comp (PP
+                    :Head (P :t "to")
+                    :Obj (NP
+                        :Head (Nom
+                            :Mod (Nom
+                                :Head (N :t "subsection"))
+                            :Head (N :p "(" :t "f" :p ")")))))
             :Head (VP
                 :Head (V :t "determines" :l "determine" :xpos "VBZ")
                 :Comp (Clause
