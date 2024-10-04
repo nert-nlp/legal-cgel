@@ -49,11 +49,11 @@
                                         :Head (Adv :t "lawfully"))
                                     :Head (Coordination
                                         :Coordinate (VP
-                                            :Head (V :t "authorized" :l "authorize" :xpos "VBN"))
+                                            :Head (V :t "authorized" :l "authorize" :xpos "VBN" :note "[AMBIG] not lawfully [authorized or conducted] (neither nor) vs. [not lawfully] authorized or conducted (either or)"))
                                         :Coordinate (VP
                                             :Marker (Coordinator :t "or")
                                             :Head (VP
-                                                :Head (V :t "conducted" :l "conduct" :xpos "VBN" :p ","))))))))))))
+                                                :Head (V :t "conducted" :l "conduct" :xpos "VBN" :p "," ))))))))))))
     :Head (Clause
         :Subj (NP
             :Head (Nom
