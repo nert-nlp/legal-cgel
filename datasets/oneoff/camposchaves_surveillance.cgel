@@ -1,4 +1,147 @@
 # sent_id = camposchaves_surveillance
 # text = If the United States district court pursuant to subsection (f) determines that the surveillance was not lawfully authorized or conducted, it shall, in accordance with the requirements of law, suppress the evidence which was unlawfully obtained or derived from electronic surveillance of the aggrieved person or otherwise grant the motion of the aggrieved person.
-# sent = if the United States district court pursuant to subsection (f) determines that the surveillance was not lawfully authorized or conducted it shall in accordance with the requirements of law suppress the evidence which was unlawfully obtained or derived from electronic surveillance of the aggrieved person or otherwise grant the motion of the aggrieved person
-# tree_by = mebwells
+# sent = if the United States district court pursuant to subsection ( f ) determines that the surveillance was not lawfully authorized or conducted it shall in accordance with the requirements of law suppress the evidence which was unlawfully obtained or derived from electronic surveillance of the aggrieved person or otherwise grant the motion of the aggrieved person
+# tree_by = mebwells (2024-10-02)
+(Clause
+    :Mod (PP
+        :Head (P :t "if")
+        :Comp (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (Nom
+                        :Mod (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "United"))
+                            :Head (N :t "States"))
+                        :Head (Nom
+                            :Mod (Nom
+                                :Head (N :t "district"))
+                            :Head (N :t "court")))))
+            :Supplement (PP
+                :Head (P :t "pursuant")
+                :Comp (PP
+                    :Head (P :t "to")
+                    :Obj (NP
+                        :Head (Nom
+                            :Mod (Nom
+                                :Head (N :t "subsection"))
+                            :Head (N :p "(" :t "f" :p ")")))))
+            :Head (VP
+                :Head (V :t "determines" :l "determine" :xpos "VBZ")
+                :Comp (Clause
+                    :Marker (Sdr :t "that")
+                    :Head (Clause
+                        :Subj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "surveillance")))
+                        :Head (VP
+                            :Head (VP
+                                :Head (V_aux :t "was" :l "be" :xpos "VBD")
+                                :Mod (AdvP
+                                    :Head (Adv :t "not")))
+                            :Comp (Clause
+                                :Head (VP
+                                    :Mod (AdvP
+                                        :Head (Adv :t "lawfully"))
+                                    :Head (Coordination
+                                        :Coordinate (VP
+                                            :Head (V :t "authorized" :l "authorize" :xpos "VBN" :note "[SEM AMBIG] not lawfully [authorized or conducted] (neither nor) vs. [not lawfully] authorized or conducted (either or)"))
+                                        :Coordinate (VP
+                                            :Marker (Coordinator :t "or")
+                                            :Head (VP
+                                                :Head (V :t "conducted" :l "conduct" :xpos "VBN" :p "," ))))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Head (Nom
+                :Head (N_pro :t "it")))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD" :p ",")
+            :Supplement (PP
+                :Head (P :t "in")
+                :Obj (NP
+                    :Head (Nom
+                        :Head (N :t "accordance")
+                        :Comp (PP
+                            :Head (P :t "with")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "requirements")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "law" :p ","))))))))))
+            :Comp (Coordination
+                :Coordinate (Clause
+                    :Head (VP
+                        :Head (V :t "suppress" :xpos "VB")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "evidence")
+                                :Mod (Clause_rel
+                                    :Prenucleus (x / NP
+                                        :Head (Nom
+                                            :Head (N_pro :t "which")))
+                                    :Head (Clause_rel
+                                        :Subj (x / GAP)
+                                        :Head (VP
+                                            :Head (V_aux :t "was" :l "be" :xpos "VBD")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Mod (AdvP
+                                                        :Head (Adv :t "unlawfully"))
+                                                    :Head (VP
+                                                        :Head (Coordination
+                                                            :Coordinate (VP
+                                                                :Head (V :t "obtained" :l "obtain" :xpos "VBN"))
+                                                            :Coordinate (VP
+                                                                :Marker (Coordinator :t "or")
+                                                                :Head (VP
+                                                                    :Head (V :t "derived" :l "derive" :xpos "VBN"))))
+                                                        :Comp (PP
+                                                            :Head (P :t "from")
+                                                            :Obj (NP
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "electronic"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "surveillance")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "of")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "the"))
+                                                                                :Head (Nom
+                                                                                    :Mod (AdjP
+                                                                                        :Head (Adj :t "aggrieved"))
+                                                                                    :Head (N :t "person"))))))))))))))))))
+                :Coordinate (Clause
+                    :Marker (Coordinator :t "or")
+                    :Head (Clause
+                        :Head (VP
+                            :Mod (AdvP
+                                :Head (Adv :t "otherwise"))
+                            :Head (VP
+                                :Head (V :t "grant" :xpos "VB")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "motion")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "aggrieved"))
+                                                    :Head (N :t "person" :p "."))))))))))))))
