@@ -7,7 +7,7 @@
         :Head (P :t "for")
         :Obj (NP
             :Head (Nom
-                :Head (N :t "purposes" :l "purpose")
+                :Head (N :t "purposes")
                 :Comp (PP
                     :Head (P :t "of")
                     :Obj (NP
@@ -37,7 +37,7 @@
                     :Head (N :t "it")))
             :Head (VP
                 :Head (VP
-                    :Head (V :t "is" :l "be" :xpos "VBZ")
+                    :Head (V_aux :t "is" :l "be" :xpos "VBZ")
                     :Mod (AdvP
                         :Head (Adv :t "not")))
                 :PredComp (AdjP
@@ -77,7 +77,7 @@
                                                                         :Head (Nom
                                                                             :Mod (Nom
                                                                                 :Head (N :t "paragraph"))
-                                                                            :Head (N :p "(" :t "2" :p ")" :p "," :xpos "CD")))))))))))))))))))
+                                                                            :Head (N :p "(" :t "2" :xpos "CD" :p ")" :p ",")))))))))))))))))))
     :Head (Clause
         :Subj (NP
             :Det (DP
@@ -86,7 +86,7 @@
                 :Head (N :t "Administrator")))
         :Head (VP
             :Head (VP
-                :Head (V :t "may" :note "should have :xpos "MD" here but for some reason it won't validate with it?")
+                :Head (V_aux :t "may" :xpos "MD")
                 :Mod (AdvP
                     :Head (Adv :t "instead")))
             :Comp (Clause
