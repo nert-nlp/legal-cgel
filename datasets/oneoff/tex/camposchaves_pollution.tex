@@ -156,23 +156,22 @@
                             [\Node{Head}{D},edge={line width=1pt}[a]]]
                         [\Node{Head}{Nom},edge={line width=1pt}
                             [\Node{Head}{Coordination},edge={line width=1pt}
-                                [\Node{Coordinate}{Nom}
-                                    [\Node{Head}{N},edge={line width=1pt}[design,label={right:\p{{,}}}]]]
-                                [\Node{Coordinate}{Nom}
-                                    [\Node{Head}{N},edge={line width=1pt}[equipment,label={right:\p{{,}}}]]]
                                 [\Node{Coordinate}{NP}
+                                    [\Node{Mod}{Coordination}
+                                        [\Node{Coordinate}{Nom}
+                                            [\Node{Head}{N},edge={line width=1pt}[design,label={right:\p{{,}}}]]]
+                                        [\Node{Coordinate}{Nom}
+                                            [\Node{Head}{N},edge={line width=1pt}[equipment,label={right:\p{{,}}}]]]
+                                        [\Node{Coordinate}{Nom}
+                                            [\Node{Mod}{Nom}
+                                                [\Node{Head}{N},edge={line width=1pt}[management]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[practice,label={right:\p{{,}}}]]]
+                                        [\Node{Coordinate}{AdjP}
+                                            [\Node{Marker}{Coordinator}[or]]
+                                            [\Node{Head}{AdjP},edge={line width=1pt}
+                                                [\Node{Head}{Adj},edge={line width=1pt}[operational]]]]]
                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Mod}{NP}
-                                            [\Node{Head}{Nom},edge={line width=1pt}
-                                                [\Node{Head}{N},edge={line width=1pt}[management]]]]
-                                        [\Node{Head}{N},edge={line width=1pt}[practice,label={right:\p{{,}}}]]]]
-                                [\Node{Coordinate}{NP}
-                                    [\Node{Marker}{Coordinator}[or]]
-                                    [\Node{Head}{NP},edge={line width=1pt}
-                                        [\Node{Head}{Nom},edge={line width=1pt}
-                                            [\Node{Mod}{AdjP}
-                                                [\Node{Head}{Adj},edge={line width=1pt}[operational]]]
-                                            [\Node{Head}{N},edge={line width=1pt}[standard,label={right:\p{{,}}}]]]]]
+                                        [\Node{Head}{N},edge={line width=1pt}[standard,label={right:\p{{,}}}]]]]
                                 [\Node{Coordinate}{NP}
                                     [\Node{Marker}{Coordinator}[or]]
                                     [\Node{Head}{NP},edge={line width=1pt}
@@ -205,42 +204,41 @@
                                                     [\Node{Marker}{Sdr}[to]]
                                                     [\Node{Head}{VP},edge={line width=1pt}
                                                         [\Node{Head}{V},edge={line width=1pt}[protect]]
-                                                        [\Node{Obj}{NP}
-                                                            [\Node{Head}{Coordination},edge={line width=1pt}
-                                                                [\Node{Coordinate}{NP}
-                                                                    [\Node{Head}{Nom},edge={line width=1pt}
-                                                                        [\Node{Mod}{AdjP}
-                                                                            [\Node{Head}{Adj},edge={line width=1pt}[public]]]
-                                                                        [\Node{Head}{N},edge={line width=1pt}[health]]]]
-                                                                [\Node{Coordinate}{NP}
-                                                                    [\Node{Marker}{Coordinator}[and]]
-                                                                    [\Node{Head}{NP},edge={line width=1pt}
-                                                                        [\Node{Det}{DP}
-                                                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
-                                                                        [\Node{Head}{Nom},edge={line width=1pt}
-                                                                            [\Node{Head}{N},edge={line width=1pt}[environment]]]]]]
-                                                            [\Node{Mod}{PP}
-                                                                [\Node{Head}{P},edge={line width=1pt}[from]]
-                                                                [\Node{Obj}{NP}
+                                                        [\Node{Obj}{Coordination}
+                                                            [\Node{Coordinate}{NP}
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Mod}{AdjP}
+                                                                        [\Node{Head}{Adj},edge={line width=1pt}[public]]]
+                                                                    [\Node{Head}{N},edge={line width=1pt}[health]]]]
+                                                            [\Node{Coordinate}{NP}
+                                                                [\Node{Marker}{Coordinator}[and]]
+                                                                [\Node{Head}{NP},edge={line width=1pt}
                                                                     [\Node{Det}{DP}
-                                                                        [\Node{Head}{D},edge={line width=1pt}[any]]]
+                                                                        [\Node{Head}{D},edge={line width=1pt}[the]]]
                                                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                                                        [\Node{Mod}{VP}
-                                                                            [\Node{Mod}{AdvP}
-                                                                                [\Node{Head}{Adv},edge={line width=1pt}[reasonably]]]
-                                                                            [\Node{Head}{V},edge={line width=1pt}[anticipated]]]
+                                                                        [\Node{Head}{N},edge={line width=1pt}[environment]]]]]]
+                                                        [\Node{Comp}{PP}
+                                                            [\Node{Head}{P},edge={line width=1pt}[from]]
+                                                            [\Node{Obj}{NP}
+                                                                [\Node{Det}{DP}
+                                                                    [\Node{Head}{D},edge={line width=1pt}[any]]]
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Mod}{VP}
+                                                                        [\Node{Mod}{AdvP}
+                                                                            [\Node{Head}{Adv},edge={line width=1pt}[reasonably]]]
+                                                                        [\Node{Head}{V},edge={line width=1pt}[anticipated]]]
+                                                                    [\Node{Head}{Nom},edge={line width=1pt}
                                                                         [\Node{Head}{Nom},edge={line width=1pt}
                                                                             [\Node{Mod}{AdjP}
                                                                                 [\Node{Head}{Adj},edge={line width=1pt}[adverse]]]
-                                                                            [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                [\Node{Head}{N},edge={line width=1pt}[effects]]
-                                                                                [\Node{Comp}{PP}
-                                                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
-                                                                                    [\Node{Obj}{NP}
-                                                                                        [\Node{Det}{DP}
-                                                                                            [\Node{Head}{D},edge={line width=1pt}[such]]]
-                                                                                        [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                            [\Node{Head}{N},edge={line width=1pt}[pollutant.]]]]]]]]]]]]]]]]]]]]]]]]]
+                                                                            [\Node{Head}{N},edge={line width=1pt}[effects]]]
+                                                                        [\Node{Comp}{PP}
+                                                                            [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                            [\Node{Obj}{NP}
+                                                                                [\Node{Det}{DP}
+                                                                                    [\Node{Head}{D},edge={line width=1pt}[such]]]
+                                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                    [\Node{Head}{N},edge={line width=1pt}[pollutant,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]
         \end{forest}
         
 
