@@ -97,23 +97,22 @@
                             :Head (D :t "a"))
                         :Head (Nom
                             :Head (Coordination
-                                :Coordinate (Nom
-                                    :Head (N :t "design" :p ","))
-                                :Coordinate (Nom
-                                    :Head (N :t "equipment" :p ","))
                                 :Coordinate (NP
+                                    :Mod (Coordination
+                                        :Coordinate (Nom
+                                            :Head (N :t "design" :p ","))
+                                        :Coordinate (Nom
+                                            :Head (N :t "equipment" :p ","))
+                                        :Coordinate (Nom
+                                            :Mod (Nom
+                                                :Head (N :t "management"))
+                                            :Head (N :t "practice" :p ","))
+                                        :Coordinate (AdjP
+                                            :Marker (Coordinator :t "or")
+                                            :Head (AdjP
+                                                :Head (Adj :t "operational"))))
                                     :Head (Nom
-                                        :Mod (NP
-                                            :Head (Nom
-                                                :Head (N :t "management")))
-                                        :Head (N :t "practice" :p ",")))
-                                :Coordinate (NP
-                                    :Marker (Coordinator :t "or")
-                                    :Head (NP
-                                        :Head (Nom
-                                            :Mod (AdjP
-                                                :Head (Adj :t "operational"))
-                                            :Head (N :t "standard" :p ","))))
+                                        :Head (N :t "standard" :p ",")))
                                 :Coordinate (NP
                                     :Marker (Coordinator :t "or")
                                     :Head (NP
@@ -146,39 +145,38 @@
                                                     :Marker (Sdr :t "to")
                                                     :Head (VP
                                                         :Head (V :t "protect" :xpos "VB")
-                                                        :Obj (NP
-                                                            :Head (Coordination
-                                                                :Coordinate (NP
-                                                                    :Head (Nom
-                                                                        :Mod (AdjP
-                                                                            :Head (Adj :t "public"))
-                                                                        :Head (N :t "health")))
-                                                                :Coordinate (NP
-                                                                    :Marker (Coordinator :t "and")
-                                                                    :Head (NP
-                                                                        :Det (DP
-                                                                            :Head (D :t "the"))
-                                                                        :Head (Nom
-                                                                            :Head (N :t "environment")))))
-                                                            :Mod (PP
-                                                                :Head (P :t "from")
-                                                                :Obj (NP
+                                                        :Obj (Coordination
+                                                            :Coordinate (NP
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "public"))
+                                                                    :Head (N :t "health")))
+                                                            :Coordinate (NP
+                                                                :Marker (Coordinator :t "and")
+                                                                :Head (NP
                                                                     :Det (DP
-                                                                        :Head (D :t "any"))
+                                                                        :Head (D :t "the"))
                                                                     :Head (Nom
-                                                                        :Mod (VP
-                                                                            :Mod (AdvP
-                                                                                :Head (Adv :t "reasonably"))
-                                                                            :Head (V :t "anticipated" :l "anticipate" :xpos "VBN"))
+                                                                        :Head (N :t "environment")))))
+                                                        :Comp (PP
+                                                            :Head (P :t "from")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "any"))
+                                                                :Head (Nom
+                                                                    :Mod (VP
+                                                                        :Mod (AdvP
+                                                                            :Head (Adv :t "reasonably"))
+                                                                        :Head (V :t "anticipated" :l "anticipate" :xpos "VBN"))
+                                                                    :Head (Nom
                                                                         :Head (Nom
                                                                             :Mod (AdjP
                                                                                 :Head (Adj :t "adverse"))
-                                                                            :Head (Nom
-                                                                                :Head (N :t "effects")
-                                                                                :Comp (PP
-                                                                                    :Head (P :t "of")
-                                                                                    :Obj (NP
-                                                                                        :Det (DP
-                                                                                            :Head (D :t "such"))
-                                                                                        :Head (Nom
-                                                                                            :Head (N :t "pollutant."))))))))))))))))))))))))
+                                                                            :Head (N :t "effects"))
+                                                                        :Comp (PP
+                                                                            :Head (P :t "of")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "such"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "pollutant" :p "."))))))))))))))))))))))
