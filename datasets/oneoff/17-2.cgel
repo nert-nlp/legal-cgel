@@ -120,6 +120,6 @@
                                 :Head (P :t "on")
                                 :Obj (NP
                                     :Head (Nom
-                                        :Mod (AdjP
-                                            :Head (Adj :t "such"))
+                                        :Mod (DP
+                                            :Head (D :t "such"))
                                         :Head (N :t "study" :p ".")))))))))))
