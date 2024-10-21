@@ -42,8 +42,8 @@
                                     :Head (P :t "with")
                                     :Obj (NP
                                         :Head (Nom
-                                            :Mod (AdjP
-                                                :Head (Adj :t "such"))
+                                            :Mod (DP
+                                                :Head (D :t "such"))
                                             :Head (N :t "provisions" :p ",")))))))))))
     :Head (VP
         :Head (VP
