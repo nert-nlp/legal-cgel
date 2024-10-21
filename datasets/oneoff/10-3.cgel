@@ -48,8 +48,8 @@
                                                         :Obj (x / GAP))))))))))))))
     :Head (Clause
         :Subj (NP
-            :Mod (AdjP
-                :Head (Adj :t "such"))
+            :Mod (DP
+                :Head (D :t "such"))
             :Head (Nom
                 :Head (N :t "service")))
         :Head (VP
