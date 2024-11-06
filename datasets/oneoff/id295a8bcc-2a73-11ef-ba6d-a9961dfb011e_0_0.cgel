@@ -6,10 +6,10 @@
     :Coordinate (Clause
         :Subj (NP
             :Head (Nom
-                :Head (N :t "funds")
+                :Head (N :t "funds" :note "assuming this is a pluralia tantum so 'funds' is also the lemma")
                 :Mod (Clause
                     :Head (VP
-                        :Head (V :t "obligated")
+                        :Head (V :t "obligated" :xpos "VBN")
                         :Comp (PP
                             :Head (P :t "for")
                             :Obj (NP
@@ -20,13 +20,13 @@
                                         :Head (N :t "program"))
                                     :Head (N :t "year"))))))))
         :Head (VP
-            :Head (V_aux :t "may")
+            :Head (V_aux :t "may" :xpos "MD")
             :Comp (Clause
                 :Head (VP
-                    :Head (V_aux :t "be")
+                    :Head (V_aux :t "be" :xpos "VB")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V :t "expended")
+                            :Head (V :t "expended" :xpos "VBN")
                             :Comp (PP
                                 :Head (P :t "by")
                                 :Obj (NP
@@ -51,14 +51,14 @@
                                                             :Head (D :t "the"))
                                                         :Head (Nom
                                                             :Mod (DP
-                                                                :Head (D :t "two"))
+                                                                :Head (D :t "two" :xpos "CD"))
                                                             :Head (Nom
                                                                 :Mod (AdjP
                                                                     :Head (Adj :t "succeeding"))
                                                                 :Head (Nom
                                                                     :Mod (Nom
                                                                         :Head (N :t "program"))
-                                                                    :Head (N :t "years")))))))))))))))))
+                                                                    :Head (N :t "years" :l "year")))))))))))))))))
     :Coordinate (Clause
         :Marker (Coordinator :t "and")
         :Head (Clause
@@ -68,13 +68,13 @@
                 :Head (Nom
                     :Head (N :t "amount")))
             :Head (VP
-                :Head (V_aux :t "shall")
+                :Head (V_aux :t "shall" :xpos "MD")
                 :Comp (Clause
                     :Head (VP
-                        :Head (V_aux :t "be")
+                        :Head (V_aux :t "be" :xpos "VB")
                         :Comp (Clause
                             :Head (VP
-                                :Head (V :t "deobligated")
+                                :Head (V :t "deobligated" :xpos "VBN")
                                 :Mod (PP
                                     :Head (P :t "on")
                                     :Obj (NP
@@ -100,7 +100,7 @@
                                                             :Head (Clause
                                                                 :Subj (x / GAP)
                                                                 :Head (VP
-                                                                    :Head (V_aux :t "is")
+                                                                    :Head (V_aux :t "is" :xpos "VBZ")
                                                                     :PredComp (AdjP
                                                                         :Head (Adj :t "consistent")
                                                                         :Comp (PP
