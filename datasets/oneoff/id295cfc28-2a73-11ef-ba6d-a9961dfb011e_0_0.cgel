@@ -16,23 +16,23 @@
                         :Head (VP
                             :Head (Coordination
                                 :Coordinate (VP
-                                    :Head (V :t "evaluating"))
+                                    :Head (V :t "evaluating" :l "evaluate" :xpos "VBG"))
                                 :Coordinate (VP
                                     :Marker (Coordinator :t "and")
                                     :Head (VP
-                                        :Head (V :t "reviewing"))))
+                                        :Head (V :t "reviewing" :l "review" :xpos "VBG"))))
                             :Obj (NP
                                 :Head (Nom
-                                    :Head (N :t "programs")
+                                    :Head (N :t "programs" :l "program")
                                     :Mod (Clause
                                         :Head (VP
                                             :Head (Coordination
                                                 :Coordinate (VP
-                                                    :Head (V :t "established"))
+                                                    :Head (V :t "established" :l "establish" :xpos "VBN"))
                                                 :Coordinate (VP
                                                     :Marker (Coordinator :t "or")
                                                     :Head (VP
-                                                        :Head (V :t "provided")
+                                                        :Head (V :t "provided" :l "provide" :xpos "VBN")
                                                         :Comp (PP_strand
                                                             :Head (P :t "for")))))
                                             :Comp (PP
@@ -51,10 +51,10 @@
                 :Mod (AdjP
                     :Head (Adj :t "General"))))
         :Head (VP
-            :Head (V_aux :t "shall")
+            :Head (V_aux :t "shall" :xpos "MD")
             :Comp (Clause
                 :Head (VP
-                    :Head (V :t "have")
+                    :Head (V :t "have" :xpos "VB")
                     :Obj (Coordination
                         :Head (Coordination
                             :Coordinate (NP
@@ -74,7 +74,7 @@
                                             :Head (VP
                                                 :Marker (Sdr :t "to")
                                                 :Head (VP
-                                                    :Head (V :t "copy")
+                                                    :Head (V :t "copy" :xpos "VB")
                                                     :Obj (y / GAP))))))))
                         :Postnucleus (y / NP
                             :Det (DP
@@ -83,11 +83,11 @@
                                 :Head (x / Nom
                                     :Head (Coordination
                                         :Coordinate (Nom
-                                            :Head (N :t "books" :p ","))
+                                            :Head (N :t "books" :l "book" :p ","))
                                         :Coordinate (Nom
-                                            :Head (N :t "accounts" :p ","))
+                                            :Head (N :t "accounts" :l "account" :p ","))
                                         :Coordinate (Nom
-                                            :Head (N :t "records" :p ","))
+                                            :Head (N :t "records" :l "record" :p ","))
                                         :Coordinate (Nom
                                             :Head (N :t "correspondence" :p ","))
                                         :Coordinate (Nom
@@ -95,7 +95,7 @@
                                             :Head (Nom
                                                 :Mod (AdjP
                                                     :Head (Adj :t "other"))
-                                                :Head (N :t "documents"))))
+                                                :Head (N :t "documents" :l "document"))))
                                     :Mod (AdjP
                                         :Head (Adj :t "pertinent")
                                         :Comp (PP
@@ -104,13 +104,13 @@
                                                 :Det (DP
                                                     :Head (D :t "such"))
                                                 :Head (Nom
-                                                    :Head (N :t "programs"))))))
+                                                    :Head (N :t "programs" :l "program"))))))
                                 :Mod (Clause_rel
                                     :Marker (Sdr :t "that")
                                     :Head (Clause_rel
                                         :Subj (x / GAP)
                                         :Head (VP
-                                            :Head (V_aux :t "are")
+                                            :Head (V_aux :t "are" :l "be" :xpos "VBP")
                                             :PredComp (PP
                                                 :Head (P :t "in")
                                                 :Obj (NP
