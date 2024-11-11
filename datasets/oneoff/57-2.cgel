@@ -8,102 +8,102 @@
             :Mod (Clause_rel
                 :Head-Prenucleus (x / NP
                     :Head (Nom
-                        :Head (N_pro :t "Whoever")))
+                        :Head (N_pro :t "whoever")))
                 :Head (Clause_rel
                     :Subj (x / GAP)
-                    :Head (Clause
-                        :Head (VP
-                            :Head (V_aux :t "shall")
-                            :Comp (Clause
-                                :Head (VP
-                                    :Head (VP
-                                        :Head (Coordination
-                                            :Coordinate (VP
-                                                :Head (V :t "deprive"))
-                                            :Coordinate (VP
-                                                :Marker (Coordinator :t "or")
+                    :Head (VP
+                        :Head (V_aux :t "shall")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (Coordination
+                                    :Coordinate (VP
+                                        :Head (V :t "deprive"))
+                                    :Coordinate (VP
+                                        :Marker (Coordinator :t "or")
+                                        :Head (VP
+                                            :Head (V :t "attempt")
+                                            :Comp (Clause
                                                 :Head (VP
-                                                    :Head (V :t "attempt")
-                                                    :Comp (Clause
-                                                        :Head (VP
-                                                            :Marker (Sdr :t "to")
-                                                            :Head (VP
-                                                                :Head (V :t "deprive")))))))
-                                        :Obj (NP
-                                            :Det (DP
-                                                :Head (D :t "any"))
-                                            :Obj (Nom
-                                                :Head (N :t "person"))))
-                                    :Comp (PP
-                                        :Head (P :t "of")
-                                        :Obj (NP
-                                            :Det (DP
-                                                :Head (D :t "any"))
-                                            :Head (Nom
-                                                :Head (N :t "right")
-                                                :Mod (Clause
-                                                    :Head (VP
-                                                        :Head (V :t "secured")
-                                                        :Mod (PP
-                                                            :Head (P :t "by")
-                                                            :Obj (NP
-                                                                :Head (Nom
-                                                                    :Mod (Nom
-                                                                        :Head (N :t "section"))
-                                                                    :Head (Coordination
-                                                                        :Coordinate (Nom
-                                                                            :Head (N :t "10501,"))
-                                                                        :Coordinate (Nom
-                                                                            :Head (N :t "10502,"))
-                                                                        :Coordinate (Nom
-                                                                            :Marker (Coordinator :t "or")
-                                                                            :Head (Nom
-                                                                                :Head (N :t "10503")))))
-                                                                :Comp (PP
-                                                                    :Head (P :t "of")
-                                                                    :Obj (NP
-                                                                        :Det (DP
-                                                                            :Head (D :t "this"))
+                                                    :Marker (Sdr :t "to")
+                                                    :Head (V :t "deprive"))))))
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "any"))
+                                    :Head (Nom
+                                        :Head (N :t "person")))
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "any"))
+                                        :Head (Nom
+                                            :Head (N :t "right")
+                                            :Mod (Clause
+                                                :Head (VP
+                                                    :Head (V :t "secured")
+                                                    :Mod (PP
+                                                        :Head (P :t "by")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Mod (Nom
+                                                                    :Head (N :t "section"))
+                                                                :Head (Coordination
+                                                                    :Coordinate (Nom
+                                                                        :Head (N :t "10501" :p ","))
+                                                                    :Coordinate (Nom
+                                                                        :Head (N :t "10502" :p ","))
+                                                                    :Coordinate (Nom
+                                                                        :Marker (Coordinator :t "or")
                                                                         :Head (Nom
-                                                                            :Head (N :t "title")))))))))))))))))))
+                                                                            :Head (N :t "10503")))))
+                                                            :Mod (PP
+                                                                :Head (P :t "of")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "this"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "title"))))))))))))))))))
     :Head (VP
         :Head (V_aux :t "shall")
         :Comp (Clause
             :Head (VP
                 :Head (V_aux :t "be")
-                :Comp (Clause
-                    :Head (Coordination
-                        :Coordinate (VP
-                            :Head (V :t "fined")
+                :Comp (Coordination
+                    :Coordinate (VP
+                        :Head (V :t "fined")
+                        :Obj (NP
+                            :Det (DP
+                                :Mod (AdvP
+                                    :Head (Adv :t "not"))
+                                :Head (DP
+                                    :Head (D :t "more" :note "comparative degree determinative, CGEL p. 432")
+                                    :Comp (PP
+                                        :Head (P :t "than")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Det-Head (DP
+                                                    :Head (D :t "5,000")))))))
+                            :Head (Nom
+                                :Head (N :t "$" :p ","))))
+                    :Coordinate (VP
+                        :Marker (Coordinator :t "or")
+                        :Head (VP
+                            :Head (V :t "imprisoned")
                             :Obj (NP
                                 :Det (DP
                                     :Mod (AdvP
                                         :Head (Adv :t "not"))
-                                    :Head (D :t "more")
-                                    :Comp (PP
-                                        :Head (P :t "than")
-                                        :Obj (NP
-                                            :Det (DP
-                                                :Head (D :t "5,000"))
-                                            :Head (Nom
-                                                :Head (N :t "$" :p ",")))))))
-                        :Coordinate (VP
-                            :Marker (Coordinator :t "or")
-                            :Head (VP
-                                :Head (V :t "imprisoned")
-                                :Obj (NP
-                                    :Det (DP
-                                        :Mod (AdvP
-                                            :Head (Adv :t "not"))
+                                    :Head (DP
                                         :Head (D :t "more")
                                         :Comp (PP
                                             :Head (P :t "than")
                                             :Obj (NP
-                                                :Det (DP
-                                                    :Head (D :t "five"))
                                                 :Head (Nom
-                                                    :Head (N :t "years,"))))))))
-                        :Coordinate (VP
-                            :Marker (Coordinator :t "or")
-                            :Det-Head (DP
-                                :Head (D :t "both.")))))))))
+                                                    :Det-Head (DP
+                                                        :Head (D :t "five")))))))
+                                :Head (Nom
+                                    :Head (N :t "years" :p ",")))))
+                    :Coordinate (VP
+                        :Marker (Coordinator :t "or")
+                        :Head (VP
+                            :Head (V :t "both" :p "."))))))))
