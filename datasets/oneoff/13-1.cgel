@@ -1,4 +1,65 @@
 # sent_id = 13-1
 # text = Whenever there is an actual dispute, other than an adversary proceeding, before the bankruptcy court, the litigation to resolve that dispute is a contested matter.
 # sent = whenever there is an actual dispute other than an adversary proceeding before the bankruptcy court the litigation to resolve that dispute is a contested matter
-# tree_by = m3ru (YYYY-MM-DD)
+# tree_by = m3ru (2024-08-15)
+(Clause
+    :Mod (PP
+        :Head (P :t "whenever")
+        :Comp (Clause
+            :Subj (NP
+                :Head (Nom
+                    :Head (N_pro :t "there")))
+            :Head (VP
+                :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                :DisplacedSubj (NP
+                    :Det (DP
+                        :Head (D :t "an"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "actual"))
+                                :Head (N :t "dispute" :p ","))
+                            :Supplement (PP
+                                :Head (P :t "other than")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "an"))
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "adversary"))
+                                        :Head (N :t "proceeding" :p ",")))))
+                        :Mod (PP :note "Attaches higher due to punctuation in the sentence"
+                                        :Head (P :t "before")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Mod (Nom
+                                                    :Head (N :t "bankruptcy"))
+                                                :Head (N :t "court" :p ",")))))))))
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "litigation")
+                :Comp (Clause :note "Encodes purpose/nature as a semantic argument - Decided on Comp over Mod"
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (V :t "resolve" :xpos "VB")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "that"))
+                                :Head (Nom
+                                    :Head (N :t "dispute"))))))))
+        :Head (VP
+            :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+            :PredComp (NP
+                :Det (DP
+                    :Head (D :t "a"))
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "contested"))
+                    :Head (N :t "matter" :p "."))))))
