@@ -1,7 +1,7 @@
 # sent_id = 13-1
 # text = Whenever there is an actual dispute, other than an adversary proceeding, before the bankruptcy court, the litigation to resolve that dispute is a contested matter.
 # sent = whenever there is an actual dispute other than an adversary proceeding before the bankruptcy court the litigation to resolve that dispute is a contested matter
-# tree_by = m3ru (2024-08-15)
+# tree_by = m3ru (2024-08-15) rev. nschneid+mebwells+devika-tiwari+bwaldon (2024-09-27) rev. bwaldon (2024-11-11)
 (Clause
     :Mod (PP
         :Head (P :t "whenever")
