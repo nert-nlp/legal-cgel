@@ -21,40 +21,41 @@
                         :Head (D :t "the"))
                     :Head (Nom
                         :Head (Nom
-                            :Head (N :t "payment")
+                            :Head (Nom
+                                :Head (N :t "payment")
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "reasonable"))
+                                            :Head (N :t "compensation")))))
                             :Comp (PP
-                                :Head (P :t "of")
+                                :Head (P :t "to")
                                 :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "an"))
                                     :Head (Nom
-                                        :Mod (AdjP
-                                            :Head (Adj :t "reasonable"))
-                                        :Head (N :t "compensation")))))
-                        :Comp (PP
-                            :Head (P :t "to")
+                                        :Head (N :t "officer")))))
+                        :Mod (PP
+                            :Head (P :t "in")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "an"))
                                 :Head (Nom
-                                    :Head (N :t "officer")
-                                    :Mod (PP
-                                        :Head (P :t "in")
-                                        :Obj (NP
-                                            :Det (DP
-                                                :Head (D :t "an"))
-                                            :Head (Nom
-                                                :Head (N :t "amount")
-                                                :Mod (Clause
-                                                    :Head (VP
-                                                        :Head (V :t "approved" :l "approve" :xpos "VBN")
+                                    :Head (N :t "amount")
+                                    :Mod (Clause
+                                        :Head (VP
+                                            :Head (V :t "approved" :l "approve" :xpos "VBN")
+                                            :Comp (PP
+                                                :Head (P :t "by")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "board")
                                                         :Comp (PP
-                                                            :Head (P :t "by")
+                                                            :Head (P :t "of")
                                                             :Obj (NP
-                                                                :Det (DP
-                                                                    :Head (D :t "the"))
                                                                 :Head (Nom
-                                                                    :Head (N :t "board")
-                                                                    :Comp (PP
-                                                                        :Head (P :t "of")
-                                                                        :Obj (NP
-                                                                            :Head (Nom
-                                                                                :Head (N :t "directors" :p ".")))))))))))))))))))))
+                                                                    :Head (N :t "directors" :p "."))))))))))))))))))
