@@ -1,7 +1,7 @@
 # sent_id = id88a874cb-4e86-11ef-8795-d6c340cedfe7_2_0
 # text = Where appropriate, the Secretary shall award grants under this section in consultation with the Attorney General and the Secretary of Homeland Security.
 # sent = where appropriate the Secretary shall award grants under this section in consultation with the Attorney General and the Secretary of Homeland Security
-# tree_by = nschneid (2024-11-13)
+# tree_by = nschneid (2024-11-13) rev. bwaldon (2024-11-13)
 (Clause
     :Supplement (PP
         :Head (P :t "where" :note "CGEL would analyze this as licensing a reduced clause (p. 1267), but CGELBank currently does not recognize verbless clauses")
