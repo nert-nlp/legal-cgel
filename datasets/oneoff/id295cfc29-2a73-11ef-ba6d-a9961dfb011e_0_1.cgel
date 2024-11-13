@@ -18,7 +18,7 @@
                     :Head (V_aux :t "be" :xpos "VB")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V :t "made" :xpos "VBN")))))))
+                            :Head (V :t "made" :l "make" :xpos "VBN")))))))
     :Mod (PP
         :Head (P :t "except")
         :Comp (PP
