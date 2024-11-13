@@ -12,13 +12,13 @@
                     :Head (Adj :t "such"))
                 :Head (N :t "finding")))
         :Head (VP
-            :Head (V :t "shall")
+            :Head (V_aux :t "shall" :xpos "MD")
             :Comp (Clause
                 :Head (VP
-                    :Head (V :t "be")
+                    :Head (V_aux :t "be" :xpos "VB")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V :t "made")))))))
+                            :Head (V :t "made" :xpos "VBN")))))))
     :Mod (PP
         :Head (P :t "except")
         :Comp (PP
