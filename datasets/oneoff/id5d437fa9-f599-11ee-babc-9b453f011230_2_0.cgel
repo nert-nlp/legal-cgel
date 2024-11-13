@@ -1,7 +1,7 @@
 # sent_id = id5d437fa9-f599-11ee-babc-9b453f011230_2_0
 # text = Beginning with the 1995 crop year, the Corporation shall offer to producers additional prevented planting coverage that insures producers against losses in accordance with this paragraph.
 # sent = beginning with the 1995 crop year the Corporation shall offer to producers additional prevented planting coverage that -- insures producers against losses in accordance with this paragraph
-# tree_by = nschneid (2024-11-13)
+# tree_by = nschneid (2024-11-13) rev. bwaldon (2024-11-13)
 (Clause
     :Supplement (Clause
         :Head (VP
@@ -13,10 +13,11 @@
                         :Head (D :t "the"))
                     :Head (Nom
                         :Mod (Nom
+                            :Head (N :t "1995" :xpos "CD"))
+                        :Head (Nom
                             :Mod (Nom
-                                :Head (N :t "1995" :xpos "CD"))
-                            :Head (N :t "crop"))
-                        :Head (N :t "year" :p ","))))))
+                                :Head (N :t "crop"))
+                            :Head (N :t "year" :p ",")))))))
     :Subj (NP
         :Det (DP
             :Head (D :t "the"))
@@ -40,12 +41,11 @@
                             :Mod (AdjP
                                 :Head (Adj :t "additional"))
                             :Head (Nom
-                                :Mod (AdjP
-                                    :Head (Adj :t "prevented"))
-                                :Head (Nom
-                                    :Mod (Nom
-                                        :Head (N :t "planting"))
-                                    :Head (N :t "coverage"))))
+                                :Mod (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "prevented"))
+                                    :Head (N :t "planting"))
+                                :Head (N :t "coverage")))
                         :Mod (Clause_rel
                             :Marker (Sdr :t "that")
                             :Head (Clause_rel
