@@ -9,10 +9,10 @@
         :Head (Nom
             :Head (N :t "State")))
     :Head (VP
-        :Head (V :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V :t "repay")
+                :Head (V :t "repay" :xpos "VB")
                 :Obj (x / GAP)
                 :Comp (PP
                     :Head (P :t "to")
@@ -22,13 +22,13 @@
                         :Head (Nom
                             :Mod (AdjP
                                 :Head (Adj :t "United"))
-                            :Head (N :t "States")))))
+                            :Head (N :t "States" :l "state")))))
             :Postnucleus (x / NP
                 :Head (Nom
-                    :Head (N :t "amounts"))
+                    :Head (N :t "amounts" :l "amount"))
                 :Mod (Clause
                     :Head (VP
-                        :Head (V :t "found")
+                        :Head (V :t "found" :l "find" :xpos "VBN")
                         :PredComp (Clause
                             :Mod (AdvP
                                 :Head (Adv :t "not"))
@@ -36,13 +36,13 @@
                                 :Head (VP
                                     :Marker (Sdr :t "to")
                                     :Head (VP
-                                        :Head (V_aux :t "have")
+                                        :Head (V_aux :t "have" :xpos "VB")
                                         :Comp (Clause
                                             :Head (VP
-                                                :Head (V_aux :t "been")
+                                                :Head (V_aux :t "been" :l "be" :xpos "VBN")
                                                 :Comp (Clause
                                                     :Head (VP
-                                                        :Head (V :t "expended")
+                                                        :Head (V :t "expended" :l "expend" :xpos "VBN")
                                                         :Mod (PP
                                                             :Head (P :t "in")
                                                             :Obj (NP
