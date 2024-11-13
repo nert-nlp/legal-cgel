@@ -14,7 +14,7 @@
                     :Head (Nom
                         :Mod (Nom
                             :Mod (Nom
-                                :Head (N :t "1995"))
+                                :Head (N :t "1995" :xpos "CD"))
                             :Head (N :t "crop"))
                         :Head (N :t "year" :p ","))))))
     :Subj (NP
