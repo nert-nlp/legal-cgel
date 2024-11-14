@@ -1,0 +1,143 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0
+% # text = Not less frequently than once every two years, the Secretary shall provide training on merit system protection in a manner that the Special Counsel certifies as being satisfactory.
+% # sent = not less frequently than once every two years the Secretary shall provide training on merit system protection in a manner that the Special Counsel certifies -- as being satisfactory
+% # tree_by = nschneid (2024-11-14)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Mod}{AdvP}
+        [\Node{Mod}{AdvP}
+            [\Node{Head}{Adv},edge={line width=1pt}[not]]]
+        [\Node{Head}{AdvP},edge={line width=1pt}
+            [\Node{Head}{AdvP},edge={line width=1pt}
+                [\Node{Mod}{AdvP}
+                    [\Node{Head}{Adv},edge={line width=1pt}[less]]]
+                [\Node{Head}{Adv},edge={line width=1pt}[frequently]]]
+            [\Node{Comp}{PP}
+                [\Node{Head}{P},edge={line width=1pt}[than]]
+                [\Node{Obj}{NP}
+                    [\Node{Head}{Nom},edge={line width=1pt}, before drawing tree={x+=4em}
+                        [\Node{Det-Head}{DP},no edge
+                            [\Node{Head}{D} \hlgreen{\Info},edge={line width=1pt}[once]]] { \draw[-] (!uu.south) -- (); \draw[-,line width=1pt] (!u.south) -- (); }
+                        [\Node{Mod}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[every]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Mod}{DP}
+                                    [\Node{Head}{D},edge={line width=1pt}[two]]]
+                                [\Node{Head}{N},edge={line width=1pt}[years,label={right:\p{{,}}}]]]]]]]]]
+    [\Node{Head}{Clause},edge={line width=1pt}
+        [\Node{Subj}{NP}
+            [\Node{Det}{DP}
+                [\Node{Head}{D},edge={line width=1pt}[the]]]
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N},edge={line width=1pt}[Secretary]]]]
+        [\Node{Head}{VP},edge={line width=1pt}
+            [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
+            [\Node{Comp}{Clause}
+                [\Node{Head}{VP},edge={line width=1pt}
+                    [\Node{Head}{VP},edge={line width=1pt}
+                        [\Node{Head}{V},edge={line width=1pt}[provide]]
+                        [\Node{Obj}{NP}
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{N},edge={line width=1pt}[training]]
+                                [\Node{Comp}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[on]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Mod}{Nom}
+                                                [\Node{Mod}{Nom}
+                                                    [\Node{Head}{N},edge={line width=1pt}[merit]]]
+                                                [\Node{Head}{N},edge={line width=1pt}[system]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[protection]]]]]]]]
+                    [\Node{Mod}{PP}
+                        [\Node{Head}{P},edge={line width=1pt}[in]]
+                        [\Node{Obj}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[a]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{N\idx{x}},edge={line width=1pt}[manner]]
+                                [\Node{Mod}{Clause\textsubscript{rel}}
+                                    [\Node{Marker}{Sdr}[that]]
+                                    [\Node{Head}{Clause\textsubscript{rel}},edge={line width=1pt}
+                                        [\Node{Subj}{NP}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Mod}{AdjP}
+                                                    [\Node{Head}{Adj},edge={line width=1pt}[Special]]]
+                                                [\Node{Head}{N},edge={line width=1pt}[Counsel]]]]
+                                        [\Node{Head}{VP},edge={line width=1pt}
+                                            [\Node{Head}{V},edge={line width=1pt}[certifies]]
+                                            [\Node{Obj}{GAP\idx{x}}[--]]
+                                            [\Node{Comp}{PP}
+                                                [\Node{Head}{P} \hlgreen{\Info},edge={line width=1pt}[as]]
+                                                [\Node{PredComp}{Clause}
+                                                    [\Node{Head}{VP},edge={line width=1pt}
+                                                        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[being]]
+                                                        [\Node{PredComp}{AdjP}
+                                                            [\Node{Head}{Adj},edge={line width=1pt}[satisfactory,label={right:\p{.}}]]]]]]]]]]]]]]]]]
+\node at (current bounding box.south)[yshift=-1cm]{
+(1) Payne et al. (2007) Fusion of Functions paper discusses \textquotesingle{}once\textquotesingle{}; (2) always sister to PredComp? https://github.com/nert-nlp/cgel/issues/144};
+        \end{forest}
+        
+
+\end{document}
+
