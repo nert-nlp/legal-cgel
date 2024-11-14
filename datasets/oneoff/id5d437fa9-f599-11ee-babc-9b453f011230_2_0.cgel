@@ -1,4 +1,75 @@
 # sent_id = id5d437fa9-f599-11ee-babc-9b453f011230_2_0
 # text = Beginning with the 1995 crop year, the Corporation shall offer to producers additional prevented planting coverage that insures producers against losses in accordance with this paragraph.
-# sent = beginning with the 1995 crop year the Corporation shall offer to producers additional prevented planting coverage that insures producers against losses in accordance with this paragraph
-# tree_by = nschneid (YYYY-MM-DD)
+# sent = beginning with the 1995 crop year the Corporation shall offer to producers additional prevented planting coverage that -- insures producers against losses in accordance with this paragraph
+# tree_by = nschneid (2024-11-13) rev. bwaldon (2024-11-13)
+(Clause
+    :Supplement (Clause
+        :Head (VP
+            :Head (V :t "beginning" :l "begin" :xpos "VBG")
+            :Comp (PP
+                :Head (P :t "with")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Mod (Nom
+                            :Head (N :t "1995" :xpos "CD"))
+                        :Head (Nom
+                            :Mod (Nom
+                                :Head (N :t "crop"))
+                            :Head (N :t "year" :p ",")))))))
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Corporation")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "offer" :xpos "VB")
+                    :Obj (y / GAP)
+                    :Comp (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "producers" :l "producer")))))
+                :Postnucleus (y / NP
+                    :Head (Nom
+                        :Head (x / Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "additional"))
+                            :Head (Nom
+                                :Mod (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "prevented"))
+                                    :Head (N :t "planting"))
+                                :Head (N :t "coverage")))
+                        :Mod (Clause_rel
+                            :Marker (Sdr :t "that")
+                            :Head (Clause_rel
+                                :Subj (x / GAP)
+                                :Head (VP
+                                    :Head (VP
+                                        :Head (V :t "insures" :l "insure" :xpos "VBZ")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "producers" :l "producer")))
+                                        :Comp (PP
+                                            :Head (P :t "against")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "losses" :l "loss")))))
+                                    :Mod (PP
+                                        :Head (P :t "in")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "accordance")
+                                                :Comp (PP
+                                                    :Head (P :t "with")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "this"))
+                                                        :Head (Nom
+                                                            :Head (N :t "paragraph" :p "."))))))))))))))))
