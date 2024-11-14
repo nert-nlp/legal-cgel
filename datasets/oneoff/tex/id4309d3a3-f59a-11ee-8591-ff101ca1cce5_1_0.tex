@@ -1,0 +1,172 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = id4309d3a3-f59a-11ee-8591-ff101ca1cce5_1_0
+% # text = Any individual with respect to whom an annuity is reduced under this subsection may appeal the reduction to the Director of the Office of Personnel Management pursuant to such regulations as the Director may prescribe for purposes of this subsection.
+% # sent = any individual with respect to whom an annuity is reduced -- under this subsection may appeal the reduction to the Director of the Office of Personnel Management pursuant to such regulations as the Director may prescribe for purposes of this subsection
+% # tree_by = nschneid (2024-11-14)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Subj}{NP}
+        [\Node{Det}{DP}
+            [\Node{Head}{D},edge={line width=1pt}[any]]]
+        [\Node{Head}{Nom},edge={line width=1pt}
+            [\Node{Head}{N},edge={line width=1pt}[individual]]
+            [\Node{Mod}{Clause\textsubscript{rel}}
+                [\Node{Prenucleus}{PP\idx{x}}
+                    [\Node{Head}{P},edge={line width=1pt}[with]]
+                    [\Node{Obj}{NP}
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{N},edge={line width=1pt}[respect]]
+                            [\Node{Comp}{PP}
+                                [\Node{Head}{P},edge={line width=1pt}[to]]
+                                [\Node{Obj}{NP}
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N\textsubscript{pro}},edge={line width=1pt}[whom]]]]]]]]
+                [\Node{Head}{Clause\textsubscript{rel}},edge={line width=1pt}
+                    [\Node{Subj}{NP}
+                        [\Node{Det}{DP}
+                            [\Node{Head}{D},edge={line width=1pt}[an]]]
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{N},edge={line width=1pt}[annuity]]]]
+                    [\Node{Head}{VP},edge={line width=1pt}
+                        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[is]]
+                        [\Node{Comp}{Clause}
+                            [\Node{Head}{VP},edge={line width=1pt}
+                                [\Node{Head}{VP},edge={line width=1pt}
+                                    [\Node{Head}{V},edge={line width=1pt}[reduced]]
+                                    [\Node{Mod}{GAP\idx{x}}[--]]]
+                                [\Node{Mod}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[under]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Det}{DP}
+                                            [\Node{Head}{D},edge={line width=1pt}[this]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[subsection]]]]]]]]]]]]
+    [\Node{Head}{VP},edge={line width=1pt}
+        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[may]]
+        [\Node{Comp}{Clause}
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{VP},edge={line width=1pt}
+                    [\Node{Head}{V},edge={line width=1pt}[appeal]]
+                    [\Node{Obj}{NP}
+                        [\Node{Det}{DP}
+                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{N},edge={line width=1pt}[reduction]]]]
+                    [\Node{Comp}{PP}
+                        [\Node{Head}{P},edge={line width=1pt}[to]]
+                        [\Node{Obj}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{N},edge={line width=1pt}[Director]]
+                                [\Node{Comp}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Det}{DP}
+                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[Office]]
+                                            [\Node{Comp}{PP}
+                                                [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                [\Node{Obj}{NP}
+                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                        [\Node{Mod}{Nom}
+                                                            [\Node{Head}{N},edge={line width=1pt}[Personnel]]]
+                                                        [\Node{Head}{N},edge={line width=1pt}[Management]]]]]]]]]]]]
+                [\Node{Mod}{AdjP}
+                    [\Node{Head}{Adj},edge={line width=1pt}[pursuant]]
+                    [\Node{Comp}{PP}
+                        [\Node{Head}{P},edge={line width=1pt}[to]]
+                        [\Node{Obj}{NP}
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Mod}{AdjP}
+                                        [\Node{Head}{Adj},edge={line width=1pt}[such]]]
+                                    [\Node{Head}{N},edge={line width=1pt}[regulations]]]
+                                [\Node{Comp\textsubscript{ind}}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[as]]
+                                    [\Node{Comp}{Clause}
+                                        [\Node{Subj}{NP}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Head}{N},edge={line width=1pt}[Director]]]]
+                                        [\Node{Head}{VP},edge={line width=1pt}
+                                            [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[may]]
+                                            [\Node{Comp}{Clause}
+                                                [\Node{Head}{VP},edge={line width=1pt}
+                                                    [\Node{Head}{V},edge={line width=1pt}[prescribe]]
+                                                    [\Node{Mod}{PP}
+                                                        [\Node{Head}{P},edge={line width=1pt}[for]]
+                                                        [\Node{Obj}{NP}
+                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                [\Node{Head}{N},edge={line width=1pt}[purposes]]
+                                                                [\Node{Mod}{PP}
+                                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                    [\Node{Comp}{NP}
+                                                                        [\Node{Det}{DP}
+                                                                            [\Node{Head}{D},edge={line width=1pt}[this]]]
+                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                            [\Node{Head}{N},edge={line width=1pt}[subsection,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]
+        \end{forest}
+        
+
+\end{document}
+
