@@ -22,38 +22,37 @@
                                 :Head (Adj :t "enlisted"))
                             :Head (N :t "men" :l "man")))))))
     :Head (VP
-        :Head (Clause
-            :Head (VP
-                :Head (V_aux :t "is" :l "be" :xpos "VBZ")
-                :PredComp (Clause
-                    :Head (VP
-                        :Head (V :t "left" :l "leave" :xpos "VBN")
-                        :Comp (PP
-                            :Head (P :t "to")
-                            :Obj (NP
-                                :Det (DP
-                                    :Head (D :t "the"))
+        :Head (VP
+            :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "left" :l "leave" :xpos "VBN")
+                    :Comp (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "administrative"))
                                 :Head (Nom
-                                    :Mod (AdjP
-                                        :Head (Adj :t "administrative"))
-                                    :Head (Nom
-                                        :Head (N :t "discretion")
-                                        :Comp (PP
-                                            :Head (P :t "of")
-                                            :Obj (NP
-                                                :Det (DP
-                                                    :Head (D :t "the"))
-                                                :Head (Nom
-                                                    :Head (N :t "Secretary" :p ",")))))))))))
-            :Supplement (PP
-                :Head (P :t "as")
-                :Comp (PP
-                    :Head (P :t "in")
-                    :Obj (NP
-                        :Det (DP
-                            :Head (D :t "the"))
-                        :Head (Nom
-                            :Head (N :t "past" :p ","))))))
+                                    :Head (N :t "discretion")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "Secretary" :p ",")))))))))))
+        :Supplement (PP
+            :Head (P :t "as")
+            :Comp (PP
+                :Head (P :t "in")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Head (N :t "past" :p ",")))))
         :Mod (PP
             :Head (P :t "for")
             :Obj (NP
