@@ -1,4 +1,131 @@
 # sent_id = id2bb36fca-2a73-11ef-880b-d748b6d8dd9e_1_0
 # text = Proceeds of sales by the Department of the Army and the Department of the Air Force under this section shall be credited to the appropriations from which the property was purchased, shall not be covered into the Treasury, and may be used to replace property sold under this section.
 # sent = proceeds of sales by the Department of the Army and the Department of the Air Force under this section shall be credited to the appropriations from which the property was purchased shall not be covered into the Treasury and may be used to replace property sold under this section
-# tree_by = bwaldon (YYYY-MM-DD)
+# tree_by = bwaldon (2024-11-15)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N :t "proceeds" :l "proceed")
+            :Comp (PP
+                :Head (P :t "of")
+                :Obj (NP
+                    :Head (Nom
+                        :Head (N :t "sales" :l "sale")
+                        :Mod (PP
+                            :Head (P :t "by")
+                            :Obj (Coordination
+                                :Coordinate (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "Department")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "Army"))))))
+                                :Coordinate (NP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "Department")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Mod (Nom
+                                                            :Head (N :t "Air"))
+                                                        :Head (N :t "Force"))))))))))
+                    :Mod (PP
+                        :Head (P :t "under")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "this"))
+                            :Head (Nom
+                                :Head (N :t "section"))))))))
+    :Head (Coordination
+        :Coordinate (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "credited" :l "credit" :xpos "VBN")
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "appropriations" :l "appropriation")
+                                        :Mod (Clause_rel
+                                            :Prenucleus (x / PP
+                                                :Head (P :t "from")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N_pro :t "which"))))
+                                            :Head (Clause_rel
+                                                :Subj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "property")))
+                                                :Head (VP
+                                                    :Head (V_aux :t "was" :l "be" :xpos "VBD")
+                                                    :Comp (Clause
+                                                        :Head (VP
+                                                            :Head (V :t "purchased" :l "purchase" :xpos "VBN" :p ",")
+                                                            :Mod (x / GAP))))))))))))))
+        :Coordinate (VP
+            :Head (VP
+                :Head (V :t "shall" :xpos "MD")
+                :Mod (AdvP
+                    :Head (Adv :t "not")))
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "covered" :l "cover" :xpos "VBN")
+                            :Comp (PP
+                                :Head (P :t "into")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "Treasury" :p ",")))))))))
+        :Coordinate (VP
+            :Marker (Coordinator :t "and")
+            :Head (VP
+                :Head (V_aux :t "may" :xpos "MD")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V_aux :t "be" :xpos "VB")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V :t "used" :l "use" :xpos "VBN")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Marker (Sdr :t "to")
+                                        :Head (VP
+                                            :Head (V :t "replace" :xpos "VB")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "property")
+                                                    :Mod (Clause
+                                                        :Head (VP
+                                                            :Head (V :t "sold" :l "sell" :xpos "VBN")
+                                                            :Mod (PP
+                                                                :Head (P :t "under")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "this"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "section" :p ".")))))))))))))))))))
