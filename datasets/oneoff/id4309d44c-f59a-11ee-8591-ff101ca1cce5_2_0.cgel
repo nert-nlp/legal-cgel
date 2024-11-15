@@ -69,8 +69,8 @@
                                             :Head (V :t "certifies" :l "certify" :xpos "VBZ")
                                             :Obj (x / GAP)
                                             :Comp (PP
-                                                :Head (P :t "as" :note "always sister to PredComp? https://github.com/nert-nlp/cgel/issues/144")
-                                                :PredComp (Clause
+                                                :Head (P :t "as" :note "licensing Comp here not PredComp: https://github.com/nert-nlp/cgel/issues/144")
+                                                :Comp (Clause
                                                     :Head (VP
                                                         :Head (V_aux :t "being" :l "be" :xpos "VBG")
                                                         :PredComp (AdjP
