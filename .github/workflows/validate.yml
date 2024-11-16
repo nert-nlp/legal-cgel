@@ -28,6 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Install cgel submodule dependencies
+      run: |
+        pip install -r cgel/requirements.txt
     - name: Validate trees including tree_by, :p, and :xpos checks
       run: |
         ls
