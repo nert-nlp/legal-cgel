@@ -17,6 +17,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        submodules: true
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -28,5 +30,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Validate trees including tree_by, :p, and :xpos checks
       run: |
-        git submodule update
+        ls
+        ls cgel
         python cgel/validate_trees.py --punct datasets/*/*.cgel
