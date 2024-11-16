@@ -1,4 +1,149 @@
 # sent_id = idf3eb7cb1-2a49-11ef-8437-855ef5b8fc19_2_0
 # text = Any officer or employee of the Internal Revenue Service in connection with any in-person interview with any taxpayer relating to the determination or collection of any tax shall, upon advance request of such taxpayer, allow the taxpayer to make an audio recording of such interview at the taxpayer’s own expense and with the taxpayer’s own equipment.
 # sent = any officer or employee of the Internal Revenue Service in connection with any inperson interview with any taxpayer relating to the determination or collection of any tax shall upon advance request of such taxpayer allow the taxpayer to make an audio recording of such interview at the taxpayers own expense and with the taxpayers own equipment
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = nschneid (2024-11-15)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "any"))
+        :Head (Nom
+            :Head (Coordination
+                :Coordinate (Nom
+                    :Head (N :t "officer"))
+                :Coordinate (Nom
+                    :Marker (Coordinator :t "or")
+                    :Head (Nom
+                        :Head (N :t "employee"))))
+            :Comp (PP
+                :Head (P :t "of")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Mod (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "Internal"))
+                            :Head (N :t "Revenue"))
+                        :Head (N :t "Service"))))))
+    :Supplement (PP
+        :Head (P :t "in")
+        :Obj (NP
+            :Head (Nom
+                :Head (N :t "connection")
+                :Comp (PP
+                    :Head (P :t "with")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "any"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "in-person"))
+                            :Head (Nom
+                                :Head (Nom
+                                    :Head (N :t "interview")
+                                    :Mod (PP
+                                        :Head (P :t "with")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "any"))
+                                            :Head (Nom
+                                                :Head (N :t "taxpayer")))))
+                                :Mod (Clause
+                                    :Head (VP
+                                        :Head (V :t "relating" :l "relate" :xpos "VBG")
+                                        :Comp (PP
+                                            :Head (P :t "to")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "determination"))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "or")
+                                                            :Head (Nom
+                                                                :Head (N :t "collection"))))
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "any"))
+                                                            :Head (Nom
+                                                                :Head (N :t "tax"))))))))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD" :p ",")
+        :Supplement (PP
+            :Head (P :t "upon")
+            :Obj (NP
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "advance"))
+                    :Head (Nom
+                        :Head (N :t "request")
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "such"))
+                                :Head (Nom
+                                    :Head (N :t "taxpayer" :p ","))))))))
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "allow" :xpos "VB")
+                :Comp (Clause
+                    :Subj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "taxpayer")))
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (Clause
+                            :Head (VP
+                                :Head (VP
+                                    :Head (V :t "make" :xpos "VB")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "an"))
+                                        :Head (Nom
+                                            :Head (Nom
+                                                :Mod (Nom
+                                                    :Head (N :t "audio"))
+                                                :Head (N :t "recording"))
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "such"))
+                                                        :Head (N :t "interview")))))))
+                                :Mod (Coordination
+                                    :Coordinate (PP
+                                        :Head (P :t "at")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Det (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "taxpayer’s" :subt "taxpayer" :subt "’s")))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "own"))
+                                                    :Head (N :t "expense")))))
+                                    :Coordinate (PP
+                                        :Marker (Coordinator :t "and")
+                                        :Head (PP
+                                            :Head (P :t "with")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Det (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Head (N :t "taxpayer’s" :subt "taxpayer" :subt "’s")))
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "own"))
+                                                        :Head (N :t "equipment" :p ".")))))))))))))))
