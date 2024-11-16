@@ -33,6 +33,11 @@ jobs:
         pip install -r cgel/requirements.txt
     - name: Validate trees including tree_by, :p, and :xpos checks
       run: |
-        ls
-        ls cgel
-        python cgel/validate_trees.py --punct datasets/*/*.cgel
+        N=`ls datasets/*/*.cgel | wc -l`
+        echo "checking $N files..."
+        for F in datasets/*/*.cgel; do
+          TREELINES=`egrep -v '^#' $F | wc -l`
+          if [ "$TREELINES" -ge 1 ]; then
+            python cgel/validate_trees.py --punct $F
+          fi
+        done
