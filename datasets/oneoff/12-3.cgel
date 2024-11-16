@@ -1,11 +1,11 @@
 # sent_id = 12-3
 # text = The definition excludes judicial liens and security interests, whether or not they are provided for or are dependent on a statute, and whether or not they are made fully effective by statute.
-# sent = the definition excludes judicial liens and security interests whether_or_not they are provided for or are dependent on a statute and whether_or_not they are made fully effective by statute
+# sent = the definition excludes judicial liens and security interests whether or not they are provided for or are dependent on a statute and whether or not they are made fully effective by statute
 # tree_by = bwaldon (2024-07-17)
 (Clause
     :Subj (NP
         :Det (DP
-            :Head (D :t "The"))
+            :Head (D :t "the"))
         :Head (Nom
             :Head (N :t "definition")))
     :Head (VP
@@ -25,7 +25,7 @@
                         :Head (N :t "interests" :l "interest" :p ","))))))
     :Supplement (Coordination
         :Coordinate (Clause
-            :Marker (Sdr :t "whether_or_not")
+            :Marker (Sdr :t "whether or not")
             :Head (Clause
                 :Subj (NP
                     :Head (Nom
@@ -54,7 +54,7 @@
         :Coordinate (Clause
             :Marker (Coordinator :t "and")
             :Head (Clause
-                :Marker (Sdr :t "whether_or_not")
+                :Marker (Sdr :t "whether or not")
                 :Head (Clause
                     :Subj (NP
                         :Head (Nom
