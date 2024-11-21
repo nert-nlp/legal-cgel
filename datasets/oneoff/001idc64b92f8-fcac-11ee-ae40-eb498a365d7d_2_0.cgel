@@ -1,0 +1,75 @@
+# sent_id = 001idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0
+# text = The Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10, 1958, shall be enforced in United States courts in accordance with this chapter.
+# sent = the Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10 1958 shall be enforced in United States courts in accordance with this chapter
+# tree_by = mebwells (2024-08-13) rev. bwaldon (2024-09-17)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Convention")
+            :Mod (PP
+                :Head (P :t "on")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (NP
+                        :Head (Coordination
+                            :Coordinate (NP
+                                :Head (Nom
+                                    :Head (N :t "Recognition")))
+                            :Coordinate (NP
+                                :Marker (Coordinator :t "and")
+                                :Head (NP
+                                    :Head (Nom
+                                        :Head (N :t "Enforcement")))))
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "Foreign"))
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "Arbitral"))
+                                        :Head (N :t "Awards" :l "award")))
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N
+                                                :Flat (N :t "June")
+                                                :Flat (N :t "10" :xpos "CD" :p ",")
+                                                :Flat (N :t "1958" :xpos "CD" :p ","))))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (VP
+                            :Head (V :t "enforced" :l "enforce" :xpos "VBN")
+                            :Mod (PP
+                                :Head (P :t "in")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Mod (NP
+                                            :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "United"))
+                                                :Head (N :t "States")))
+                                        :Head (N :t "courts" :l "court")))))
+                        :Mod (PP
+                            :Head (P :t "in")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Head (N :t "accordance")
+                                    :Comp (PP
+                                        :Head (P :t "with")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "this"))
+                                            :Head (Nom
+                                                :Head (N :t "chapter" :p ".")))))))))))))
+
