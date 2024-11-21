@@ -1,6 +1,6 @@
 # sent_id = 044idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2
 # text = The term “motor vehicle” means any vehicle which is manufactured primarily for use on public streets, roads, and highways (not including a vehicle operated exclusively on a rail or rails) and which has at least 4 wheels.
-# sent = the term motor vehicle means any vehicle which is manufactured primarily for use on public streets roads and highways not including a vehicle operated exclusively on a rail or rails and which has at least 4 wheels
+# sent = the term motor vehicle means any vehicle which _. is manufactured primarily for use on public streets roads and highways not including a vehicle operated exclusively on a rail or rails and which _. has at least 4 wheels
 # tree_by = nschneid (2024-11-21)
 (Clause
     :Subj (NP
