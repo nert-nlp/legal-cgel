@@ -53,15 +53,14 @@
                 :Head (V_aux :t "be" :xpos "VB")
                 :Comp (Clause
                     :Head (VP
-                        :Head (VP
-                            :Head (V :t "used" :l "use" :xpos "VBN")
-                            :Comp (PP
-                                :Head (P :t "by")
-                                :Obj (NP
-                                    :Det (DP
-                                        :Head (D :t "any"))
-                                    :Head (Nom
-                                        :Head (N :t "person")))))
+                        :Head (V :t "used" :l "use" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "by")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "any"))
+                                :Head (Nom
+                                    :Head (N :t "person"))))
                         :Comp (Clause
                             :Head (VP
                                 :Marker (Sdr :t "to")
