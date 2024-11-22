@@ -1,7 +1,7 @@
 # sent_id = id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0
 # text = Each State shall repay to the United States amounts found not to have been expended in accordance with this chapter.
 # sent = each State shall repay to the United States amounts found not to have been expended in accordance with this chapter
-# tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08)
+# tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08) rev. nschneid+devika (2024-11-22)
 (Clause
     :Subj (NP
         :Det (DP
@@ -28,8 +28,8 @@
                     :Head (N :t "amounts" :l "amount"))
                 :Mod (Clause
                     :Head (VP
-                        :Head (V :t "found" :l "find" :xpos "VBN")
-                        :PredComp (Clause
+                        :Head (V :t "found" :l "find" :xpos "VBN" :note "verb licensing catenative complement (p. 1233), as opposed to predicative complement (p. 1255)")
+                        :Comp (Clause
                             :Mod (AdvP
                                 :Head (Adv :t "not"))
                             :Head (Clause
