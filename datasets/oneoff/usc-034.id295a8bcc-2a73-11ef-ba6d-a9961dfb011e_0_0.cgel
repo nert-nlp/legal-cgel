@@ -1,0 +1,115 @@
+# sent_id = usc-034.id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0
+# text = Funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which is consistent with the program plan.
+# sent = funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which -- is consistent with the program plan
+# tree_by = nschneid (2024-11-06) rev. bwaldon (2024-11-09)
+(Coordination
+    :Coordinate (Clause
+        :Subj (NP
+            :Head (Nom
+                :Head (N :t "funds" :note "assuming this is a pluralia tantum so 'funds' is also the lemma")
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "obligated" :l "obligate" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "for")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "any"))
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "program"))
+                                    :Head (N :t "year"))))))))
+        :Head (VP
+            :Head (V_aux :t "may" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (VP
+                                :Head (V :t "expended" :l "expend" :xpos "VBN")
+                                :Comp (PP
+                                    :Head (P :t "by")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "State")))))
+                            :Mod (PP
+                                :Head (P :t "during")
+                                :Obj (Coordination
+                                    :Coordinate (NP
+                                        :Det (DP
+                                            :Head (D :t "that"))
+                                        :Head (Nom
+                                            :Mod (Nom
+                                                :Head (N :t "program"))
+                                            :Head (N :t "year")))
+                                    :Coordinate (NP
+                                        :Marker (Coordinator :t "and")
+                                        :Head (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Mod (DP
+                                                    :Head (D :t "two" :xpos "CD"))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "succeeding"))
+                                                    :Head (Nom
+                                                        :Mod (Nom
+                                                            :Head (N :t "program"))
+                                                        :Head (N :t "years" :l "year"))))))))))))))
+    :Coordinate (Clause
+        :Marker (Coordinator :t "and")
+        :Head (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "no"))
+                :Head (Nom
+                    :Head (N :t "amount")))
+            :Head (VP
+                :Head (V_aux :t "shall" :xpos "MD")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V_aux :t "be" :xpos "VB")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V :t "deobligated" :l "deobligate" :xpos "VBN")
+                                :Mod (PP
+                                    :Head (P :t "on")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N :t "account")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "a"))
+                                                    :Head (Nom
+                                                        :Head (Nom
+                                                            :Head (N :t "rate")
+                                                            :Comp (PP
+                                                                :Head (P :t "of")
+                                                                :Obj (NP
+                                                                    :Head (Nom
+                                                                        :Head (N :t "expenditure")))))
+                                                        :Mod (Clause
+                                                            :Prenucleus (x / NP
+                                                                :Head (Nom
+                                                                    :Head (N_pro :t "which")))
+                                                            :Head (Clause
+                                                                :Subj (x / GAP)
+                                                                :Head (VP
+                                                                    :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                                                    :PredComp (AdjP
+                                                                        :Head (Adj :t "consistent")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "with")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "the"))
+                                                                                :Head (Nom
+                                                                                    :Mod (Nom
+                                                                                        :Head (N :t "program"))
+                                                                                    :Head (N :t "plan" :p "."))))))))))))))))))))))
