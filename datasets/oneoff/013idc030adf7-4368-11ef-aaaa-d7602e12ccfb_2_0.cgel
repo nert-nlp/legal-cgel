@@ -53,7 +53,7 @@
                                         :Coordinate (VP
                                             :Marker (Coordinator :t "or")
                                             :Head (VP
-                                                :Head (V :t "conducted" :l "conduct" :xpos "VBN" :p "," ))))))))))))
+                                                :Head (V :t "conducted" :l "conduct" :xpos "VBN" :p ","))))))))))))
     :Head (Clause
         :Subj (NP
             :Head (Nom
