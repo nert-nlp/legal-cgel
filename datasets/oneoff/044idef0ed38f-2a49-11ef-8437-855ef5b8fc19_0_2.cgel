@@ -9,7 +9,7 @@
         :Head (Nom
             :Head (N :t "term")
             :Mod (NP :note "integrated appositive"
-                :Head (Nom
+                :Head (Nom :note "metalinguistic mention"
                     :Mod (Nom
                         :Head (N :p "“" :t "motor"))
                     :Head (N :t "vehicle" :p "”")))))
