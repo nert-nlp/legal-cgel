@@ -52,7 +52,7 @@
 % # sent_id = id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0
 % # text = Each State shall repay to the United States amounts found not to have been expended in accordance with this chapter.
 % # sent = each State shall repay to the United States amounts found not to have been expended in accordance with this chapter
-% # tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08)
+% # tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08) rev. nschneid+devika (2024-11-22)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -87,8 +87,8 @@
                     [\Node{Head}{N},edge={line width=1pt}[amounts]]]
                 [\Node{Mod}{Clause}
                     [\Node{Head}{VP},edge={line width=1pt}
-                        [\Node{Head}{V},edge={line width=1pt}[found]]
-                        [\Node{PredComp}{Clause}
+                        [\Node{Head}{V} \hlgreen{\Info},edge={line width=1pt}[found]]
+                        [\Node{Comp}{Clause}
                             [\Node{Mod}{AdvP}
                                 [\Node{Head}{Adv},edge={line width=1pt}[not]]]
                             [\Node{Head}{Clause},edge={line width=1pt}
@@ -114,6 +114,8 @@
                                                                                 [\Node{Head}{D},edge={line width=1pt}[this]]]
                                                                             [\Node{Head}{Nom},edge={line width=1pt}
                                                                                 [\Node{Head}{N},edge={line width=1pt}[chapter,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]
+\node at (current bounding box.south)[yshift=-1cm]{
+(1) verb licensing catenative complement (p. 1233), as opposed to predicative complement (p. 1255)};
         \end{forest}
         
 
