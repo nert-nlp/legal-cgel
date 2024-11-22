@@ -10,15 +10,14 @@
                 :Det (DP
                     :Head (D :t "the"))
                 :Head (Nom
+                    :Mod (Nom
+                        :Mod (AdjP
+                            :Head (Adj :t "United"))
+                        :Head (N :t "States"))
                     :Head (Nom
                         :Mod (Nom
-                            :Mod (AdjP
-                                :Head (Adj :t "United"))
-                            :Head (N :t "States"))
-                        :Head (Nom
-                            :Mod (Nom
-                                :Head (N :t "district"))
-                            :Head (N :t "court")))))
+                            :Head (N :t "district"))
+                        :Head (N :t "court"))))
             :Supplement (PP
                 :Head (P :t "pursuant")
                 :Comp (PP
