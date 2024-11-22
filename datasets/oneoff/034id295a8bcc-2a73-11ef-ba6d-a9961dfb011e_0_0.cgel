@@ -1,6 +1,6 @@
 # sent_id = 034id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0
 # text = Funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which is consistent with the program plan.
-# sent = funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which is consistent with the program plan
+# sent = funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which -- is consistent with the program plan
 # tree_by = nschneid (2024-11-06) rev. bwaldon (2024-11-09)
 (Coordination
     :Coordinate (Clause
