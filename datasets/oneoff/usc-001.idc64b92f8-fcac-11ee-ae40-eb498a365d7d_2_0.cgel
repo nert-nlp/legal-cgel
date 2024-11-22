@@ -7,40 +7,41 @@
         :Det (DP
             :Head (D :t "the"))
         :Head (Nom
-            :Head (N :t "Convention")
-            :Mod (PP
-                :Head (P :t "on")
-                :Obj (NP
-                    :Det (DP
-                        :Head (D :t "the"))
-                    :Head (NP
-                        :Head (Coordination
-                            :Coordinate (NP
-                                :Head (Nom
-                                    :Head (N :t "Recognition")))
-                            :Coordinate (NP
-                                :Marker (Coordinator :t "and")
-                                :Head (NP
+            :Head (Nom
+                :Head (N :t "Convention")
+                :Mod (PP
+                    :Head (P :t "on")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (NP
+                            :Head (Coordination
+                                :Coordinate (NP
                                     :Head (Nom
-                                        :Head (N :t "Enforcement")))))
-                        :Comp (PP
-                            :Head (P :t "of")
-                            :Obj (NP
-                                :Head (Nom
-                                    :Mod (AdjP
-                                        :Head (Adj :t "Foreign"))
+                                        :Head (N :t "Recognition")))
+                                :Coordinate (NP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (NP
+                                        :Head (Nom
+                                            :Head (N :t "Enforcement")))))
+                            :Comp (PP
+                                :Head (P :t "of")
+                                :Obj (NP
                                     :Head (Nom
                                         :Mod (AdjP
-                                            :Head (Adj :t "Arbitral"))
-                                        :Head (N :t "Awards" :l "award")))
-                                :Comp (PP
-                                    :Head (P :t "of")
-                                    :Obj (NP
+                                            :Head (Adj :t "Foreign"))
                                         :Head (Nom
-                                            :Head (N
-                                                :Flat (N :t "June")
-                                                :Flat (N :t "10" :xpos "CD" :p ",")
-                                                :Flat (N :t "1958" :xpos "CD" :p ","))))))))))))
+                                            :Mod (AdjP
+                                                :Head (Adj :t "Arbitral"))
+                                            :Head (N :t "Awards" :l "award")))))))))
+            :Mod (PP
+                :Head (P :t "of")
+                :Obj (NP
+                    :Head (Nom
+                        :Head (N
+                            :Flat (N :t "June")
+                            :Flat (N :t "10" :xpos "CD" :p ",")
+                            :Flat (N :t "1958" :xpos "CD" :p ",")))))))
     :Head (VP
         :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
