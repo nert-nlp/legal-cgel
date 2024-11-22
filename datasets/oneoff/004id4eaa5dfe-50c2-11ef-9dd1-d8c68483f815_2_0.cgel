@@ -1,6 +1,6 @@
 # sent_id = 004id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0
 # text = the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26.
-# sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that _. holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26
+# sent = the Attorney General may not award a grant under this subchapter to a nonprofit organization that -- holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26
 # tree_by = mebwells (2024-08-12)
 (Clause
     :Subj (NP
