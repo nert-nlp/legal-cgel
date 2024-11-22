@@ -34,7 +34,7 @@
                                             :Mod (AdjP
                                                 :Head (Adj :t "Arbitral"))
                                             :Head (N :t "Awards" :l "award")))))))))
-            :Comp (PP
+            :Mod (PP
                 :Head (P :t "of")
                 :Obj (NP
                     :Head (Nom
