@@ -16,28 +16,27 @@
                         :Head (D :t "an"))
                     :Head (Nom
                         :Head (Nom
-                            :Head (Nom
-                                :Mod (AdjP
-                                    :Head (Adj :t "actual"))
-                                :Head (N :t "dispute" :p ","))
-                            :Supplement (PP
-                                :Head (P :t "other than")
-                                :Obj (NP
-                                    :Det (DP
-                                        :Head (D :t "an"))
-                                    :Head (Nom
-                                        :Mod (AdjP
-                                            :Head (Adj :t "adversary"))
-                                        :Head (N :t "proceeding" :p ",")))))
+                            :Mod (AdjP
+                                :Head (Adj :t "actual"))
+                            :Head (N :t "dispute" :p ","))
+                        :Supplement (PP
+                            :Head (P :t "other than")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "an"))
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "adversary"))
+                                    :Head (N :t "proceeding" :p ","))))
                         :Mod (PP :note "Attaches higher due to punctuation in the sentence"
-                                        :Head (P :t "before")
-                                        :Obj (NP
-                                            :Det (DP
-                                                :Head (D :t "the"))
-                                            :Head (Nom
-                                                :Mod (Nom
-                                                    :Head (N :t "bankruptcy"))
-                                                :Head (N :t "court" :p ",")))))))))
+                            :Head (P :t "before")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "bankruptcy"))
+                                    :Head (N :t "court" :p ",")))))))))
     :Head (Clause
         :Subj (NP
             :Det (DP

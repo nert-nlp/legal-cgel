@@ -35,7 +35,7 @@
                                                 :Head (Nom
                                                     :Mod (AdjP
                                                         :Head (Adj :t "large"))
-                                                    :Head (N :t "cases" :p "," :l "case")))))))))))))
+                                                    :Head (N :t "cases" :l "case" :p ",")))))))))))))
     :Coordinate (Clause
         :Marker (Coordinator :t "but")
         :Head (Clause
@@ -94,4 +94,4 @@
                                                         :Det (DP
                                                             :Head (D :t "the"))
                                                         :Head (Nom
-                                                            :Head (N :t "claimants" :p "." :l "claimant"))))))))))))))))
+                                                            :Head (N :t "claimants" :l "claimant" :p "."))))))))))))))))
