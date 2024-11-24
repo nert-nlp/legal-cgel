@@ -52,7 +52,7 @@
 % # sent_id = 13-1
 % # text = Whenever there is an actual dispute, other than an adversary proceeding, before the bankruptcy court, the litigation to resolve that dispute is a contested matter.
 % # sent = whenever there is an actual dispute other than an adversary proceeding before the bankruptcy court the litigation to resolve that dispute is a contested matter
-% # tree_by = m3ru (2024-08-15)
+% # tree_by = m3ru (2024-08-15) rev. nschneid+mebwells+devika-tiwari+bwaldon (2024-09-27) rev. bwaldon (2024-11-11)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -75,19 +75,18 @@
                         [\Node{Head}{D},edge={line width=1pt}[an]]]
                     [\Node{Head}{Nom},edge={line width=1pt}
                         [\Node{Head}{Nom},edge={line width=1pt}
-                            [\Node{Head}{Nom},edge={line width=1pt}
-                                [\Node{Mod}{AdjP}
-                                    [\Node{Head}{Adj},edge={line width=1pt}[actual]]]
-                                [\Node{Head}{N},edge={line width=1pt}[dispute,label={right:\p{{,}}}]]]
-                            [\Node{Supplement}{PP}
-                                [\Node{Head}{P},edge={line width=1pt}[other than]]
-                                [\Node{Obj}{NP}
-                                    [\Node{Det}{DP}
-                                        [\Node{Head}{D},edge={line width=1pt}[an]]]
-                                    [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Mod}{AdjP}
-                                            [\Node{Head}{Adj},edge={line width=1pt}[adversary]]]
-                                        [\Node{Head}{N},edge={line width=1pt}[proceeding,label={right:\p{{,}}}]]]]]]
+                            [\Node{Mod}{AdjP}
+                                [\Node{Head}{Adj},edge={line width=1pt}[actual]]]
+                            [\Node{Head}{N},edge={line width=1pt}[dispute,label={right:\p{{,}}}]]]
+                        [\Node{Supplement}{PP}
+                            [\Node{Head}{P},edge={line width=1pt}[other than]]
+                            [\Node{Obj}{NP}
+                                [\Node{Det}{DP}
+                                    [\Node{Head}{D},edge={line width=1pt}[an]]]
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Mod}{AdjP}
+                                        [\Node{Head}{Adj},edge={line width=1pt}[adversary]]]
+                                    [\Node{Head}{N},edge={line width=1pt}[proceeding,label={right:\p{{,}}}]]]]]
                         [\Node{Mod}{PP} \hlgreen{\Info}
                             [\Node{Head}{P},edge={line width=1pt}[before]]
                             [\Node{Obj}{NP}

@@ -51,7 +51,7 @@
 
 % # sent_id = 19-2
 % # text = A closed circuit wire system that only originates programs and does not carry television broadcast signals would not come within the definition.
-% # sent = a closed circuit wire system that only originates programs and does not carry television broadcast signals would not come within the definition
+% # sent = a closed circuit wire system that -- only originates programs and does not carry television broadcast signals would not come within the definition
 % # tree_by = m3ru (2024-08-15)
 
         \begin{forest}
@@ -79,33 +79,32 @@
                 [\Node{Marker}{Sdr}[that]]
                 [\Node{Head}{Clause\textsubscript{rel}},edge={line width=1pt}
                     [\Node{Subj}{GAP\idx{x}}[--]]
-                    [\Node{Head}{VP},edge={line width=1pt}
-                        [\Node{Head}{Coordination},edge={line width=1pt}
-                            [\Node{Coordinate}{VP}
-                                [\Node{Mod}{AdvP}
-                                    [\Node{Head}{Adv},edge={line width=1pt}[only]]]
+                    [\Node{Head}{Coordination},edge={line width=1pt}
+                        [\Node{Coordinate}{VP}
+                            [\Node{Mod}{AdvP}
+                                [\Node{Head}{Adv},edge={line width=1pt}[only]]]
+                            [\Node{Head}{VP},edge={line width=1pt}
+                                [\Node{Head}{V},edge={line width=1pt}[originates]]
+                                [\Node{Obj}{NP}
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N},edge={line width=1pt}[programs]]]]]]
+                        [\Node{Coordinate}{VP}
+                            [\Node{Marker}{Coordinator}[and]]
+                            [\Node{Head}{VP},edge={line width=1pt}
                                 [\Node{Head}{VP},edge={line width=1pt}
-                                    [\Node{Head}{V},edge={line width=1pt}[originates]]
-                                    [\Node{Obj}{NP}
-                                        [\Node{Head}{Nom},edge={line width=1pt}
-                                            [\Node{Head}{N},edge={line width=1pt}[programs]]]]]]
-                            [\Node{Coordinate}{VP}
-                                [\Node{Marker}{Coordinator}[and]]
-                                [\Node{Head}{VP},edge={line width=1pt}
+                                    [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[does]]
+                                    [\Node{Mod}{AdvP}
+                                        [\Node{Head}{Adv},edge={line width=1pt}[not]]]]
+                                [\Node{Comp}{Clause}
                                     [\Node{Head}{VP},edge={line width=1pt}
-                                        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[does]]
-                                        [\Node{Mod}{AdvP}
-                                            [\Node{Head}{Adv},edge={line width=1pt}[not]]]]
-                                    [\Node{Comp}{Clause}
-                                        [\Node{Head}{VP},edge={line width=1pt}
-                                            [\Node{Head}{V},edge={line width=1pt}[carry]]
-                                            [\Node{Obj}{NP}
-                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{V},edge={line width=1pt}[carry]]
+                                        [\Node{Obj}{NP}
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Mod}{Nom}
                                                     [\Node{Mod}{Nom}
-                                                        [\Node{Mod}{Nom}
-                                                            [\Node{Head}{N},edge={line width=1pt}[television]]]
-                                                        [\Node{Head}{N},edge={line width=1pt}[broadcast]]]
-                                                    [\Node{Head}{N},edge={line width=1pt}[signals]]]]]]]]]]]]]]
+                                                        [\Node{Head}{N},edge={line width=1pt}[television]]]
+                                                    [\Node{Head}{N},edge={line width=1pt}[broadcast]]]
+                                                [\Node{Head}{N},edge={line width=1pt}[signals]]]]]]]]]]]]]
     [\Node{Head}{VP},edge={line width=1pt}
         [\Node{Head}{VP},edge={line width=1pt}
             [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[would]]
