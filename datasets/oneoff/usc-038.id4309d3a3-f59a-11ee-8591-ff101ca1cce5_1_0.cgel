@@ -1,0 +1,108 @@
+# sent_id = usc-038.id4309d3a3-f59a-11ee-8591-ff101ca1cce5_1_0
+# text = Any individual with respect to whom an annuity is reduced under this subsection may appeal the reduction to the Director of the Office of Personnel Management pursuant to such regulations as the Director may prescribe for purposes of this subsection.
+# sent = any individual with respect to whom an annuity is reduced -- under this subsection may appeal the reduction to the Director of the Office of Personnel Management pursuant to such regulations as the Director may prescribe for purposes of this subsection
+# tree_by = nschneid (2024-11-14)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "any"))
+        :Head (Nom
+            :Head (N :t "individual")
+            :Mod (Clause_rel
+                :Prenucleus (x / PP
+                    :Head (P :t "with")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "respect")
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (N_pro :t "whom")))))))
+                :Head (Clause_rel
+                    :Subj (NP
+                        :Det (DP
+                            :Head (D :t "an"))
+                        :Head (Nom
+                            :Head (N :t "annuity")))
+                    :Head (VP
+                        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (VP
+                                    :Head (V :t "reduced" :l "reduce" :xpos "VBN")
+                                    :Mod (x / GAP))
+                                :Mod (PP
+                                    :Head (P :t "under")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "this"))
+                                        :Head (Nom
+                                            :Head (N :t "subsection")))))))))))
+    :Head (VP
+        :Head (V_aux :t "may" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "appeal" :xpos "VB")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "reduction")))
+                    :Comp (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "Director")
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "Office")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Mod (Nom
+                                                            :Head (N :t "Personnel"))
+                                                        :Head (N :t "Management")))))))))))
+                :Mod (AdjP
+                    :Head (Adj :t "pursuant")
+                    :Comp (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "such"))
+                                    :Head (N :t "regulations" :l "regulation"))
+                                :Comp_ind (PP
+                                    :Head (P :t "as")
+                                    :Comp (Clause
+                                        :Subj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "Director")))
+                                        :Head (VP
+                                            :Head (V_aux :t "may" :xpos "MD")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Head (V :t "prescribe" :xpos "VB")
+                                                    :Mod (PP
+                                                        :Head (P :t "for")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "purposes" :l "purpose")
+                                                                :Mod (PP
+                                                                    :Head (P :t "of")
+                                                                    :Comp (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "this"))
+                                                                        :Head (Nom
+                                                                            :Head (N :t "subsection" :p "."))))))))))))))))))))
