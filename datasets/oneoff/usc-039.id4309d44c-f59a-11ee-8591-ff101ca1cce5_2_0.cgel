@@ -75,3 +75,4 @@
                                                         :Head (V_aux :t "being" :l "be" :xpos "VBG")
                                                         :PredComp (AdjP
                                                             :Head (Adj :t "satisfactory" :p "."))))))))))))))))
+
