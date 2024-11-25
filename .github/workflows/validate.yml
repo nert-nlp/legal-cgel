@@ -1,0 +1,43 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Validate treebank
+
+on:
+  push:
+    branches: [ "main" ]
+  
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Install cgel submodule dependencies
+      run: |
+        pip install -r cgel/requirements.txt
+    - name: Validate trees including tree_by, :p, and :xpos checks
+      run: |
+        N=`ls datasets/*/*.cgel | wc -l`
+        echo "checking $N files..."
+        for F in datasets/*/*.cgel; do
+          TREELINES=`egrep -v '^#' $F | wc -l`
+          if [ "$TREELINES" -ge 1 ]; then
+            python cgel/validate_trees.py --punct $F
+          fi
+        done

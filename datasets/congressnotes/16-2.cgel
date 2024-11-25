@@ -1,0 +1,65 @@
+# sent_id = 16-2
+# text = The entire rating structure for enlisted men is left to the administrative discretion of the Secretary, as in the past, for reasons of flexibility.
+# sent = the entire rating structure for enlisted men is left to the administrative discretion of the Secretary as in the past for reasons of flexibility
+# tree_by = devika-tiwari (2024-10-25) rev. bwaldon+nschneid (2024-11-13) rev. bwaldon (2024-11-15)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Mod (AdjP
+                :Head (Adj :t "entire"))
+            :Head (Nom
+                :Head (Nom
+                    :Mod (Nom
+                        :Head (N :t "rating"))
+                    :Head (N :t "structure"))
+                :Comp (PP
+                    :Head (P :t "for")
+                    :Obj (NP
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "enlisted"))
+                            :Head (N :t "men" :l "man")))))))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "left" :l "leave" :xpos "VBN")
+                    :Comp (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "administrative"))
+                                :Head (Nom
+                                    :Head (N :t "discretion")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "Secretary" :p ",")))))))))))
+        :Supplement (PP
+            :Head (P :t "as")
+            :Comp (PP
+                :Head (P :t "in")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Head (N :t "past" :p ",")))))
+        :Mod (PP
+            :Head (P :t "for")
+            :Obj (NP
+                :Head (Nom
+                    :Head (N :t "reasons" :l "reason")
+                    :Comp (PP
+                        :Head (P :t "of")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "flexibility" :p ".")))))))))
