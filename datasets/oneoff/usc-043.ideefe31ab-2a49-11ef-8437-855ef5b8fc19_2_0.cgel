@@ -1,7 +1,7 @@
 # sent_id = usc-043.ideefe31ab-2a49-11ef-8437-855ef5b8fc19_2_0
 # text = Any issuing authority which revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time and in such manner as the Secretary shall prescribe by regulations.
 # sent = any issuing authority which -- revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time and in such manner as the Secretary shall prescribe by regulations
-# tree_by = nschneid (2024-11-29)
+# tree_by = nschneid (2024-11-29) rev. bwaldon (2024-12-06)
 (Clause
     :Subj (NP
         :Det (DP
