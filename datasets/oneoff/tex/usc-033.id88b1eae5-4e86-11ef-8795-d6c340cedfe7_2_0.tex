@@ -52,7 +52,7 @@
 % # sent_id = usc-033.id88b1eae5-4e86-11ef-8795-d6c340cedfe7_2_0
 % # text = The amount authorized to be appropriated for the period of automatic extension under subsection (a) of an applicable program shall be the amount authorized to be appropriated for such program for the terminal fiscal year of the applicable program.
 % # sent = the amount authorized to be appropriated for the period of automatic extension under subsection (a) of an applicable program shall be the amount authorized to be appropriated for such program for the terminal fiscal year of the applicable program
-% # tree_by = nschneid (2024-11-25)
+% # tree_by = nschneid (2024-11-25) rev. bwaldon (2024-12-13)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -130,36 +130,37 @@
                                             [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
                                             [\Node{Comp}{Clause}
                                                 [\Node{Head}{VP},edge={line width=1pt}
-                                                    [\Node{Head}{V},edge={line width=1pt}[appropriated]]
-                                                    [\Node{Comp}{PP}
+                                                    [\Node{Head}{VP},edge={line width=1pt}
+                                                        [\Node{Head}{V},edge={line width=1pt}[appropriated]]
+                                                        [\Node{Comp}{PP}
+                                                            [\Node{Head}{P},edge={line width=1pt}[for]]
+                                                            [\Node{Obj}{NP}
+                                                                [\Node{Det}{DP}
+                                                                    [\Node{Head}{D},edge={line width=1pt}[such]]]
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Head}{N},edge={line width=1pt}[program]]]]]]
+                                                    [\Node{Mod}{PP}
                                                         [\Node{Head}{P},edge={line width=1pt}[for]]
                                                         [\Node{Obj}{NP}
                                                             [\Node{Det}{DP}
-                                                                [\Node{Head}{D},edge={line width=1pt}[such]]]
+                                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
                                                             [\Node{Head}{Nom},edge={line width=1pt}
-                                                                [\Node{Head}{N},edge={line width=1pt}[program]]
-                                                                [\Node{Mod}{PP}
-                                                                    [\Node{Head}{P},edge={line width=1pt}[for]]
-                                                                    [\Node{Obj}{NP}
-                                                                        [\Node{Det}{DP}
-                                                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
-                                                                        [\Node{Head}{Nom},edge={line width=1pt}
-                                                                            [\Node{Mod}{Nom}
-                                                                                [\Node{Head}{N},edge={line width=1pt}[terminal]]]
-                                                                            [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                [\Node{Mod}{AdjP}
-                                                                                    [\Node{Head}{Adj},edge={line width=1pt}[fiscal]]]
+                                                                [\Node{Mod}{Nom}
+                                                                    [\Node{Head}{N},edge={line width=1pt}[terminal]]]
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Mod}{AdjP}
+                                                                        [\Node{Head}{Adj},edge={line width=1pt}[fiscal]]]
+                                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                                        [\Node{Head}{N},edge={line width=1pt}[year]]
+                                                                        [\Node{Comp}{PP}
+                                                                            [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                            [\Node{Obj}{NP}
+                                                                                [\Node{Det}{DP}
+                                                                                    [\Node{Head}{D},edge={line width=1pt}[the]]]
                                                                                 [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                    [\Node{Head}{N},edge={line width=1pt}[year]]
-                                                                                    [\Node{Comp}{PP}
-                                                                                        [\Node{Head}{P},edge={line width=1pt}[of]]
-                                                                                        [\Node{Obj}{NP}
-                                                                                            [\Node{Det}{DP}
-                                                                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
-                                                                                            [\Node{Head}{Nom},edge={line width=1pt}
-                                                                                                [\Node{Mod}{AdjP}
-                                                                                                    [\Node{Head}{Adj},edge={line width=1pt}[applicable]]]
-                                                                                                [\Node{Head}{N},edge={line width=1pt}[program,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]]]]
+                                                                                    [\Node{Mod}{AdjP}
+                                                                                        [\Node{Head}{Adj},edge={line width=1pt}[applicable]]]
+                                                                                    [\Node{Head}{N},edge={line width=1pt}[program,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]
         \end{forest}
         
 
