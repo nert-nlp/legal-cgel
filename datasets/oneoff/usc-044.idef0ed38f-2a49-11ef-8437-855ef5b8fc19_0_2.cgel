@@ -1,4 +1,109 @@
 # sent_id = usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2
 # text = The term “motor vehicle” means any vehicle which is manufactured primarily for use on public streets, roads, and highways (not including a vehicle operated exclusively on a rail or rails) and which has at least 4 wheels.
-# sent = the term motor vehicle means any vehicle which is manufactured primarily for use on public streets roads and highways not including a vehicle operated exclusively on a rail or rails and which has at least 4 wheels
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the term motor vehicle means any vehicle which -- is manufactured primarily for use on public streets roads and highways not including a vehicle operated exclusively on a rail or rails and which -- has at least 4 wheels
+# tree_by = nschneid (2024-11-21)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "term")
+            :Mod (NP :note "integrated appositive"
+                :Head (Nom :note "metalinguistic mention"
+                    :Mod (Nom
+                        :Head (N :p "“" :t "motor"))
+                    :Head (N :t "vehicle" :p "”")))))
+    :Head (VP
+        :Head (V :t "means" :l "mean" :xpos "VBZ")
+        :Obj (NP
+            :Det (DP
+                :Head (D :t "any"))
+            :Head (Nom
+                :Head (N :t "vehicle")
+                :Mod (Coordination
+                    :Coordinate (Clause_rel
+                        :Prenucleus (x / NP
+                            :Head (Nom
+                                :Head (N_pro :t "which")))
+                        :Head (Clause_rel
+                            :Subj (x / GAP)
+                            :Head (VP
+                                :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (V :t "manufactured" :l "manufacture" :xpos "VBN")
+                                        :Mod (PP
+                                            :Mod (AdvP
+                                                :Head (Adv :t "primarily"))
+                                            :Head (PP
+                                                :Head (P :t "for")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "use")
+                                                        :Mod (PP
+                                                            :Head (P :t "on")
+                                                            :Obj (NP
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "public"))
+                                                                    :Head (Coordination
+                                                                        :Coordinate (Nom
+                                                                            :Head (N :t "streets" :l "street" :p ","))
+                                                                        :Coordinate (Nom
+                                                                            :Head (N :t "roads" :l "road" :p ","))
+                                                                        :Coordinate (Nom
+                                                                            :Marker (Coordinator :t "and")
+                                                                            :Head (Nom
+                                                                                :Head (N :t "highways" :l "highway"))))))))))))))))
+                    :Supplement (PP
+                        :Mod (AdvP
+                            :Head (Adv :p "(" :t "not"))
+                        :Head (PP
+                            :Head (P :t "including")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "a"))
+                                :Head (Nom
+                                    :Head (N :t "vehicle")
+                                    :Mod (Clause
+                                        :Head (VP
+                                            :Head (V :t "operated" :l "operate" :xpos "VBN")
+                                            :Mod (PP
+                                                :Mod (AdvP
+                                                    :Head (Adv :t "exclusively"))
+                                                :Head (PP
+                                                    :Head (P :t "on")
+                                                    :Obj (Coordination
+                                                        :Coordinate (NP
+                                                            :Det (DP
+                                                                :Head (D :t "a"))
+                                                            :Head (Nom
+                                                                :Head (N :t "rail")))
+                                                        :Coordinate (NP
+                                                            :Marker (Coordinator :t "or")
+                                                            :Head (NP
+                                                                :Head (Nom
+                                                                    :Head (N :t "rails" :l "rail" :p ")")))))))))))))
+                    :Coordinate (Clause_rel
+                        :Marker (Coordinator :t "and")
+                        :Head (Clause_rel
+                            :Prenucleus (y / NP
+                                :Head (Nom
+                                    :Head (N_pro :t "which")))
+                            :Head (Clause_rel
+                                :Subj (y / GAP)
+                                :Head (VP
+                                    :Head (V :t "has" :l "have" :xpos "VBZ")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Mod (PP
+                                                :Head (P :t "at")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (Nom
+                                                            :Mod-Head (AdjP
+                                                                :Head (Adj :t "least"))))))
+                                            :Head (D :t "4" :xpos "CD"))
+                                        :Head (Nom
+                                            :Head (N :t "wheels" :l "wheel" :p "."))))))))))))
+
