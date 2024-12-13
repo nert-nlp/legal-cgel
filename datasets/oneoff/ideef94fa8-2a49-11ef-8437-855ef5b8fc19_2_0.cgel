@@ -10,14 +10,14 @@
             :Head (Nom
                 :Head (N :t "credit")))
         :Head (VP
-            :Head (V_aux :t "shall")
+            :Head (V_aux :t "shall" :xpos "MD")
             :Comp (Clause
                 :Head (VP
-                    :Head (V_aux :t "be")
+                    :Head (V_aux :t "be" :xpos "VB")
                     :Comp (Clause
                         :Head (VP
                             :Head (VP
-                                :Head (V :t "allowed")
+                                :Head (V :t "allowed" :l "allow" :xpos "VBN")
                                 :Mod (PP
                                     :Head (P :t "under")
                                     :Obj (NP
@@ -44,7 +44,7 @@
                     :Head (Clause
                         :Subj (NP
                             :Head (Nom
-                                :Head (N :t "funds")
+                                :Head (N :t "funds" :l "fund")
                                 :Mod (PP
                                     :Head (P :t "for")
                                     :Obj (NP
@@ -53,10 +53,10 @@
                                         :Head (Nom
                                             :Head (N :t "expense"))))))
                         :Head (VP
-                            :Head (V_aux :t "are")
+                            :Head (V_aux :t "are" :l "be" :xpos "VBP")
                             :Comp (Clause
                                 :Head (VP
-                                    :Head (V :t "received")
+                                    :Head (V :t "received" :l "receive" :xpos "VBN")
                                     :Comp (PP
                                         :Head (P :t "under")
                                         :Obj (NP
