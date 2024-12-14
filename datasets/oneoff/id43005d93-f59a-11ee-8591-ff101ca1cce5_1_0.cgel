@@ -66,6 +66,6 @@
                                                                         :Head (P :t "as")
                                                                         :PredComp (NP
                                                                             :Det (DP
-                                                                                :Head (D :p "``" :t "the"))
+                                                                                :Head (D :p "“" :t "the"))
                                                                             :Head (Nom
-                                                                                :Head (N :t "Committee" :p "''" :p ")" :p ".")))))))))))))))))))))
+                                                                                :Head (N :t "Committee" :p "”" :p ")" :p ".")))))))))))))))))))))
