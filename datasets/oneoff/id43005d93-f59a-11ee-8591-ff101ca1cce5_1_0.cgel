@@ -39,7 +39,7 @@
                                                             :Mod (AdjP
                                                                 :Head (Adj :t "Advisory"))
                                                             :Head (N :t "Committee"))
-                                                        :Mod (PP
+                                                        :Comp (PP
                                                             :Head (P :t "on")
                                                             :Obj (NP
                                                                 :Head (Nom
