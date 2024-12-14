@@ -21,7 +21,7 @@
                             :Mod (AdjP
                                 :Head (Adj :t "advisory"))
                             :Head (N :t "committee"))
-                        :Mod (Clause
+                        :Supp (Clause
                             :Head (VP
                                 :Marker (Sdr :t "to")
                                 :Head (VP
