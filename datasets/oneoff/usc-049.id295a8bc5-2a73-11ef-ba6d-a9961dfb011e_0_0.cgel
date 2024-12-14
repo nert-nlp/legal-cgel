@@ -9,18 +9,18 @@
     :Head (VP
         :Head (VP
             :Head (VP
-                :Head (V_aux :t "is")
+                :Head (V_aux :t "is" :xpos "VBZ" :l "be")
                 :PredComp (Clause
                     :Head (VP
-                        :Head (V :t "authorized")
+                        :Head (V :t "authorized" :xpos "VBN" :l "authorize")
                         :Comp (Clause
                             :Head (VP
                                 :Marker (Sdr :t "to")
                                 :Head (VP
-                                    :Head (V_aux :t "be")
+                                    :Head (V_aux :t "be" :xpos "VB")
                                     :Comp (Clause
                                         :Head (VP
-                                            :Head (V :t "appropriated" :p ",")
+                                            :Head (V :t "appropriated" :p "," :xpos "VBN" :l "appropriate")
                                             :Supplement (PP
                                                 :Head (P :t "out")
                                                 :Comp (PP
@@ -45,12 +45,12 @@
                                                                     :Head (VP
                                                                         :Mod (AdvP
                                                                             :Head (Adv :t "otherwise"))
-                                                                        :Head (V :t "appropriated" :p ",")))))))))))))))
+                                                                        :Head (V :t "appropriated" :p "," :xpos "VBN" :l "appropriate")))))))))))))))
                 :DisplacedSubj (NP
                     :Head (Nom
                         :Mod (AdjP
                             :Head (Adj :t "such"))
-                        :Head (N :t "amounts"))))
+                        :Head (N :t "amounts" :l "amount"))))
             :Mod (PP
                 :Head (PP
                     :Head (P :t "from")
@@ -71,24 +71,24 @@
                     :Head (Nom
                         :Head (N :t "Congress")))
                 :Head (VP
-                    :Head (V :t "may")
+                    :Head (V :t "may" :xpos "MD")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V :t "deem")
+                            :Head (V :t "deem" :xpos "VB")
                             :PredComp (AdjP
                                 :Head (Adj :t "necessary")
                                 :Comp (Clause
                                     :Head (VP
                                         :Marker (Sdr :t "to")
                                         :Head (VP
-                                            :Head (V :t "carry")
+                                            :Head (V :t "carry" :xpos "VB")
                                             :Particle (PP
                                                 :Head (P :t "out"))
                                             :Obj (NP
                                                 :Det (DP
                                                     :Head (D :t "the"))
                                                 :Head (Nom
-                                                    :Head (N :t "purposes")
+                                                    :Head (N :t "purposes" :l "purpose")
                                                     :Comp (PP
                                                         :Head (P :t "of")
                                                         :Obj (NP
