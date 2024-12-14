@@ -36,8 +36,8 @@
                                                         :Head (D :t "the"))
                                                     :Head (Nom
                                                         :Head (Nom
-                                                            :Mod (Nom
-                                                                :Head (N :t "Advisory"))
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "Advisory"))
                                                             :Head (N :t "Committee"))
                                                         :Mod (PP
                                                             :Head (P :t "on")
