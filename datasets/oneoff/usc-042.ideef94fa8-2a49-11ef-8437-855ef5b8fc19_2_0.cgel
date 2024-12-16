@@ -18,7 +18,7 @@
                         :Head (VP
                             :Head (VP
                                 :Head (V :t "allowed" :l "allow" :xpos "VBN")
-                                :Mod (PP
+                                :Comp (PP
                                     :Head (P :t "under")
                                     :Obj (NP
                                         :Head (Nom
@@ -57,7 +57,7 @@
                             :Comp (Clause
                                 :Head (VP
                                     :Head (V :t "received" :l "receive" :xpos "VBN")
-                                    :Comp (PP
+                                    :Mod (PP
                                         :Head (P :t "under")
                                         :Obj (NP
                                             :Det (DP
