@@ -52,7 +52,7 @@
 % # sent_id = usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0
 % # text = The Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10, 1958, shall be enforced in United States courts in accordance with this chapter.
 % # sent = the Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10 1958 shall be enforced in United States courts in accordance with this chapter
-% # tree_by = mebwells (2024-08-13)
+% # tree_by = mebwells (2024-08-13) rev. bwaldon (2024-09-17)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -66,40 +66,41 @@
         [\Node{Det}{DP}
             [\Node{Head}{D},edge={line width=1pt}[the]]]
         [\Node{Head}{Nom},edge={line width=1pt}
-            [\Node{Head}{N},edge={line width=1pt}[Convention]]
-            [\Node{Mod}{PP}
-                [\Node{Head}{P},edge={line width=1pt}[on]]
-                [\Node{Obj}{NP}
-                    [\Node{Det}{DP}
-                        [\Node{Head}{D},edge={line width=1pt}[the]]]
-                    [\Node{Head}{NP},edge={line width=1pt}
-                        [\Node{Head}{Coordination},edge={line width=1pt}
-                            [\Node{Coordinate}{NP}
-                                [\Node{Head}{Nom},edge={line width=1pt}
-                                    [\Node{Head}{N},edge={line width=1pt}[Recognition]]]]
-                            [\Node{Coordinate}{NP}
-                                [\Node{Marker}{Coordinator}[and]]
-                                [\Node{Head}{NP},edge={line width=1pt}
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N},edge={line width=1pt}[Convention]]
+                [\Node{Mod}{PP}
+                    [\Node{Head}{P},edge={line width=1pt}[on]]
+                    [\Node{Obj}{NP}
+                        [\Node{Det}{DP}
+                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                        [\Node{Head}{NP},edge={line width=1pt}
+                            [\Node{Head}{Coordination},edge={line width=1pt}
+                                [\Node{Coordinate}{NP}
                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Head}{N},edge={line width=1pt}[Enforcement]]]]]]
-                        [\Node{Comp}{PP}
-                            [\Node{Head}{P},edge={line width=1pt}[of]]
-                            [\Node{Obj}{NP}
-                                [\Node{Head}{Nom},edge={line width=1pt}
-                                    [\Node{Mod}{AdjP}
-                                        [\Node{Head}{Adj},edge={line width=1pt}[Foreign]]]
+                                        [\Node{Head}{N},edge={line width=1pt}[Recognition]]]]
+                                [\Node{Coordinate}{NP}
+                                    [\Node{Marker}{Coordinator}[and]]
+                                    [\Node{Head}{NP},edge={line width=1pt}
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[Enforcement]]]]]]
+                            [\Node{Comp}{PP}
+                                [\Node{Head}{P},edge={line width=1pt}[of]]
+                                [\Node{Obj}{NP}
                                     [\Node{Head}{Nom},edge={line width=1pt}
                                         [\Node{Mod}{AdjP}
-                                            [\Node{Head}{Adj},edge={line width=1pt}[Arbitral]]]
-                                        [\Node{Head}{N},edge={line width=1pt}[Awards]]]]
-                                [\Node{Comp}{PP}
-                                    [\Node{Head}{P},edge={line width=1pt}[of]]
-                                    [\Node{Obj}{NP}
+                                            [\Node{Head}{Adj},edge={line width=1pt}[Foreign]]]
                                         [\Node{Head}{Nom},edge={line width=1pt}
-                                            [\Node{Head}{N},edge={line width=1pt}
-                                                [\Node{Flat}{N}[June]]
-                                                [\Node{Flat}{N}[10,label={right:\p{{,}}}]]
-                                                [\Node{Flat}{N}[1958,label={right:\p{{,}}}]]]]]]]]]]]]]
+                                            [\Node{Mod}{AdjP}
+                                                [\Node{Head}{Adj},edge={line width=1pt}[Arbitral]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[Awards]]]]]]]]]]
+            [\Node{Mod}{PP}
+                [\Node{Head}{P},edge={line width=1pt}[of]]
+                [\Node{Obj}{NP}
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Head}{N},edge={line width=1pt}
+                            [\Node{Flat}{N}[June]]
+                            [\Node{Flat}{N}[10,label={right:\p{{,}}}]]
+                            [\Node{Flat}{N}[1958,label={right:\p{{,}}}]]]]]]]]
     [\Node{Head}{VP},edge={line width=1pt}
         [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
         [\Node{Comp}{Clause}
