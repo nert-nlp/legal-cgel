@@ -59,13 +59,15 @@ jobs:
           cache: 'pip'
       - run: pip install -r cgel/requirements.txt
 
-      - name: Setup TeX Live
-        uses: teatimeguest/setup-texlive-action@e69e0852590264df4a35dbc6cc94009a2466a562
-        with:
-          packages: |
-            scheme-full
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
       - name: Generate .tex and .pdf files
+        env:
+          SERVICE_URL: ${{ secrets.LATEX_SERVICE_URL }}
+          CREDS: ${{ secrets.TEXLIVE_API_CREDS }}
         run: |
           mkdir -p datasets/oneoff/tex
           mkdir -p datasets/oneoff/pdf
@@ -76,7 +78,7 @@ jobs:
               # make .tex
               python cgel/tree2tex.py "${changed_file}" > "datasets/oneoff/tex/$tree_name.tex"
               # make .pdf 
-              pdflatex -output-directory=datasets/oneoff/pdf "datasets/oneoff/tex/$tree_name.tex"
+              jq -n --arg latex "$(cat datasets/oneoff/tex/$tree_name.tex)" '{"latex_code": $latex}' | curl -X POST "$SERVICE_URL" -u $CREDS -H "Content-Type: application/json" -d @- --output datasets/oneoff/pdf/$tree_name.pdf
             fi
           done   
 
