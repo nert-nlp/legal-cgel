@@ -1,0 +1,103 @@
+# sent_id = usc-003.ida377c234-f599-11ee-b05d-9a0a8a5eaa8d_2_0
+# text = The provisions of this section, or any failure by the Corporation to comply with such provisions, may not be used by any person to attack or defeat any title to property after it is conveyed by the Corporation.
+# sent = the provisions of this section or any failure by the Corporation to comply with such provisions may not be used by any person to attack or defeat any title to property after it is conveyed by the Corporation
+# tree_by = mebwells (2024-08-14) rev. bwaldon (2024-09-17) ed. mewbwells (2024-09-20)
+(Clause
+    :Subj (Coordination
+        :Coordinate (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "provisions" :l "provision")
+                :Comp (PP
+                    :Head (P :t "of")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "this"))
+                        :Head (Nom
+                            :Head (N :t "section" :p ","))))))
+        :Coordinate (NP
+            :Marker (Coordinator :t "or")
+            :Head (NP
+                :Det (DP
+                    :Head (D :t "any"))
+                :Head (Nom
+                    :Head (Nom
+                        :Head (N :t "failure")
+                        :Comp (PP
+                            :Head (P :t "by")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "Corporation")))))
+                    :Comp (Clause
+                        :Head (VP
+                            :Marker (Sdr :t "to")
+                            :Head (VP
+                                :Head (V :t "comply" :xpos "VB")
+                                :Comp (PP
+                                    :Head (P :t "with")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "such"))
+                                            :Head (N :t "provisions" :l "provision" :p ",")))))))))))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "may" :xpos "MD")
+            :Mod (AdvP
+                :Head (Adv :t "not")))
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "used" :l "use" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "by")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "any"))
+                                :Head (Nom
+                                    :Head (N :t "person"))))
+                        :Comp (Clause
+                            :Head (VP
+                                :Marker (Sdr :t "to")
+                                :Head (VP
+                                    :Head (VP
+                                        :Head (Coordination
+                                            :Coordinate (VP
+                                                :Head (V :t "attack" :xpos "VB"))
+                                            :Coordinate (VP
+                                                :Marker (Coordinator :t "or")
+                                                :Head (VP
+                                                    :Head (V :t "defeat" :xpos "VB"))))
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "any"))
+                                            :Head (Nom
+                                                :Head (N :t "title")
+                                                :Comp (PP
+                                                    :Head (P :t "to")
+                                                    :Obj (NP
+                                                        :Head (Nom
+                                                            :Head (N :t "property")))))))
+                                    :Mod (PP
+                                        :Head (P :t "after")
+                                        :Comp (Clause
+                                            :Subj (NP
+                                                :Head (Nom
+                                                    :Head (N_pro :t "it")))
+                                            :Head (VP
+                                                :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                                :Comp (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "conveyed" :l "convey" :xpos "VBN")
+                                                        :Comp (PP
+                                                            :Head (P :t "by")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "Corporation" :p "."))))))))))))))))))

@@ -59,7 +59,7 @@ If a difficult analytical choice is justified in part by appealing to an authori
 
 ## Dealing with legal terms of art
 
-Legal terms of art should be analyzed as constituents. Terms of art consisting of multiple tokens include: *adversary proceeding*, *due process rights*, *Attorney General*.
+Legal terms of art should be analyzed as constituents. Terms of art consisting of multiple tokens include: *adversary proceeding*, *due process rights*, *Attorney General*, *Comptroller General*, *adverse effects*
 
 If an annotator's analysis depends on analyzing a sequence of tokens as a term of art, and that sequence doesn't appear in the above list, the annotator should flag this for the reviewer. If the reviewer and annotator agree on the analysis, then the sequence should be added to the list.
 

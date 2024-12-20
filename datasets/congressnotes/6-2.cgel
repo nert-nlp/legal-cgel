@@ -1,0 +1,75 @@
+# sent_id = 6-2
+# text = The Public Roads Administration is primarily engaged in planning and financing the development of the highways which provide the essential facilities for motor transportation throughout the country.
+# sent = the Public Roads Administration is primarily engaged in planning and financing the development of the highways which -- provide the essential facilities for motor transportation throughout the country
+# tree_by = devika-tiwari (2024-10-25) rev. nschneid+mebwells+m3ru+bwaldon (2024-10-25) rev. bwaldon (2024-11-13)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Mod (Nom
+                :Mod (AdjP
+                    :Head (Adj :t "Public"))
+                :Head (N :t "Roads" :l "road"))
+            :Head (N :t "Administration")))
+    :Head (VP
+        :Head (V_aux :t "is" :xpos "VBZ")
+        :PredComp (AdjP
+            :Mod (AdvP
+                :Head (Adv :t "primarily"))
+            :Head (AdjP
+                :Head (Adj :t "engaged")
+                :Comp (PP
+                    :Head (P :t "in")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (Coordination
+                                :Coordinate (VP
+                                    :Head (V :t "planning" :l "plan" :xpos "VBG"))
+                                :Coordinate (VP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (VP
+                                        :Head (V :t "financing" :l "finance" :xpos "VBG"))))
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "development")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "highways" :l "highway")
+                                                :Mod (Clause_rel
+                                                    :Prenucleus (x / NP
+                                                        :Head (Nom
+                                                            :Head (N_pro :t "which")))
+                                                    :Head (Clause_rel
+                                                        :Subj (x / GAP)
+                                                        :Head (VP
+                                                            :Head (V :t "provide" :xpos "VBP")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "essential"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "facilities" :l "facility")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "for")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Head (Nom
+                                                                                        :Mod (AdjP
+                                                                                            :Head (Adj :t "motor"))
+                                                                                        :Head (N :t "transportation"))
+                                                                                    :Mod (PP
+                                                                                        :Head (P :t "throughout")
+                                                                                        :Obj (NP
+                                                                                            :Det (DP
+                                                                                                :Head (D :t "the"))
+                                                                                            :Head (Nom
+                                                                                                :Head (N :t "country" :p ".")))))))))))))))))))))))))
