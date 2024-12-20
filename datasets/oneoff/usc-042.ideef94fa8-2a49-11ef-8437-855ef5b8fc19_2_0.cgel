@@ -1,4 +1,76 @@
 # sent_id = usc-042.ideef94fa8-2a49-11ef-8437-855ef5b8fc19_2_0
 # text = No credit shall be allowed under subsection (a) for any expense to the extent that funds for such expense are received under any Federal, State, or local program.
 # sent = no credit shall be allowed under subsection a for any expense to the extent that funds for such expense are received under any Federal State or local program
-# tree_by = bwaldon (YYYY-MM-DD)
+# tree_by = bwaldon (2024-12-14)
+(Clause
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "no"))
+            :Head (Nom
+                :Head (N :t "credit")))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (VP
+                                :Head (V :t "allowed" :l "allow" :xpos "VBN")
+                                :Comp (PP
+                                    :Head (P :t "under")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Mod (Nom
+                                                :Head (N :t "subsection"))
+                                            :Head (N :p "(" :t "a" :p ")")))))
+                            :Mod (PP
+                                :Head (P :t "for")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "any"))
+                                    :Head (Nom
+                                        :Head (N :t "expense"))))))))))
+    :Mod (PP
+        :Head (P :t "to")
+        :Obj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "extent")
+                :Comp (Clause
+                    :Marker (Sdr :t "that" :note "treating 'to the extent that' as an idiom w/ clausal complement")
+                    :Head (Clause
+                        :Subj (NP
+                            :Head (Nom
+                                :Head (N :t "funds" :l "fund")
+                                :Mod (PP
+                                    :Head (P :t "for")
+                                    :Obj (NP
+                                        :Mod (DP
+                                            :Head (D :t "such"))
+                                        :Head (Nom
+                                            :Head (N :t "expense"))))))
+                        :Head (VP
+                            :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (V :t "received" :l "receive" :xpos "VBN")
+                                    :Mod (PP
+                                        :Head (P :t "under")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "any"))
+                                            :Head (Nom
+                                                :Mod (Coordination
+                                                    :Coordinate (AdjP
+                                                        :Head (Adj :t "Federal" :p ","))
+                                                    :Coordinate (NP
+                                                        :Head (Nom
+                                                            :Head (N :t "State" :p ",")))
+                                                    :Coordinate (AdjP
+                                                        :Marker (Coordinator :t "or")
+                                                        :Head (AdjP
+                                                            :Head (Adj :t "local"))))
+                                                :Head (N :t "program" :p ".")))))))))))))
