@@ -147,4 +147,3 @@
                                                         :Mod (AdjP
                                                             :Head (Adj :t "own"))
                                                         :Head (N :t "equipment" :p ".")))))))))))))))
-
