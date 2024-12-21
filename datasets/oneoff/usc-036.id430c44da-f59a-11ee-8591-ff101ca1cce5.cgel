@@ -1,4 +1,91 @@
 # sent_id = usc-036.id430c44da-f59a-11ee-8591-ff101ca1cce5
 # text = The Secretary may pay an allowance under this section for the purchase of uniforms to any Department police officer who is required to wear a prescribed uniform in the performance of official duties.
-# sent = the Secretary may pay an allowance under this section for the purchase of uniforms to any Department police officer who is required to wear a prescribed uniform in the performance of official duties
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the Secretary may pay an allowance under this section for the purchase of uniforms to any Department police officer who -- is required to wear a prescribed uniform in the performance of official duties
+# tree_by = nschneid (2024-12-14) rev. bwaldon (2024-12-20)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")))
+    :Head (VP
+        :Head (V_aux :t "may" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "pay" :xpos "VB")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "an"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Head (N :t "allowance")
+                            :Mod (PP
+                                :Head (P :t "under")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "this"))
+                                    :Head (Nom
+                                        :Head (N :t "section")))))
+                        :Comp (PP
+                            :Head (P :t "for")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "purchase")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Head (V :t "uniforms" :l "uniform")))))))))
+                :Comp (PP
+                    :Head (P :t "to")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "any"))
+                        :Head (Nom
+                            :Head (Nom
+                                :Mod (Nom
+                                    :Head (N :t "Department"))
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "police"))
+                                    :Head (N :t "officer")))
+                            :Mod (Clause_rel
+                                :Prenucleus (x / NP
+                                    :Head (Nom
+                                        :Head (N_pro :t "who")))
+                                :Head (Clause_rel
+                                    :Subj (x / GAP)
+                                    :Head (VP
+                                        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Head (V :t "required" :l "require" :xpos "VBN")
+                                                :Comp (Clause
+                                                    :Head (VP
+                                                        :Marker (Sdr :t "to")
+                                                        :Head (VP
+                                                            :Head (VP
+                                                                :Head (V :t "wear" :xpos "VB")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "a"))
+                                                                    :Head (Nom
+                                                                        :Mod (AdjP
+                                                                            :Head (Adj :t "prescribed"))
+                                                                        :Head (N :t "uniform"))))
+                                                            :Mod (PP
+                                                                :Head (P :t "in")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "the"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "performance")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "of")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Mod (AdjP
+                                                                                        :Head (Adj :t "official"))
+                                                                                    :Head (N :t "duties" :l "duty" :p "."))))))))))))))))))))))

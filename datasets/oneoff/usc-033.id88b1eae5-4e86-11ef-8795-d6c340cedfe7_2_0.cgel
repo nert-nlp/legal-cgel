@@ -1,4 +1,104 @@
 # sent_id = usc-033.id88b1eae5-4e86-11ef-8795-d6c340cedfe7_2_0
 # text = The amount authorized to be appropriated for the period of automatic extension under subsection (a) of an applicable program shall be the amount authorized to be appropriated for such program for the terminal fiscal year of the applicable program.
-# sent = the amount authorized to be appropriated for the period of automatic extension under subsection a of an applicable program shall be the amount authorized to be appropriated for such program for the terminal fiscal year of the applicable program
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the amount authorized to be appropriated for the period of automatic extension under subsection (a) of an applicable program shall be the amount authorized to be appropriated for such program for the terminal fiscal year of the applicable program
+# tree_by = nschneid (2024-11-25) rev. bwaldon (2024-12-13)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "amount")
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "authorized" :l "authorize" :xpos "VBN")
+                    :Comp (Clause
+                        :Head (VP
+                            :Marker (Sdr :t "to")
+                            :Head (VP
+                                :Head (V_aux :t "be" :xpos "VB")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (V :t "appropriated" :l "appropriate" :xpos "VBN")
+                                        :Mod (PP
+                                            :Head (P :t "for")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "period")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Mod (AdjP
+                                                                    :Head (Adj :t "automatic"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "extension")
+                                                                    :Mod (PP
+                                                                        :Head (P :t "under")
+                                                                        :Obj (NP
+                                                                            :Head (Nom
+                                                                                :Head (Nom
+                                                                                    :Mod (Nom
+                                                                                        :Head (N :t "subsection"))
+                                                                                    :Head (N :t "(a)"))
+                                                                                :Comp (PP
+                                                                                    :Head (P :t "of")
+                                                                                    :Obj (NP
+                                                                                        :Det (DP
+                                                                                            :Head (D :t "an"))
+                                                                                        :Head (Nom
+                                                                                            :Mod (AdjP
+                                                                                                :Head (Adj :t "applicable"))
+                                                                                            :Head (N :t "program")))))))))))))))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :PredComp (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Head (N :t "amount")
+                        :Mod (Clause
+                            :Head (VP
+                                :Head (V :t "authorized" :l "authorize" :xpos "VBN")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Marker (Sdr :t "to")
+                                        :Head (VP
+                                            :Head (V_aux :t "be" :xpos "VB")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Head (VP
+                                                        :Head (V :t "appropriated" :l "appropriate" :xpos "VBN")
+                                                        :Comp (PP
+                                                            :Head (P :t "for")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "such"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "program")))))
+                                                    :Mod (PP
+                                                        :Head (P :t "for")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Mod (Nom
+                                                                    :Head (N :t "terminal"))
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "fiscal"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "year")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "of")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "the"))
+                                                                                :Head (Nom
+                                                                                    :Mod (AdjP
+                                                                                        :Head (Adj :t "applicable"))
+                                                                                    :Head (N :t "program" :p "."))))))))))))))))))))))

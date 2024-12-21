@@ -1,4 +1,112 @@
 # sent_id = usc-016.id2bb36f8b-2a73-11ef-880b-d748b6d8dd9e_1_0
 # text = Civilian employees of the National Guard performing services for the Program and contractor personnel performing such services may be required, when appropriate to achieve the purposes of the Program, to be members of the National Guard and to wear the military uniform.
 # sent = civilian employees of the National Guard performing services for the Program and contractor personnel performing such services may be required when appropriate to achieve the purposes of the Program to be members of the National Guard and to wear the military uniform
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = nschneid (2024-11-16) rev. bwaldon (2024-12-13)
+(Clause
+    :Subj (Coordination
+        :Coordinate (NP
+            :Head (Nom
+                :Head (Nom
+                    :Mod (Nom
+                        :Head (N :t "civilian"))
+                    :Head (Nom
+                        :Head (N :t "employees" :l "employee")
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "National"))
+                                    :Head (N :t "Guard"))))))
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "performing" :l "perform" :xpos "VBG")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "services" :l "service")
+                                :Mod (PP
+                                    :Head (P :t "for")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "Program"))))))))))
+        :Coordinate (NP
+            :Marker (Coordinator :t "and")
+            :Head (NP
+                :Head (Nom
+                    :Head (Nom
+                        :Mod (Nom
+                            :Head (N :t "contractor"))
+                        :Head (N :t "personnel"))
+                    :Mod (Clause
+                        :Head (VP
+                            :Head (V :t "performing" :l "perform" :xpos "VBG")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Det (DP
+                                        :Head (D :t "such"))
+                                    :Head (N :t "services" :l "service")))))))))
+    :Head (VP
+        :Head (V_aux :t "may" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "required" :l "require" :xpos "VBN" :p ",")
+                        :Supplement (PP
+                            :Head (P :t "when")
+                            :Comp (AdjP :note "reduced clause"
+                                :Head (Adj :t "appropriate")
+                                :Mod (Clause
+                                    :Head (VP
+                                        :Marker (Sdr :t "to")
+                                        :Head (VP
+                                            :Head (V :t "achieve" :xpos "VB")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "purposes" :l "purpose")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Head (N :t "Program" :p ",")))))))))))
+                        :Comp (Coordination
+                            :Coordinate (Clause
+                                :Head (VP
+                                    :Marker (Sdr :t "to")
+                                    :Head (VP
+                                        :Head (V_aux :t "be" :xpos "VB")
+                                        :PredComp (NP
+                                            :Head (Nom
+                                                :Head (N :t "members" :l "member")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "National"))
+                                                            :Head (N :t "Guard")))))))))
+                            :Coordinate (Clause
+                                :Marker (Coordinator :t "and")
+                                :Head (Clause
+                                    :Head (VP
+                                        :Marker (Sdr :t "to")
+                                        :Head (VP
+                                            :Head (V :t "wear" :xpos "VB")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "military"))
+                                                    :Head (N :t "uniform" :p "."))))))))))))))
