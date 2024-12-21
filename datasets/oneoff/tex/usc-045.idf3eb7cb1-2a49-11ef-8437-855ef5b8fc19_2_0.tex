@@ -52,7 +52,7 @@
 % # sent_id = usc-045.idf3eb7cb1-2a49-11ef-8437-855ef5b8fc19_2_0
 % # text = Any officer or employee of the Internal Revenue Service in connection with any in-person interview with any taxpayer relating to the determination or collection of any tax shall, upon advance request of such taxpayer, allow the taxpayer to make an audio recording of such interview at the taxpayer’s own expense and with the taxpayer’s own equipment.
 % # sent = any officer or employee of the Internal Revenue Service in connection with any inperson interview with any taxpayer relating to the determination or collection of any tax shall upon advance request of such taxpayer allow the taxpayer to make an audio recording of such interview at the taxpayers own expense and with the taxpayers own equipment
-% # tree_by = nschneid (2024-11-15)
+% # tree_by = nschneid (2024-11-15) rev. bwaldon (2024-12-13)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -173,9 +173,9 @@
                                             [\Node{Comp}{PP}
                                                 [\Node{Head}{P},edge={line width=1pt}[of]]
                                                 [\Node{Obj}{NP}
+                                                    [\Node{Det}{DP}
+                                                        [\Node{Head}{D},edge={line width=1pt}[such]]]
                                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                                        [\Node{Mod}{AdjP}
-                                                            [\Node{Head}{Adj},edge={line width=1pt}[such]]]
                                                         [\Node{Head}{N},edge={line width=1pt}[interview]]]]]]]]
                                 [\Node{Mod}{Coordination}
                                     [\Node{Coordinate}{PP}
