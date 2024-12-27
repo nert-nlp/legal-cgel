@@ -1,7 +1,7 @@
 # sent_id = usc-036.id430c44da-f59a-11ee-8591-ff101ca1cce5
 # text = The Secretary may pay an allowance under this section for the purchase of uniforms to any Department police officer who is required to wear a prescribed uniform in the performance of official duties.
 # sent = the Secretary may pay an allowance under this section for the purchase of uniforms to any Department police officer who -- is required to wear a prescribed uniform in the performance of official duties
-# tree_by = nschneid (2024-12-14) rev. bwaldon (2024-12-20)
+# tree_by = nschneid (2024-12-14) rev. bwaldon (2024-12-20) rev. nschneid (2024-12-27)
 (Clause
     :Subj (NP
         :Det (DP
@@ -35,9 +35,9 @@
                                     :Head (N :t "purchase")
                                     :Comp (PP
                                         :Head (P :t "of")
-                                        :Comp (Clause
-                                            :Head (VP
-                                                :Head (V :t "uniforms" :l "uniform")))))))))
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "uniforms" :l "uniform")))))))))
                 :Comp (PP
                     :Head (P :t "to")
                     :Obj (NP
@@ -89,3 +89,4 @@
                                                                                     :Mod (AdjP
                                                                                         :Head (Adj :t "official"))
                                                                                     :Head (N :t "duties" :l "duty" :p "."))))))))))))))))))))))
+
