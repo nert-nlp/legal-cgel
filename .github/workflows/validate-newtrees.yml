@@ -57,9 +57,10 @@ jobs:
             if [[ "$changed_file" == **.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
-              TREELINES=`egrep -v '^#' $changed_file | wc -l`
+              TREELINES=`egrep -v '^#' "$changed_file" | wc -l`
               if [ "$TREELINES" -ge 1 ]; then
-                python cgel/validate_trees.py --punct $changed_file
+                python cgel/validate_trees.py --punct "$changed_file"
               fi
+            fi
           done
   
