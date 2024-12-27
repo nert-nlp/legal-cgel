@@ -1,7 +1,7 @@
 # sent_id = usc-040.id43005d93-f59a-11ee-8591-ff101ca1cce5_1_0
 # text = The Secretary shall establish an advisory committee to be known as the Advisory Committee on Minority Veterans (hereinafter in this section referred to as “the Committee”).
 # sent = the Secretary shall establish an advisory committee to be known as the Advisory Committee on Minority Veterans hereinafter in this section referred to as the Committee
-# tree_by = bwaldon (2024-11-15) rev. nschneid (2024-11-15)
+# tree_by = bwaldon (2024-11-15) rev. nschneid (2024-11-15) rev. nschneid (2024-12-27)
 (Clause
     :Subj (NP
         :Det (DP
@@ -21,7 +21,7 @@
                             :Mod (AdjP
                                 :Head (Adj :t "advisory"))
                             :Head (N :t "committee"))
-                        :Supp (Clause
+                        :Supplement (Clause
                             :Head (VP
                                 :Marker (Sdr :t "to")
                                 :Head (VP
@@ -69,3 +69,4 @@
                                                                                 :Head (D :p "“" :t "the"))
                                                                             :Head (Nom
                                                                                 :Head (N :t "Committee" :p "”" :p ")" :p ".")))))))))))))))))))))
+
