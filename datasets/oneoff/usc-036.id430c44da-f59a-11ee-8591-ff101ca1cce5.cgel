@@ -35,9 +35,9 @@
                                     :Head (N :t "purchase")
                                     :Comp (PP
                                         :Head (P :t "of")
-                                        :Comp (Clause
-                                            :Head (VP
-                                                :Head (V :t "uniforms" :l "uniform")))))))))
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "uniforms" :l "uniform")))))))))
                 :Comp (PP
                     :Head (P :t "to")
                     :Obj (NP
