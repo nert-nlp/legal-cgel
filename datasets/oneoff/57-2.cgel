@@ -68,42 +68,44 @@
         :Comp (Clause
             :Head (VP
                 :Head (V_aux :t "be")
-                :Comp (Coordination
-                    :Coordinate (VP
-                        :Head (V :t "fined")
-                        :Obj (NP
-                            :Det (DP
-                                :Mod (AdvP
-                                    :Head (Adv :t "not"))
-                                :Head (DP
-                                    :Head (D :t "more" :note "comparative degree determinative, CGEL p. 432")
-                                    :Comp (PP
-                                        :Head (P :t "than")
-                                        :Obj (NP
-                                            :Head (Nom
-                                                :Det-Head (DP
-                                                    :Head (D :t "5,000")))))))
-                            :Head (Nom
-                                :Head (N :t "$" :p ","))))
-                    :Coordinate (VP
-                        :Marker (Coordinator :t "or")
-                        :Head (VP
-                            :Head (V :t "imprisoned")
+                :Comp (Clause
+                    :Head (Coordination
+                        :Coordinate (VP
+                            :Head (V :t "fined")
                             :Obj (NP
                                 :Det (DP
                                     :Mod (AdvP
                                         :Head (Adv :t "not"))
                                     :Head (DP
-                                        :Head (D :t "more")
+                                        :Head (D :t "more" :note "comparative degree determinative, CGEL p. 432")
                                         :Comp (PP
                                             :Head (P :t "than")
                                             :Obj (NP
                                                 :Head (Nom
                                                     :Det-Head (DP
-                                                        :Head (D :t "five")))))))
+                                                        :Head (D :t "5,000")))))))
                                 :Head (Nom
-                                    :Head (N :t "years" :p ",")))))
-                    :Coordinate (VP
-                        :Marker (Coordinator :t "or")
-                        :Head (VP
-                            :Head (V :t "both" :p "."))))))))
+                                    :Head (N :t "$" :p ","))))
+                        :Coordinate (VP
+                            :Marker (Coordinator :t "or")
+                            :Head (VP
+                                :Head (V :t "imprisoned")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Mod (AdvP
+                                            :Head (Adv :t "not"))
+                                        :Head (DP
+                                            :Head (D :t "more")
+                                            :Comp (PP
+                                                :Head (P :t "than")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Det-Head (DP
+                                                            :Head (D :t "five")))))))
+                                    :Head (Nom
+                                        :Head (N :t "years" :p ",")))))
+                        :Coordinate (Coordination
+                            :Marker (Coordinator :t "or")
+                            :Head (Coordination
+                                :Marker-Head (DP
+                                    :Head (D :t "both" :p "."))))))))))
