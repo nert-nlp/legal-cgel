@@ -45,7 +45,7 @@
                         :Head (V :t "performing" :l "perform" :xpos "VBG")
                         :Obj (NP
                             :Det (DP
-                                    :Head (D :t "such"))
+                                :Head (D :t "such"))
                             :Head (Nom
                                 :Head (N :t "services" :l "service"))))))))
     :Head (VP
