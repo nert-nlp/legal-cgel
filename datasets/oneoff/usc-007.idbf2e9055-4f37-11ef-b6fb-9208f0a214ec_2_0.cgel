@@ -12,20 +12,20 @@
                 :Head (Clause_rel
                     :Subj (x / GAP)
                     :Head (VP
-                        :Head (V_aux :t "shall")
+                        :Head (V_aux :t "shall" :xpos "MD")
                         :Comp (Clause
                             :Head (VP
                                 :Head (Coordination
                                     :Coordinate (VP
-                                        :Head (V :t "deprive"))
+                                        :Head (V :t "deprive" :xpos "VB"))
                                     :Coordinate (VP
                                         :Marker (Coordinator :t "or")
                                         :Head (VP
-                                            :Head (V :t "attempt")
+                                            :Head (V :t "attempt" :xpos "VB")
                                             :Comp (Clause
                                                 :Head (VP
                                                     :Marker (Sdr :t "to")
-                                                    :Head (V :t "deprive"))))))
+                                                    :Head (V :t "deprive" :xpos "VB"))))))
                                 :Obj (NP
                                     :Det (DP
                                         :Head (D :t "any"))
@@ -40,7 +40,7 @@
                                             :Head (N :t "right")
                                             :Mod (Clause
                                                 :Head (VP
-                                                    :Head (V :t "secured")
+                                                    :Head (V :t "secured" :l "secure" :xpos "VBN")
                                                     :Mod (PP
                                                         :Head (P :t "by")
                                                         :Obj (NP
@@ -49,13 +49,13 @@
                                                                     :Head (N :t "section"))
                                                                 :Head (Coordination
                                                                     :Coordinate (Nom
-                                                                        :Head (N :t "10501" :p ","))
+                                                                        :Head (N :t "10501" :xpos "CD" :p ","))
                                                                     :Coordinate (Nom
-                                                                        :Head (N :t "10502" :p ","))
+                                                                        :Head (N :t "10502" :xpos "CD" :p ","))
                                                                     :Coordinate (Nom
                                                                         :Marker (Coordinator :t "or")
                                                                         :Head (Nom
-                                                                            :Head (N :t "10503")))))
+                                                                            :Head (N :t "10503" :xpos "CD")))))
                                                             :Mod (PP
                                                                 :Head (P :t "of")
                                                                 :Obj (NP
@@ -64,14 +64,14 @@
                                                                     :Head (Nom
                                                                         :Head (N :t "title"))))))))))))))))))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V_aux :t "be")
+                :Head (V_aux :t "be" :xpos "VB")
                 :Comp (Clause
                     :Head (Coordination
                         :Coordinate (VP
-                            :Head (V :t "fined")
+                            :Head (V :t "fined" :l "fine" :xpos "VBN")
                             :Obj (NP
                                 :Det (DP
                                     :Mod (AdvP
@@ -83,13 +83,13 @@
                                             :Obj (NP
                                                 :Head (Nom
                                                     :Det-Head (DP
-                                                        :Head (D :t "5,000")))))))
+                                                        :Head (D :t "5,000" :xpos "CD")))))))
                                 :Head (Nom
                                     :Head (N :t "$" :p ","))))
                         :Coordinate (VP
                             :Marker (Coordinator :t "or")
                             :Head (VP
-                                :Head (V :t "imprisoned")
+                                :Head (V :t "imprisoned" :l "imprison" :xpos "VBN")
                                 :Obj (NP
                                     :Det (DP
                                         :Mod (AdvP
@@ -101,9 +101,9 @@
                                                 :Obj (NP
                                                     :Head (Nom
                                                         :Det-Head (DP
-                                                            :Head (D :t "five")))))))
+                                                            :Head (D :t "five" :xpos "CD")))))))
                                     :Head (Nom
-                                        :Head (N :t "years" :p ",")))))
+                                        :Head (N :t "years" :l "year" :p ",")))))
                         :Coordinate (Coordination
                             :Marker (Coordinator :t "or")
                             :Head (Coordination
