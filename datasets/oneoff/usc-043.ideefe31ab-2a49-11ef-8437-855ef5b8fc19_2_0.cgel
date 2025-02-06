@@ -1,0 +1,84 @@
+# sent_id = usc-043.ideefe31ab-2a49-11ef-8437-855ef5b8fc19_2_0
+# text = Any issuing authority which revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time and in such manner as the Secretary shall prescribe by regulations.
+# sent = any issuing authority which -- revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time and in such manner as the Secretary shall prescribe by regulations
+# tree_by = nschneid (2024-11-29) rev. bwaldon (2024-12-06)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "any"))
+        :Head (Nom
+            :Head (Nom
+                :Mod (VP
+                    :Head (V :t "issuing" :l "issue" :xpos "VBG"))
+                :Head (N :t "authority"))
+            :Mod (Clause_rel
+                :Prenucleus (x / NP
+                    :Head (Nom
+                        :Head (N_pro :t "which")))
+                :Head (Clause_rel
+                    :Subj (x / GAP)
+                    :Head (VP
+                        :Head (V :t "revokes" :l "revoke" :xpos "VBZ")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "any"))
+                            :Head (Nom
+                                :Mod (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "mortgage"))
+                                    :Head (N :t "credit"))
+                                :Head (N :t "certificate"))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "notify" :xpos "VB")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "Secretary")))
+                    :Comp (PP
+                        :Head (P :t "of")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "such"))
+                            :Head (Nom
+                                :Head (N :t "revocation")))))
+                :Mod (PP
+                    :Head (Coordination
+                        :Coordinate (PP
+                            :Head (P :t "at")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "such"))
+                                :Head (Nom
+                                    :Head (N :t "time"))))
+                        :Coordinate (PP
+                            :Marker (Coordinator :t "and")
+                            :Head (PP
+                                :Head (P :t "in")
+                                :Obj (NP
+                                    :Mod (DP
+                                        :Head (D :t "such"))
+                                    :Head (Nom
+                                        :Head (N :t "manner"))))))
+                    :Comp_ind (PP
+                        :Head (P :t "as")
+                        :PredComp (Clause
+                            :Subj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "Secretary")))
+                            :Head (VP
+                                :Head (V_aux :t "shall" :xpos "MD")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (V :t "prescribe" :xpos "VB")
+                                        :Comp (PP
+                                            :Head (P :t "by")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "regulations" :l "regulation" :p "."))))))))))))))
