@@ -35,49 +35,12 @@ jobs:
           
           # Find all merge commits since branching from main
           MERGE_BASE=$(git merge-base origin/main HEAD)
-          MERGE_COMMITS=$(git log --merges --format=%H $MERGE_BASE..HEAD)
           
           # Get all changed files since branching from main (no path restriction)
           ALL_CHANGES=$(git diff --name-only $MERGE_BASE HEAD)
           
-          # Initialize empty array for merge-only changes
-          declare -A MERGE_ONLY_CHANGES
-          
-          # For each merge commit, get its changes and mark them as merge changes
-          for merge_commit in $MERGE_COMMITS; do
-            # Get the parents of the merge commit
-            parent1=$(git rev-parse $merge_commit^1)
-            parent2=$(git rev-parse $merge_commit^2)
-            
-            # Get changes that came from main branch (parent2) in this merge
-            # No path restriction here - look at all files
-            merge_changes=$(git diff --name-only $parent2 $merge_commit)
-            
-            # Mark these as merge-only changes unless they were also modified in non-merge commits
-            for file in $merge_changes; do
-              # Check if file was modified in any non-merge commit
-              non_merge_changes=$(git log --no-merges --format=%H $MERGE_BASE..HEAD -- "$file")
-              if [[ -z "$non_merge_changes" ]]; then
-                MERGE_ONLY_CHANGES[$file]=1
-              fi
-            done
-          done
-          
-          # Build final list of files excluding merge-only changes
-          FINAL_DIFF=""
-          for file in $ALL_CHANGES; do
-            if [[ -z "${MERGE_ONLY_CHANGES[$file]}" ]]; then
-              FINAL_DIFF="$FINAL_DIFF $file"
-            fi
-          done
-          
-          # Trim leading/trailing whitespace and set environment variable
-          FINAL_DIFF=$(echo $FINAL_DIFF | xargs)
-          echo "DIFF_FILES=$FINAL_DIFF" >> $GITHUB_ENV
-          
           # Debug output
           echo "All changes since branching from main: $ALL_CHANGES"
-          echo "Final diff (excluding merge-only changes): $FINAL_DIFF"
           
       - name: Config github actions bot
         run: |
@@ -106,7 +69,7 @@ jobs:
           mkdir -p datasets/oneoff/tex
           mkdir -p datasets/oneoff/pdf
           # Only iterate through cgel files
-          for changed_file in ${DIFF_FILES}; do
+          for changed_file in ${ALL_CHANGES}; do
             if [[ -n "$changed_file" ]] && [[ "$changed_file" == datasets/oneoff/*.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
@@ -120,7 +83,7 @@ jobs:
       - name: Commit and push .tex and .pdf files 
         run: |
           # Only iterate through cgel files
-          for changed_file in ${DIFF_FILES}; do
+          for changed_file in ${ALL_CHANGES}; do
             if [[ -n "$changed_file" ]] && [[ "$changed_file" == datasets/oneoff/*.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
