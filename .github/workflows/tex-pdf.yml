@@ -77,7 +77,7 @@ jobs:
           
           # Debug output
           echo "All changes since branching from main: $ALL_CHANGES"
-          echo "Final diff (cgel files excluding merge-only changes): $FINAL_DIFF"
+          echo "Final diff (excluding merge-only changes): $FINAL_DIFF"
           
       - name: Config github actions bot
         run: |
