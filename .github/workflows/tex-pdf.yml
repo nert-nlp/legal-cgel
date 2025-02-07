@@ -11,7 +11,6 @@ on:
       - main      
 
 jobs:
-
   render:
     runs-on: ubuntu-latest
     permissions: 
@@ -29,21 +28,56 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
-      - name: Get changed files
+      - name: Get changed files excluding merge-only changes
         run: |
-            # check to see if there's a previous commit on the branch
-            # if not, then diff with origin/main
-            # if yes, then diff with the HEAD @ prevous commit
-            if [[ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]] ; then
-              git fetch --depth=1 origin main
-              export DIFF=$( git diff --name-only origin/main ${{ github.sha }} )
-              echo "Diff between origin/main and ${{ github.sha }} "
-            else
-              export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
-              echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
+          # Fetch main branch for comparison
+          git fetch origin main:main
+          
+          # Find all merge commits since branching from main
+          MERGE_BASE=$(git merge-base origin/main HEAD)
+          MERGE_COMMITS=$(git log --merges --format=%H $MERGE_BASE..HEAD)
+          
+          # Get all changed files since branching from main (no path restriction)
+          ALL_CHANGES=$(git diff --name-only $MERGE_BASE HEAD)
+          
+          # Initialize empty array for merge-only changes
+          declare -A MERGE_ONLY_CHANGES
+          
+          # For each merge commit, get its changes and mark them as merge changes
+          for merge_commit in $MERGE_COMMITS; do
+            # Get the parents of the merge commit
+            parent1=$(git rev-parse $merge_commit^1)
+            parent2=$(git rev-parse $merge_commit^2)
+            
+            # Get changes that came from main branch (parent2) in this merge
+            # No path restriction here - look at all files
+            merge_changes=$(git diff --name-only $parent2 $merge_commit)
+            
+            # Mark these as merge-only changes unless they were also modified in non-merge commits
+            for file in $merge_changes; do
+              # Check if file was modified in any non-merge commit
+              non_merge_changes=$(git log --no-merges --format=%H $MERGE_BASE..HEAD -- "$file")
+              if [[ -z "$non_merge_changes" ]]; then
+                MERGE_ONLY_CHANGES[$file]=1
+              fi
+            done
+          done
+          
+          # Build final list of files excluding merge-only changes
+          FINAL_DIFF=""
+          for file in $ALL_CHANGES; do
+            if [[ -z "${MERGE_ONLY_CHANGES[$file]}" ]]; then
+              FINAL_DIFF="$FINAL_DIFF $file"
             fi
-            echo "DIFF_FILES=$(echo $DIFF | tr '\n' ' ')" >> $GITHUB_ENV
+          done
+          
+          # Trim leading/trailing whitespace and set environment variable
+          FINAL_DIFF=$(echo $FINAL_DIFF | xargs)
+          echo "DIFF_FILES=$FINAL_DIFF" >> $GITHUB_ENV
+          
+          # Debug output
+          echo "All changes since branching from main: $ALL_CHANGES"
+          echo "Final diff (excluding merge-only changes): $FINAL_DIFF"
           
       - name: Config github actions bot
         run: |
@@ -59,31 +93,35 @@ jobs:
           cache: 'pip'
       - run: pip install -r cgel/requirements.txt
 
-      - name: Setup TeX Live
-        uses: teatimeguest/setup-texlive-action@e69e0852590264df4a35dbc6cc94009a2466a562
-        with:
-          packages: |
-            scheme-full
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
       - name: Generate .tex and .pdf files
+        env:
+          SERVICE_URL: ${{ secrets.LATEX_SERVICE_URL }}
+          CREDS: ${{ secrets.TEXLIVE_API_CREDS }}
         run: |
           mkdir -p datasets/oneoff/tex
           mkdir -p datasets/oneoff/pdf
+          # Only iterate through cgel files
           for changed_file in ${DIFF_FILES}; do
-            if [[ "$changed_file" == **.cgel ]]; then
+            if [[ -n "$changed_file" ]] && [[ "$changed_file" == datasets/oneoff/*.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
               # make .tex
               python cgel/tree2tex.py "${changed_file}" > "datasets/oneoff/tex/$tree_name.tex"
               # make .pdf 
-              pdflatex -output-directory=datasets/oneoff/pdf "datasets/oneoff/tex/$tree_name.tex"
+              jq -n --arg latex "$(cat datasets/oneoff/tex/$tree_name.tex)" '{"latex_code": $latex}' | curl -X POST "$SERVICE_URL" -u $CREDS -H "Content-Type: application/json" -d @- --output datasets/oneoff/pdf/$tree_name.pdf
             fi
           done   
 
       - name: Commit and push .tex and .pdf files 
         run: |
+          # Only iterate through cgel files
           for changed_file in ${DIFF_FILES}; do
-            if [[ "$changed_file" == **.cgel ]]; then
+            if [[ -n "$changed_file" ]] && [[ "$changed_file" == datasets/oneoff/*.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
               git add "datasets/oneoff/tex/$tree_name.tex"
