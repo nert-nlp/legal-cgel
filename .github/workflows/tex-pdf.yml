@@ -11,6 +11,7 @@ on:
       - main      
 
 jobs:
+
   render:
     runs-on: ubuntu-latest
     permissions: 
@@ -28,19 +29,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get changed files excluding merge-only changes
+      # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
+      - name: Get changed files
         run: |
-          # Fetch main branch for comparison
-          git fetch origin main:main
-          
-          # Find all merge commits since branching from main
-          MERGE_BASE=$(git merge-base origin/main HEAD)
-          
-          # Get all changed files since branching from main (no path restriction)
-          ALL_CHANGES=$(git diff --name-only $MERGE_BASE HEAD)
-          
-          # Debug output
-          echo "All changes since branching from main: $ALL_CHANGES"
+            # check to see if there's a previous commit on the branch
+            # if not, then diff with origin/main
+            # if yes, then diff with the HEAD @ prevous commit
+            if [[ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]] ; then
+              git fetch --depth=1 origin main
+              export DIFF=$( git diff --name-only origin/main ${{ github.sha }} )
+              echo "Diff between origin/main and ${{ github.sha }} "
+            else
+              export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
+              echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
+            fi
+            echo "DIFF_FILES=$(echo $DIFF | tr '\n' ' ')" >> $GITHUB_ENV
           
       - name: Config github actions bot
         run: |
@@ -68,9 +71,8 @@ jobs:
         run: |
           mkdir -p datasets/oneoff/tex
           mkdir -p datasets/oneoff/pdf
-          # Only iterate through cgel files
-          for changed_file in ${ALL_CHANGES}; do
-            if [[ -n "$changed_file" ]] && [[ "$changed_file" == datasets/oneoff/*.cgel ]]; then
+          for changed_file in ${DIFF_FILES}; do
+            if [[ "$changed_file" == **.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
               # make .tex
@@ -82,9 +84,8 @@ jobs:
 
       - name: Commit and push .tex and .pdf files 
         run: |
-          # Only iterate through cgel files
-          for changed_file in ${ALL_CHANGES}; do
-            if [[ -n "$changed_file" ]] && [[ "$changed_file" == datasets/oneoff/*.cgel ]]; then
+          for changed_file in ${DIFF_FILES}; do
+            if [[ "$changed_file" == **.cgel ]]; then
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
               git add "datasets/oneoff/tex/$tree_name.tex"
