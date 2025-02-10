@@ -26,7 +26,7 @@
                                         :Head (Nom
                                             :Mod (Nom
                                                 :Head (N :t "section"))
-                                            :Head (N :t "6996(b" :xpos "CD" :p ")"))
+                                            :Head (N :t "6996(b)" :xpos "CD"))
                                         :Mod (PP
                                             :Head (P :t "of")
                                             :Obj (NP
