@@ -89,35 +89,34 @@
                                                 :Obj (NP
                                                     :Head (Nom
                                                         :Head (N :t "law")))))
-                                    :Mod (PP
-                                        :Head (P :t "for")
-                                        :Obj (NP
-                                            :Head (Nom
-                                                :Head (N :t "service" :note "[AMBIG]: I see 5 plausible readings (could be more or fewer). [service of [notice of [motion in [an action in [the same court]]]]]; [service of [notice of [motion in an action]] in the same court]; [service of [notice of [motion in an action in the same court]]]; [[service of [notice of [motion in [an action]]]] in the same court]; [service of [notice of motion]] in [an action in the same court]")
-                                                :Comp (PP
-                                                    :Head (P :t "of")
-                                                    :Obj (NP
-                                                        :Head (Nom
-                                                            :Head (N :t "notice")
-                                                            :Comp (PP
-                                                                :Head (P :t "of")
-                                                                :Obj (NP
-                                                                    :Head (Nom
-                                                                        :Head (N :t "motion")
-                                                                        :Mod (PP
-                                                                            :Head (P :t "in")
-                                                                            :Obj (NP
-                                                                                :Det (DP
-                                                                                    :Head (D :t "an"))
-                                                                                :Head (Nom
-                                                                                    :Head (N :t "action")
-                                                                                    :Mod (PP
-                                                                                        :Head (P :t "in")
-                                                                                        :Obj (NP
-                                                                                            :Det (DP
-                                                                                                :Head (D :t "the"))
-                                                                                            :Head (Nom
-                                                                                                :Mod (AdjP
-                                                                                                    :Head (Adj :t "same"))
-                                                                                                :Head (N :t "court" :p "."))))))))))))))))))))))))))
-
+                                        :Mod (PP
+                                            :Head (P :t "for")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "service" :note "[AMBIG]: I see 5 plausible readings (could be more or fewer). [service of [notice of [motion in [an action in [the same court]]]]]; [service of [notice of [motion in an action]] in the same court]; [service of [notice of [motion in an action in the same court]]]; [[service of [notice of [motion in [an action]]]] in the same court]; [service of [notice of motion]] in [an action in the same court]")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "notice")
+                                                                :Comp (PP
+                                                                    :Head (P :t "of")
+                                                                    :Obj (NP
+                                                                        :Head (Nom
+                                                                            :Head (N :t "motion")
+                                                                            :Mod (PP
+                                                                                :Head (P :t "in")
+                                                                                :Obj (NP
+                                                                                    :Det (DP
+                                                                                        :Head (D :t "an"))
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "action")
+                                                                                        :Mod (PP
+                                                                                            :Head (P :t "in")
+                                                                                            :Obj (NP
+                                                                                                :Det (DP
+                                                                                                    :Head (D :t "the"))
+                                                                                                :Head (Nom
+                                                                                                    :Mod (AdjP
+                                                                                                        :Head (Adj :t "same"))
+                                                                                                    :Head (N :t "court" :p "."))))))))))))))))))))))))))
