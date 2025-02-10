@@ -1,0 +1,112 @@
+# sent_id = usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0
+# text = Whoever shall deprive or attempt to deprive any person of any right secured by section 10501, 10502, or 10503 of this title shall be fined not more than $5,000, or imprisoned not more than five years, or both.
+# sent = whoever shall deprive or attempt to deprive any person of any right secured by section 10501 10502 or 10503 of this title shall be fined not more than 5,000 $ or imprisoned not more than five years or both
+# tree_by = mebwells (2024-10-04) rev. nschneid+bwaldon+mebwells+devika-tiwari+m3ru (2024-12-20) rev. bwaldon+nschneid (2025-02-07)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Mod (Clause_rel
+                :Head-Prenucleus (x / NP
+                    :Head (Nom
+                        :Head (N_pro :t "whoever")))
+                :Head (Clause_rel
+                    :Subj (x / GAP)
+                    :Head (VP
+                        :Head (V_aux :t "shall" :xpos "MD")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (Coordination
+                                    :Coordinate (VP
+                                        :Head (V :t "deprive" :xpos "VB"))
+                                    :Coordinate (VP
+                                        :Marker (Coordinator :t "or")
+                                        :Head (VP
+                                            :Head (V :t "attempt" :xpos "VB")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Marker (Sdr :t "to")
+                                                    :Head (V :t "deprive" :xpos "VB"))))))
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "any"))
+                                    :Head (Nom
+                                        :Head (N :t "person")))
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "any"))
+                                        :Head (Nom
+                                            :Head (N :t "right")
+                                            :Mod (Clause
+                                                :Head (VP
+                                                    :Head (V :t "secured" :l "secure" :xpos "VBN")
+                                                    :Comp (PP
+                                                        :Head (P :t "by")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Head (Nom
+                                                                    :Mod (Nom
+                                                                        :Head (N :t "section"))
+                                                                    :Head (Coordination
+                                                                        :Coordinate (Nom
+                                                                            :Head (N :t "10501" :xpos "CD" :p ","))
+                                                                        :Coordinate (Nom
+                                                                            :Head (N :t "10502" :xpos "CD" :p ","))
+                                                                        :Coordinate (Nom
+                                                                            :Marker (Coordinator :t "or")
+                                                                            :Head (Nom
+                                                                                :Head (N :t "10503" :xpos "CD")))))
+                                                                :Mod (PP
+                                                                    :Head (P :t "of")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "this"))
+                                                                        :Head (Nom
+                                                                            :Head (N :t "title")))))))))))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (Coordination
+                        :Coordinate (VP
+                            :Head (V :t "fined" :l "fine" :xpos "VBN")
+                            :Obj (NP
+                                :Det (DP
+                                    :Mod (AdvP
+                                        :Head (Adv :t "not"))
+                                    :Head (DP
+                                        :Head (D :t "more" :note "comparative degree determinative, CGEL p. 432")
+                                        :Comp (PP
+                                            :Head (P :t "than")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Det-Head (DP
+                                                        :Head (D :t "5,000" :xpos "CD")))))))
+                                :Head (Nom
+                                    :Head (N :t "$" :p ","))))
+                        :Coordinate (VP
+                            :Marker (Coordinator :t "or")
+                            :Head (VP
+                                :Head (V :t "imprisoned" :l "imprison" :xpos "VBN")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Mod (AdvP
+                                            :Head (Adv :t "not"))
+                                        :Head (DP
+                                            :Head (D :t "more")
+                                            :Comp (PP
+                                                :Head (P :t "than")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Det-Head (DP
+                                                            :Head (D :t "five" :xpos "CD")))))))
+                                    :Head (Nom
+                                        :Head (N :t "years" :l "year" :p ",")))))
+                        :Coordinate (Coordination
+                            :Marker (Coordinator :t "or")
+                            :Head (Coordination
+                                :Marker-Head (DP
+                                    :Head (D :t "both" :p "."))))))))))

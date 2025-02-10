@@ -1,0 +1,97 @@
+# sent_id = usc-049.id295a8bc5-2a73-11ef-ba6d-a9961dfb011e_0_0
+# text = There is authorized to be appropriated, out of any money in the Treasury not otherwise appropriated, such amounts from time to time as the Congress may deem necessary to carry out the purposes of this chapter.
+# sent = there is authorized to be appropriated out of any money in the Treasury not otherwise appropriated such amounts from time to time as the Congress may deem necessary to carry out the purposes of this chapter
+# tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08) rev. nschneid (2024-12-14)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N_pro :t "there")))
+    :Head (VP
+        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "authorized" :l "authorize" :xpos "VBN")
+                :Comp (Clause
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (V_aux :t "be" :xpos "VB")
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (V :t "appropriated" :l "appropriate" :xpos "VBN" :p ",")
+                                    :Supplement (PP
+                                        :Head (P :t "out")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "any"))
+                                                :Head (Nom
+                                                    :Head (Nom
+                                                        :Head (N :t "money")
+                                                        :Mod (PP
+                                                            :Head (P :t "in")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "Treasury")))))
+                                                    :Mod (Clause
+                                                        :Head (VP
+                                                            :Mod (AdvP
+                                                                :Head (Adv :t "not"))
+                                                            :Head (VP
+                                                                :Mod (AdvP
+                                                                    :Head (Adv :t "otherwise"))
+                                                                :Head (V :t "appropriated" :l "appropriate" :xpos "VBN" :p ",")))))))))))))))
+        :DisplacedSubj (NP
+            :Head (Nom
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "such"))
+                    :Head (N :t "amounts" :l "amount"))
+                :Supplement (PP
+                    :Head (PP
+                        :Head (P :t "from")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "time"))))
+                    :Comp (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "time")))))
+                :Comp_ind (PP
+                    :Head (P :t "as" :note "indir. comp. licensed by 'such'")
+                    :Comp (Clause
+                        :Subj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "Congress")))
+                        :Head (VP
+                            :Head (V_aux :t "may" :xpos "MD")
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (V :t "deem" :xpos "VB")
+                                    :PredComp (AdjP
+                                        :Head (Adj :t "necessary")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Marker (Sdr :t "to")
+                                                :Head (VP
+                                                    :Head (V :t "carry" :xpos "VB")
+                                                    :Particle (PP
+                                                        :Head (P :t "out"))
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Head (N :t "purposes" :l "purpose")
+                                                            :Comp (PP
+                                                                :Head (P :t "of")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "this"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "chapter" :p ".")))))))))))))))))))

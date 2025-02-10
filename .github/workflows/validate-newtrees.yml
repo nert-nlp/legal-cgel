@@ -1,0 +1,66 @@
+# Run CGEL validation on trees that have been committed to a branch.
+
+name: Validate new/modified .cgel trees
+
+on:
+  push:
+    paths:
+      - datasets/*/*.cgel
+    branches-ignore:
+      - main      
+
+jobs:
+
+  validate:
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          submodules: true
+          fetch-depth: 0
+
+      - name: Update to make sure we have a newly created branch
+        run: |
+          git branch -v
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
+      - name: Get changed files
+        run: |
+            # check to see if there's a previous commit on the branch
+            # if not, then diff with origin/main
+            # if yes, then diff with the HEAD @ prevous commit
+            if [[ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]] ; then
+              git fetch --depth=1 origin main
+              export DIFF=$( git diff --name-only origin/main ${{ github.sha }} )
+              echo "Diff between origin/main and ${{ github.sha }} "
+            else
+              export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
+              echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
+            fi
+            echo "DIFF_FILES=$(echo $DIFF | tr '\n' ' ')" >> $GITHUB_ENV
+          
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          cache: 'pip'
+      - run: pip install -r cgel/requirements.txt
+    
+      - name: Validate trees including tree_by, :p, and :xpos checks
+        run: |
+          for changed_file in ${DIFF_FILES}; do
+            if [[ "$changed_file" == **.cgel ]]; then
+              filename=$(basename "$changed_file")
+              tree_name="${filename%.cgel}"
+              TREELINES=`egrep -v '^#' "$changed_file" | wc -l`
+              if [ "$TREELINES" -ge 1 ]; then
+                python cgel/validate_trees.py --punct "$changed_file"
+              fi
+            fi
+          done
+  
