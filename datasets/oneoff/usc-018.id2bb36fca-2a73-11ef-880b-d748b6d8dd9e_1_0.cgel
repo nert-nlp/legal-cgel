@@ -5,7 +5,7 @@
 (Clause
     :Subj (NP
         :Head (Nom
-            :Head (N :t "proceeds" :l "proceed")
+            :Head (N :t "proceeds")
             :Comp (PP
                 :Head (P :t "of")
                 :Obj (NP
