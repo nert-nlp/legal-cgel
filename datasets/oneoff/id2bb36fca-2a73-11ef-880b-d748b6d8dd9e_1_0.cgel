@@ -11,7 +11,7 @@
                 :Obj (NP
                     :Head (Nom
                         :Head (N :t "sales" :l "sale")
-                        :Mod (PP
+                        :Comp (PP
                             :Head (P :t "by")
                             :Obj (Coordination
                                 :Coordinate (NP
@@ -82,7 +82,7 @@
                                                     :Comp (Clause
                                                         :Head (VP
                                                             :Head (V :t "purchased" :l "purchase" :xpos "VBN" :p ",")
-                                                            :Mod (x / GAP))))))))))))))
+                                                            :Comp (x / GAP))))))))))))))
         :Coordinate (VP
             :Head (VP
                 :Head (V :t "shall" :xpos "MD")
