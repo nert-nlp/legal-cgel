@@ -32,6 +32,9 @@ jobs:
       # https://github.com/trilom/file-changes-action/issues/116#issuecomment-790007782
       - name: Get changed files
         run: |
+            # check to see if there's a previous commit on the branch
+            # if not, then diff with origin/main
+            # if yes, then diff with the HEAD @ prevous commit
             if [[ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]] ; then
               git fetch --depth=1 origin main
               export DIFF=$( git diff --name-only origin/main ${{ github.sha }} )
