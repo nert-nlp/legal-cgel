@@ -1,0 +1,246 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = usc-012.id327c7597-f59a-11ee-9f93-9b257bd089f3_2_0
+% # text = For purposes of this subsection, if, in the judgment of the Administrator, it is not feasible to prescribe or enforce a numerical limitation for a pollutant identified under paragraph (2), the Administrator may instead promulgate a design, equipment, management practice, or operational standard, or combination thereof, which in the Administrator’s judgment is adequate to protect public health and the environment from any reasonably anticipated adverse effects of such pollutant.
+% # sent = for purposes of this subsection if in the judgment of the Administrator it is not feasible to prescribe or enforce a numerical limitation for a pollutant identified under paragraph 2 the Administrator may instead promulgate a design equipment management practice or operational standard or combination thereof which in the Administrator’s judgment is adequate to protect public health and the environment from any reasonably anticipated adverse effects of such pollutant
+% # tree_by = mebwells (2024-10-15)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Supplement}{PP}
+        [\Node{Head}{P},edge={line width=1pt}[for]]
+        [\Node{Obj}{NP}
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N},edge={line width=1pt}[purposes]]
+                [\Node{Comp}{PP}
+                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                    [\Node{Obj}{NP}
+                        [\Node{Det}{DP}
+                            [\Node{Head}{D},edge={line width=1pt}[this]]]
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{N},edge={line width=1pt}[subsection,label={right:\p{{,}}}]]]]]]]]
+    [\Node{Mod}{PP}
+        [\Node{Head}{P},edge={line width=1pt}[if,label={right:\p{{,}}}]]
+        [\Node{Supplement}{PP}
+            [\Node{Head}{P},edge={line width=1pt}[in]]
+            [\Node{Obj}{NP}
+                [\Node{Det}{DP}
+                    [\Node{Head}{D},edge={line width=1pt}[the]]]
+                [\Node{Head}{Nom},edge={line width=1pt}
+                    [\Node{Head}{N},edge={line width=1pt}[judgment]]
+                    [\Node{Comp}{PP}
+                        [\Node{Head}{P},edge={line width=1pt}[of]]
+                        [\Node{Obj}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{N},edge={line width=1pt}[Administrator,label={right:\p{{,}}}]]]]]]]]
+        [\Node{Comp}{Clause}
+            [\Node{Subj}{NP}
+                [\Node{Head}{Nom},edge={line width=1pt}
+                    [\Node{Head}{N},edge={line width=1pt}[it]]]]
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{VP},edge={line width=1pt}
+                    [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[is]]
+                    [\Node{Mod}{AdvP}
+                        [\Node{Head}{Adv},edge={line width=1pt}[not]]]]
+                [\Node{PredComp}{AdjP}
+                    [\Node{Head}{Adj},edge={line width=1pt}[feasible]]
+                    [\Node{Comp}{Clause}
+                        [\Node{Head}{VP},edge={line width=1pt}
+                            [\Node{Marker}{Sdr}[to]]
+                            [\Node{Head}{VP},edge={line width=1pt}
+                                [\Node{Head}{Coordination},edge={line width=1pt}
+                                    [\Node{Coordinate}{VP}
+                                        [\Node{Head}{V},edge={line width=1pt}[prescribe]]]
+                                    [\Node{Coordinate}{VP}
+                                        [\Node{Marker}{Coordinator}[or]]
+                                        [\Node{Head}{VP},edge={line width=1pt}
+                                            [\Node{Head}{V},edge={line width=1pt}[enforce]]]]]
+                                [\Node{Obj}{NP}
+                                    [\Node{Det}{DP}
+                                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Mod}{AdjP}
+                                            [\Node{Head}{Adj},edge={line width=1pt}[numerical]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[limitation]]
+                                            [\Node{Comp}{PP}
+                                                [\Node{Head}{P},edge={line width=1pt}[for]]
+                                                [\Node{Obj}{NP}
+                                                    [\Node{Det}{DP}
+                                                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                        [\Node{Head}{N},edge={line width=1pt}[pollutant]]
+                                                        [\Node{Mod}{Clause}
+                                                            [\Node{Head}{VP},edge={line width=1pt}
+                                                                [\Node{Head}{V},edge={line width=1pt}[identified]]
+                                                                [\Node{Mod}{PP}
+                                                                    [\Node{Head}{P},edge={line width=1pt}[under]]
+                                                                    [\Node{Obj}{NP}
+                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                            [\Node{Mod}{Nom}
+                                                                                [\Node{Head}{N},edge={line width=1pt}[paragraph]]]
+                                                                            [\Node{Head}{N},edge={line width=1pt}[X,phantom][2,label={left:\p{(}},label={right:\p{){,}}}][Y,phantom]]]]]]]]]]]]]]]]]]]]
+    [\Node{Head}{Clause},edge={line width=1pt}
+        [\Node{Subj}{NP}
+            [\Node{Det}{DP}
+                [\Node{Head}{D},edge={line width=1pt}[the]]]
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N},edge={line width=1pt}[Administrator]]]]
+        [\Node{Head}{VP},edge={line width=1pt}
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[may]]
+                [\Node{Mod}{AdvP}
+                    [\Node{Head}{Adv},edge={line width=1pt}[instead]]]]
+            [\Node{Comp}{Clause}
+                [\Node{Head}{VP},edge={line width=1pt}
+                    [\Node{Head}{V},edge={line width=1pt}[promulgate]]
+                    [\Node{Obj}{NP}
+                        [\Node{Det}{DP}
+                            [\Node{Head}{D},edge={line width=1pt}[a]]]
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{Coordination},edge={line width=1pt}
+                                [\Node{Coordinate}{NP}
+                                    [\Node{Mod}{Coordination}
+                                        [\Node{Coordinate}{Nom}
+                                            [\Node{Head}{N},edge={line width=1pt}[design,label={right:\p{{,}}}]]]
+                                        [\Node{Coordinate}{Nom}
+                                            [\Node{Head}{N},edge={line width=1pt}[equipment,label={right:\p{{,}}}]]]
+                                        [\Node{Coordinate}{Nom}
+                                            [\Node{Mod}{Nom}
+                                                [\Node{Head}{N},edge={line width=1pt}[management]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[practice,label={right:\p{{,}}}]]]
+                                        [\Node{Coordinate}{AdjP}
+                                            [\Node{Marker}{Coordinator}[or]]
+                                            [\Node{Head}{AdjP},edge={line width=1pt}
+                                                [\Node{Head}{Adj},edge={line width=1pt}[operational]]]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N},edge={line width=1pt}[standard,label={right:\p{{,}}}]]]]
+                                [\Node{Coordinate}{NP}
+                                    [\Node{Marker}{Coordinator}[or]]
+                                    [\Node{Head}{NP},edge={line width=1pt}
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[combination]]
+                                            [\Node{Mod}{AdvP}
+                                                [\Node{Head}{Adv},edge={line width=1pt}[thereof,label={right:\p{{,}}}]]]]]]]
+                            [\Node{Mod}{Clause\textsubscript{rel}}
+                                [\Node{Prenucleus}{NP\idx{x}}
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N\textsubscript{pro}},edge={line width=1pt}[which]]]]
+                                [\Node{Supplement}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[in]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Det}{NP}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Head}{N},edge={line width=1pt}[Administrator{\textquoteright}s]]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[judgment]]]]]
+                                [\Node{Head}{Clause\textsubscript{rel}},edge={line width=1pt}
+                                    [\Node{Subj}{GAP\idx{x}}[--]]
+                                    [\Node{Head}{VP},edge={line width=1pt}
+                                        [\Node{Head}{V},edge={line width=1pt}[is]]
+                                        [\Node{PredComp}{AdjP}
+                                            [\Node{Head}{Adj},edge={line width=1pt}[adequate]]
+                                            [\Node{Comp}{Clause}
+                                                [\Node{Head}{VP},edge={line width=1pt}
+                                                    [\Node{Marker}{Sdr}[to]]
+                                                    [\Node{Head}{VP},edge={line width=1pt}
+                                                        [\Node{Head}{V},edge={line width=1pt}[protect]]
+                                                        [\Node{Obj}{Coordination}
+                                                            [\Node{Coordinate}{NP}
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Mod}{AdjP}
+                                                                        [\Node{Head}{Adj},edge={line width=1pt}[public]]]
+                                                                    [\Node{Head}{N},edge={line width=1pt}[health]]]]
+                                                            [\Node{Coordinate}{NP}
+                                                                [\Node{Marker}{Coordinator}[and]]
+                                                                [\Node{Head}{NP},edge={line width=1pt}
+                                                                    [\Node{Det}{DP}
+                                                                        [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                                        [\Node{Head}{N},edge={line width=1pt}[environment]]]]]]
+                                                        [\Node{Comp}{PP}
+                                                            [\Node{Head}{P},edge={line width=1pt}[from]]
+                                                            [\Node{Obj}{NP}
+                                                                [\Node{Det}{DP}
+                                                                    [\Node{Head}{D},edge={line width=1pt}[any]]]
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Mod}{VP}
+                                                                        [\Node{Mod}{AdvP}
+                                                                            [\Node{Head}{Adv},edge={line width=1pt}[reasonably]]]
+                                                                        [\Node{Head}{V},edge={line width=1pt}[anticipated]]]
+                                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                            [\Node{Mod}{AdjP}
+                                                                                [\Node{Head}{Adj},edge={line width=1pt}[adverse]]]
+                                                                            [\Node{Head}{N},edge={line width=1pt}[effects]]]
+                                                                        [\Node{Comp}{PP}
+                                                                            [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                            [\Node{Obj}{NP}
+                                                                                [\Node{Det}{DP}
+                                                                                    [\Node{Head}{D},edge={line width=1pt}[such]]]
+                                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                    [\Node{Head}{N},edge={line width=1pt}[pollutant,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]
+        \end{forest}
+        
+
+\end{document}
+

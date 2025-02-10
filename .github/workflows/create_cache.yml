@@ -1,0 +1,34 @@
+name: Create texlive cache
+
+on:
+  push:
+    paths: 
+      - .github/workflows/TEXLIVE_INIT_CACHE
+    branches:
+      - main
+      
+permissions: {}
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          submodules: true
+          fetch-depth: 0
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          cache: 'pip'
+      - run: pip install -r cgel/requirements.txt
+
+      - name: Setup TeX Live
+        uses: teatimeguest/setup-texlive-action@e69e0852590264df4a35dbc6cc94009a2466a562
+        with:
+          packages: |
+            scheme-full

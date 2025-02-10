@@ -1,0 +1,135 @@
+# sent_id = usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0
+# text = For the purpose of evaluating and reviewing programs established or provided for by this chapter, the Comptroller General shall have access to and the right to copy any books, accounts, records, correspondence, or other documents pertinent to such programs that are in the possession, custody, or control of the State.
+# sent = for the purpose of evaluating and reviewing programs established or provided for by this chapter the Comptroller General shall have access to -- and the right to copy -- any books accounts records correspondence or other documents pertinent to such programs that -- are in the possession custody or control of the State
+# tree_by = nschneid (2024-11-06) rev. bwaldon+nschneid+devika-tiwari+m3ru (2024-11-01) rev. bwaldon (2024-11-09)
+(Clause
+    :Mod (PP
+        :Head (P :t "for")
+        :Obj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "purpose")
+                :Comp (PP
+                    :Head (P :t "of")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (Coordination
+                                :Coordinate (VP
+                                    :Head (V :t "evaluating" :l "evaluate" :xpos "VBG"))
+                                :Coordinate (VP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (VP
+                                        :Head (V :t "reviewing" :l "review" :xpos "VBG"))))
+                            :Obj (NP
+                                :Head (Nom
+                                    :Head (N :t "programs" :l "program")
+                                    :Mod (Clause
+                                        :Head (VP
+                                            :Head (Coordination
+                                                :Coordinate (VP
+                                                    :Head (V :t "established" :l "establish" :xpos "VBN"))
+                                                :Coordinate (VP
+                                                    :Marker (Coordinator :t "or")
+                                                    :Head (VP
+                                                        :Head (V :t "provided" :l "provide" :xpos "VBN")
+                                                        :Comp (PP_strand
+                                                            :Head (P :t "for")))))
+                                            :Comp (PP
+                                                :Head (P :t "by")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "this"))
+                                                    :Head (Nom
+                                                        :Head (N :t "chapter" :p ","))))))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "Comptroller")
+                :Mod (AdjP
+                    :Head (Adj :t "General"))))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "have" :xpos "VB")
+                    :Obj (Coordination
+                        :Head (Coordination
+                            :Coordinate (NP
+                                :Head (Nom
+                                    :Head (N :t "access")
+                                    :Comp (PP
+                                        :Head (P :t "to")
+                                        :Obj (y / GAP))))
+                            :Coordinate (NP
+                                :Marker (Coordinator :t "and")
+                                :Head (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "right")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Marker (Sdr :t "to")
+                                                :Head (VP
+                                                    :Head (V :t "copy" :xpos "VB")
+                                                    :Obj (y / GAP))))))))
+                        :Postnucleus (y / NP
+                            :Det (DP
+                                :Head (D :t "any"))
+                            :Head (Nom
+                                :Head (x / Nom
+                                    :Head (Coordination
+                                        :Coordinate (Nom
+                                            :Head (N :t "books" :l "book" :p ","))
+                                        :Coordinate (Nom
+                                            :Head (N :t "accounts" :l "account" :p ","))
+                                        :Coordinate (Nom
+                                            :Head (N :t "records" :l "record" :p ","))
+                                        :Coordinate (Nom
+                                            :Head (N :t "correspondence" :p ","))
+                                        :Coordinate (Nom
+                                            :Marker (Coordinator :t "or")
+                                            :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "other"))
+                                                :Head (N :t "documents" :l "document"))))
+                                    :Mod (AdjP
+                                        :Head (Adj :t "pertinent")
+                                        :Comp (PP
+                                            :Head (P :t "to")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "such"))
+                                                :Head (Nom
+                                                    :Head (N :t "programs" :l "program"))))))
+                                :Mod (Clause_rel
+                                    :Marker (Sdr :t "that")
+                                    :Head (Clause_rel
+                                        :Subj (x / GAP)
+                                        :Head (VP
+                                            :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                                            :PredComp (PP
+                                                :Head (P :t "in")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (Coordination
+                                                            :Coordinate (Nom
+                                                                :Head (N :t "possession" :p ","))
+                                                            :Coordinate (Nom
+                                                                :Head (N :t "custody" :p ","))
+                                                            :Coordinate (Nom
+                                                                :Marker (Coordinator :t "or")
+                                                                :Head (Nom
+                                                                    :Head (N :t "control"))))
+                                                        :Comp (PP
+                                                            :Head (P :t "of")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "State" :p "."))))))))))))))))))

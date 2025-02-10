@@ -6,7 +6,7 @@ This document provides guidance on particular aspects of the legal-cgel annotati
 
 - Provide lemma `:l` tags only when the lemma form and surface form differ (e.g., inflected verb forms and plural nouns).
    * Exception: omit for determinatives (`D`) and pronouns (`N_pro`), as these are closed classes.
-- Provide part-of-speech `:xpos` tags for verbs (see https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html), modal verbs (`MD`), and cardinal numbers (always `CD`).
+- Provide part-of-speech `:xpos` tags for verbs (see https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html), modal verbs (`MD`), cardinal numbers (always `CD`), and list item markers (`LS`). 
 - Provide punctuation tags following the CGELBank Annotation Manual (Section 6.2.4 in version 1.1). 
 
 We also follow the annotation manual for marking typographical errors in sentences. (The following is from Section 6.2 in version 1.1):  
@@ -53,9 +53,13 @@ Even if a sentence is consistent with multiple possible syntactic analyses, the 
 
 Does the PP *in accordance with this subchapter* modify the modal *shall* (1), the auxiliary *be* (2), or the verb *enforced* (3)? It's not clear that these three resolutions of the PP attachment ambiguity give rise to appreciably distinct readings. In cases like this, the default preference is for low right attachment (3), and there is no need to make note of the ambiguity. 
 
+## Making note 
+
+If a difficult analytical choice is justified in part by appealing to an authoritative CGEL resource (e.g., _CGEL_ itself or _SIEG_), please make a `:note` with a reference to the relevant portion of that resource. 
+
 ## Dealing with legal terms of art
 
-Legal terms of art should be analyzed as constituents. Terms of art consisting of multiple tokens include: *adversary proceeding*, *due process rights*, *Attorney General*.
+Legal terms of art should be analyzed as constituents. Terms of art consisting of multiple tokens include: *adversary proceeding*, *due process rights*, *Attorney General*, *Comptroller General*, *adverse effects*
 
 If an annotator's analysis depends on analyzing a sequence of tokens as a term of art, and that sequence doesn't appear in the above list, the annotator should flag this for the reviewer. If the reviewer and annotator agree on the analysis, then the sequence should be added to the list.
 

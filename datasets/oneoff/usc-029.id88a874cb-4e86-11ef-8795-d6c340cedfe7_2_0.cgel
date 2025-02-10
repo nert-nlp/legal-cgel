@@ -1,0 +1,59 @@
+# sent_id = usc-029.id88a874cb-4e86-11ef-8795-d6c340cedfe7_2_0
+# text = Where appropriate, the Secretary shall award grants under this section in consultation with the Attorney General and the Secretary of Homeland Security.
+# sent = where appropriate the Secretary shall award grants under this section in consultation with the Attorney General and the Secretary of Homeland Security
+# tree_by = nschneid (2024-11-13) rev. bwaldon (2024-11-13)
+(Clause
+    :Supplement (PP
+        :Head (P :t "where" :note "CGEL would analyze this as licensing a reduced clause (p. 1267), but CGELBank currently does not recognize verbless clauses")
+        :Comp (AdjP
+            :Head (Adj :t "appropriate" :p ",")))
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "award" :xpos "VB")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "grants" :l "grant")
+                            :Mod (PP
+                                :Head (P :t "under")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "this"))
+                                    :Head (Nom
+                                        :Head (N :t "section")))))))
+                :Mod (PP
+                    :Head (P :t "in")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "consultation")
+                            :Comp (PP
+                                :Head (P :t "with")
+                                :Obj (Coordination
+                                    :Coordinate (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "Attorney")
+                                            :Mod (AdjP
+                                                :Head (Adj :t "General"))))
+                                    :Coordinate (NP
+                                        :Marker (Coordinator :t "and")
+                                        :Head (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "Secretary")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Head (Nom
+                                                            :Mod (Nom
+                                                                :Head (N :t "Homeland"))
+                                                            :Head (N :t "Security" :p "."))))))))))))))))
