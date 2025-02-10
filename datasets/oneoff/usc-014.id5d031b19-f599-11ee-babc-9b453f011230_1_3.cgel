@@ -1,7 +1,7 @@
 # sent_id = usc-014.id5d031b19-f599-11ee-babc-9b453f011230_1_3
 # text = Upon failure to store or deliver to the Secretary the farm marketing excess within such time as may be determined under regulations prescribed by the Secretary, the penalty computed as aforesaid shall be paid by the producer.
 # sent = upon failure to store -- or deliver -- to the Secretary the farm marketing excess within such time as may be determined under regulations prescribed by the Secretary the penalty computed as aforesaid shall be paid by the producer
-# tree_by = devika-tiwari (2024-11-15) rev. bwaldon (2025-02-07) 
+# tree_by = devika-tiwari (2024-11-15) rev. bwaldon (2025-02-07)
 (Clause
     :Mod (PP
         :Head (P :t "upon")
