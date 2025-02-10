@@ -52,7 +52,7 @@
 % # sent_id = usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0
 % # text = Whoever shall deprive or attempt to deprive any person of any right secured by section 10501, 10502, or 10503 of this title shall be fined not more than $5,000, or imprisoned not more than five years, or both.
 % # sent = whoever shall deprive or attempt to deprive any person of any right secured by section 10501 10502 or 10503 of this title shall be fined not more than 5,000 $ or imprisoned not more than five years or both
-% # tree_by = mebwells (2024-10-04) rev. nschneid+bwaldon+mebwells+devika-tiwari+m3ru (2024-12-20) rev. bwaldon (2025-02-07)
+% # tree_by = mebwells (2024-10-04) rev. nschneid+bwaldon+mebwells+devika-tiwari+m3ru (2024-12-20) rev. bwaldon+nschneid (2025-02-07)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -100,28 +100,29 @@
                                             [\Node{Mod}{Clause}
                                                 [\Node{Head}{VP},edge={line width=1pt}
                                                     [\Node{Head}{V},edge={line width=1pt}[secured]]
-                                                    [\Node{Mod}{PP}
+                                                    [\Node{Comp}{PP}
                                                         [\Node{Head}{P},edge={line width=1pt}[by]]
                                                         [\Node{Obj}{NP}
                                                             [\Node{Head}{Nom},edge={line width=1pt}
-                                                                [\Node{Mod}{Nom}
-                                                                    [\Node{Head}{N},edge={line width=1pt}[section]]]
-                                                                [\Node{Head}{Coordination},edge={line width=1pt}
-                                                                    [\Node{Coordinate}{Nom}
-                                                                        [\Node{Head}{N},edge={line width=1pt}[10501,label={right:\p{{,}}}]]]
-                                                                    [\Node{Coordinate}{Nom}
-                                                                        [\Node{Head}{N},edge={line width=1pt}[10502,label={right:\p{{,}}}]]]
-                                                                    [\Node{Coordinate}{Nom}
-                                                                        [\Node{Marker}{Coordinator}[or]]
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Mod}{Nom}
+                                                                        [\Node{Head}{N},edge={line width=1pt}[section]]]
+                                                                    [\Node{Head}{Coordination},edge={line width=1pt}
+                                                                        [\Node{Coordinate}{Nom}
+                                                                            [\Node{Head}{N},edge={line width=1pt}[10501,label={right:\p{{,}}}]]]
+                                                                        [\Node{Coordinate}{Nom}
+                                                                            [\Node{Head}{N},edge={line width=1pt}[10502,label={right:\p{{,}}}]]]
+                                                                        [\Node{Coordinate}{Nom}
+                                                                            [\Node{Marker}{Coordinator}[or]]
+                                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                [\Node{Head}{N},edge={line width=1pt}[10503]]]]]]
+                                                                [\Node{Mod}{PP}
+                                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                    [\Node{Obj}{NP}
+                                                                        [\Node{Det}{DP}
+                                                                            [\Node{Head}{D},edge={line width=1pt}[this]]]
                                                                         [\Node{Head}{Nom},edge={line width=1pt}
-                                                                            [\Node{Head}{N},edge={line width=1pt}[10503]]]]]]
-                                                            [\Node{Mod}{PP}
-                                                                [\Node{Head}{P},edge={line width=1pt}[of]]
-                                                                [\Node{Obj}{NP}
-                                                                    [\Node{Det}{DP}
-                                                                        [\Node{Head}{D},edge={line width=1pt}[this]]]
-                                                                    [\Node{Head}{Nom},edge={line width=1pt}
-                                                                        [\Node{Head}{N},edge={line width=1pt}[title]]]]]]]]]]]]]]]]]]]
+                                                                            [\Node{Head}{N},edge={line width=1pt}[title]]]]]]]]]]]]]]]]]]]]
     [\Node{Head}{VP},edge={line width=1pt}
         [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
         [\Node{Comp}{Clause}
