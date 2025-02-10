@@ -1,0 +1,123 @@
+# sent_id = usc-002.idc64b92b2-fcac-11ee-ae40-eb498a365d7d_2_839
+# text = If the adverse party is a resident of the district within which the award was made, such service shall be made upon the adverse party or his attorney as prescribed by law for service of notice of motion in an action in the same court.
+# sent = if the adverse party is a resident of the district within which the award was made _. such service shall be made upon the adverse party or his attorney as prescribed by law for service of notice of motion in an action in the same court
+# tree_by = mebwells (2024-08-14)
+(Clause
+    :Mod (PP
+        :Head (P :t "if")
+        :Comp (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "adverse"))
+                    :Head (N :t "party")))
+            :Head (VP
+                :Head (V :t "is" :l "be" :xpos "VBZ")
+                :PredComp (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (N :t "resident")
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "district")
+                                    :Mod (Clause_rel
+                                        :Prenucleus (x / PP
+                                            :Head (P :t "within")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Det-Head (DP
+                                                        :Head (D :t "which")))))
+                                        :Head (Clause_rel
+                                            :Subj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "award")))
+                                            :Head (VP
+                                                :Head (V_aux :t "was" :l "be" :xpos "VBD")
+                                                :Comp (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "made" :l "make" :xpos "VBN" :p ",")
+                                                        :Obj (x / GAP))))))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Mod (DP
+                :Head (D :t "such"))
+            :Head (Nom
+                :Head (N :t "service")))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (VP
+                                :Head (V :t "made" :l "make" :xpos "VBN")
+                                :Comp (PP
+                                    :Head (P :t "upon")
+                                    :Obj (Coordination
+                                        :Coordinate (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "adverse"))
+                                                :Head (N :t "party")))
+                                        :Coordinate (NP
+                                            :Marker (Coordinator :t "or")
+                                            :Head (NP
+                                                :Det (DP
+                                                    :Head (D :t "his"))
+                                                :Head (Nom
+                                                    :Head (N :t "attorney")))))))
+                            :Mod (AdvP
+                                :Head (Adv :t "as")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (VP
+                                            :Head (V :t "prescribed" :l "prescribe" :xpos "VBN")
+                                            :Comp (PP
+                                                :Head (P :t "by")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "law")))))
+                                    :Mod (PP
+                                        :Head (P :t "for")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "service" :note "[AMBIG]: I see 5 plausible readings (could be more or fewer). [service of [notice of [motion in [an action in [the same court]]]]]; [service of [notice of [motion in an action]] in the same court]; [service of [notice of [motion in an action in the same court]]]; [[service of [notice of [motion in [an action]]]] in the same court]; [service of [notice of motion]] in [an action in the same court]")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Head (Nom
+                                                            :Head (N :t "notice")
+                                                            :Comp (PP
+                                                                :Head (P :t "of")
+                                                                :Obj (NP
+                                                                    :Head (Nom
+                                                                        :Head (N :t "motion")
+                                                                        :Mod (PP
+                                                                            :Head (P :t "in")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "an"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "action")
+                                                                                    :Mod (PP
+                                                                                        :Head (P :t "in")
+                                                                                        :Obj (NP
+                                                                                            :Det (DP
+                                                                                                :Head (D :t "the"))
+                                                                                            :Head (Nom
+                                                                                                :Mod (AdjP
+                                                                                                    :Head (Adj :t "same"))
+                                                                                                :Head (N :t "court" :p "."))))))))))))))))))))))))))
+

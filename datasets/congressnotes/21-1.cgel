@@ -1,0 +1,89 @@
+# sent_id = 21-1
+# text = The court may inquire as to the good faith of the assisting personnel, to ensure that access to material is not merely a subterfuge to gather evidence unattainable by means other than the grand jury.
+# sent = the court may inquire as to the good faith of the assisting personnel to ensure that access to material is not merely a subterfuge to gather evidence unattainable by means other than the grand jury
+# tree_by = mebwells (2024-08-12) rev. nschneid (2024-08-16) rev. bwaldon (2024-08-19)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "court")))
+    :Head (VP
+        :Head (V_aux :t "may" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "inquire" :xpos "VB")
+                :Comp (PP
+                    :Head (P :t "as to")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "good"))
+                                :Head (N :t "faith"))
+                            :Mod (PP
+                                :Head (P :t "of")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "assisting"))
+                                        :Head (N :t "personnel" :p ","))))))))
+            :Mod (Clause
+                :Head (VP
+                    :Marker (Sdr :t "to")
+                    :Head (VP
+                        :Head (V :t "ensure" :xpos "VB")
+                        :Comp (Clause
+                            :Marker (Sdr :t "that")
+                            :Head (Clause
+                                :Subj (NP
+                                    :Head (Nom
+                                        :Head (N :t "access")
+                                        :Comp (PP
+                                            :Head (P :t "to")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "material"))))))
+                                :Head (VP
+                                    :Head (VP
+                                        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                        :Mod (AdvP
+                                            :Head (Adv :t "not")))
+                                    :PredComp (NP
+                                        :Mod (AdvP
+                                            :Head (Adv :t "merely"))
+                                        :Head (NP
+                                            :Det (DP
+                                                :Head (D :t "a"))
+                                            :Head (Nom
+                                                :Head (N :t "subterfuge")
+                                                :Mod (Clause
+                                                    :Head (VP
+                                                        :Marker (Sdr :t "to")
+                                                        :Head (VP
+                                                            :Head (V :t "gather" :xpos "VB")
+                                                            :Obj (NP
+                                                                :Head (Nom
+                                                                    :Head (N :t "evidence")
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "unattainable")
+                                                                        :Mod (PP
+                                                                            :Head (P :t "by")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "means")
+                                                                                    :Mod (AdjP
+                                                                                        :Head (Adj :t "other")
+                                                                                        :Mod (PP
+                                                                                            :Head (P :t "than")
+                                                                                            :Obj (NP
+                                                                                                :Det (DP
+                                                                                                    :Head (D :t "the"))
+                                                                                                :Head (Nom
+                                                                                                    :Mod (AdjP
+                                                                                                        :Head (Adj :t "grand"))
+                                                                                                    :Head (N :t "jury" :p "."))))))))))))))))))))))))))

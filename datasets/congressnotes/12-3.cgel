@@ -1,0 +1,75 @@
+# sent_id = 12-3
+# text = The definition excludes judicial liens and security interests, whether or not they are provided for or are dependent on a statute, and whether or not they are made fully effective by statute.
+# sent = the definition excludes judicial liens and security interests whether or not they are provided for or are dependent on a statute and whether or not they are made fully effective by statute
+# tree_by = bwaldon (2024-07-17)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "definition")))
+    :Head (VP
+        :Head (V :t "excludes" :l "exclude" :xpos "VBZ")
+        :Obj (Coordination
+            :Coordinate (NP
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "judicial"))
+                    :Head (N :t "liens" :l "lien")))
+            :Coordinate (NP
+                :Marker (Coordinator :t "and")
+                :Head (NP
+                    :Head (Nom
+                        :Mod (Nom
+                            :Head (N :t "security"))
+                        :Head (N :t "interests" :l "interest" :p ","))))))
+    :Supplement (Coordination
+        :Coordinate (Clause
+            :Marker (Sdr :t "whether or not")
+            :Head (Clause
+                :Subj (NP
+                    :Head (Nom
+                        :Head (N_pro :t "they")))
+                :Head (Coordination
+                    :Coordinate (VP
+                        :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V :t "provided" :l "provide" :xpos "VBN")
+                                :Comp (PP
+                                    :Head (P :t "for")))))
+                    :Coordinate (VP
+                        :Marker (Coordinator :t "or")
+                        :Head (VP
+                            :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                            :PredComp (AdjP
+                                :Head (Adj :t "dependent")
+                                :Comp (PP
+                                    :Head (P :t "on")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "a"))
+                                        :Head (Nom
+                                            :Head (N_pro :t "statute" :p ","))))))))))
+        :Coordinate (Clause
+            :Marker (Coordinator :t "and")
+            :Head (Clause
+                :Marker (Sdr :t "whether or not")
+                :Head (Clause
+                    :Subj (NP
+                        :Head (Nom
+                            :Head (N_pro :t "they")))
+                    :Head (VP
+                        :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V :t "made" :l "make" :xpos "VBN")
+                                :PredComp (AdjP
+                                    :Mod (AdvP
+                                        :Head (Adv :t "fully"))
+                                    :Head (Adj :t "effective"))
+                                :Comp (PP
+                                    :Head (P :t "by")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N :t "statute" :p "."))))))))))))

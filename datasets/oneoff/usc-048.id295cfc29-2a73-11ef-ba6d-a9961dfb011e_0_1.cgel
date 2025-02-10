@@ -1,0 +1,44 @@
+# sent_id = usc-048.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_1
+# text = No such finding shall be made except after notice and opportunity for a fair hearing. 
+# sent = no such finding shall be made except after notice and opportunity for a fair hearing
+# tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08)
+(Clause
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "no"))
+            :Head (Nom
+                :Mod (AdjP
+                    :Head (Adj :t "such"))
+                :Head (N :t "finding")))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "made" :l "make" :xpos "VBN")))))))
+    :Mod (PP
+        :Head (P :t "except")
+        :Comp (PP
+            :Head (P :t "after")
+            :Obj (Coordination
+                :Head (Coordination
+                    :Coordinate (NP
+                        :Head (Nom
+                            :Head (N :t "notice")))
+                    :Coordinate (NP
+                        :Marker (Coordinator :t "and")
+                        :Head (NP
+                            :Head (Nom
+                                :Head (N :t "opportunity")))))
+                :Comp (PP :note "[AMBIG] could plausibly apply just to 'opportunity' (neglible meaning difference)"
+                    :Head (P :t "for")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "a"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "fair"))
+                            :Head (N :t "hearing" :p "."))))))))
