@@ -1,0 +1,57 @@
+# sent_id = usc-047.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0
+# text = Each State shall repay to the United States amounts found not to have been expended in accordance with this chapter.
+# sent = each State shall repay -- to the United States amounts found not to have been expended in accordance with this chapter
+# tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08) rev. nschneid+devika (2024-11-22)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "each"))
+        :Head (Nom
+            :Head (N :t "State")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "repay" :xpos "VB")
+                :Obj (x / GAP)
+                :Comp (PP
+                    :Head (P :t "to")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "United"))
+                            :Head (N :t "States" :l "state")))))
+            :Postnucleus (x / NP
+                :Head (Nom
+                    :Head (N :t "amounts" :l "amount"))
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "found" :l "find" :xpos "VBN" :note "verb licensing catenative complement (p. 1233), as opposed to predicative complement (p. 1255)")
+                        :Comp (Clause
+                            :Mod (AdvP
+                                :Head (Adv :t "not"))
+                            :Head (Clause
+                                :Head (VP
+                                    :Marker (Sdr :t "to")
+                                    :Head (VP
+                                        :Head (V_aux :t "have" :xpos "VB")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Head (V_aux :t "been" :l "be" :xpos "VBN")
+                                                :Comp (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "expended" :l "expend" :xpos "VBN")
+                                                        :Mod (PP
+                                                            :Head (P :t "in")
+                                                            :Obj (NP
+                                                                :Head (Nom
+                                                                    :Head (N :t "accordance")
+                                                                    :Comp (PP
+                                                                        :Head (P :t "with")
+                                                                        :Obj (NP
+                                                                            :Det (DP
+                                                                                :Head (D :t "this"))
+                                                                            :Head (Nom
+                                                                                :Head (N :t "chapter" :p ".")))))))))))))))))))))

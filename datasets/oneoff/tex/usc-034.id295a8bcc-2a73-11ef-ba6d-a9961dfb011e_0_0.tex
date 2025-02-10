@@ -1,0 +1,181 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0
+% # text = Funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which is consistent with the program plan.
+% # sent = funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which is consistent with the program plan
+% # tree_by = nschneid (2024-11-06) rev. bwaldon (2024-11-09)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Coordination
+    [\Node{Coordinate}{Clause}
+        [\Node{Subj}{NP}
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N} \hlgreen{\Info},edge={line width=1pt}[funds]]
+                [\Node{Mod}{Clause}
+                    [\Node{Head}{VP},edge={line width=1pt}
+                        [\Node{Head}{V},edge={line width=1pt}[obligated]]
+                        [\Node{Comp}{PP}
+                            [\Node{Head}{P},edge={line width=1pt}[for]]
+                            [\Node{Obj}{NP}
+                                [\Node{Det}{DP}
+                                    [\Node{Head}{D},edge={line width=1pt}[any]]]
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Mod}{Nom}
+                                        [\Node{Head}{N},edge={line width=1pt}[program]]]
+                                    [\Node{Head}{N},edge={line width=1pt}[year]]]]]]]]]
+        [\Node{Head}{VP},edge={line width=1pt}
+            [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[may]]
+            [\Node{Comp}{Clause}
+                [\Node{Head}{VP},edge={line width=1pt}
+                    [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
+                    [\Node{Comp}{Clause}
+                        [\Node{Head}{VP},edge={line width=1pt}
+                            [\Node{Head}{VP},edge={line width=1pt}
+                                [\Node{Head}{V},edge={line width=1pt}[expended]]
+                                [\Node{Comp}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[by]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Det}{DP}
+                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[State]]]]]]
+                            [\Node{Mod}{PP}
+                                [\Node{Head}{P},edge={line width=1pt}[during]]
+                                [\Node{Obj}{Coordination}
+                                    [\Node{Coordinate}{NP}
+                                        [\Node{Det}{DP}
+                                            [\Node{Head}{D},edge={line width=1pt}[that]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Mod}{Nom}
+                                                [\Node{Head}{N},edge={line width=1pt}[program]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[year]]]]
+                                    [\Node{Coordinate}{NP}
+                                        [\Node{Marker}{Coordinator}[and]]
+                                        [\Node{Head}{NP},edge={line width=1pt}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Mod}{DP}
+                                                    [\Node{Head}{D},edge={line width=1pt}[two]]]
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Mod}{AdjP}
+                                                        [\Node{Head}{Adj},edge={line width=1pt}[succeeding]]]
+                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                        [\Node{Mod}{Nom}
+                                                            [\Node{Head}{N},edge={line width=1pt}[program]]]
+                                                        [\Node{Head}{N},edge={line width=1pt}[years]]]]]]]]]]]]]]]
+    [\Node{Coordinate}{Clause}
+        [\Node{Marker}{Coordinator}[and]]
+        [\Node{Head}{Clause},edge={line width=1pt}
+            [\Node{Subj}{NP}
+                [\Node{Det}{DP}
+                    [\Node{Head}{D},edge={line width=1pt}[no]]]
+                [\Node{Head}{Nom},edge={line width=1pt}
+                    [\Node{Head}{N},edge={line width=1pt}[amount]]]]
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
+                [\Node{Comp}{Clause}
+                    [\Node{Head}{VP},edge={line width=1pt}
+                        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
+                        [\Node{Comp}{Clause}
+                            [\Node{Head}{VP},edge={line width=1pt}
+                                [\Node{Head}{V},edge={line width=1pt}[deobligated]]
+                                [\Node{Mod}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[on]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[account]]
+                                            [\Node{Comp}{PP}
+                                                [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                [\Node{Obj}{NP}
+                                                    [\Node{Det}{DP}
+                                                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                            [\Node{Head}{N},edge={line width=1pt}[rate]]
+                                                            [\Node{Comp}{PP}
+                                                                [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                [\Node{Obj}{NP}
+                                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                                        [\Node{Head}{N},edge={line width=1pt}[expenditure]]]]]]
+                                                        [\Node{Mod}{Clause}
+                                                            [\Node{Prenucleus}{NP\idx{x}}
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Head}{N\textsubscript{pro}},edge={line width=1pt}[which]]]]
+                                                            [\Node{Head}{Clause},edge={line width=1pt}
+                                                                [\Node{Subj}{GAP\idx{x}}[--]]
+                                                                [\Node{Head}{VP},edge={line width=1pt}
+                                                                    [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[is]]
+                                                                    [\Node{PredComp}{AdjP}
+                                                                        [\Node{Head}{Adj},edge={line width=1pt}[consistent]]
+                                                                        [\Node{Comp}{PP}
+                                                                            [\Node{Head}{P},edge={line width=1pt}[with]]
+                                                                            [\Node{Obj}{NP}
+                                                                                [\Node{Det}{DP}
+                                                                                    [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                    [\Node{Mod}{Nom}
+                                                                                        [\Node{Head}{N},edge={line width=1pt}[program]]]
+                                                                                    [\Node{Head}{N},edge={line width=1pt}[plan,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]]]
+\node at (current bounding box.south)[yshift=-1cm]{
+(1) assuming this is a pluralia tantum so \textquotesingle{}funds\textquotesingle{} is also the lemma};
+        \end{forest}
+        
+
+\end{document}
+
