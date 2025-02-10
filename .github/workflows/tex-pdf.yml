@@ -1,5 +1,5 @@
 # add .tex conversion and (and .pdf rendering of .tex file) to a pull request that adds/modifies a cgel tree.
-# currently assumes cgel file(s) in datasets/oneoff.
+# handles cgel files in both datasets/oneoff and datasets/congressnotes
 
 name: Create tree .tex and .pdf 
 
@@ -7,11 +7,11 @@ on:
   push:
     paths:
       - datasets/oneoff/*.cgel
+      - datasets/congressnotes/*.cgel
     branches-ignore:
       - main      
 
 jobs:
-
   render:
     runs-on: ubuntu-latest
     permissions: 
@@ -69,16 +69,24 @@ jobs:
           SERVICE_URL: ${{ secrets.LATEX_SERVICE_URL }}
           CREDS: ${{ secrets.TEXLIVE_API_CREDS }}
         run: |
-          mkdir -p datasets/oneoff/tex
-          mkdir -p datasets/oneoff/pdf
+          # Create output directories for both locations
+          mkdir -p datasets/oneoff/tex datasets/oneoff/pdf
+          mkdir -p datasets/congressnotes/tex datasets/congressnotes/pdf
+          
           for changed_file in ${DIFF_FILES}; do
             if [[ "$changed_file" == **.cgel ]]; then
+              # Extract the directory path and filename
+              dir_path=$(dirname "$changed_file")
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
+              
               # make .tex
-              python cgel/tree2tex.py "${changed_file}" > "datasets/oneoff/tex/$tree_name.tex"
+              python cgel/tree2tex.py "${changed_file}" > "$dir_path/tex/$tree_name.tex"
+              
               # make .pdf 
-              jq -n --arg latex "$(cat datasets/oneoff/tex/$tree_name.tex)" '{"latex_code": $latex}' | curl -X POST "$SERVICE_URL" -u $CREDS -H "Content-Type: application/json" -d @- --output datasets/oneoff/pdf/$tree_name.pdf
+              jq -n --arg latex "$(cat $dir_path/tex/$tree_name.tex)" '{"latex_code": $latex}' | \
+                curl -X POST "$SERVICE_URL" -u $CREDS -H "Content-Type: application/json" \
+                -d @- --output "$dir_path/pdf/$tree_name.pdf"
             fi
           done   
 
@@ -86,10 +94,12 @@ jobs:
         run: |
           for changed_file in ${DIFF_FILES}; do
             if [[ "$changed_file" == **.cgel ]]; then
+              dir_path=$(dirname "$changed_file")
               filename=$(basename "$changed_file")
               tree_name="${filename%.cgel}"
-              git add "datasets/oneoff/tex/$tree_name.tex"
-              git add "datasets/oneoff/pdf/$tree_name.pdf"
+              
+              git add "$dir_path/tex/$tree_name.tex"
+              git add "$dir_path/pdf/$tree_name.pdf"
               git commit -m "generated tex and pdf files for $filename"
             fi
           done   
