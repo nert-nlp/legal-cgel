@@ -44,4 +44,4 @@
                     :Head (Nom
                         :Mod (Nom
                             :Head (N :t "discharge"))
-                        :Head (N :t "certificate")))))))
+                        :Head (N :t "certificate" :p ".")))))))
