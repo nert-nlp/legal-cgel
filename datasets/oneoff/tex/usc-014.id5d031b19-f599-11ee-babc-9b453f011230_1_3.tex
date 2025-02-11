@@ -52,7 +52,7 @@
 % # sent_id = usc-014.id5d031b19-f599-11ee-babc-9b453f011230_1_3
 % # text = Upon failure to store or deliver to the Secretary the farm marketing excess within such time as may be determined under regulations prescribed by the Secretary, the penalty computed as aforesaid shall be paid by the producer.
 % # sent = upon failure to store -- or deliver -- to the Secretary the farm marketing excess within such time as may be determined under regulations prescribed by the Secretary the penalty computed as aforesaid shall be paid by the producer
-% # tree_by = devika-tiwari (2024-11-15) rev. bwaldon (2025-02-07)
+% # tree_by = devika-tiwari (2024-11-15) rev. bwaldon+nschneid (2025-02-07)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -100,10 +100,11 @@
                             [\Node{Mod}{PP}
                                 [\Node{Head}{P},edge={line width=1pt}[within]]
                                 [\Node{Obj}{NP}
-                                    [\Node{Det}{DP}
-                                        [\Node{Head}{D},edge={line width=1pt}[such]]]
                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Head}{N},edge={line width=1pt}[time]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Mod}{AdjP}
+                                                [\Node{Head}{Adj},edge={line width=1pt}[such]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[time]]]
                                         [\Node{Comp\textsubscript{ind}}{PP}
                                             [\Node{Head}{P},edge={line width=1pt}[as]]
                                             [\Node{Comp}{Clause}
