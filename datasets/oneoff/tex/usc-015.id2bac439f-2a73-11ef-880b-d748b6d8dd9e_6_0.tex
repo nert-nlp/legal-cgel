@@ -1,0 +1,111 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = usc-015.id2bac439f-2a73-11ef-880b-d748b6d8dd9e_6_0
+% # text = The official who would be authorized to appoint him shall give him a discharge certificate.
+% # sent = the official who -- would be authorized to appoint him shall give him a discharge certificate
+% # tree_by = bwaldon (2025-02-11)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Subj}{NP}
+        [\Node{Det}{DP}
+            [\Node{Head}{D},edge={line width=1pt}[the]]]
+        [\Node{Head}{Nom},edge={line width=1pt}
+            [\Node{Head}{N},edge={line width=1pt}[official]]
+            [\Node{Mod}{Clause\textsubscript{rel}}
+                [\Node{Prenucleus}{NP\idx{x}}
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Head}{N\textsubscript{pro}},edge={line width=1pt}[who]]]]
+                [\Node{Head}{Clause\textsubscript{rel}},edge={line width=1pt}
+                    [\Node{Subj}{GAP\idx{x}}[--]]
+                    [\Node{Head}{VP},edge={line width=1pt}
+                        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[would]]
+                        [\Node{Comp}{Clause}
+                            [\Node{Head}{VP},edge={line width=1pt}
+                                [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
+                                [\Node{Comp}{Clause}
+                                    [\Node{Head}{VP},edge={line width=1pt}
+                                        [\Node{Head}{V},edge={line width=1pt}[authorized]]
+                                        [\Node{Comp}{Clause}
+                                            [\Node{Head}{VP},edge={line width=1pt}
+                                                [\Node{Marker}{Sdr}[to]]
+                                                [\Node{Head}{VP},edge={line width=1pt}
+                                                    [\Node{Head}{V},edge={line width=1pt}[appoint]]
+                                                    [\Node{Obj}{NP}
+                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                            [\Node{Head}{N\textsubscript{pro}},edge={line width=1pt}[him]]]]]]]]]]]]]]]]
+    [\Node{Head}{VP},edge={line width=1pt}
+        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
+        [\Node{Comp}{Clause}
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{V},edge={line width=1pt}[give]]
+                [\Node{Obj}{NP}
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Head}{N\textsubscript{pro}},edge={line width=1pt}[him]]]]
+                [\Node{Obj}{NP}
+                    [\Node{Det}{DP}
+                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Mod}{Nom}
+                            [\Node{Head}{N},edge={line width=1pt}[discharge]]]
+                        [\Node{Head}{N},edge={line width=1pt}[certificate]]]]]]]]
+        \end{forest}
+        
+
+\end{document}
+
