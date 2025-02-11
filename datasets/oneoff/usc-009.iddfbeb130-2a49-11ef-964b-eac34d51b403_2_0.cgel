@@ -1,7 +1,7 @@
 # sent_id = usc-009.iddfbeb130-2a49-11ef-964b-eac34d51b403_2_0
 # text = The authority of the Directing Officer of the NBIC under this section shall not affect any authority or responsibility of any other department or agency of the Federal Government with respect to biosurveillance activities under any program administered by that department or agency.
 # sent = the authority of the Directing Officer of the NBIC under this section shall not affect any authority or responsibility of any other department or agency of the Federal Government with respect to biosurveillance activities under any program administered by that department or agency
-# tree_by = mebwells (2024-09-10) rev. bwaldon (2024-09-16)
+# tree_by = mebwells (2024-09-10) rev. bwaldon (2024-09-16) rev. nschneid (2025-01-17) rev. bwaldon (2025-02-11)
 (Clause
     :Subj (NP
         :Det (DP
@@ -87,30 +87,30 @@
                                         :Head (P :t "to")
                                         :Obj (NP
                                             :Head (Nom
-                                                :Mod (NP
-                                                    :Head (Nom
-                                                        :Head (N :t "biosurveillance")))
-                                                :Head (N :t "activities"))
-                                            :Mod (PP
-                                                :Head (P :t "under")
-                                                :Obj (NP
-                                                    :Det (DP
-                                                        :Head (D :t "any"))
-                                                    :Head (Nom
-                                                        :Head (N :t "program")
-                                                        :Mod (Clause
-                                                            :Head (VP
-                                                                :Head (V :t "administered" :l "administer" :xpos "VBD")
-                                                                :Comp (PP
-                                                                    :Head (P :t "by")
-                                                                    :Obj (NP
-                                                                        :Det (DP
-                                                                            :Head (D :t "that"))
-                                                                        :Head (Coordination
-                                                                            :Coordinate (Nom
-                                                                                :Head (N :t "department"))
-                                                                            :Coordinate (Nom
-                                                                                :Marker (Coordinator :t "or")
-                                                                                :Head (Nom
-                                                                                    :Head (N :t "agency" :p "."))))))))))))))))))))))
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Head (N :t "biosurveillance"))
+                                                    :Head (N :t "activities"))
+                                                :Mod (PP
+                                                    :Head (P :t "under")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "any"))
+                                                        :Head (Nom
+                                                            :Head (N :t "program")
+                                                            :Mod (Clause
+                                                                :Head (VP
+                                                                    :Head (V :t "administered" :l "administer" :xpos "VBD")
+                                                                    :Comp (PP
+                                                                        :Head (P :t "by")
+                                                                        :Obj (NP
+                                                                            :Det (DP
+                                                                                :Head (D :t "that"))
+                                                                            :Head (Coordination
+                                                                                :Coordinate (Nom
+                                                                                    :Head (N :t "department"))
+                                                                                :Coordinate (Nom
+                                                                                    :Marker (Coordinator :t "or")
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "agency" :p ".")))))))))))))))))))))))
         
