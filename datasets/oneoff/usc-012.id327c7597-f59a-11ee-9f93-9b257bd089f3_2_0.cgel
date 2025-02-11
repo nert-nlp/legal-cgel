@@ -1,7 +1,7 @@
 # sent_id = usc-012.id327c7597-f59a-11ee-9f93-9b257bd089f3_2_0
 # text = For purposes of this subsection, if, in the judgment of the Administrator, it is not feasible to prescribe or enforce a numerical limitation for a pollutant identified under paragraph (2), the Administrator may instead promulgate a design, equipment, management practice, or operational standard, or combination thereof, which in the Administrator’s judgment is adequate to protect public health and the environment from any reasonably anticipated adverse effects of such pollutant.
 # sent = for purposes of this subsection if in the judgment of the Administrator it is not feasible to prescribe or enforce a numerical limitation for a pollutant identified under paragraph 2 the Administrator may instead promulgate a design equipment management practice or operational standard or combination thereof which in the Administrator’s judgment -- is adequate to protect public health and the environment from any reasonably anticipated adverse effects of such pollutant
-# tree_by = mebwells (2024-10-15) rev. bwaldon+nschneid+devika-tiwari+m3ru (2024-10-18)
+# tree_by = mebwells (2024-10-15) rev. bwaldon+nschneid+devika-tiwari+m3ru (2024-10-18) rev. nschneid (2025-01-17) rev. bwaldon (2025-02-11)
 (Clause
     :Supplement (PP
         :Head (P :t "for")
@@ -98,20 +98,20 @@
                         :Head (Nom
                             :Head (Coordination
                                 :Coordinate (NP
-                                    :Mod (Coordination
-                                        :Coordinate (Nom
-                                            :Head (N :t "design" :p ","))
-                                        :Coordinate (Nom
-                                            :Head (N :t "equipment" :p ","))
-                                        :Coordinate (Nom
-                                            :Mod (Nom
-                                                :Head (N :t "management"))
-                                            :Head (N :t "practice" :p ","))
-                                        :Coordinate (AdjP
-                                            :Marker (Coordinator :t "or")
-                                            :Head (AdjP
-                                                :Head (Adj :t "operational"))))
                                     :Head (Nom
+                                        :Mod (Coordination
+                                            :Coordinate (Nom
+                                                :Head (N :t "design" :p ","))
+                                            :Coordinate (Nom
+                                                :Head (N :t "equipment" :p ","))
+                                            :Coordinate (Nom
+                                                :Mod (Nom
+                                                    :Head (N :t "management"))
+                                                :Head (N :t "practice" :p ","))
+                                            :Coordinate (AdjP
+                                                :Marker (Coordinator :t "or")
+                                                :Head (AdjP
+                                                    :Head (Adj :t "operational"))))
                                         :Head (N :t "standard" :p ",")))
                                 :Coordinate (NP
                                     :Marker (Coordinator :t "or")
