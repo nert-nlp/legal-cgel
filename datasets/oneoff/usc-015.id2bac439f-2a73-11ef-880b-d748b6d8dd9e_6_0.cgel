@@ -35,10 +35,10 @@
         :Comp (Clause
             :Head (VP
                 :Head (V :t "give" :xpos "VB")
-                :Obj (NP
+                :Obj_ind (NP
                     :Head (Nom
                         :Head (N_pro :t "him")))
-                :Obj (NP
+                :Obj_dir (NP
                     :Det (DP
                         :Head (D :t "a"))
                     :Head (Nom
