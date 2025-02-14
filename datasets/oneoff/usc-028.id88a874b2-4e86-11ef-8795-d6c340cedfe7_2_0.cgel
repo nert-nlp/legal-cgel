@@ -1,4 +1,95 @@
 # sent_id = usc-028.id88a874b2-4e86-11ef-8795-d6c340cedfe7_2_0
 # text = From the funds appropriated under this section, the Secretary shall enter into a contract with one or more private, nonprofit entities to provide technical assistance to grantees and to conduct the evaluations required under paragraph (3).
 # sent = from the funds appropriated under this section the Secretary shall enter into a contract with one or more private nonprofit entities to provide technical assistance to grantees and to conduct the evaluations required under paragraph 3
-# tree_by = bwaldon (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-14)
+(Clause
+    :Supplement (PP
+        :Head (P :t "from")
+        :Obj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "funds")
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "appropriated")
+                        :Mod (PP
+                            :Head (P :t "under")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "this"))
+                                :Head (Nom
+                                    :Head (N :t "section" :p ",")))))))))
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")))
+    :Head (VP
+        :Head (V_aux :t "shall")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "enter")
+                    :Comp (PP
+                        :Head (P :t "into")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "a"))
+                            :Head (Nom
+                                :Head (N :t "contract")
+                                :Comp (PP
+                                    :Head (P :t "with")
+                                    :Obj (NP
+                                        :Det (Coordination
+                                            :Coordinate (DP
+                                                :Head (D :t "one"))
+                                            :Coordinate (DP
+                                                :Marker (Coordinator :t "or")
+                                                :Head (DP
+                                                    :Head (D :t "more"))))
+                                        :Head (Nom
+                                            :Mod (Coordination
+                                                :Coordinate (AdjP
+                                                    :Head (Adj :t "private" :p ","))
+                                                :Coordinate (AdjP
+                                                    :Head (Adj :t "nonprofit")))
+                                            :Head (N :t "entities"))))))))
+                :Mod (Coordination
+                    :Coordinate (Clause
+                        :Head (VP
+                            :Marker (Sdr :t "to")
+                            :Head (VP
+                                :Head (V :t "provide")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "technical"))
+                                        :Head (N :t "assistance")))
+                                :Comp (PP
+                                    :Head (P :t "to")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N :t "grantees")))))))
+                    :Coordinate (Clause
+                        :Marker (Coordinator :t "and")
+                        :Head (Clause
+                            :Head (VP
+                                :Marker (Sdr :t "to")
+                                :Head (VP
+                                    :Head (V :t "conduct")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "evaluations")
+                                            :Mod (Clause
+                                                :Head (VP
+                                                    :Head (V :t "required")
+                                                    :Comp (PP
+                                                        :Head (P :t "under")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Mod (Nom
+                                                                    :Head (N :t "paragraph"))
+                                                                :Head (N :p "(" :t "3" :p ")" :p ".")))))))))))))))))
