@@ -1,4 +1,74 @@
 # sent_id = usc-025.id5d306d31-f599-11ee-babc-9b453f011230_2_0
 # text = Loans made under this section shall not be less than the then current level of support under the wheat and feed grain programs established under this subchapter.
 # sent = loans made under this section shall not be less than the then current level of support under the wheat and feed grain programs established under this subchapter
-# tree_by = bwaldon (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-14)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N :t "loans" :l "loan")
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "made" :xpos "VBN" :l "make")
+                    :Mod (PP
+                        :Head (P :t "under")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "this"))
+                            :Head (Nom
+                                :Head (N :t "section"))))))))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Mod (AdvP
+                :Head (Adv :t "not")))
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :PredComp (NP
+                    :Head (Nom
+                        :Det-Head (DP
+                            :Head (D :t "less"))
+                        :Comp (PP
+                            :Head (P :t "than")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Mod (AdvP
+                                            :Head (Adv :t "then"))
+                                        :Head (Adj :t "current"))
+                                    :Head (Nom
+                                        :Head (N :t "level")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "support")
+                                                    :Mod (PP
+                                                        :Head (P :t "under")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Head (Nom
+                                                                    :Mod (Coordination
+                                                                        :Coordinate (Nom
+                                                                            :Head (N :t "wheat"))
+                                                                        :Coordinate (Nom
+                                                                            :Marker (Coordinator :t "and")
+                                                                            :Head (Nom
+                                                                                :Mod (Nom
+                                                                                    :Head (N :t "feed"))
+                                                                                :Head (N :t "grain"))))
+                                                                    :Head (N :t "programs" :l "program"))
+                                                                :Mod (Clause
+                                                                    :Head (VP
+                                                                        :Head (V :t "established" :xpos "VBN" :l "establish")
+                                                                        :Mod (PP
+                                                                            :Head (P :t "under")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "this"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "subchapter" :p "."))))))))))))))))))))))
