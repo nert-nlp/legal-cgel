@@ -8,7 +8,7 @@
             :Head (N :t "loans" :l "loan")
             :Mod (Clause
                 :Head (VP
-                    :Head (V :t "made" :xpos "VBN" :l "make")
+                    :Head (V :t "made" :l "make" :xpos "VBN")
                     :Mod (PP
                         :Head (P :t "under")
                         :Obj (NP
@@ -64,7 +64,7 @@
                                                                     :Head (N :t "programs" :l "program"))
                                                                 :Mod (Clause
                                                                     :Head (VP
-                                                                        :Head (V :t "established" :xpos "VBN" :l "establish")
+                                                                        :Head (V :t "established" :l "establish" :xpos "VBN")
                                                                         :Mod (PP
                                                                             :Head (P :t "under")
                                                                             :Obj (NP
