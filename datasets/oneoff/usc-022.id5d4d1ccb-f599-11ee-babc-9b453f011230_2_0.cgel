@@ -1,4 +1,99 @@
 # sent_id = usc-022.id5d4d1ccb-f599-11ee-babc-9b453f011230_2_0
 # text = Payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy.
 # sent = payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-16)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (Nom
+                :Head (N :t "payments")
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "made")
+                        :Comp (PP
+                            :Head (P :t "under")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "this"))
+                                :Head (Nom
+                                    :Head (N :t "subsection")))))))
+            :Comp (PP
+                :Head (P :t "for")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (N :t "policy"))))))
+    :Head (VP
+        :Head (V_aux :t "shall")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "considered")
+                        :Comp (PP
+                            :Head (P :t "as")
+                            :PredComp (NP
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Head (Nom
+                                            :Head (N :t "payment")
+                                            :Mod (PP
+                                                :Head (P :t "in")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "full")))))
+                                        :Comp (PP
+                                            :Head (P :t "by")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "Corporation")))))
+                                    :Comp (PP
+                                        :Head (P :t "for")
+                                        :Obj (Coordination
+                                            :Coordinate (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "research"))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "and")
+                                                            :Head (Nom
+                                                                :Head (N :t "development"))))
+                                                    :Mod (Clause
+                                                        :Head (VP
+                                                            :Head (V :t "conducted")
+                                                            :Mod (PP
+                                                                :Head (P :t "with")
+                                                                :Obj (NP
+                                                                    :Head (Nom
+                                                                        :Head (N :t "regard")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "to")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "the"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "policy")))))))))))
+                                            :Coordinate (NP
+                                                :Marker (Coordinator :t "and")
+                                                :Head (NP
+                                                    :Det (DP
+                                                        :Head (D :t "any"))
+                                                    :Head (Nom
+                                                        :Head (Nom
+                                                            :Mod (Nom
+                                                                :Head (N :t "property"))
+                                                            :Head (N :t "rights"))
+                                                        :Comp (PP
+                                                            :Head (P :t "to")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "policy" :p "."))))))))))))))))))
