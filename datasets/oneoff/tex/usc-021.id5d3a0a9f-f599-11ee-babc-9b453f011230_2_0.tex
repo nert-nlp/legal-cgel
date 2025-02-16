@@ -1,0 +1,173 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = usc-021.id5d3a0a9f-f599-11ee-babc-9b453f011230_2_0
+% # text = The Corporation shall have a capital stock of $500,000,000 subscribed by the United States of America, payment for which shall, with the approval of the Secretary, be subject to call in whole or in part by the Board.
+% # sent = the Corporation shall have a capital stock of 500,000,000 $ subscribed by the United States of America payment for which -- shall with the approval of the Secretary be subject to call in whole or in part by the Board
+% # tree_by = bwaldon (2025-02-15)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Subj}{NP}
+        [\Node{Det}{DP}
+            [\Node{Head}{D},edge={line width=1pt}[the]]]
+        [\Node{Head}{Nom},edge={line width=1pt}
+            [\Node{Head}{N},edge={line width=1pt}[Corporation]]]]
+    [\Node{Head}{VP},edge={line width=1pt}
+        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
+        [\Node{Comp}{Clause}
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{V},edge={line width=1pt}[have]]
+                [\Node{Obj}{NP}
+                    [\Node{Det}{DP}
+                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Mod}{Nom}
+                                        [\Node{Head}{N},edge={line width=1pt}[capital]]]
+                                    [\Node{Head}{N},edge={line width=1pt}[stock]]]
+                                [\Node{Comp}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Det}{DP}
+                                            [\Node{Head}{D},edge={line width=1pt}[500{,}000{,}000]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[\$]]]]]]
+                            [\Node{Mod}{Clause}
+                                [\Node{Head}{VP},edge={line width=1pt}
+                                    [\Node{Head}{V},edge={line width=1pt}[subscribed]]
+                                    [\Node{Comp}{PP}
+                                        [\Node{Head}{P},edge={line width=1pt}[by]]
+                                        [\Node{Obj}{NP}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Mod}{AdjP}
+                                                        [\Node{Head}{Adj},edge={line width=1pt}[United]]]
+                                                    [\Node{Head}{N},edge={line width=1pt}[States]]]
+                                                [\Node{Mod}{PP}
+                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                    [\Node{Obj}{NP}
+                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                            [\Node{Head}{N},edge={line width=1pt}[America,label={right:\p{{,}}}]]]]]]]]]]]
+                        [\Node{Mod}{Clause\textsubscript{rel}}
+                            [\Node{Prenucleus}{NP\idx{x}}
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Head}{N},edge={line width=1pt}[payment]]
+                                    [\Node{Comp}{PP}
+                                        [\Node{Head}{P},edge={line width=1pt}[for]]
+                                        [\Node{Obj}{NP}
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Head}{N\textsubscript{pro}},edge={line width=1pt}[which]]]]]]]
+                            [\Node{Head}{Clause\textsubscript{rel}},edge={line width=1pt}
+                                [\Node{Subj}{GAP\idx{x}}[--]]
+                                [\Node{Head}{VP},edge={line width=1pt}
+                                    [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall,label={right:\p{{,}}}]]
+                                    [\Node{Supplement}{PP}
+                                        [\Node{Head}{P},edge={line width=1pt}[with]]
+                                        [\Node{Obj}{NP}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Head}{N},edge={line width=1pt}[approval]]
+                                                [\Node{Mod}{PP}
+                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                    [\Node{Obj}{NP}
+                                                        [\Node{Det}{DP}
+                                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                            [\Node{Head}{N},edge={line width=1pt}[Secretary{,}]]]]]]]]
+                                    [\Node{Comp}{Clause}
+                                        [\Node{Head}{VP},edge={line width=1pt}
+                                            [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
+                                            [\Node{Comp}{Clause}
+                                                [\Node{Head}{VP},edge={line width=1pt}
+                                                    [\Node{Head}{V},edge={line width=1pt}[subject]]
+                                                    [\Node{Comp}{PP}
+                                                        [\Node{Head}{P},edge={line width=1pt}[to]]
+                                                        [\Node{Obj}{NP}
+                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                    [\Node{Head}{N},edge={line width=1pt}[call]]
+                                                                    [\Node{Mod}{Coordination}
+                                                                        [\Node{Coordinate}{PP}
+                                                                            [\Node{Head}{P},edge={line width=1pt}[in]]
+                                                                            [\Node{Obj}{NP}
+                                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                    [\Node{Head}{N},edge={line width=1pt}[whole]]]]]
+                                                                        [\Node{Coordinate}{PP}
+                                                                            [\Node{Marker}{Coordinator}[or]]
+                                                                            [\Node{Head}{PP},edge={line width=1pt}
+                                                                                [\Node{Head}{P},edge={line width=1pt}[in]]
+                                                                                [\Node{Obj}{NP}
+                                                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                        [\Node{Head}{N},edge={line width=1pt}[part]]]]]]]]
+                                                                [\Node{Comp}{PP}
+                                                                    [\Node{Head}{P},edge={line width=1pt}[by]]
+                                                                    [\Node{Obj}{NP}
+                                                                        [\Node{Det}{DP}
+                                                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                            [\Node{Head}{N},edge={line width=1pt}[Board,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]
+        \end{forest}
+        
+
+\end{document}
+
