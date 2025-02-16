@@ -1,4 +1,124 @@
 # sent_id = usc-019.id2bb36fdd-2a73-11ef-880b-d748b6d8dd9e_2_0
 # text = So far as practicable, whenever units, organizations, or members of the National Guard are returned to their National Guard status under section 325(b) 1 of this title, arms and equipment that the Secretary concerned determines are sufficient to accomplish their peacetime mission shall be returned with them.
 # sent = so far as practicable whenever units organizations or members of the National Guard are returned to their National Guard status under section 325b 1 of this title arms and equipment that the Secretary concerned determines are sufficient to accomplish their peacetime mission shall be returned with them
-# tree_by = bwaldon (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-15)
+(Clause
+    :Supplement (AdjP
+        :Head (AdjP
+            :Mod (AdvP
+                :Head (Adv :t "so"))
+            :Head (Adj :t "far"))
+        :Comp_ind (PP
+            :Head (P :t "as")
+            :Comp (AdjP
+                :Head (Adj :t "practicable" :p ","))))
+    :Mod (PP
+        :Head (P :t "whenever")
+        :Comp (Clause
+            :Subj (NP
+                :Head (Nom
+                    :Head (Coordination
+                        :Coordinate (Nom
+                            :Head (N :t "units" :p ","))
+                        :Coordinate (Nom
+                            :Head (N :t "organizations" :p ","))
+                        :Coordinate (Nom
+                            :Marker (Coordinator :t "or")
+                            :Head (Nom
+                                :Head (N :t "members"))))
+                    :Comp (PP
+                        :Head (P :t "of")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "National"))
+                                :Head (N :t "Guard"))))))
+            :Head (VP
+                :Head (V_aux :t "are")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (VP
+                            :Head (V :t "returned")
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Det (NP
+                                        :Head (Nom
+                                            :Head (N_pro :t "their")))
+                                    :Head (Nom
+                                        :Mod (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "National"))
+                                            :Head (N :t "Guard"))
+                                        :Head (N :t "status")))))
+                        :Mod (PP
+                            :Head (P :t "under")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "section"))
+                                    :Head (N :t "325(b)1"))
+                                :Mod (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "this"))
+                                        :Head (Nom
+                                            :Head (N :t "title" :p ",")))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Head (Nom
+                :Head (x / Coordination
+                    :Coordinate (Nom
+                        :Head (N :t "arms"))
+                    :Coordinate (Nom
+                        :Marker (Coordinator :t "and")
+                        :Head (Nom
+                            :Head (N :t "equipment"))))
+                :Mod (Clause_rel
+                    :Marker (Sdr :t "that")
+                    :Head (Clause_rel
+                        :Subj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "Secretary")
+                                :Mod (Clause
+                                    :Head (VP
+                                        :Head (V :t "concerned")))))
+                        :Head (VP
+                            :Head (V :t "determines")
+                            :Comp (Clause
+                                :Subj (x / GAP)
+                                :Head (VP
+                                    :Head (V_aux :t "are")
+                                    :PredComp (AdjP
+                                        :Head (Adj :t "sufficient")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Marker (Sdr :t "to")
+                                                :Head (VP
+                                                    :Head (V :t "accomplish")
+                                                    :Obj (NP
+                                                        :Det (NP
+                                                            :Head (Nom
+                                                                :Head (N_pro :t "their")))
+                                                        :Head (Nom
+                                                            :Mod (Nom
+                                                                :Head (N :t "peacetime"))
+                                                            :Head (N :t "mission"))))))))))))))
+        :Head (VP
+            :Head (V_aux :t "shall")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "returned")
+                            :Mod (PP
+                                :Head (P :t "with")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (N_pro :t "them" :p ".")))))))))))
