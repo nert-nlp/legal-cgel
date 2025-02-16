@@ -40,7 +40,7 @@
                                                 :Mod (Nom
                                                     :Head (N :t "subsection"))
                                                 :Head (N :t "(a)"))))))))))
-            :Mod (Coordination
+            :Mod (PP
                 :Head (Coordination
                     :Coordinate (PP
                         :Head (P :t "to")
