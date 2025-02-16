@@ -1,4 +1,101 @@
 # sent_id = usc-046.idf3f05e5d-2a49-11ef-8437-855ef5b8fc19_2_0
 # text = The Secretary shall not use financial status or economic reality examination techniques to determine the existence of unreported income of any taxpayer unless the Secretary has a reasonable indication that there is a likelihood of such unreported income.
 # sent = the Secretary shall not use financial status or economic reality examination techniques to determine the existence of unreported income of any taxpayer unless the Secretary has a reasonable indication that there is a likelihood of such unreported income
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-15)
+(Clause
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "Secretary")))
+        :Head (VP
+            :Head (VP
+                :Head (V_aux :t "shall")
+                :Mod (AdvP
+                    :Head (Adv :t "not")))
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "use")
+                    :Obj (Coordination
+                        :Coordinate (NP
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "financial"))
+                                :Head (N :t "status")))
+                        :Coordinate (NP
+                            :Marker (Coordinator :t "or")
+                            :Head (NP
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Mod (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "economic"))
+                                            :Head (N :t "reality"))
+                                        :Head (N :t "examination"))
+                                    :Head (N :t "techniques")))))
+                    :Comp (Clause
+                        :Head (VP
+                            :Marker (Sdr :t "to")
+                            :Head (VP
+                                :Head (V :t "determine")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "existence")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "unreported"))
+                                                        :Head (N :t "income"))
+                                                    :Mod (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "any"))
+                                                            :Head (Nom
+                                                                :Head (N :t "taxpayer"))))))))))))))))
+    :Mod (PP
+        :Head (P :t "unless")
+        :Comp (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (N :t "Secretary")))
+            :Head (VP
+                :Head (V_aux :t "has")
+                :PredComp (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "reasonable"))
+                            :Head (N :t "indication"))
+                        :Comp (Clause
+                            :Marker (Sdr :t "that")
+                            :Head (Clause
+                                :Subj (NP
+                                    :Head (Nom
+                                        :Head (N_pro :t "there")))
+                                :Head (VP
+                                    :Head (V_aux :t "is")
+                                    :DisplacedSubj (NP
+                                        :Det (DP
+                                            :Head (D :t "a"))
+                                        :Head (Nom
+                                            :Head (N :t "likelihood")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "such"))
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "unreported"))
+                                                        :Head (N :t "income" :p ".")))))))))))))))
