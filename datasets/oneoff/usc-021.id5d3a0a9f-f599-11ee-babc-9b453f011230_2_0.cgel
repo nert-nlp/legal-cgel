@@ -1,4 +1,109 @@
 # sent_id = usc-021.id5d3a0a9f-f599-11ee-babc-9b453f011230_2_0
 # text = The Corporation shall have a capital stock of $500,000,000 subscribed by the United States of America, payment for which shall, with the approval of the Secretary, be subject to call in whole or in part by the Board.
-# sent = the Corporation shall have a capital stock of 500000000 subscribed by the United States of America payment for which shall with the approval of the Secretary be subject to call in whole or in part by the Board
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the Corporation shall have a capital stock of 500,000,000 $ subscribed by the United States of America payment for which -- shall with the approval of the Secretary be subject to call in whole or in part by the Board
+# tree_by = bwaldon (2025-02-15)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Corporation")))
+    :Head (VP
+        :Head (V_aux :t "shall")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "have")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Head (Nom
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "capital"))
+                                    :Head (N :t "stock"))
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "500,000,000"))
+                                        :Head (Nom
+                                            :Head (N :t "$")))))
+                            :Mod (Clause
+                                :Head (VP
+                                    :Head (V :t "subscribed")
+                                    :Comp (PP
+                                        :Head (P :t "by")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "United"))
+                                                    :Head (N :t "States"))
+                                                :Mod (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Head (Nom
+                                                            :Head (N :t "America" :p ","))))))))))
+                        :Mod (Clause_rel
+                            :Prenucleus (x / NP
+                                :Head (Nom
+                                    :Head (N :t "payment")
+                                    :Comp (PP
+                                        :Head (P :t "for")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N_pro :t "which"))))))
+                            :Head (Clause_rel
+                                :Subj (x / GAP)
+                                :Head (VP
+                                    :Head (V_aux :t "shall" :p ",")
+                                    :Supplement (PP
+                                        :Head (P :t "with")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "approval")
+                                                :Mod (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Head (N :t "Secretary,")))))))
+                                    :Comp (Clause
+                                        :Head (VP
+                                            :Head (V_aux :t "be")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Head (V :t "subject")
+                                                    :Comp (PP
+                                                        :Head (P :t "to")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Head (Nom
+                                                                    :Head (N :t "call")
+                                                                    :Mod (Coordination
+                                                                        :Coordinate (PP
+                                                                            :Head (P :t "in")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "whole"))))
+                                                                        :Coordinate (PP
+                                                                            :Marker (Coordinator :t "or")
+                                                                            :Head (PP
+                                                                                :Head (P :t "in")
+                                                                                :Obj (NP
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "part")))))))
+                                                                :Comp (PP
+                                                                    :Head (P :t "by")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "the"))
+                                                                        :Head (Nom
+                                                                            :Head (N :t "Board" :p "."))))))))))))))))))))
