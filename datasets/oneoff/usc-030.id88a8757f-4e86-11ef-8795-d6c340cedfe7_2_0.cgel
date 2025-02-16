@@ -1,4 +1,81 @@
 # sent_id = usc-030.id88a8757f-4e86-11ef-8795-d6c340cedfe7_2_0
 # text = There are authorized to be appropriated to carry out this section such sums as may be necessary for fiscal year 2009 and each of the five succeeding fiscal years.
 # sent = there are authorized to be appropriated to carry out this section such sums as may be necessary for fiscal year 2009 and each of the five succeeding fiscal years
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-16)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N_pro :t "there")))
+    :Head (VP
+        :Head (V_aux :t "are")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "authorized")
+                    :Comp (Clause
+                        :Head (VP
+                            :Marker (Sdr :t "to")
+                            :Head (VP
+                                :Head (V_aux :t "be")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (V :t "appropriated")))))))
+                :Mod (Clause
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (V :t "carry")
+                            :Particle (PP
+                                :Head (P :t "out"))
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "this"))
+                                :Head (Nom
+                                    :Head (N :t "section"))))))))
+        :DisplacedSubj (NP
+            :Head (Nom
+                :Head (Nom
+                    :Mod (AdvP
+                        :Head (Adv :t "such"))
+                    :Head (N :t "sums"))
+                :Comp_ind (PP
+                    :Head (P :t "as")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V_aux :t "may")
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (V_aux :t "be")
+                                    :PredComp (AdjP
+                                        :Head (Adj :t "necessary")
+                                        :Comp (PP
+                                            :Head (P :t "for")
+                                            :Obj (Coordination
+                                                :Coordinate (NP
+                                                    :Head (Nom
+                                                        :Mod (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "fiscal"))
+                                                            :Head (N :t "year"))
+                                                        :Head (N :t "2009" :note "Does not pass diagnostic for appositive modification, CGEL p. 447. (Fiscal year 2009 =/ 2009).")))
+                                                :Coordinate (NP
+                                                    :Marker (Coordinator :t "and")
+                                                    :Head (NP
+                                                        :Head (Nom
+                                                            :Det-Head (DP
+                                                                :Head (D :t "each"))
+                                                            :Comp (PP
+                                                                :Head (P :t "of")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "the"))
+                                                                    :Head (Nom
+                                                                        :Mod (DP
+                                                                            :Head (D :t "five"))
+                                                                        :Head (Nom
+                                                                            :Mod (AdjP
+                                                                                :Head (Adj :t "succeeding"))
+                                                                            :Head (Nom
+                                                                                :Mod (AdjP
+                                                                                    :Head (Adj :t "fiscal"))
+                                                                                :Head (N :t "years" :p ".")))))))))))))))))))))
