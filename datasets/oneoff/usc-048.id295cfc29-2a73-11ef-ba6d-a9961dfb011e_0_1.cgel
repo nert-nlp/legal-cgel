@@ -33,7 +33,7 @@
                             :Head (Nom
                                 :Head (N :t "opportunity"))))
                     :Comp (PP
-                        :Head (P :t "for")
+                        :Head (P :t "for" :note "[AMBIG] could plausibly apply just to 'opportunity' (neglible meaning difference)")
                         :Obj (NP
                             :Det (DP
                                 :Head (D :t "a"))
