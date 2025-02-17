@@ -9,10 +9,10 @@
             :Det (DP
                 :Head (D :t "the"))
             :Head (Nom
-                :Head (N :t "funds")
+                :Head (N :t "funds" :l "fund")
                 :Mod (Clause
                     :Head (VP
-                        :Head (V :t "appropriated")
+                        :Head (V :t "appropriated" :l "appropriate" :xpos "VBN")
                         :Mod (PP
                             :Head (P :t "under")
                             :Obj (NP
@@ -26,11 +26,11 @@
         :Head (Nom
             :Head (N :t "Secretary")))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
                 :Head (VP
-                    :Head (V :t "enter")
+                    :Head (V :t "enter" :xpos "VB")
                     :Comp (PP
                         :Head (P :t "into")
                         :Obj (NP
@@ -54,13 +54,13 @@
                                                     :Head (Adj :t "private" :p ","))
                                                 :Coordinate (AdjP
                                                     :Head (Adj :t "nonprofit")))
-                                            :Head (N :t "entities"))))))))
+                                            :Head (N :t "entities" :l "entity"))))))))
                 :Mod (Coordination
                     :Coordinate (Clause
                         :Head (VP
                             :Marker (Sdr :t "to")
                             :Head (VP
-                                :Head (V :t "provide")
+                                :Head (V :t "provide" :xpos "VB")
                                 :Obj (NP
                                     :Head (Nom
                                         :Mod (AdjP
@@ -70,26 +70,26 @@
                                     :Head (P :t "to")
                                     :Obj (NP
                                         :Head (Nom
-                                            :Head (N :t "grantees")))))))
+                                            :Head (N :t "grantees" :l "grantee")))))))
                     :Coordinate (Clause
                         :Marker (Coordinator :t "and")
                         :Head (Clause
                             :Head (VP
                                 :Marker (Sdr :t "to")
                                 :Head (VP
-                                    :Head (V :t "conduct")
+                                    :Head (V :t "conduct" :xpos "VB")
                                     :Obj (NP
                                         :Det (DP
                                             :Head (D :t "the"))
                                         :Head (Nom
-                                            :Head (N :t "evaluations")
+                                            :Head (N :t "evaluations" :l "evaluation")
                                             :Mod (Clause
                                                 :Head (VP
-                                                    :Head (V :t "required")
+                                                    :Head (V :t "required" :l "require" :xpos "VBN")
                                                     :Comp (PP
                                                         :Head (P :t "under")
                                                         :Obj (NP
                                                             :Head (Nom
                                                                 :Mod (Nom
                                                                     :Head (N :t "paragraph"))
-                                                                :Head (N :p "(" :t "3" :p ")" :p ".")))))))))))))))))
+                                                                :Head (N :p "(" :t "3" :xpos "CD" :p ")" :p ".")))))))))))))))))
