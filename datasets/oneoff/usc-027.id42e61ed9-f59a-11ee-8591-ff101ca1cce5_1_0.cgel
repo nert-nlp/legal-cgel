@@ -17,7 +17,7 @@
                             :Head (Nom
                                 :Mod (Nom
                                     :Head (N :t "paragraph"))
-                                :Head (N :p "(" :t "2" :p ")" :xpos "CD"))))))))
+                                :Head (N :p "(" :t "2" :xpos "CD" :p ")"))))))))
     :Head (VP
         :Head (V_aux :t "is" :l "be" :xpos "VBZ")
         :PredComp (AdjP
