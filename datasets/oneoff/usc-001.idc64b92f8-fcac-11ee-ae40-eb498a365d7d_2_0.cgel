@@ -1,7 +1,7 @@
 # sent_id = usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0
 # text = The Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10, 1958, shall be enforced in United States courts in accordance with this chapter.
 # sent = the Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10 1958 shall be enforced in United States courts in accordance with this chapter
-# tree_by = mebwells (2024-08-13) rev. bwaldon (2024-09-17)
+# tree_by = mebwells (2024-08-13) rev. bwaldon (2024-09-17) rev. nschneid (2025-01-17) rev. bwaldon (2025-02-11)
 (Clause
     :Subj (NP
         :Det (DP
@@ -15,25 +15,24 @@
                         :Det (DP
                             :Head (D :t "the"))
                         :Head (NP
-                            :Head (Coordination
-                                :Coordinate (NP
-                                    :Head (Nom
-                                        :Head (N :t "Recognition")))
-                                :Coordinate (NP
-                                    :Marker (Coordinator :t "and")
-                                    :Head (NP
+                            :Head (Nom
+                                :Head (Coordination
+                                    :Coordinate (Nom
+                                        :Head (N :t "Recognition"))
+                                    :Coordinate (Nom
+                                        :Marker (Coordinator :t "and")
                                         :Head (Nom
-                                            :Head (N :t "Enforcement")))))
-                            :Comp (PP
-                                :Head (P :t "of")
-                                :Obj (NP
-                                    :Head (Nom
-                                        :Mod (AdjP
-                                            :Head (Adj :t "Foreign"))
+                                            :Head (N :t "Enforcement"))))
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
                                         :Head (Nom
                                             :Mod (AdjP
-                                                :Head (Adj :t "Arbitral"))
-                                            :Head (N :t "Awards" :l "award")))))))))
+                                                :Head (Adj :t "Foreign"))
+                                            :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "Arbitral"))
+                                                :Head (N :t "Awards" :l "award"))))))))))
             :Mod (PP
                 :Head (P :t "of")
                 :Obj (NP
@@ -73,4 +72,3 @@
                                                 :Head (D :t "this"))
                                             :Head (Nom
                                                 :Head (N :t "chapter" :p ".")))))))))))))
-
