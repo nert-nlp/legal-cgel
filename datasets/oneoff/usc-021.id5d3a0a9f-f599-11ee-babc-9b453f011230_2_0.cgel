@@ -74,7 +74,7 @@
                                                         :Det (DP
                                                             :Head (D :t "the"))
                                                         :Head (Nom
-                                                            :Head (N :t "Secretary,")))))))
+                                                            :Head (N :t "Secretary" :p ",")))))))
                                     :Comp (Clause
                                         :Head (VP
                                             :Head (V_aux :t "be" :xpos "MD")
