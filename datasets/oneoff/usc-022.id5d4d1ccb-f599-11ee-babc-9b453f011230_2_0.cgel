@@ -6,10 +6,10 @@
     :Subj (NP
         :Head (Nom
             :Head (Nom
-                :Head (N :t "payments")
+                :Head (N :t "payments" :l "payment")
                 :Mod (Clause
                     :Head (VP
-                        :Head (V :t "made")
+                        :Head (V :t "made" :l "make" :xpos "VBN")
                         :Comp (PP
                             :Head (P :t "under")
                             :Obj (NP
@@ -25,13 +25,13 @@
                     :Head (Nom
                         :Head (N :t "policy"))))))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V_aux :t "be")
+                :Head (V_aux :t "be" :xpos "VB")
                 :Comp (Clause
                     :Head (VP
-                        :Head (V :t "considered")
+                        :Head (V :t "considered" :l "consider" :xpos "VBN")
                         :Comp (PP
                             :Head (P :t "as")
                             :PredComp (NP
@@ -67,7 +67,7 @@
                                                                 :Head (N :t "development"))))
                                                     :Mod (Clause
                                                         :Head (VP
-                                                            :Head (V :t "conducted")
+                                                            :Head (V :t "conducted" :l "conduct" :xpos "VBN")
                                                             :Mod (PP
                                                                 :Head (P :t "with")
                                                                 :Obj (NP
@@ -89,7 +89,7 @@
                                                         :Head (Nom
                                                             :Mod (Nom
                                                                 :Head (N :t "property"))
-                                                            :Head (N :t "rights"))
+                                                            :Head (N :t "rights" :l "right"))
                                                         :Comp (PP
                                                             :Head (P :t "to")
                                                             :Obj (NP
