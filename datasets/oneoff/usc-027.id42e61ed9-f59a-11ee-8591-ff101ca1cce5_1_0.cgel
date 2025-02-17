@@ -10,7 +10,7 @@
             :Head (N :t "person")
             :Mod (Clause
                 :Head (VP
-                    :Head (V :t "described")
+                    :Head (V :t "described" :l "describe" :xpos "VBN")
                     :Mod (PP
                         :Head (P :t "in")
                         :Obj (NP
@@ -19,7 +19,7 @@
                                     :Head (N :t "paragraph"))
                                 :Head (N :t "(2)"))))))))
     :Head (VP
-        :Head (V_aux :t "is")
+        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
         :PredComp (AdjP
             :Head (AdjP
                 :Head (Adj :t "eligible")
@@ -29,10 +29,10 @@
                         :Det (DP
                             :Head (D :t "the"))
                         :Head (Nom
-                            :Head (N :t "benefits")
+                            :Head (N :t "benefits" :l "benefit")
                             :Mod (Clause
                                 :Head (VP
-                                    :Head (V :t "specified")
+                                    :Head (V :t "specified" :l "specify" :xpos "VBN")
                                     :Mod (PP
                                         :Head (P :t "in")
                                         :Obj (NP
@@ -64,7 +64,7 @@
                                     :Head (Nom
                                         :Mod (AdjP
                                             :Head (Adj :t "same"))
-                                        :Head (N :t "conditions"))
+                                        :Head (N :t "conditions" :l "condition"))
                                     :Comp_ind (x / GAP))))))
                 :Supplement (PP
                     :Head (P :p "(" :t "including")
@@ -82,7 +82,7 @@
                                             :Head (Nom
                                                 :Mod (Nom
                                                     :Head (N :t "reciprocity"))
-                                                :Head (N :t "requirements" :p ")")))))))))
+                                                :Head (N :t "requirements" :l "requirement" :p ")")))))))))
                 :Postnucleus (x / PP
                     :Head (P :t "as")
                     :Obj (NP
@@ -113,7 +113,7 @@
                                                             :Head (N :t "government")
                                                             :Mod (Clause
                                                                 :Head (VP
-                                                                    :Head (V :t "specified")
+                                                                    :Head (V :t "specified" :l "specify" :xpos "VBN")
                                                                     :Mod (PP
                                                                         :Head (P :t "in")
                                                                         :Obj (NP
@@ -128,7 +128,7 @@
                                     :Head (Clause_rel
                                         :Subj (y / GAP)
                                         :Head (VP
-                                            :Head (V_aux :t "is")
+                                            :Head (V_aux :t "is" :l "be" :xpos "VBZ")
                                             :PredComp (AdjP
                                                 :Head (AdjP
                                                     :Head (Adj :t "eligible")
@@ -138,7 +138,7 @@
                                                             :Det (DP
                                                                 :Head (D :t "such"))
                                                             :Head (Nom
-                                                                :Head (N :t "benefits")))))
+                                                                :Head (N :t "benefits" :l "benefit")))))
                                                 :Mod (PP
                                                     :Head (P :t "under")
                                                     :Obj (NP
