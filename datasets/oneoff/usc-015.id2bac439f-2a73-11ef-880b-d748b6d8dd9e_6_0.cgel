@@ -1,7 +1,7 @@
 # sent_id = usc-015.id2bac439f-2a73-11ef-880b-d748b6d8dd9e_6_0
 # text = The official who would be authorized to appoint him shall give him a discharge certificate.
 # sent = the official who -- would be authorized to appoint him shall give him a discharge certificate
-# tree_by = bwaldon (2025-02-11)
+# tree_by = bwaldon (2025-02-11) 
 (Clause
     :Subj (NP
         :Det (DP
