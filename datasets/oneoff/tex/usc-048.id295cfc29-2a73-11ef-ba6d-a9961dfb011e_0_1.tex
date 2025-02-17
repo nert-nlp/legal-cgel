@@ -52,7 +52,7 @@
 % # sent_id = usc-048.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_1
 % # text = No such finding shall be made except after notice and opportunity for a fair hearing.
 % # sent = no such finding shall be made except after notice and opportunity for a fair hearing
-% # tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08)
+% # tree_by = bwaldon (2024-11-08) rev. nschneid+mebwells+devika-tiwari (2024-11-08) rev. nschneid (2025-01-17) rev. bwaldon (2025-02-11)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -82,27 +82,26 @@
         [\Node{Head}{P},edge={line width=1pt}[except]]
         [\Node{Comp}{PP}
             [\Node{Head}{P},edge={line width=1pt}[after]]
-            [\Node{Obj}{Coordination}
-                [\Node{Head}{Coordination},edge={line width=1pt}
-                    [\Node{Coordinate}{NP}
-                        [\Node{Head}{Nom},edge={line width=1pt}
-                            [\Node{Head}{N},edge={line width=1pt}[notice]]]]
-                    [\Node{Coordinate}{NP}
-                        [\Node{Marker}{Coordinator}[and]]
-                        [\Node{Head}{NP},edge={line width=1pt}
+            [\Node{Obj}{NP}
+                [\Node{Head}{Nom},edge={line width=1pt}
+                    [\Node{Head}{Coordination},edge={line width=1pt}
+                        [\Node{Coordinate}{Nom}
+                            [\Node{Head}{N},edge={line width=1pt}[notice]]]
+                        [\Node{Coordinate}{Nom}
+                            [\Node{Marker}{Coordinator}[and]]
                             [\Node{Head}{Nom},edge={line width=1pt}
-                                [\Node{Head}{N},edge={line width=1pt}[opportunity]]]]]]
-                [\Node{Comp}{PP} \hlgreen{\Info}
-                    [\Node{Head}{P},edge={line width=1pt}[for]]
-                    [\Node{Obj}{NP}
-                        [\Node{Det}{DP}
-                            [\Node{Head}{D},edge={line width=1pt}[a]]]
-                        [\Node{Head}{Nom},edge={line width=1pt}
-                            [\Node{Mod}{AdjP}
-                                [\Node{Head}{Adj},edge={line width=1pt}[fair]]]
-                            [\Node{Head}{N},edge={line width=1pt}[hearing,label={right:\p{.}}]]]]]]]]]
+                                [\Node{Head}{N},edge={line width=1pt}[opportunity]]]]]
+                    [\Node{Comp}{PP}
+                        [\Node{Head}{P} \hlgreen{\Info},edge={line width=1pt}[for]]
+                        [\Node{Obj}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[a]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Mod}{AdjP}
+                                    [\Node{Head}{Adj},edge={line width=1pt}[fair]]]
+                                [\Node{Head}{N},edge={line width=1pt}[hearing,label={right:\p{.}}]]]]]]]]]]
 \node at (current bounding box.south)[yshift=-1cm]{
-(1) [AMBIG] could plausibly apply just to \textquotesingle{}opportunity\textquotesingle{} (neglible meaning difference)};
+(1) {[}AMBIG{]} could plausibly apply just to 'opportunity' (neglible meaning difference)};
         \end{forest}
         
 

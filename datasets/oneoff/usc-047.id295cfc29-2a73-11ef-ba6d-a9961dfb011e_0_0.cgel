@@ -25,33 +25,33 @@
                             :Head (N :t "States" :l "state")))))
             :Postnucleus (x / NP
                 :Head (Nom
-                    :Head (N :t "amounts" :l "amount"))
-                :Mod (Clause
-                    :Head (VP
-                        :Head (V :t "found" :l "find" :xpos "VBN" :note "verb licensing catenative complement (p. 1233), as opposed to predicative complement (p. 1255)")
-                        :Comp (Clause
-                            :Mod (AdvP
-                                :Head (Adv :t "not"))
-                            :Head (Clause
-                                :Head (VP
-                                    :Marker (Sdr :t "to")
+                    :Head (N :t "amounts" :l "amount")
+                    :Mod (Clause
+                        :Head (VP
+                            :Head (V :t "found" :l "find" :xpos "VBN" :note "verb licensing catenative complement (p. 1233), as opposed to predicative complement (p. 1255)")
+                            :Comp (Clause
+                                :Mod (AdvP
+                                    :Head (Adv :t "not"))
+                                :Head (Clause
                                     :Head (VP
-                                        :Head (V_aux :t "have" :xpos "VB")
-                                        :Comp (Clause
-                                            :Head (VP
-                                                :Head (V_aux :t "been" :l "be" :xpos "VBN")
-                                                :Comp (Clause
-                                                    :Head (VP
-                                                        :Head (V :t "expended" :l "expend" :xpos "VBN")
-                                                        :Mod (PP
-                                                            :Head (P :t "in")
-                                                            :Obj (NP
-                                                                :Head (Nom
-                                                                    :Head (N :t "accordance")
-                                                                    :Comp (PP
-                                                                        :Head (P :t "with")
-                                                                        :Obj (NP
-                                                                            :Det (DP
-                                                                                :Head (D :t "this"))
-                                                                            :Head (Nom
-                                                                                :Head (N :t "chapter" :p ".")))))))))))))))))))))
+                                        :Marker (Sdr :t "to")
+                                        :Head (VP
+                                            :Head (V_aux :t "have" :xpos "VB")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Head (V_aux :t "been" :l "be" :xpos "VBN")
+                                                    :Comp (Clause
+                                                        :Head (VP
+                                                            :Head (V :t "expended" :l "expend" :xpos "VBN")
+                                                            :Mod (PP
+                                                                :Head (P :t "in")
+                                                                :Obj (NP
+                                                                    :Head (Nom
+                                                                        :Head (N :t "accordance")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "with")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "this"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "chapter" :p "."))))))))))))))))))))))
