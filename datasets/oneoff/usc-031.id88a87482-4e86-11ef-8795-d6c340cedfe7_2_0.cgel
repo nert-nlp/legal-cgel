@@ -9,14 +9,14 @@
         :Head (Nom
             :Head (N :t "Secretary")))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
                 :Head (VP
-                    :Head (V :t "award")
+                    :Head (V :t "award" :xpos "VB")
                     :Obj (NP
                         :Head (Nom
-                            :Head (N :t "grants")
+                            :Head (N :t "grants" :l "grant")
                             :Mod (PP
                                 :Head (P :t "under")
                                 :Obj (NP
@@ -30,23 +30,23 @@
                             :Head (Nom
                                 :Mod (AdjP
                                     :Head (Adj :t "eligible"))
-                                :Head (N :t "institutions")))))
+                                :Head (N :t "institutions" :l "institution")))))
                 :Mod (Clause
                     :Head (VP
                         :Marker (Sdr :t "to")
                         :Head (VP
-                            :Head (V :t "enable")
+                            :Head (V :t "enable" :xpos "VB")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "such"))
                                 :Head (Nom
-                                    :Head (N :t "institutions")))
+                                    :Head (N :t "institutions" :l "institution")))
                             :Comp (Clause
                                 :Head (VP
                                     :Marker (Sdr :t "to")
                                     :Head (VP
                                         :Head (VP
-                                            :Head (V :t "provide")
+                                            :Head (V :t "provide" :xpos "VB")
                                             :Obj (NP
                                                 :Head (Nom
                                                     :Mod (Nom
@@ -66,25 +66,25 @@
                                                     :Head (Nom
                                                         :Mod (AdjP
                                                             :Head (Adj :t "eligible"))
-                                                        :Head (N :t "students")))))
+                                                        :Head (N :t "students" :l "student")))))
                                         :Mod (Clause
                                             :Head (VP
                                                 :Marker (Sdr :t "to")
                                                 :Head (VP
-                                                    :Head (V :t "enable")
+                                                    :Head (V :t "enable" :xpos "VB")
                                                     :Obj (NP
                                                         :Det (DP
                                                             :Head (D :t "the"))
                                                         :Head (Nom
                                                             :Mod (AdjP
                                                                 :Head (Adj :t "eligible"))
-                                                            :Head (N :t "students")))
+                                                            :Head (N :t "students" :l "student")))
                                                     :Comp (Clause
                                                         :Head (VP
                                                             :Marker (Sdr :t "to")
                                                             :Head (Coordination
                                                                 :Coordinate (VP
-                                                                    :Head (V :t "maintain")
+                                                                    :Head (V :t "maintain" :xpos "VB")
                                                                     :Obj (NP
                                                                         :Head (Nom
                                                                             :Head (N :t "enrollment"))))
@@ -101,4 +101,4 @@
                                                                                         :Marker (Coordinator :t "or")
                                                                                         :Head (Nom
                                                                                             :Head (N :t "certificate"))))
-                                                                                :Head (N :t "programs" :p ".")))))))))))))))))))))
+                                                                                :Head (N :t "programs" :l "program" :p ".")))))))))))))))))))))
