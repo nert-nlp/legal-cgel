@@ -7,24 +7,24 @@
         :Head (Nom
             :Head (N_pro :t "there")))
     :Head (VP
-        :Head (V_aux :t "are")
+        :Head (V_aux :t "are" :l "be" :xpos "VBP")
         :Comp (Clause
             :Head (VP
                 :Head (VP
-                    :Head (V :t "authorized")
+                    :Head (V :t "authorized" :l "authorize" :xpos "VBN")
                     :Comp (Clause
                         :Head (VP
                             :Marker (Sdr :t "to")
                             :Head (VP
-                                :Head (V_aux :t "be")
+                                :Head (V_aux :t "be" :xpos "VB")
                                 :Comp (Clause
                                     :Head (VP
-                                        :Head (V :t "appropriated")))))))
+                                        :Head (V :t "appropriated" :l "appropriate" :xpos "VBN")))))))
                 :Mod (Clause
                     :Head (VP
                         :Marker (Sdr :t "to")
                         :Head (VP
-                            :Head (V :t "carry")
+                            :Head (V :t "carry" :xpos "VB")
                             :Particle (PP
                                 :Head (P :t "out"))
                             :Obj (NP
@@ -37,15 +37,15 @@
                 :Head (Nom
                     :Mod (AdvP
                         :Head (Adv :t "such"))
-                    :Head (N :t "sums"))
+                    :Head (N :t "sums" :l "sum"))
                 :Comp_ind (PP
                     :Head (P :t "as")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V_aux :t "may")
+                            :Head (V_aux :t "may" :xpos "MD")
                             :Comp (Clause
                                 :Head (VP
-                                    :Head (V_aux :t "be")
+                                    :Head (V_aux :t "be" :xpos "VB")
                                     :PredComp (AdjP
                                         :Head (Adj :t "necessary")
                                         :Comp (PP
@@ -57,7 +57,7 @@
                                                             :Mod (AdjP
                                                                 :Head (Adj :t "fiscal"))
                                                             :Head (N :t "year"))
-                                                        :Head (N :t "2009" :note "Does not pass diagnostic for appositive modification, CGEL p. 447. (Fiscal year 2009 =/ 2009).")))
+                                                        :Head (N :t "2009" :xpos "CD" :note "Does not pass diagnostic for appositive modification, CGEL p. 447. (Fiscal year 2009 =/ 2009).")))
                                                 :Coordinate (NP
                                                     :Marker (Coordinator :t "and")
                                                     :Head (NP
@@ -71,11 +71,11 @@
                                                                         :Head (D :t "the"))
                                                                     :Head (Nom
                                                                         :Mod (DP
-                                                                            :Head (D :t "five"))
+                                                                            :Head (D :t "five" :xpos "CD"))
                                                                         :Head (Nom
                                                                             :Mod (AdjP
                                                                                 :Head (Adj :t "succeeding"))
                                                                             :Head (Nom
                                                                                 :Mod (AdjP
                                                                                     :Head (Adj :t "fiscal"))
-                                                                                :Head (N :t "years" :p ".")))))))))))))))))))))
+                                                                                :Head (N :t "years" :l "year" :p ".")))))))))))))))))))))
