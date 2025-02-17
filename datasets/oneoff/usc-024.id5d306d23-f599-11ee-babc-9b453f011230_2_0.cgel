@@ -67,7 +67,7 @@
                                                                         :Head (Adv :t "otherwise"))
                                                                     :Head (VP
                                                                         :Head (V :t "provided" :l "provide" :xpos "VBN")
-                                                                        :Particle (PP
+                                                                        :Comp (PP_strand
                                                                             :Head (P :t "for"))
                                                                         :Comp (PP
                                                                             :Head (P :t "by")
