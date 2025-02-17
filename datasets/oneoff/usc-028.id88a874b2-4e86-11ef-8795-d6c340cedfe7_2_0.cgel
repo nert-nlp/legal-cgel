@@ -43,7 +43,7 @@
                                     :Obj (NP
                                         :Det (Coordination
                                             :Coordinate (DP
-                                                :Head (D :t "one"))
+                                                :Head (D :t "one" :xpos "CD"))
                                             :Coordinate (DP
                                                 :Marker (Coordinator :t "or")
                                                 :Head (DP
