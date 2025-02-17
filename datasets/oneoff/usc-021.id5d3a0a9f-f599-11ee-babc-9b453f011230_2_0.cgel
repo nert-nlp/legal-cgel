@@ -9,10 +9,10 @@
         :Head (Nom
             :Head (N :t "Corporation")))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (V :t "have")
+                :Head (V :t "have" :xpos "VB")
                 :Obj (NP
                     :Det (DP
                         :Head (D :t "a"))
@@ -27,12 +27,12 @@
                                     :Head (P :t "of")
                                     :Obj (NP
                                         :Det (DP
-                                            :Head (D :t "500,000,000"))
+                                            :Head (D :t "500,000,000" :xpos "CD"))
                                         :Head (Nom
                                             :Head (N :t "$")))))
                             :Mod (Clause
                                 :Head (VP
-                                    :Head (V :t "subscribed")
+                                    :Head (V :t "subscribed" :l "subscribe" :xpos "VBN")
                                     :Comp (PP
                                         :Head (P :t "by")
                                         :Obj (NP
@@ -60,7 +60,7 @@
                             :Head (Clause_rel
                                 :Subj (x / GAP)
                                 :Head (VP
-                                    :Head (V_aux :t "shall" :p ",")
+                                    :Head (V_aux :t "shall" :xpos "MD" :p ",")
                                     :Supplement (PP
                                         :Head (P :t "with")
                                         :Obj (NP
@@ -77,7 +77,7 @@
                                                             :Head (N :t "Secretary,")))))))
                                     :Comp (Clause
                                         :Head (VP
-                                            :Head (V_aux :t "be")
+                                            :Head (V_aux :t "be" :xpos "MD")
                                             :Comp (Clause
                                                 :Head (VP
                                                     :Head (V :t "subject")
@@ -107,3 +107,4 @@
                                                                             :Head (D :t "the"))
                                                                         :Head (Nom
                                                                             :Head (N :t "Board" :p "."))))))))))))))))))))
+                                                                            
