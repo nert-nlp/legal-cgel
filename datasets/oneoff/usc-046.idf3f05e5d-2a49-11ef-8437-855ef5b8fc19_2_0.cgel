@@ -73,29 +73,29 @@
                     :Det (DP
                         :Head (D :t "a"))
                     :Head (Nom
+                        :Mod (AdjP
+                            :Head (Adj :t "reasonable"))
                         :Head (Nom
-                            :Mod (AdjP
-                                :Head (Adj :t "reasonable"))
-                            :Head (N :t "indication"))
-                        :Comp (Clause
-                            :Marker (Sdr :t "that")
-                            :Head (Clause
-                                :Subj (NP
-                                    :Head (Nom
-                                        :Head (N_pro :t "there")))
-                                :Head (VP
-                                    :Head (V_aux :t "is" :l "be" :xpos "VBZ")
-                                    :DisplacedSubj (NP
-                                        :Det (DP
-                                            :Head (D :t "a"))
+                            :Head (N :t "indication")
+                            :Comp (Clause
+                                :Marker (Sdr :t "that")
+                                :Head (Clause
+                                    :Subj (NP
                                         :Head (Nom
-                                            :Head (N :t "likelihood")
-                                            :Comp (PP
-                                                :Head (P :t "of")
-                                                :Obj (NP
-                                                    :Det (DP
-                                                        :Head (D :t "such"))
-                                                    :Head (Nom
-                                                        :Mod (AdjP
-                                                            :Head (Adj :t "unreported"))
-                                                        :Head (N :t "income" :p ".")))))))))))))))
+                                            :Head (N_pro :t "there")))
+                                    :Head (VP
+                                        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                        :DisplacedSubj (NP
+                                            :Det (DP
+                                                :Head (D :t "a"))
+                                            :Head (Nom
+                                                :Head (N :t "likelihood")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "such"))
+                                                        :Head (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "unreported"))
+                                                            :Head (N :t "income" :p "."))))))))))))))))
