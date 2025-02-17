@@ -21,16 +21,16 @@
                     :Mod (AdjP
                         :Head (Adj :t "same"))
                     :Head (Nom
-                        :Head (N :t "types")
+                        :Head (N :t "types" :l "type")
                         :Comp (PP
                             :Head (P :t "of")
                             :Comp (Coordination
                                 :Coordinate (NP
                                     :Head (Nom
-                                        :Head (N :t "uniforms" :p ",")))
+                                        :Head (N :t "uniforms" :l "uniform" :p ",")))
                                 :Coordinate (NP
                                     :Head (Nom
-                                        :Head (N :t "arms" :p ",")))
+                                        :Head (N :t "arms" :p "," :note "pluralia tantum")))
                                 :Coordinate (NP
                                     :Marker (Coordinator :t "and")
                                     :Head (NP
@@ -40,10 +40,10 @@
                     :Head (P :t "as")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V_aux :t "are")
+                            :Head (V_aux :t "are" :l "be" :xpos "VBP")
                             :Comp (Clause
                                 :Head (VP
-                                    :Head (V :t "issued")
+                                    :Head (V :t "issued" :l "issue" :xpos "VBN")
                                     :Comp (PP
                                         :Head (P :t "to")
                                         :Obj (NP
@@ -52,13 +52,13 @@
                                             :Head (Nom
                                                 :Head (N_pro :t "Army")))))))))))
         :Head (VP
-            :Head (V_aux :t "shall")
+            :Head (V_aux :t "shall" :xpos "MD")
             :Comp (Clause
                 :Head (VP
-                    :Head (V_aux :t "be")
+                    :Head (V_aux :t "be" :xpos "VB")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V :t "issued")
+                            :Head (V :t "issued" :l "issue" :xpos "VBN")
                             :Comp (PP
                                 :Head (P :t "to")
                                 :Obj (NP
@@ -82,13 +82,13 @@
                         :Mod (AdjP
                             :Head (Adj :t "same"))
                         :Head (Nom
-                            :Head (N :t "types")
+                            :Head (N :t "types" :l "type")
                             :Comp (PP
                                 :Head (P :t "of")
                                 :Comp (Coordination
                                     :Coordinate (NP
                                         :Head (Nom
-                                            :Head (N :t "uniforms" :p ",")))
+                                            :Head (N :t "uniforms" :l "uniform" :p ",")))
                                     :Coordinate (NP
                                         :Head (Nom
                                             :Head (N :t "arms" :p ",")))
@@ -101,10 +101,10 @@
                         :Head (P :t "as")
                         :Comp (Clause
                             :Head (VP
-                                :Head (V_aux :t "are")
+                                :Head (V_aux :t "are" :l "be" :xpos "VBP")
                                 :Comp (Clause
                                     :Head (VP
-                                        :Head (V_aux :t "issued")
+                                        :Head (V_aux :t "issued" :l "issue" :xpos "VBN")
                                         :Comp (PP
                                             :Head (P :t "to")
                                             :Obj (NP
@@ -115,13 +115,13 @@
                                                         :Head (N :t "Air"))
                                                     :Head (N :t "Force")))))))))))
             :Head (VP
-                :Head (V_aux :t "shall")
+                :Head (V_aux :t "shall" :xpos "MD")
                 :Comp (Clause
                     :Head (VP
-                        :Head (V_aux :t "be")
+                        :Head (V_aux :t "be" :xpos "VB")
                         :Comp (Clause
                             :Head (VP
-                                :Head (V :t "issued")
+                                :Head (V :t "issued" :l "issue" :xpos "VBN")
                                 :Mod (PP
                                     :Head (P :t "to")
                                     :Obj (NP
