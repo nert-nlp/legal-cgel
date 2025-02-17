@@ -19,13 +19,13 @@
                 :Head (Nom
                     :Head (Coordination
                         :Coordinate (Nom
-                            :Head (N :t "units" :p ","))
+                            :Head (N :t "units" :l "unit" :p ","))
                         :Coordinate (Nom
-                            :Head (N :t "organizations" :p ","))
+                            :Head (N :t "organizations" :l "organization" :p ","))
                         :Coordinate (Nom
                             :Marker (Coordinator :t "or")
                             :Head (Nom
-                                :Head (N :t "members"))))
+                                :Head (N :t "members" :l "member"))))
                     :Comp (PP
                         :Head (P :t "of")
                         :Obj (NP
@@ -36,11 +36,11 @@
                                     :Head (Adj :t "National"))
                                 :Head (N :t "Guard"))))))
             :Head (VP
-                :Head (V_aux :t "are")
+                :Head (V_aux :t "are" :l "be" :xpos "VBP")
                 :Comp (Clause
                     :Head (VP
                         :Head (VP
-                            :Head (V :t "returned")
+                            :Head (V :t "returned" :l "return" :xpos "VBN")
                             :Comp (PP
                                 :Head (P :t "to")
                                 :Obj (NP
@@ -72,7 +72,7 @@
             :Head (Nom
                 :Head (x / Coordination
                     :Coordinate (Nom
-                        :Head (N :t "arms"))
+                        :Head (N :t "arms" :note "pluralia tantum"))
                     :Coordinate (Nom
                         :Marker (Coordinator :t "and")
                         :Head (Nom
@@ -87,20 +87,20 @@
                                 :Head (N :t "Secretary")
                                 :Mod (Clause
                                     :Head (VP
-                                        :Head (V :t "concerned")))))
+                                        :Head (V :t "concerned" :l "concern" :xpos "VBN")))))
                         :Head (VP
-                            :Head (V :t "determines")
+                            :Head (V :t "determines" :l "determine" :xpos "VBZ")
                             :Comp (Clause
                                 :Subj (x / GAP)
                                 :Head (VP
-                                    :Head (V_aux :t "are")
+                                    :Head (V_aux :t "are" :l "be" :xpos "VBP")
                                     :PredComp (AdjP
                                         :Head (Adj :t "sufficient")
                                         :Comp (Clause
                                             :Head (VP
                                                 :Marker (Sdr :t "to")
                                                 :Head (VP
-                                                    :Head (V :t "accomplish")
+                                                    :Head (V :t "accomplish" :xpos "VB")
                                                     :Obj (NP
                                                         :Det (NP
                                                             :Head (Nom
@@ -110,13 +110,13 @@
                                                                 :Head (N :t "peacetime"))
                                                             :Head (N :t "mission"))))))))))))))
         :Head (VP
-            :Head (V_aux :t "shall")
+            :Head (V_aux :t "shall" :xpos "MD")
             :Comp (Clause
                 :Head (VP
-                    :Head (V_aux :t "be")
+                    :Head (V_aux :t "be" :xpos "VB")
                     :Comp (Clause
                         :Head (VP
-                            :Head (V :t "returned")
+                            :Head (V :t "returned" :l "return" :xpos "VBN")
                             :Mod (PP
                                 :Head (P :t "with")
                                 :Obj (NP
