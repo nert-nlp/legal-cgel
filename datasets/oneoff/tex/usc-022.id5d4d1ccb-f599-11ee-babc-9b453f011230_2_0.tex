@@ -64,25 +64,27 @@
         [Clause
     [\Node{Subj}{NP}
         [\Node{Head}{Nom},edge={line width=1pt}
-            [\Node{Head}{Nom},edge={line width=1pt}
-                [\Node{Head}{N},edge={line width=1pt}[payments]]
-                [\Node{Mod}{Clause}
+            [\Node{Head}{N},edge={line width=1pt}[payments]]
+            [\Node{Mod}{Clause}
+                [\Node{Head}{VP},edge={line width=1pt}
                     [\Node{Head}{VP},edge={line width=1pt}
-                        [\Node{Head}{V},edge={line width=1pt}[made]]
-                        [\Node{Comp}{PP}
+                        [\Node{Head}{VP},edge={line width=1pt}
+                            [\Node{Head}{V},edge={line width=1pt}[made]]
+                            [\Node{Comp}{GAP\idx{x}}[--]]]
+                        [\Node{Mod}{PP}
                             [\Node{Head}{P},edge={line width=1pt}[under]]
                             [\Node{Obj}{NP}
                                 [\Node{Det}{DP}
                                     [\Node{Head}{D},edge={line width=1pt}[this]]]
                                 [\Node{Head}{Nom},edge={line width=1pt}
-                                    [\Node{Head}{N},edge={line width=1pt}[subsection]]]]]]]]
-            [\Node{Comp}{PP}
-                [\Node{Head}{P},edge={line width=1pt}[for]]
-                [\Node{Obj}{NP}
-                    [\Node{Det}{DP}
-                        [\Node{Head}{D},edge={line width=1pt}[a]]]
-                    [\Node{Head}{Nom},edge={line width=1pt}
-                        [\Node{Head}{N},edge={line width=1pt}[policy]]]]]]]
+                                    [\Node{Head}{N},edge={line width=1pt}[subsection]]]]]]
+                    [\Node{Postnucleus}{PP\idx{x}}
+                        [\Node{Head}{P} \hlgreen{\Info},edge={line width=1pt}[for]]
+                        [\Node{Obj}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[a]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{N},edge={line width=1pt}[policy]]]]]]]]]
     [\Node{Head}{VP},edge={line width=1pt}
         [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
         [\Node{Comp}{Clause}
@@ -156,6 +158,8 @@
                                                                     [\Node{Head}{D},edge={line width=1pt}[the]]]
                                                                 [\Node{Head}{Nom},edge={line width=1pt}
                                                                     [\Node{Head}{N},edge={line width=1pt}[policy,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]
+\node at (current bounding box.south)[yshift=-1cm]{
+(1) treating 'for a policy' as complement to light verb 'made'{,} CGEL p. 292};
         \end{forest}
         
 
