@@ -55,7 +55,7 @@
                     :Head (D :t "the"))
                 :Head (Nom
                     :Head (N :t "case")
-                    :Mod (Coordination
+                    :Comp (Coordination
                         :Coordinate (PP
                             :Head (P :t "of")
                             :Obj (NP
@@ -70,9 +70,9 @@
                                     :Comp (PP
                                         :Head (P :t "by")
                                         :Obj (NP
-                                            :Det (DP
-                                                :Head (D :t "pass-thru"))
                                             :Head (Nom
+                                                :Mod (Nom
+                                                    :Head (N :t "pass-thru"))
                                                 :Head (N :t "entities" :l "entity")))))))
                         :Coordinate (PP
                             :Marker (Coordinator :t "and")
@@ -88,3 +88,4 @@
                                                     :Head (D :t "such"))
                                                 :Head (Nom
                                                     :Head (N :t "entities" :l "entity" :p "."))))))))))))))
+                                                    
