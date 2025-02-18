@@ -68,7 +68,7 @@
                 :Head (Nom
                     :Head (N :t "Secretary")))
             :Head (VP
-                :Head (V_aux :t "has" :l "have" :xpos "VBZ")
+                :Head (V :t "has" :l "have" :xpos "VBZ")
                 :PredComp (NP
                     :Det (DP
                         :Head (D :t "a"))
