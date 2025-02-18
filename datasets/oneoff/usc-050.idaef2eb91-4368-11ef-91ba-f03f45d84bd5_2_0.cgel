@@ -1,4 +1,141 @@
 # sent_id = usc-050.idaef2eb91-4368-11ef-91ba-f03f45d84bd5_2_0
 # text = The value of all compensation and benefits provided under part C of this subchapter for an incident or series of incidents shall be offset against the amount of an award, compromise, or settlement of money damages in a claim or suit under this subsection based on the same incident or series of incidents.
 # sent = the value of all compensation and benefits provided under part C of this subchapter for an incident or series of incidents shall be offset against the amount of an award compromise or settlement of money damages in a claim or suit under this subsection based on the same incident or series of incidents
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-18)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "value")
+            :Comp (PP
+                :Head (P :t "of")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "all"))
+                    :Head (Nom
+                        :Head (Coordination
+                            :Coordinate (Nom
+                                :Head (N :t "compensation"))
+                            :Coordinate (Nom
+                                :Marker (Coordinator :t "and")
+                                :Head (Nom
+                                    :Head (N :t "benefits" :l "benefit"))))
+                        :Mod (Clause
+                            :Head (VP
+                                :Head (VP
+                                    :Head (V :t "provided" :l "provide" :xpos "VBZ")
+                                    :Mod (PP
+                                        :Head (P :t "under")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Head (N :t "part"))
+                                                    :Head (N :t "C"))
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "this"))
+                                                        :Head (Nom
+                                                            :Head (N :t "subchapter"))))))))
+                                :Comp (PP
+                                    :Head (P :t "for")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "an"))
+                                        :Head (Coordination
+                                            :Coordinate (Nom
+                                                :Head (N :t "incident"))
+                                            :Coordinate (Nom
+                                                :Marker (Coordinator :t "or")
+                                                :Head (Nom
+                                                    :Head (N :t "series")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "incidents" :l "incident"))))))))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "offset" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "against")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "amount")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "an"))
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Head (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "award" :p ","))
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "compromise" :p ","))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "or")
+                                                            :Head (Nom
+                                                                :Head (N :t "settlement"))))
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Head (Nom
+                                                                    :Mod (Nom
+                                                                        :Head (N :t "money"))
+                                                                    :Head (N :t "damages" :note "pluralia tantum"))
+                                                                :Mod (PP
+                                                                    :Head (P :t "in")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "a"))
+                                                                        :Head (Nom
+                                                                            :Head (Coordination
+                                                                                :Coordinate (Nom
+                                                                                    :Head (N :t "claim"))
+                                                                                :Coordinate (Nom
+                                                                                    :Marker (Coordinator :t "or")
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "suit"))))
+                                                                            :Mod (PP
+                                                                                :Head (P :t "under")
+                                                                                :Obj (NP
+                                                                                    :Det (DP
+                                                                                        :Head (D :t "this"))
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "subsection")))))))))))
+                                                :Mod (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "based" :l "base" :xpos "VBN")
+                                                        :Comp (PP
+                                                            :Head (P :t "on")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "same"))
+                                                                    :Head (Coordination
+                                                                        :Coordinate (Nom
+                                                                            :Head (N :t "incident"))
+                                                                        :Coordinate (Nom
+                                                                            :Marker (Coordinator :t "or")
+                                                                            :Head (Nom
+                                                                                :Head (N :t "series")
+                                                                                :Comp (PP
+                                                                                    :Head (P :t "of")
+                                                                                    :Obj (NP
+                                                                                        :Head (Nom
+                                                                                            :Head (N :t "incidents" :l "incident" :p "."))))))))))))))))))))))))
