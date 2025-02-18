@@ -85,13 +85,14 @@
                                                                                             :Head (P :t "in")
                                                                                             :Obj (NP
                                                                                                 :Head (Nom
-                                                                                                    :Mod (Nom
-                                                                                                        :Head (N :t "section"))
-                                                                                                    :Head (N :t "511(a)" :xpos "CD" :note "The compound constuction of this number may merit review of the CD tag"))
-                                                                                                :Mod (PP
-                                                                                                    :Head (P :t "of")
-                                                                                                    :Obj (NP
-                                                                                                        :Head (Nom
-                                                                                                            :Mod (Nom
-                                                                                                                :Head (N :t "title"))
-                                                                                                            :Head (N :t "26" :xpos "CD" :p "."))))))))))))))))))))))))))))
+                                                                                                    :Head (Nom
+                                                                                                        :Mod (Nom
+                                                                                                            :Head (N :t "section"))
+                                                                                                        :Head (N :t "511(a)" :xpos "CD" :note "The compound constuction of this number may merit review of the CD tag"))
+                                                                                                    :Mod (PP
+                                                                                                        :Head (P :t "of")
+                                                                                                        :Obj (NP
+                                                                                                            :Head (Nom
+                                                                                                                :Mod (Nom
+                                                                                                                    :Head (N :t "title"))
+                                                                                                                :Head (N :t "26" :xpos "CD" :p ".")))))))))))))))))))))))))))))
