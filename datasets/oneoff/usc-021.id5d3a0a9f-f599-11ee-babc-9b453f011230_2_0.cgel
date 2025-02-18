@@ -23,7 +23,7 @@
                                     :Mod (Nom
                                         :Head (N :t "capital"))
                                     :Head (N :t "stock"))
-                                :Comp (PP
+                                :Mod (PP
                                     :Head (P :t "of")
                                     :Obj (NP
                                         :Det (DP
@@ -68,7 +68,7 @@
                                                 :Head (D :t "the"))
                                             :Head (Nom
                                                 :Head (N :t "approval")
-                                                :Mod (PP
+                                                :Comp (PP
                                                     :Head (P :t "of")
                                                     :Obj (NP
                                                         :Det (DP
@@ -84,21 +84,20 @@
                                                     :Head (P :t "to")
                                                     :Obj (NP
                                                         :Head (Nom
-                                                            :Head (Nom
-                                                                :Head (N :t "call")
-                                                                :Mod (Coordination
-                                                                    :Coordinate (PP
+                                                            :Head (N :t "call")
+                                                            :Supplement (Coordination
+                                                                :Coordinate (PP
+                                                                    :Head (P :t "in")
+                                                                    :Obj (NP
+                                                                        :Head (Nom
+                                                                            :Head (N :t "whole"))))
+                                                                :Coordinate (PP
+                                                                    :Marker (Coordinator :t "or")
+                                                                    :Head (PP
                                                                         :Head (P :t "in")
                                                                         :Obj (NP
                                                                             :Head (Nom
-                                                                                :Head (N :t "whole"))))
-                                                                    :Coordinate (PP
-                                                                        :Marker (Coordinator :t "or")
-                                                                        :Head (PP
-                                                                            :Head (P :t "in")
-                                                                            :Obj (NP
-                                                                                :Head (Nom
-                                                                                    :Head (N :t "part")))))))
+                                                                                :Head (N :t "part"))))))
                                                             :Comp (PP
                                                                 :Head (P :t "by")
                                                                 :Obj (NP
@@ -106,3 +105,4 @@
                                                                         :Head (D :t "the"))
                                                                     :Head (Nom
                                                                         :Head (N :t "Board" :p ".")))))))))))))))))))
+                                                                        
