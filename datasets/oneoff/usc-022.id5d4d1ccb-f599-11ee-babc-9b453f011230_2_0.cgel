@@ -5,25 +5,27 @@
 (Clause
     :Subj (NP
         :Head (Nom
-            :Head (Nom
-                :Head (N :t "payments" :l "payment")
-                :Mod (Clause
+            :Head (N :t "payments" :l "payment")
+            :Mod (Clause
+                :Head (VP
                     :Head (VP
-                        :Head (V :t "made" :l "make" :xpos "VBN")
+                        :Head (VP
+                            :Head (V :t "made" :l "make" :xpos "VBN")
+                            :Comp (x / GAP))
                         :Mod (PP
                             :Head (P :t "under")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "this"))
                                 :Head (Nom
-                                    :Head (N :t "subsection")))))))
-            :Comp (PP
-                :Head (P :t "for")
-                :Obj (NP
-                    :Det (DP
-                        :Head (D :t "a"))
-                    :Head (Nom
-                        :Head (N :t "policy"))))))
+                                    :Head (N :t "subsection")))))
+                    :Postnucleus (x / PP
+                        :Head (P :t "for" :note "treating 'for a policy' as complement to light verb 'made', CGEL p. 292")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "a"))
+                            :Head (Nom
+                                :Head (N :t "policy"))))))))
     :Head (VP
         :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
