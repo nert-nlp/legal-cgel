@@ -10,7 +10,7 @@
                 :Mod (Clause
                     :Head (VP
                         :Head (V :t "made" :l "make" :xpos "VBN")
-                        :Comp (PP
+                        :Mod (PP
                             :Head (P :t "under")
                             :Obj (NP
                                 :Det (DP
