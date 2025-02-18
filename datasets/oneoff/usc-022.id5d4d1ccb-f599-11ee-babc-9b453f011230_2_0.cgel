@@ -1,6 +1,6 @@
 # sent_id = usc-022.id5d4d1ccb-f599-11ee-babc-9b453f011230_2_0
 # text = Payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy.
-# sent = payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy
+# sent = payments made -- under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy
 # tree_by = bwaldon (2025-02-16)
 (Clause
     :Subj (NP
