@@ -51,7 +51,7 @@
 
 % # sent_id = usc-022.id5d4d1ccb-f599-11ee-babc-9b453f011230_2_0
 % # text = Payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy.
-% # sent = payments made -- under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy
+% # sent = payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy
 % # tree_by = bwaldon (2025-02-16)
 
         \begin{forest}
@@ -64,27 +64,25 @@
         [Clause
     [\Node{Subj}{NP}
         [\Node{Head}{Nom},edge={line width=1pt}
-            [\Node{Head}{N},edge={line width=1pt}[payments]]
-            [\Node{Mod}{Clause}
-                [\Node{Head}{VP},edge={line width=1pt}
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N},edge={line width=1pt}[payments]]
+                [\Node{Mod}{Clause}
                     [\Node{Head}{VP},edge={line width=1pt}
-                        [\Node{Head}{VP},edge={line width=1pt}
-                            [\Node{Head}{V},edge={line width=1pt}[made]]
-                            [\Node{Comp}{GAP\idx{x}}[--]]]
+                        [\Node{Head}{V},edge={line width=1pt}[made]]
                         [\Node{Mod}{PP}
                             [\Node{Head}{P},edge={line width=1pt}[under]]
                             [\Node{Obj}{NP}
                                 [\Node{Det}{DP}
                                     [\Node{Head}{D},edge={line width=1pt}[this]]]
                                 [\Node{Head}{Nom},edge={line width=1pt}
-                                    [\Node{Head}{N},edge={line width=1pt}[subsection]]]]]]
-                    [\Node{Postnucleus}{PP\idx{x}}
-                        [\Node{Head}{P} \hlgreen{\Info},edge={line width=1pt}[for]]
-                        [\Node{Obj}{NP}
-                            [\Node{Det}{DP}
-                                [\Node{Head}{D},edge={line width=1pt}[a]]]
-                            [\Node{Head}{Nom},edge={line width=1pt}
-                                [\Node{Head}{N},edge={line width=1pt}[policy]]]]]]]]]
+                                    [\Node{Head}{N},edge={line width=1pt}[subsection]]]]]]]]
+            [\Node{Comp}{PP}
+                [\Node{Head}{P},edge={line width=1pt}[for]]
+                [\Node{Obj}{NP}
+                    [\Node{Det}{DP}
+                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Head}{N},edge={line width=1pt}[policy]]]]]]]
     [\Node{Head}{VP},edge={line width=1pt}
         [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
         [\Node{Comp}{Clause}
@@ -158,8 +156,6 @@
                                                                     [\Node{Head}{D},edge={line width=1pt}[the]]]
                                                                 [\Node{Head}{Nom},edge={line width=1pt}
                                                                     [\Node{Head}{N},edge={line width=1pt}[policy,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]
-\node at (current bounding box.south)[yshift=-1cm]{
-(1) treating 'for a policy' as complement to light verb 'made'{,} CGEL p. 292};
         \end{forest}
         
 
