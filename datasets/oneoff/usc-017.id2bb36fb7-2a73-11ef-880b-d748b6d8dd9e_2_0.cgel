@@ -10,7 +10,7 @@
             :Head (Adj :t "far"))
         :Comp_ind (PP
             :Head (P :t "as")
-            :Comp (AdjP
+            :PredComp (AdjP
                 :Head (Adj :t "practicable" :p ","))))
     :Coordinate (Clause
         :Subj (NP
