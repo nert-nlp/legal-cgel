@@ -1,4 +1,148 @@
 # sent_id = usc-027.id42e61ed9-f59a-11ee-8591-ff101ca1cce5_1_0
 # text = Any person described in paragraph (2) is eligible for the benefits specified in subsection (a) to the same extent and under the same conditions (including with respect to applicable reciprocity requirements) as a discharged member of the armed forces of a government specified in such subsection who is eligible for such benefits under such subsection.
-# sent = any person described in paragraph 2 is eligible for the benefits specified in subsection a to the same extent and under the same conditions including with respect to applicable reciprocity requirements as a discharged member of the armed forces of a government specified in such subsection who is eligible for such benefits under such subsection
-# tree_by = bwaldon (YYYY-MM-DD)
+# sent = any person described in paragraph 2 is eligible for the benefits specified in subsection a to the same extent -- and under the same conditions -- including with respect to applicable reciprocity requirements as a discharged member of the armed forces of a government specified in such subsection who -- is eligible for such benefits under such subsection
+# tree_by = bwaldon (2025-02-15)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "any"))
+        :Head (Nom
+            :Head (N :t "person")
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "described" :l "describe" :xpos "VBN")
+                    :Mod (PP
+                        :Head (P :t "in")
+                        :Obj (NP
+                            :Head (Nom
+                                :Mod (Nom
+                                    :Head (N :t "paragraph"))
+                                :Head (N :p "(" :t "2" :xpos "CD" :p ")"))))))))
+    :Head (VP
+        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+        :PredComp (AdjP
+            :Head (AdjP
+                :Head (Adj :t "eligible")
+                :Comp (PP
+                    :Head (P :t "for")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "benefits" :l "benefit")
+                            :Mod (Clause
+                                :Head (VP
+                                    :Head (V :t "specified" :l "specify" :xpos "VBN")
+                                    :Mod (PP
+                                        :Head (P :t "in")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Mod (Nom
+                                                    :Head (N :t "subsection"))
+                                                :Head (N :p "(" :t "a" :p ")"))))))))))
+            :Mod (PP
+                :Head (Coordination
+                    :Coordinate (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "same"))
+                                    :Head (N :t "extent"))
+                                :Comp_ind (x / GAP))))
+                    :Coordinate (PP
+                        :Marker (Coordinator :t "and")
+                        :Head (PP
+                            :Head (P :t "under")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "same"))
+                                        :Head (N :t "conditions" :l "condition"))
+                                    :Comp_ind (x / GAP))))))
+                :Supplement (PP
+                    :Head (P :p "(" :t "including")
+                    :Comp (PP
+                        :Head (P :t "with")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "respect")
+                                :Comp (PP
+                                    :Head (P :t "to")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "applicable"))
+                                            :Head (Nom
+                                                :Mod (Nom
+                                                    :Head (N :t "reciprocity"))
+                                                :Head (N :t "requirements" :l "requirement" :p ")")))))))))
+                :Postnucleus (x / PP
+                    :Head (P :t "as")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "a"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "discharged"))
+                            :Head (Nom
+                                :Head (Nom
+                                    :Head (N :t "member")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "armed"))
+                                                    :Head (N :t "forces"))
+                                                :Mod (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "a"))
+                                                        :Head (Nom
+                                                            :Head (N :t "government")
+                                                            :Mod (Clause
+                                                                :Head (VP
+                                                                    :Head (V :t "specified" :l "specify" :xpos "VBN")
+                                                                    :Mod (PP
+                                                                        :Head (P :t "in")
+                                                                        :Obj (NP
+                                                                            :Det (DP
+                                                                                :Head (D :t "such"))
+                                                                            :Head (Nom
+                                                                                :Head (N :t "subsection")))))))))))))
+                                :Mod (Clause_rel
+                                    :Prenucleus (y / NP
+                                        :Head (Nom
+                                            :Head (N_pro :t "who")))
+                                    :Head (Clause_rel
+                                        :Subj (y / GAP)
+                                        :Head (VP
+                                            :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                            :PredComp (AdjP
+                                                :Head (AdjP
+                                                    :Head (Adj :t "eligible")
+                                                    :Comp (PP
+                                                        :Head (P :t "for")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "such"))
+                                                            :Head (Nom
+                                                                :Head (N :t "benefits" :l "benefit")))))
+                                                :Mod (PP
+                                                    :Head (P :t "under")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "such"))
+                                                        :Head (Nom
+                                                            :Head (N :t "subsection" :p "."))))))))))))))))
