@@ -1,31 +1,29 @@
 # sent_id = usc-022.id5d4d1ccb-f599-11ee-babc-9b453f011230_2_0
 # text = Payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy.
-# sent = payments made -- under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy
+# sent = payments made under this subsection for a policy shall be considered as payment in full by the Corporation for the research and development conducted with regard to the policy and any property rights to the policy
 # tree_by = bwaldon (2025-02-16)
 (Clause
     :Subj (NP
         :Head (Nom
-            :Head (N :t "payments" :l "payment")
-            :Mod (Clause
-                :Head (VP
+            :Head (Nom
+                :Head (N :t "payments" :l "payment")
+                :Mod (Clause
                     :Head (VP
-                        :Head (VP
-                            :Head (V :t "made" :l "make" :xpos "VBN")
-                            :Comp (x / GAP))
+                        :Head (V :t "made" :l "make" :xpos "VBN")
                         :Mod (PP
                             :Head (P :t "under")
                             :Obj (NP
                                 :Det (DP
                                     :Head (D :t "this"))
                                 :Head (Nom
-                                    :Head (N :t "subsection")))))
-                    :Postnucleus (x / PP
-                        :Head (P :t "for" :note "treating 'for a policy' as complement to light verb 'made', CGEL p. 292")
-                        :Obj (NP
-                            :Det (DP
-                                :Head (D :t "a"))
-                            :Head (Nom
-                                :Head (N :t "policy"))))))))
+                                    :Head (N :t "subsection")))))))
+            :Comp (PP
+                :Head (P :t "for")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (N :t "policy"))))))
     :Head (VP
         :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
