@@ -1,4 +1,168 @@
 # sent_id = usc-051.idaef2eb93-4368-11ef-91ba-f03f45d84bd5_2_0
 # text = The certification by the Attorney General that is the basis for deeming an action or proceeding to be against the United States, and for removing an action or proceeding from a State court, is a certification that the action or proceeding is against a covered person and is based upon a claim alleging personal injury or death arising out of the administration of a covered countermeasure.
-# sent = the certification by the Attorney General that is the basis for deeming an action or proceeding to be against the United States and for removing an action or proceeding from a State court is a certification that the action or proceeding is against a covered person and is based upon a claim alleging personal injury or death arising out of the administration of a covered countermeasure
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the certification by the Attorney General that -- is the basis for deeming an action or proceeding to be against the United States and for removing an action or proceeding from a State court is a certification that the action or proceeding is against a covered person and is based upon a claim alleging personal injury or death arising out of the administration of a covered countermeasure
+# tree_by = bwaldon (2025-02-18)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (x / Nom
+                :Head (N :t "certification")
+                :Comp (PP
+                    :Head (P :t "by")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "Attorney")
+                            :Mod (AdjP
+                                :Head (Adj :t "General"))))))
+            :Mod (Clause_rel
+                :Marker (Sdr :t "that")
+                :Head (Clause_rel
+                    :Subj (x / GAP)
+                    :Head (VP
+                        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                        :PredComp (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "basis")
+                                :Comp (Coordination
+                                    :Coordinate (PP
+                                        :Head (P :t "for")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Head (V :t "deeming" :l "deem" :xpos "VBG")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "an"))
+                                                    :Head (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "action"))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "or")
+                                                            :Head (Nom
+                                                                :Head (N :t "proceeding")))))
+                                                :Comp (Clause
+                                                    :Head (VP
+                                                        :Marker (Sdr :t "to")
+                                                        :Head (VP
+                                                            :Head (V_aux :t "be")
+                                                            :PredComp (PP
+                                                                :Head (P :t "against")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "the"))
+                                                                    :Head (Nom
+                                                                        :Mod (AdjP
+                                                                            :Head (Adj :t "United"))
+                                                                        :Head (N :t "States" :l "state" :p ","))))))))))
+                                    :Coordinate (PP
+                                        :Marker (Coordinator :t "and")
+                                        :Head (PP
+                                            :Head (P :t "for")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Head (V :t "removing" :l "remove" :xpos "VBG")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "an"))
+                                                        :Head (Coordination
+                                                            :Coordinate (Nom
+                                                                :Head (N :t "action"))
+                                                            :Coordinate (Nom
+                                                                :Marker (Coordinator :t "or")
+                                                                :Head (Nom
+                                                                    :Head (N :t "proceeding")))))
+                                                    :Comp (PP
+                                                        :Head (P :t "from")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "a"))
+                                                            :Head (Nom
+                                                                :Mod (Nom
+                                                                    :Head (N :t "State"))
+                                                                :Head (N :t "court" :p ","))))))))))))))))
+    :Head (VP
+        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+        :PredComp (NP
+            :Det (DP
+                :Head (D :t "a"))
+            :Head (Nom
+                :Head (N :t "certification")
+                :Comp (Clause
+                    :Marker (Sdr :t "that")
+                    :Head (Clause
+                        :Subj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Coordination
+                                :Coordinate (Nom
+                                    :Head (N :t "action"))
+                                :Coordinate (Nom
+                                    :Marker (Coordinator :t "or")
+                                    :Head (Nom
+                                        :Head (N :t "proceeding")))))
+                        :Head (Coordination
+                            :Coordinate (VP
+                                :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                :PredComp (PP
+                                    :Head (P :t "against")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "a"))
+                                        :Head (Nom
+                                            :Mod (VP
+                                                :Head (V :t "covered" :l "cover" :xpos "VBN" :note "Compare to 'anticipated... effects' in usc-012"))
+                                            :Head (N :t "person")))))
+                            :Coordinate (VP
+                                :Marker (Coordinator :t "and")
+                                :Head (VP
+                                    :Head (V_aux :t "is")
+                                    :Comp (Clause
+                                        :Head (VP
+                                            :Head (V :t "based" :l "base" :xpos "VBN")
+                                            :Comp (PP
+                                                :Head (P :t "upon")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "a"))
+                                                    :Head (Nom
+                                                        :Head (N :t "claim")
+                                                        :Mod (Clause
+                                                            :Head (VP
+                                                                :Head (V :t "alleging" :l "allege" :xpos "VBG")
+                                                                :PredComp (NP
+                                                                    :Head (Nom
+                                                                        :Head (Coordination
+                                                                            :Coordinate (Nom
+                                                                                :Mod (AdjP
+                                                                                    :Head (Adj :t "personal"))
+                                                                                :Head (N :t "injury"))
+                                                                            :Coordinate (Nom
+                                                                                :Marker (Coordinator :t "or")
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "death"))))
+                                                                        :Mod (Clause
+                                                                            :Head (VP
+                                                                                :Head (V :t "arising" :l "arise" :xpos "VBG")
+                                                                                :Comp (PP
+                                                                                    :Head (P :t "out" :note "takes PP complement -- CGEL p. 616")
+                                                                                    :Comp (PP
+                                                                                        :Head (P :t "of")
+                                                                                        :Obj (NP
+                                                                                            :Det (DP
+                                                                                                :Head (D :t "the"))
+                                                                                            :Head (Nom
+                                                                                                :Head (N :t "administration")
+                                                                                                :Comp (PP
+                                                                                                    :Head (P :t "of")
+                                                                                                    :Obj (NP
+                                                                                                        :Det (DP
+                                                                                                            :Head (D :t "a"))
+                                                                                                        :Head (Nom
+                                                                                                            :Mod (VP
+                                                                                                                :Head (V :t "covered" :l "cover" :xpos "VBN"))
+                                                                                                            :Head (N :t "countermeasure" :p "."))))))))))))))))))))))))))))
