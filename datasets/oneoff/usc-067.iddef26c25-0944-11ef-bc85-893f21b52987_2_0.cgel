@@ -1,4 +1,110 @@
 # sent_id = usc-067.iddef26c25-0944-11ef-bc85-893f21b52987_2_0
 # text = Production of oil and gas from the Arctic National Wildlife Refuge is prohibited and no leasing or other development leading to production of oil and gas from the range shall be undertaken until authorized by an Act of Congress.
 # sent = production of oil and gas from the Arctic National Wildlife Refuge is prohibited and no leasing or other development leading to production of oil and gas from the range shall be undertaken until authorized by an Act of Congress
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-19)
+(Coordination
+    :Coordinate (Clause
+        :Subj (NP
+            :Head (Nom
+                :Head (Nom
+                    :Head (N :t "production")
+                    :Comp (PP
+                        :Head (P :t "of")
+                        :Obj (Coordination
+                            :Coordinate (NP
+                                :Head (Nom
+                                    :Head (N :t "oil")))
+                            :Coordinate (NP
+                                :Marker (Coordinator :t "and")
+                                :Head (NP
+                                    :Head (Nom
+                                        :Head (N :t "gas")))))))
+                :Mod (PP
+                    :Head (P :t "from")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "Arctic"))
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "National"))
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "Wildlife"))
+                                    :Head (N :t "Refuge"))))))))
+        :Head (VP
+            :Head (V_aux :t "is")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "prohibited" :l "prohibit" :xpos "VBN")))))
+    :Coordinate (Clause
+        :Marker (Coordinator :t "and")
+        :Head (Clause
+            :Head (Clause
+                :Subj (NP
+                    :Det (DP
+                        :Head (D :t "no"))
+                    :Head (Coordination
+                        :Head (Coordination
+                            :Coordinate (Nom
+                                :Head (N :t "leasing"))
+                            :Coordinate (Nom
+                                :Marker (Coordinator :t "or")
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "other"))
+                                    :Head (N :t "development"))))
+                        :Head (Clause
+                            :Head (VP
+                                :Head (V :t "leading" :l "lead" :xpos "VBG")
+                                :Comp (PP
+                                    :Head (P :t "to")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (Nom
+                                                :Head (N :t "production")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (Coordination
+                                                        :Coordinate (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "oil")))
+                                                        :Coordinate (NP
+                                                            :Marker (Coordinator :t "and")
+                                                            :Head (NP
+                                                                :Head (Nom
+                                                                    :Head (N :t "gas")))))))
+                                            :Mod (PP
+                                                :Head (P :t "from")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "range")))))))))))
+                :Head (VP
+                    :Head (V_aux :t "shall" :xpos "MD")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V_aux :t "be" :xpos "VB")
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (V :t "undertaken" :l "undertake" :xpos "VBN")))))))
+            :Mod (PP
+                :Head (P :t "until")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "authorized" :l "authorize" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "by")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "an"))
+                                :Head (Nom
+                                    :Head (N :t "Act")
+                                    :Mod (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "Congress" :p ".")))))))))))))
