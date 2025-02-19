@@ -1,4 +1,76 @@
 # sent_id = usc-055.idb8de71af-4368-11ef-91ba-f03f45d84bd5_1_0
 # text = The vehicles purchased pursuant to this section shall be operated solely on alternative fuels except when operating in an area where the appropriate alternative fuel is unavailable.
 # sent = the vehicles purchased pursuant to this section shall be operated solely on alternative fuels except when operating in an area where the appropriate alternative fuel is unavailable
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-18)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "vehicles" :l "vehicle")
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "purchased" :l "purchase" :xpos "VBN")
+                    :Mod (PP
+                        :Head (P :t "pursuant")
+                        :Comp (PP
+                            :Head (P :t "to")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "this"))
+                                :Head (Nom
+                                    :Head (N :t "section")))))))))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "operated" :l "operate" :xpos "VBN")
+                            :Mod (PP
+                                :Mod (AdvP
+                                    :Head (Adv :t "solely"))
+                                :Head (PP
+                                    :Head (P :t "on")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "alternative"))
+                                            :Head (N :t "fuels" :l "fuel"))))))))))
+        :Mod (PP
+            :Head (P :t "except")
+            :Comp (PP
+                :Head (P :t "when")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "operating" :l "operate" :xpos "VBG")
+                        :Comp (PP
+                            :Head (P :t "in")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "an"))
+                                :Head (Nom
+                                    :Head (N :t "area")
+                                    :Mod (Clause_rel
+                                        :Prenucleus (x / PP
+                                            :Head (P :t "where"))
+                                        :Head (Clause_rel
+                                            :Subj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "appropriate"))
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "alternative"))
+                                                        :Head (N :t "fuel"))))
+                                            :Head (VP
+                                                :Head (VP
+                                                    :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                                                    :PredComp (AdjP
+                                                        :Head (Adj :t "unavailable" :p ".")))
+                                                :Mod (x / GAP)))))))))))))
+                                                
