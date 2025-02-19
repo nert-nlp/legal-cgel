@@ -49,7 +49,7 @@
                                                     :Head (VP
                                                         :Marker (Sdr :t "to")
                                                         :Head (VP
-                                                            :Head (V_aux :t "be")
+                                                            :Head (V_aux :t "be" :xpos "VB")
                                                             :PredComp (PP
                                                                 :Head (P :t "against")
                                                                 :Obj (NP
@@ -120,7 +120,7 @@
                             :Coordinate (VP
                                 :Marker (Coordinator :t "and")
                                 :Head (VP
-                                    :Head (V_aux :t "is")
+                                    :Head (V_aux :t "is" :l "be" :xpos "VBZ")
                                     :Comp (Clause
                                         :Head (VP
                                             :Head (V :t "based" :l "base" :xpos "VBN")
