@@ -7,11 +7,11 @@
         :Head (P :t "in")
         :Comp (Clause
             :Head (VP
-                :Head (VP
-                    :Head (V :t "carrying")
-                    :Particle (PP
-                        :Head (P :t "out"))
-                    :Obj (NP
+                :Head (V :t "carrying" :l "carry" :xpos "VBG")
+                :Particle (PP
+                    :Head (P :t "out"))
+                :Obj (NP
+                    :Head (Nom
                         :Head (Nom
                             :Mod (Coordination
                                 :Coordinate (Nom
@@ -26,70 +26,69 @@
                                         :Mod (AdjP
                                             :Head (Adj :t "commercial"))
                                         :Head (N :t "application"))))
-                            :Head (N :t "activities"))))
-                :Mod (PP
-                    :Head (P :t "under")
-                    :Obj (NP
-                        :Det (DP
-                            :Head (D :t "this"))
-                        :Head (Nom
-                            :Head (N :t "part" :p ",")))))))
+                            :Head (N :t "activities" :l "activity"))
+                        :Mod (PP
+                            :Head (P :t "under")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "this"))
+                                :Head (Nom
+                                    :Head (N :t "part" :p ",")))))))))
     :Subj (NP
         :Det (DP
             :Head (D :t "the"))
         :Head (Nom
             :Head (N :t "Secretary")))
     :Head (VP
-        :Head (V_aux :t "shall")
+        :Head (V_aux :t "shall" :xpos "MD")
         :Comp (Clause
             :Head (VP
-                :Head (VP
-                    :Head (V :t "consult")
-                    :Comp (PP
-                        :Head (P :t "with")
-                        :Obj (Coordination
-                            :Coordinate (NP
-                                :Det (DP
-                                    :Head (D :t "the"))
-                                :Head (Nom
-                                    :Mod (AdjP
-                                        :Head (Adj :t "National"))
-                                    :Head (Nom
-                                        :Mod (Nom
-                                            :Head (N :t "Coal"))
-                                        :Head (N :t "Council"))))
-                            :Coordinate (NP
-                                :Marker (Coordinator :t "and")
-                                :Head (NP
-                                    :Head (Nom
-                                        :Mod (AdjP
-                                            :Head (Adj :t "other"))
-                                        :Head (Nom
-                                            :Head (N :t "representatives")
-                                            :Comp (PP
-                                                :Head (P :t "of")
-                                                :Obj (NP
-                                                    :Det (DP
-                                                        :Head (D :t "the"))
-                                                    :Head (Nom
-                                                        :Mod (Coordination
-                                                            :Coordinate (AdjP
-                                                                :Head (Adj :t "public"))
-                                                            :Coordinate (AdjP
-                                                                :Marker (Coordinator :t "and")
-                                                                :Head (AdjP
-                                                                    :Head (Adj :t "private"))))
-                                                        :Head (N :t "sectors")))))))))))
-                :Mod (PP
-                    :Head (P :t "as")
-                    :Comp (Clause
-                        :Subj (NP
+                :Head (V :t "consult" :xpos "VB")
+                :Comp (PP
+                    :Head (P :t "with")
+                    :Obj (Coordination
+                        :Coordinate (NP
                             :Det (DP
                                 :Head (D :t "the"))
                             :Head (Nom
-                                :Head (N :t "Secretary")))
-                        :Head (VP
-                            :Head (V :t "considers")
-                            :PredComp (AdjP
-                                :Head (Adj :t "appropriate" :p ".")))))))))
-                                
+                                :Mod (AdjP
+                                    :Head (Adj :t "National"))
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "Coal"))
+                                    :Head (N :t "Council"))))
+                        :Coordinate (NP
+                            :Marker (Coordinator :t "and")
+                            :Head (NP
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "other"))
+                                    :Head (Nom
+                                        :Head (N :t "representatives" :xpos "representative")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Mod (Coordination
+                                                        :Coordinate (AdjP
+                                                            :Head (Adj :t "public"))
+                                                        :Coordinate (AdjP
+                                                            :Marker (Coordinator :t "and")
+                                                            :Head (AdjP
+                                                                :Head (Adj :t "private"))))
+                                                    :Head (N :t "sectors" :l "sector")))))))))))))
+    :Supplement (PP
+        :Head (P :t "as")
+        :Comp (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (N :t "Secretary")))
+            :Head (VP
+                :Head (V :t "considers" :l "consider" :xpos "VBZ")
+                :PredComp (AdjP
+                    :Head (Adj :t "appropriate" :p "."))))))
+                    
