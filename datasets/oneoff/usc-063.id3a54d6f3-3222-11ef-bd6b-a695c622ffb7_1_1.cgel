@@ -1,4 +1,103 @@
 # sent_id = usc-063.id3a54d6f3-3222-11ef-bd6b-a695c622ffb7_1_1
 # text = Any liability of the United States resulting from a reconciliation shall be charged against the applicable appropriation available to the Department of Defense (at the time of the reconciliation) for obligation for communications support and related supplies and services.
 # sent = any liability of the United States resulting from a reconciliation shall be charged against the applicable appropriation available to the Department of Defense at the time of the reconciliation for obligation for communications support and related supplies and services
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "any"))
+        :Head (Nom
+            :Head (Nom
+                :Head (N :t "liability")
+                :Mod (PP
+                    :Head (P :t "of")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "United"))
+                            :Head (N :t "States" :l "state")))))
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "resulting" :l "result" :xpos "VBG")
+                    :Comp (PP
+                        :Head (P :t "from")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "a"))
+                            :Head (Nom
+                                :Head (N :t "reconciliation"))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "charged" :l "charge" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "against")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "applicable"))
+                                        :Head (N :t "appropriation"))
+                                    :Mod (AdjP
+                                        :Head (AdjP
+                                            :Head (Adj :t "available")
+                                            :Comp (PP
+                                                :Head (P :t "to")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "Department")
+                                                        :Comp (PP
+                                                            :Head (P :t "of")
+                                                            :Obj (NP
+                                                                :Head (Nom
+                                                                    :Head (N :t "Defense")))))))
+                                            :Supplement (PP
+                                                :Head (P :p "(" :t "at")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "time")
+                                                        :Comp (PP
+                                                            :Head (P :t "of")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "reconciliation" :p ")"))))))))
+                                        :Comp (PP
+                                            :Head (P :t "for")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "obligation")
+                                                    :Mod (PP
+                                                        :Head (P :t "for")
+                                                        :Obj (Coordination
+                                                            :Coordinate (NP
+                                                                :Head (Nom
+                                                                    :Mod (Nom
+                                                                        :Head (N :t "communications" :note "plural-only form https://simple.wiktionary.org/wiki/communications"))
+                                                                    :Head (N :t "support")))
+                                                            :Coordinate (NP
+                                                                :Marker (Coordinator :t "and")
+                                                                :Head (NP
+                                                                    :Head (Nom
+                                                                        :Mod (AdjP
+                                                                            :Head (Adj :t "related"))
+                                                                        :Head (Coordination
+                                                                            :Coordinate (Nom
+                                                                                :Head (N :t "supplies" :l "supply"))
+                                                                            :Coordinate (Nom
+                                                                                :Marker (Coordinator :t "and")
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "services" :l "service" :p "."))))))))))))))))))))))
