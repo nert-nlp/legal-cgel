@@ -14,7 +14,7 @@
                         :Head (N :t "maximum"))
                     :Head (N :t "extent"))
                 :Mod (AdjP
-                    :Head (Adj :t "practicable,")))))
+                    :Head (Adj :t "practicable" :p ",")))))
     :Head (Clause
         :Mod (PP
             :Head (P :t "through")
