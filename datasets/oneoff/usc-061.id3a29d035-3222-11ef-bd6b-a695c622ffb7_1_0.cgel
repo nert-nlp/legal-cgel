@@ -56,14 +56,12 @@
                                                 :Head (Nom
                                                     :Head (Coordination
                                                         :Coordinate (Nom
-                                                            :Head (N :t "project")
-                                                            :Mod (x / GAP))
+                                                            :Head (N :t "project"))
                                                         :Coordinate (Nom
                                                             :Marker (Coordinator :t "or")
                                                             :Head (Nom
-                                                                :Head (N :t "program")
-                                                                :Mod (x / GAP))))
-                                                    :Postnucleus (x / Clause
+                                                                :Head (N :t "program"))))
+                                                    :Mod (Clause
                                                         :Head (VP
                                                             :Head (V :t "funded" :l "fund" :xpos "VBN")
                                                             :Comp (PP
