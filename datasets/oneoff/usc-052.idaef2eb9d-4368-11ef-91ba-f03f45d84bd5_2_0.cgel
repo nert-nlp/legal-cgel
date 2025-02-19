@@ -89,6 +89,5 @@
                                                                             :Head (P :t "of")
                                                                             :Obj (NP
                                                                                 :Head (Nom
-                                                                                    :Head (N :t "business"))))))))))
+                                                                                    :Head (N :t "business" :p "."))))))))))
                                                 :Mod (x / GAP)))))))))))))
-                                                
