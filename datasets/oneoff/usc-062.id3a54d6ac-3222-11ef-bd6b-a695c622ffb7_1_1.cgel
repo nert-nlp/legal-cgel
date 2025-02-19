@@ -1,4 +1,79 @@
 # sent_id = usc-062.id3a54d6ac-3222-11ef-bd6b-a695c622ffb7_1_1
 # text = Liquidation shall be either by direct payment to the country that has provided the greater amount of transportation or by the providing of in-kind transportation services to that country.
 # sent = liquidation shall be either by direct payment to the country that has provided the greater amount of transportation or by the providing of inkind transportation services to that country
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N :t "liquidation")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :PredComp (Coordination
+                    :Coordinate (PP
+                        :Marker (Coordinator :t "either")
+                        :Head (PP
+                            :Head (P :t "by")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "direct"))
+                                    :Head (Nom
+                                        :Head (N :t "payment")
+                                        :Comp (PP
+                                            :Head (P :t "to")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (x / N :t "country")
+                                                    :Mod (Clause_rel
+                                                        :Marker (Sdr :t "that")
+                                                        :Head (Clause_rel
+                                                            :Subj (x / GAP)
+                                                            :Head (VP
+                                                                :Head (V_aux :t "has" :l "have" :xpos "VBZ")
+                                                                :Comp (Clause
+                                                                    :Head (VP
+                                                                        :Head (V :t "provided" :l "provide" :xpos "VBN")
+                                                                        :Obj (NP
+                                                                            :Det (DP
+                                                                                :Head (D :t "the"))
+                                                                            :Head (Nom
+                                                                                :Head (Nom
+                                                                                    :Mod (AdjP
+                                                                                        :Head (Adj :t "greater"))
+                                                                                    :Head (N :t "amount"))
+                                                                                :Comp (PP
+                                                                                    :Head (P :t "of")
+                                                                                    :Obj (NP
+                                                                                        :Head (Nom
+                                                                                            :Head (N :t "transportation")))))))))))))))))))
+                    :Coordinate (PP
+                        :Marker (Coordinator :t "or")
+                        :Head (PP
+                            :Head (P :t "by")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Head (N :t "providing")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "in-kind"))
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Head (N :t "transportation"))
+                                                    :Head (N :t "services" :l "service")))))
+                                    :Comp (PP
+                                        :Head (P :t "to")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "that"))
+                                            :Head (Nom
+                                                :Head (N :t "country" :p ".")))))))))))))
