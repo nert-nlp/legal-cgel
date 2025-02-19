@@ -1,4 +1,85 @@
 # sent_id = usc-059.id3a1de85a-3222-11ef-bd6b-a695c622ffb7_2_0
 # text = Funding for the professional development education operations of the National Defense University shall be provided from funds made available to the Secretary of Defense from the annual appropriation “Operation and Maintenance, Defense-wide”.
-# sent = funding for the professional development education operations of the National Defense University shall be provided from funds made available to the Secretary of Defense from the annual appropriation Operation and Maintenance Defensewide
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = funding for the professional development education operations of the National Defense University shall be provided from funds made available to the Secretary of Defense from the annual appropriation Operation and Maintenance Defense-wide
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N :t "funding")
+            :Comp (PP
+                :Head (P :t "for")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Mod (Nom
+                                :Mod (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "professional"))
+                                    :Head (N :t "development"))
+                                :Head (N :t "education"))
+                            :Head (N :t "operations" :l "operation"))
+                        :Mod (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "National"))
+                                        :Head (N :t "Defense"))
+                                    :Head (N :t "University")))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V :t "provided" :l "provide" :xpos "VBN")
+                        :Mod (PP
+                            :Head (P :t "from")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Head (N :t "funds" :l "fund")
+                                    :Mod (Clause
+                                        :Head (VP
+                                            :Head (VP
+                                                :Head (V :t "made" :l "make" :xpos "VBN")
+                                                :PredComp (AdjP
+                                                    :Head (Adj :t "available")
+                                                    :Comp (PP
+                                                        :Head (P :t "to")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Head (N :t "Secretary")
+                                                                :Comp (PP
+                                                                    :Head (P :t "of")
+                                                                    :Obj (NP
+                                                                        :Head (Nom
+                                                                            :Head (N :t "Defense")))))))))
+                                            :Mod (PP
+                                                :Head (P :t "from")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "annual"))
+                                                            :Head (N :t "appropriation"))
+                                                        :Mod (Coordination
+                                                            :Coordinate (NP
+                                                                :Head (Nom
+                                                                    :Head (N :p "``" :t "Operation")))
+                                                            :Coordinate (NP
+                                                                :Marker (Coordinator :t "and")
+                                                                :Head (NP
+                                                                    :Head (Nom
+                                                                        :Head (N :t "Maintenance" :p ","))))
+                                                            :Supplement (AdjP
+                                                                :Head (Adj :t "Defense-wide" :p "''" :p ".")))))))))))))))))
