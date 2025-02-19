@@ -1,6 +1,6 @@
 # sent_id = usc-054.idb8de713e-4368-11ef-91ba-f03f45d84bd5_2_1
 # text = To the maximum extent practicable, through the establishment of cofunding requirements applicable to each project, the costs of such activities shall be provided, in part, through contributions of cash, personnel, services, equipment, and other resources, by sources other than the recovery of expenses pursuant to this section.
-# sent = to the maximum extent practicable through the establishment of cofunding requirements applicable to each project the costs of such activities shall be provided in part through contributions of cash personnel services equipment and other resources by sources other_than the recovery of expenses pursuant to this section
+# sent = to the maximum extent practicable through the establishment of cofunding requirements applicable to each project the costs of such activities shall be provided in part through contributions of cash personnel services equipment and other resources by sources other than the recovery of expenses pursuant to this section
 # tree_by = bwaldon (2025-02-18)
 (Clause
     :Mod (PP
@@ -100,7 +100,7 @@
                                         :Head (Nom
                                             :Head (N :t "sources" :l "source")
                                             :Mod (PP
-                                                :Head (P :t "other_than" :note "compound preposition, CGEL p. 1145")
+                                                :Head (P :t "other than" :note "compound preposition, CGEL p. 1145")
                                                 :Obj (NP
                                                     :Det (DP
                                                         :Head (D :t "the"))
