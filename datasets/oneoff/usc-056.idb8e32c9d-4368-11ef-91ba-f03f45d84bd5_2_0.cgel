@@ -92,3 +92,4 @@
                             :Head (V :t "considers")
                             :PredComp (AdjP
                                 :Head (Adj :t "appropriate" :p ".")))))))))
+                                
