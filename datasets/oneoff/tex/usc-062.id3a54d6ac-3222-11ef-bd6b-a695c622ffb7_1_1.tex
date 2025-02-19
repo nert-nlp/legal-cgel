@@ -1,0 +1,143 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = usc-062.id3a54d6ac-3222-11ef-bd6b-a695c622ffb7_1_1
+% # text = Liquidation shall be either by direct payment to the country that has provided the greater amount of transportation or by the providing of in-kind transportation services to that country.
+% # sent = liquidation shall be either by direct payment to the country that has provided the greater amount of transportation or by the providing of inkind transportation services to that country
+% # tree_by = bwaldon (2025-02-19)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Subj}{NP}
+        [\Node{Head}{Nom},edge={line width=1pt}
+            [\Node{Head}{N},edge={line width=1pt}[liquidation]]]]
+    [\Node{Head}{VP},edge={line width=1pt}
+        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
+        [\Node{Comp}{Clause}
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
+                [\Node{PredComp}{Coordination}
+                    [\Node{Coordinate}{PP}
+                        [\Node{Marker}{Coordinator}[either]]
+                        [\Node{Head}{PP},edge={line width=1pt}
+                            [\Node{Head}{P},edge={line width=1pt}[by]]
+                            [\Node{Obj}{NP}
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Mod}{AdjP}
+                                        [\Node{Head}{Adj},edge={line width=1pt}[direct]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N},edge={line width=1pt}[payment]]
+                                        [\Node{Comp}{PP}
+                                            [\Node{Head}{P},edge={line width=1pt}[to]]
+                                            [\Node{Obj}{NP}
+                                                [\Node{Det}{DP}
+                                                    [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Head}{N\idx{x}},edge={line width=1pt}[country]]
+                                                    [\Node{Mod}{Clause\textsubscript{rel}}
+                                                        [\Node{Marker}{Sdr}[that]]
+                                                        [\Node{Head}{Clause\textsubscript{rel}},edge={line width=1pt}
+                                                            [\Node{Subj}{GAP\idx{x}}[--]]
+                                                            [\Node{Head}{VP},edge={line width=1pt}
+                                                                [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[has]]
+                                                                [\Node{Comp}{Clause}
+                                                                    [\Node{Head}{VP},edge={line width=1pt}
+                                                                        [\Node{Head}{V},edge={line width=1pt}[provided]]
+                                                                        [\Node{Obj}{NP}
+                                                                            [\Node{Det}{DP}
+                                                                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                    [\Node{Mod}{AdjP}
+                                                                                        [\Node{Head}{Adj},edge={line width=1pt}[greater]]]
+                                                                                    [\Node{Head}{N},edge={line width=1pt}[amount]]]
+                                                                                [\Node{Comp}{PP}
+                                                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                                    [\Node{Obj}{NP}
+                                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                            [\Node{Head}{N},edge={line width=1pt}[transportation]]]]]]]]]]]]]]]]]]]]
+                    [\Node{Coordinate}{PP}
+                        [\Node{Marker}{Coordinator}[or]]
+                        [\Node{Head}{PP},edge={line width=1pt}
+                            [\Node{Head}{P},edge={line width=1pt}[by]]
+                            [\Node{Obj}{NP}
+                                [\Node{Det}{DP}
+                                    [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N},edge={line width=1pt}[providing]]
+                                        [\Node{Comp}{PP}
+                                            [\Node{Head}{P},edge={line width=1pt}[of]]
+                                            [\Node{Obj}{NP}
+                                                [\Node{Mod}{AdjP}
+                                                    [\Node{Head}{Adj},edge={line width=1pt}[in-kind]]]
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Mod}{Nom}
+                                                        [\Node{Head}{N},edge={line width=1pt}[transportation]]]
+                                                    [\Node{Head}{N},edge={line width=1pt}[services]]]]]]
+                                    [\Node{Comp}{PP}
+                                        [\Node{Head}{P},edge={line width=1pt}[to]]
+                                        [\Node{Obj}{NP}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[that]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Head}{N},edge={line width=1pt}[country,label={right:\p{.}}]]]]]]]]]]]]]]
+        \end{forest}
+        
+
+\end{document}
+
