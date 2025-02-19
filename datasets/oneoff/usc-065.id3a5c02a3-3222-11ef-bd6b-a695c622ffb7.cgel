@@ -1,4 +1,105 @@
 # sent_id = usc-065.id3a5c02a3-3222-11ef-bd6b-a695c622ffb7
 # text = Funds provided to State and local governments and regional organizations under this section may be used as part or all of any required non-Federal contribution to a Federal grant-in-aid program for the purposes stated in paragraph (1).
-# sent = funds provided to State and local governments and regional organizations under this section may be used as part or all of any required nonFederal contribution to a Federal grantinaid program for the purposes stated in paragraph 1
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = funds provided to State and local governments and regional organizations under this section may be used as part -- or all -- of any required non-Federal contribution to a Federal grant-in-aid program for the purposes stated in paragraph (1)
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N :t "funds")
+            :Mod (Clause
+                :Head (VP
+                    :Head (VP
+                        :Head (V :t "provided" :l "provide" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "to")
+                            :Obj (Coordination
+                                :Coordinate (NP
+                                    :Head (Nom
+                                        :Mod (Coordination
+                                            :Coordinate (Nom
+                                                :Head (N :t "State"))
+                                            :Coordinate (AdjP
+                                                :Marker (Coordinator :t "and")
+                                                :Head (AdjP
+                                                    :Head (Adj :t "local"))))
+                                        :Head (N :t "governments" :l "government")))
+                                :Coordinate (NP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (NP
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "regional"))
+                                            :Head (N :t "organizations" :l "organization")))))))
+                    :Mod (PP
+                        :Head (P :t "under")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "this"))
+                            :Head (Nom
+                                :Head (N :t "section"))))))))
+    :Head (VP
+        :Head (V_aux :t "may" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (VP
+                            :Head (V :t "used" :l "use" :xpos "VBN")
+                            :Comp (PP
+                                :Head (P :t "as")
+                                :PredComp (NP
+                                    :Head (Coordination
+                                        :Coordinate (NP
+                                            :Head (Nom
+                                                :Head (N :t "part")
+                                                :Comp (x / GAP)))
+                                        :Coordinate (NP
+                                            :Marker (Coordinator :t "or")
+                                            :Head (NP
+                                                :Head (Nom
+                                                    :Det-Head (DP
+                                                        :Head (D :t "all"))
+                                                    :Comp (x / GAP)))))
+                                    :Postnucleus (x / PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "any"))
+                                            :Head (Nom
+                                                :Mod (VP
+                                                    :Head (V :t "required" :l "require" :xpos "VBN"))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "non-Federal"))
+                                                    :Head (Nom
+                                                        :Head (N :t "contribution")
+                                                        :Comp (PP
+                                                            :Head (P :t "to")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "a"))
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "Federal"))
+                                                                    :Head (Nom
+                                                                        :Mod (Nom
+                                                                            :Head (N :t "grant-in-aid"))
+                                                                        :Head (N :t "program")))))))))))))
+                        :Mod (PP
+                            :Head (P :t "for")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "purposes" :l "purpose")
+                                    :Mod (Clause
+                                        :Head (VP
+                                            :Head (V :t "stated" :l "state" :xpos "VBN")
+                                            :Mod (PP
+                                                :Head (P :t "in")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Mod (Nom
+                                                            :Head (N :t "paragraph"))
+                                                        :Head (N :t "(1)" :xpos "CD" :p ".")))))))))))))))
