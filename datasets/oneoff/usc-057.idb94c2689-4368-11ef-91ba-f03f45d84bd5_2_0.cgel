@@ -1,6 +1,6 @@
 # sent_id = usc-057.idb94c2689-4368-11ef-91ba-f03f45d84bd5_2_0
 # text = Each Federal agency shall consider having the data centers of the agency evaluated once every 4 years by energy practitioners certified pursuant to the program, whenever practicable using certified practitioners employed by the agency.
-# sent = each Federal agency shall consider having the data centers of the agency evaluated once every 4 years by energy practitioners certified pursuant to the program whenever practicable using certified practitioners employed by the agency
+# sent = each Federal agency shall consider having the data centers of the agency evaluated -- once every 4 years by energy practitioners certified pursuant to the program whenever practicable using certified practitioners employed by the agency
 # tree_by = bwaldon (2025-02-19)
 (Clause
     :Subj (NP
@@ -93,4 +93,3 @@
                                                         :Head (D :t "the"))
                                                     :Head (Nom
                                                         :Head (N :t "agency" :p ".")))))))))))))))
-                                                        
