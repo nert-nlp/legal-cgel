@@ -1,4 +1,75 @@
 # sent_id = usc-061.id3a29d035-3222-11ef-bd6b-a695c622ffb7_1_0
 # text = The amount of a grant under this section may not exceed 75 percent of the total cost of the project or program funded by the grant.
 # sent = the amount of a grant under this section may not exceed 75 percent of the total cost of the project or program funded by the grant
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "amount")
+            :Comp (PP
+                :Head (P :t "of")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (N :t "grant")
+                        :Mod (PP
+                            :Head (P :t "under")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "this"))
+                                :Head (Nom
+                                    :Head (N :t "section")))))))))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "may" :xpos "MD")
+            :Mod (AdvP
+                :Head (Adv :t "not")))
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "exceed" :xpos "VB")
+                :Obj (NP
+                    :Head (Nom
+                        :Det-Head (NP
+                            :Det (DP
+                                :Head (D :t "75" :xpos "CD"))
+                            :Head (NP
+                                :Head (Nom
+                                    :Head (N :t "percent"))))
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "total"))
+                                    :Head (Nom
+                                        :Head (N :t "cost")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "project")
+                                                            :Mod (x / GAP))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "or")
+                                                            :Head (Nom
+                                                                :Head (N :t "program")
+                                                                :Mod (x / GAP))))
+                                                    :Postnucleus (x / Clause
+                                                        :Head (VP
+                                                            :Head (V :t "funded" :l "fund" :xpos "VBN")
+                                                            :Comp (PP
+                                                                :Head (P :t "by")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "the"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "grant" :p ".")))))))))))))))))))
