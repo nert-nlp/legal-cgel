@@ -64,7 +64,7 @@
                                     :Mod (AdjP
                                         :Head (Adj :t "other"))
                                     :Head (Nom
-                                        :Head (N :t "representatives" :xpos "representative")
+                                        :Head (N :t "representatives" :l "representative")
                                         :Comp (PP
                                             :Head (P :t "of")
                                             :Obj (NP
@@ -91,4 +91,3 @@
                 :Head (V :t "considers" :l "consider" :xpos "VBZ")
                 :PredComp (AdjP
                     :Head (Adj :t "appropriate" :p "."))))))
-                    
