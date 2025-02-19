@@ -18,39 +18,39 @@
                             :Head (P :t "by")
                             :Obj (NP
                                 :Head (Nom
-                                    :Mod (AdjP
-                                        :Head (Adj :t "direct"))
                                     :Head (Nom
-                                        :Head (N :t "payment")
-                                        :Comp (PP
-                                            :Head (P :t "to")
-                                            :Obj (NP
-                                                :Det (DP
-                                                    :Head (D :t "the"))
-                                                :Head (Nom
-                                                    :Head (x / N :t "country")
-                                                    :Mod (Clause_rel
-                                                        :Marker (Sdr :t "that")
-                                                        :Head (Clause_rel
-                                                            :Subj (x / GAP)
-                                                            :Head (VP
-                                                                :Head (V_aux :t "has" :l "have" :xpos "VBZ")
-                                                                :Comp (Clause
-                                                                    :Head (VP
-                                                                        :Head (V :t "provided" :l "provide" :xpos "VBN")
-                                                                        :Obj (NP
-                                                                            :Det (DP
-                                                                                :Head (D :t "the"))
+                                        :Mod (AdjP
+                                            :Head (Adj :t "direct"))
+                                        :Head (N :t "payment"))
+                                    :Comp (PP
+                                        :Head (P :t "to")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (x / N :t "country")
+                                                :Mod (Clause_rel
+                                                    :Marker (Sdr :t "that")
+                                                    :Head (Clause_rel
+                                                        :Subj (x / GAP)
+                                                        :Head (VP
+                                                            :Head (V_aux :t "has" :l "have" :xpos "VBZ")
+                                                            :Comp (Clause
+                                                                :Head (VP
+                                                                    :Head (V :t "provided" :l "provide" :xpos "VBN")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "the"))
+                                                                        :Head (Nom
                                                                             :Head (Nom
-                                                                                :Head (Nom
-                                                                                    :Mod (AdjP
-                                                                                        :Head (Adj :t "greater"))
-                                                                                    :Head (N :t "amount"))
-                                                                                :Comp (PP
-                                                                                    :Head (P :t "of")
-                                                                                    :Obj (NP
-                                                                                        :Head (Nom
-                                                                                            :Head (N :t "transportation")))))))))))))))))))
+                                                                                :Mod (AdjP
+                                                                                    :Head (Adj :t "greater"))
+                                                                                :Head (N :t "amount"))
+                                                                            :Comp (PP
+                                                                                :Head (P :t "of")
+                                                                                :Obj (NP
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "transportation"))))))))))))))))))
                     :Coordinate (PP
                         :Marker (Coordinator :t "or")
                         :Head (PP
@@ -77,3 +77,4 @@
                                                 :Head (D :t "that"))
                                             :Head (Nom
                                                 :Head (N :t "country" :p ".")))))))))))))
+                                                
