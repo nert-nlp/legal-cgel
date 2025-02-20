@@ -54,11 +54,10 @@
                                 :Head (P :t "in")
                                 :Obj (NP
                                     :Head (Nom
-                                        :Mod (NP
-                                            :Head (Nom
-                                                :Mod (AdjP
-                                                    :Head (Adj :t "United"))
-                                                :Head (N :t "States")))
+                                        :Mod (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "United"))
+                                            :Head (N :t "States"))
                                         :Head (N :t "courts" :l "court")))))
                         :Mod (PP
                             :Head (P :t "in")
@@ -72,3 +71,4 @@
                                                 :Head (D :t "this"))
                                             :Head (Nom
                                                 :Head (N :t "chapter" :p ".")))))))))))))
+                                                
