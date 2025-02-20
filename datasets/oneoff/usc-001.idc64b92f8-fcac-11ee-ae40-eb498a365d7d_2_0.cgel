@@ -1,7 +1,7 @@
 # sent_id = usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0
 # text = The Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10, 1958, shall be enforced in United States courts in accordance with this chapter.
 # sent = the Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10 1958 shall be enforced in United States courts in accordance with this chapter
-# tree_by = mebwells (2024-08-13) rev. bwaldon (2024-09-17) rev. nschneid (2025-01-17) rev. bwaldon (2025-02-11)
+# tree_by = mebwells (2024-08-13) rev. bwaldon (2024-09-17) rev. nschneid (2025-01-17) rev. bwaldon (2025-02-11) rev. bwaldon (2025-02-20)
 (Clause
     :Subj (NP
         :Det (DP
@@ -71,4 +71,3 @@
                                                 :Head (D :t "this"))
                                             :Head (Nom
                                                 :Head (N :t "chapter" :p ".")))))))))))))
-                                                
