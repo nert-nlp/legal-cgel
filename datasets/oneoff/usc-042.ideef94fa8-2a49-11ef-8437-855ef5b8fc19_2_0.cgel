@@ -1,6 +1,6 @@
 # sent_id = usc-042.ideef94fa8-2a49-11ef-8437-855ef5b8fc19_2_0
 # text = No credit shall be allowed under subsection (a) for any expense to the extent that funds for such expense are received under any Federal, State, or local program.
-# sent = no credit shall be allowed under subsection a for any expense to the extent that funds for such expense are received under any Federal State or local program
+# sent = no credit shall be allowed under subsection (a) for any expense to the extent that funds for such expense are received under any Federal State or local program
 # tree_by = bwaldon (2024-12-14) rev. nschneid (2024-12-14)
 (Clause
     :Head (Clause
@@ -24,7 +24,7 @@
                                         :Head (Nom
                                             :Mod (Nom
                                                 :Head (N :t "subsection"))
-                                            :Head (N :p "(" :t "a" :p ")")))))
+                                            :Head (N :t "(a)")))))
                             :Mod (PP
                                 :Head (P :t "for")
                                 :Obj (NP

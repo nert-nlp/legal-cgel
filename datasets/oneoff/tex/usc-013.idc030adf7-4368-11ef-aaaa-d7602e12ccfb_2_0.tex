@@ -51,8 +51,8 @@
 
 % # sent_id = usc-013.idc030adf7-4368-11ef-aaaa-d7602e12ccfb_2_0
 % # text = If the United States district court pursuant to subsection (f) determines that the surveillance was not lawfully authorized or conducted, it shall, in accordance with the requirements of law, suppress the evidence which was unlawfully obtained or derived from electronic surveillance of the aggrieved person or otherwise grant the motion of the aggrieved person.
-% # sent = if the United States district court pursuant to subsection ( f ) determines that the surveillance was not lawfully authorized or conducted it shall in accordance with the requirements of law suppress the evidence which was unlawfully obtained or derived from electronic surveillance of the aggrieved person or otherwise grant the motion of the aggrieved person
-% # tree_by = mebwells (2024-10-02)
+% # sent = if the United States district court pursuant to subsection (f) determines that the surveillance was not lawfully authorized or conducted it shall in accordance with the requirements of law suppress the evidence which -- was unlawfully obtained or derived from electronic surveillance of the aggrieved person or otherwise grant the motion of the aggrieved person
+% # tree_by = mebwells (2024-10-02) rev. nschneid+devika-tiwari+bwaldon+m3ru (2024-10-04) rev. bwaldon (2024-11-11)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -69,15 +69,14 @@
                 [\Node{Det}{DP}
                     [\Node{Head}{D},edge={line width=1pt}[the]]]
                 [\Node{Head}{Nom},edge={line width=1pt}
+                    [\Node{Mod}{Nom}
+                        [\Node{Mod}{AdjP}
+                            [\Node{Head}{Adj},edge={line width=1pt}[United]]]
+                        [\Node{Head}{N},edge={line width=1pt}[States]]]
                     [\Node{Head}{Nom},edge={line width=1pt}
                         [\Node{Mod}{Nom}
-                            [\Node{Mod}{AdjP}
-                                [\Node{Head}{Adj},edge={line width=1pt}[United]]]
-                            [\Node{Head}{N},edge={line width=1pt}[States]]]
-                        [\Node{Head}{Nom},edge={line width=1pt}
-                            [\Node{Mod}{Nom}
-                                [\Node{Head}{N},edge={line width=1pt}[district]]]
-                            [\Node{Head}{N},edge={line width=1pt}[court]]]]]]
+                            [\Node{Head}{N},edge={line width=1pt}[district]]]
+                        [\Node{Head}{N},edge={line width=1pt}[court]]]]]
             [\Node{Supplement}{PP}
                 [\Node{Head}{P},edge={line width=1pt}[pursuant]]
                 [\Node{Comp}{PP}
@@ -86,7 +85,7 @@
                         [\Node{Head}{Nom},edge={line width=1pt}
                             [\Node{Mod}{Nom}
                                 [\Node{Head}{N},edge={line width=1pt}[subsection]]]
-                            [\Node{Head}{N},edge={line width=1pt}[f,label={left:\p{(}},label={right:\p{)}}]]]]]]
+                            [\Node{Head}{N},edge={line width=1pt}[(f)]]]]]]
             [\Node{Head}{VP},edge={line width=1pt}
                 [\Node{Head}{V},edge={line width=1pt}[determines]]
                 [\Node{Comp}{Clause}
@@ -205,7 +204,7 @@
                                                         [\Node{Head}{Adj},edge={line width=1pt}[aggrieved]]]
                                                     [\Node{Head}{N},edge={line width=1pt}[person,label={right:\p{.}}]]]]]]]]]]]]]]]
 \node at (current bounding box.south)[yshift=-1cm]{
-(1) [SEM AMBIG] not lawfully [authorized or conducted] (neither nor) vs. [not lawfully] authorized or conducted (either or)};
+(1) {[}SEM AMBIG{]} not lawfully {[}authorized or conducted{]} (neither nor) vs. {[}not lawfully{]} authorized or conducted (either or)};
         \end{forest}
         
 
