@@ -1,6 +1,6 @@
 # sent_id = usc-011.id903abf9b-0944-11ef-a2f2-985114e05c72_2_0
 # text = Any alien whose permanent resident status is terminated under paragraph (1) may request a review of such determination in a proceeding to remove the alien.
-# sent = any alien whose permanent resident status -- is terminated under paragraph 1 may request a review of such determination in a proceeding to remove the alien
+# sent = any alien whose permanent resident status -- is terminated under paragraph (1) may request a review of such determination in a proceeding to remove the alien
 # tree_by = bwaldon (2024-08-13) rev. nschneid (2024-08-13)
 (Clause
     :Subj (NP
@@ -32,7 +32,7 @@
                                         :Head (Nom
                                             :Mod (Nom
                                                 :Head (N :t "paragraph"))
-                                            :Head (N :p "(" :t "1" :xpos "CD" :p ")")))))))))))
+                                            :Head (N :t "(1)" :xpos "CD")))))))))))
     :Head (VP
         :Head (V_aux :t "may" :xpos "MD")
         :Comp (Clause
