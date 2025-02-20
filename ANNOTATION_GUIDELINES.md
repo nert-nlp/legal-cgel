@@ -16,6 +16,10 @@ the tree: the original form with a :t value (for "token" or "terminal"), and the
 form with a `:correct` value. The lemma should reflect the correct version of the word,
 and must be indicated explicitly if it differs from the `:correct` value.
 
+## Notes on tokenization
+
+- The heads of _section_/_subsection_/_paragraph_- NPs frequently contain parentheses. (E.g., _section 1(a)_, _subparagraph (a)_, _subsection (3)_, etc). These parentheses, along with alphanumeric characters in the head, are treated as a single token. 
+
 ## Making note of unresolvable ambiguities
 
 A sentence may exhibit structural ambiguities that can't be resolved out of context. Consider, e.g.:
