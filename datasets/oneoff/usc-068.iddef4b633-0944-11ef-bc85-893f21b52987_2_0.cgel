@@ -7,7 +7,7 @@
         :Head (Nom
             :Head (N_pro :t "there")))
     :Head (VP
-        :Head (V_aux :t "is")
+        :Head (V_aux :t "is" :l "be" :xpos "VBN")
         :Comp (Clause
             :Head (VP
                 :Mod (AdvP
