@@ -1,4 +1,144 @@
 # sent_id = usc-069.iddefe538b-0944-11ef-bc85-893f21b52987_2_0
 # text = It is unlawful for any person to import, export, or transport in interstate commerce any container or package containing any fish or wildlife unless the container or package has previously been plainly marked, labeled, or tagged in accordance with the regulations issued pursuant to paragraph (2) of section 3376(a) of this title.
-# sent = it is unlawful for any person to import export or transport in interstate commerce any container or package containing any fish or wildlife unless the container or package has previously been plainly marked labeled or tagged in accordance with the regulations issued pursuant to paragraph 2 of section 3376a of this title
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = it is unlawful for any person to import -- export -- or transport -- in interstate commerce any container or package containing any fish or wildlife unless the container or package has previously been plainly marked labeled or tagged in accordance with the regulations issued pursuant to paragraph (2) of section 3376(a) of this title
+# tree_by = bwaldon (2025-02-23)
+(Clause
+    :Head (Clause
+        :Subj (NP
+            :Head (Nom
+                :Head (N_pro :t "it")))
+        :Head (VP
+            :Head (VP
+                :Head (V_aux :t "is")
+                :PredComp (AdjP
+                    :Head (Adj :t "unlawful")))
+            :ExtraposedSubj (Clause
+                :Marker (Sdr :t "for")
+                :Head (Clause
+                    :Subj (NP
+                        :Det (DP
+                            :Head (D :t "any"))
+                        :Head (Nom
+                            :Head (N :t "person")))
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (Coordination
+                                :Coordinate (VP
+                                    :Head (V :t "import" :xpos "VB" :p ",")
+                                    :Obj (x / GAP))
+                                :Coordinate (VP
+                                    :Head (V :t "export" :xpos "VB" :p ",")
+                                    :Obj (x / GAP))
+                                :Coordinate (VP
+                                    :Marker (Coordinator :t "or")
+                                    :Head (VP
+                                        :Head (VP
+                                            :Head (V :t "transport" :xpos "VB")
+                                            :Obj (x / GAP))
+                                        :Mod (PP
+                                            :Head (P :t "in")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Head (N :t "interstate"))
+                                                    :Head (N :t "commerce")))))))
+                            :Postnucleus (x / NP
+                                :Det (DP
+                                    :Head (D :t "any"))
+                                :Head (Nom
+                                    :Head (Coordination
+                                        :Coordinate (Nom
+                                            :Head (N :t "container"))
+                                        :Coordinate (Nom
+                                            :Marker (Coordinator :t "or")
+                                            :Head (Nom
+                                                :Head (N :t "package"))))
+                                    :Mod (Clause
+                                        :Head (VP
+                                            :Head (V :t "containing" :l "contain" :xpos "VBG")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "any"))
+                                                :Head (Coordination
+                                                    :Coordinate (Nom
+                                                        :Head (N :t "fish"))
+                                                    :Coordinate (Nom
+                                                        :Marker (Coordinator :t "or")
+                                                        :Head (Nom
+                                                            :Head (N :t "wildlife")))))))))))))))
+    :Mod (PP
+        :Head (P :t "unless")
+        :Comp (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Coordination
+                    :Coordinate (Nom
+                        :Head (N :t "container"))
+                    :Coordinate (Nom
+                        :Marker (Coordinator :t "or")
+                        :Head (Nom
+                            :Head (N :t "package")))))
+            :Head (VP
+                :Head (V_aux :t "has" :l "have" :xpos "VBZ")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (VP
+                            :Mod (AdvP
+                                :Head (Adv :t "previously"))
+                            :Head (VP
+                                :Head (V_aux :t "been" :l "be" :xpos "VBN")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Mod (AdvP
+                                            :Head (Adv :t "plainly"))
+                                        :Head (Coordination
+                                            :Coordinate (VP
+                                                :Head (V :t "marked" :l "mark" :xpos "VBN" :p ","))
+                                            :Coordinate (VP
+                                                :Head (V :t "labeled" :l "label" :xpos "VBN" :p ","))
+                                            :Coordinate (VP
+                                                :Marker (Coordinator :t "or")
+                                                :Head (VP
+                                                    :Head (V :t "tagged" :l "tag" :xpos "VBN"))))))))
+                        :Mod (PP
+                            :Head (P :t "in")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Head (N :t "accordance")
+                                    :Comp (PP
+                                        :Head (P :t "with")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "regulations" :l "regulation")
+                                                :Mod (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "issued" :l "issue" :xpos "VBN")
+                                                        :Mod (PP
+                                                            :Head (P :t "pursuant")
+                                                            :Comp (PP
+                                                                :Head (P :t "to")
+                                                                :Obj (NP
+                                                                    :Head (Nom
+                                                                        :Head (Nom
+                                                                            :Mod (Nom
+                                                                                :Head (N :t "paragraph"))
+                                                                            :Head (N :t "(2)" :xpos "CD"))
+                                                                        :Comp (PP
+                                                                            :Head (P :t "of")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Head (Nom
+                                                                                        :Mod (Nom
+                                                                                            :Head (N :t "section"))
+                                                                                        :Head (N :t "3376(a)" :xpos "CD"))
+                                                                                    :Comp (PP
+                                                                                        :Head (P :t "of")
+                                                                                        :Obj (NP
+                                                                                            :Det (DP
+                                                                                                :Head (D :t "this"))
+                                                                                            :Head (Nom
+                                                                                                :Head (N :t "title" :p ".")))))))))))))))))))))))))
