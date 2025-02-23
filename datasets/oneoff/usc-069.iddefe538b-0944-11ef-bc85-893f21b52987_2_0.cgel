@@ -9,7 +9,7 @@
                 :Head (N_pro :t "it")))
         :Head (VP
             :Head (VP
-                :Head (V_aux :t "is")
+                :Head (V_aux :t "is" :l "be" :xpos "VBZ")
                 :PredComp (AdjP
                     :Head (Adj :t "unlawful")))
             :ExtraposedSubj (Clause
