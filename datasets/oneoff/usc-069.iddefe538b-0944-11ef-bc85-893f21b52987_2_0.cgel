@@ -127,7 +127,7 @@
                                                                             :Mod (Nom
                                                                                 :Head (N :t "paragraph"))
                                                                             :Head (N :t "(2)" :xpos "CD"))
-                                                                        :Comp (PP
+                                                                        :Mod (PP
                                                                             :Head (P :t "of")
                                                                             :Obj (NP
                                                                                 :Head (Nom
@@ -135,7 +135,7 @@
                                                                                         :Mod (Nom
                                                                                             :Head (N :t "section"))
                                                                                         :Head (N :t "3376(a)" :xpos "CD"))
-                                                                                    :Comp (PP
+                                                                                    :Mod (PP
                                                                                         :Head (P :t "of")
                                                                                         :Obj (NP
                                                                                             :Det (DP
