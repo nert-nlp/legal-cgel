@@ -1,4 +1,84 @@
 # sent_id = usc-064.id3a599255-3222-11ef-bd6b-a695c622ffb7_2_0
 # text = No tax on the sale or transfer of firearms, pistols, revolvers, shells, or cartridges may be imposed on such articles when bought with funds appropriated for a military department.
-# sent = no tax on the sale or transfer of firearms pistols revolvers shells or cartridges may be imposed on such articles when bought with funds appropriated for a military department
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = no tax on the sale -- or transfer -- of firearms pistols revolvers shells or cartridges may be imposed on such articles when bought with funds appropriated for a military department
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "no"))
+            :Head (Nom
+                :Head (N :t "tax")
+                :Comp (PP
+                    :Head (P :t "on")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (Coordination
+                                :Coordinate (Nom
+                                    :Head (N :t "sale")
+                                    :Comp (x / GAP))
+                                :Coordinate (Nom
+                                    :Marker (Coordinator :t "or")
+                                    :Head (Nom
+                                        :Head (N :t "transfer")
+                                        :Comp (x / GAP))))
+                            :Postnucleus (x / PP
+                                :Head (P :t "of")
+                                :Obj (Coordination
+                                    :Coordinate (NP
+                                        :Head (Nom
+                                            :Head (N :t "firearms" :l "firearm" :p ",")))
+                                    :Coordinate (NP
+                                        :Head (Nom
+                                            :Head (N :t "pistols" :l "pistol" :p ",")))
+                                    :Coordinate (NP
+                                        :Head (Nom
+                                            :Head (N :t "revolvers" :l "revolver" :p ",")))
+                                    :Coordinate (NP
+                                        :Head (Nom
+                                            :Head (N :t "shells" :l "shell" :p ",")))
+                                    :Coordinate (NP
+                                        :Marker (Coordinator :t "or")
+                                        :Head (NP
+                                            :Head (Nom
+                                                :Head (N :t "cartridges" :l "cartridge")))))))))))
+        :Head (VP
+            :Head (V_aux :t "may" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "imposed" :l "impose" :xpos "VBN")
+                            :Comp (PP
+                                :Head (P :t "on")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "such"))
+                                    :Head (Nom
+                                        :Head (N :t "articles" :l "article"))))))))))
+    :Mod (PP
+        :Head (P :t "when")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "bought" :l "buy" :xpos "VBN")
+                :Mod (PP
+                    :Head (P :t "with")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "funds" :l "arguably pluralia tantum")
+                            :Mod (Clause
+                                :Head (VP
+                                    :Head (V :t "appropriated" :l "appropriate" :xpos "VBN")
+                                    :Comp (PP
+                                        :Head (P :t "for")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "a"))
+                                            :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "military"))
+                                                :Head (N :t "department" :p ".")))))))))))))
+                                                
