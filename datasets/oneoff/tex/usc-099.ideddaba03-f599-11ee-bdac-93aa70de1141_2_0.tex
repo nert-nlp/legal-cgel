@@ -51,7 +51,7 @@
 
 % # sent_id = usc-099.ideddaba03-f599-11ee-bdac-93aa70de1141_2_0
 % # text = To be eligible to receive a grant under this paragraph, an eligible entity shall submit to the Secretary an application at such time, in such manner, and containing such information as the Secretary may require.
-% # sent = to be eligible to receive a grant under this paragraph an eligible entity shall submit -- to the Secretary an application at such time in such manner and containing such information as the Secretary may require
+% # sent = to be eligible to receive a grant under this paragraph an eligible entity shall submit -- to the Secretary an application at such time -- in such manner -- and containing such information -- as the Secretary may require
 % # tree_by = nschneid (2025-02-24)
 
         \begin{forest}
@@ -119,28 +119,34 @@
                             [\Node{Coordinate}{PP}
                                 [\Node{Head}{P},edge={line width=1pt}[at]]
                                 [\Node{Obj}{NP}
-                                    [\Node{Det}{DP}
-                                        [\Node{Head}{D},edge={line width=1pt}[such]]]
                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Head}{N},edge={line width=1pt}[time,label={right:\p{{,}}}]]]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Mod}{AdjP}
+                                                [\Node{Head}{Adj},edge={line width=1pt}[such]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[time,label={right:\p{{,}}}]]]
+                                        [\Node{Comp\textsubscript{ind}}{GAP\idx{y}}[--]]]]]
                             [\Node{Coordinate}{PP}
                                 [\Node{Head}{P},edge={line width=1pt}[in]]
                                 [\Node{Obj}{NP}
-                                    [\Node{Det}{DP}
-                                        [\Node{Head}{D},edge={line width=1pt}[such]]]
                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Head}{N},edge={line width=1pt}[manner,label={right:\p{{,}}}]]]]]
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Mod}{AdjP}
+                                                [\Node{Head}{Adj},edge={line width=1pt}[such]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[manner,label={right:\p{{,}}}]]]
+                                        [\Node{Comp\textsubscript{ind}}{GAP\idx{y}}[--]]]]]
                             [\Node{Coordinate}{Clause}
                                 [\Node{Marker}{Coordinator}[and]]
                                 [\Node{Head}{Clause},edge={line width=1pt}
                                     [\Node{Head}{VP},edge={line width=1pt}
                                         [\Node{Head}{V},edge={line width=1pt}[containing]]
                                         [\Node{Obj}{NP}
-                                            [\Node{Det}{DP}
-                                                [\Node{Head}{D},edge={line width=1pt}[such]]]
                                             [\Node{Head}{Nom},edge={line width=1pt}
-                                                [\Node{Head}{N},edge={line width=1pt}[information]]]]]]]]
-                        [\Node{Comp\textsubscript{ind}}{PP}
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Mod}{AdjP}
+                                                        [\Node{Head}{Adj},edge={line width=1pt}[such]]]
+                                                    [\Node{Head}{N},edge={line width=1pt}[information]]]
+                                                [\Node{Comp\textsubscript{ind}}{GAP\idx{y}}[--]]]]]]]]
+                        [\Node{Postnucleus}{PP\idx{y}}
                             [\Node{Head}{P},edge={line width=1pt}[as]]
                             [\Node{Comp}{Clause}
                                 [\Node{Subj}{NP}
