@@ -1,4 +1,102 @@
 # sent_id = usc-099.ideddaba03-f599-11ee-bdac-93aa70de1141_2_0
 # text = To be eligible to receive a grant under this paragraph, an eligible entity shall submit to the Secretary an application at such time, in such manner, and containing such information as the Secretary may require.
-# sent = to be eligible to receive a grant under this paragraph an eligible entity shall submit to the Secretary an application at such time in such manner and containing such information as the Secretary may require
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = to be eligible to receive a grant under this paragraph an eligible entity shall submit -- to the Secretary an application at such time -- in such manner -- and containing such information -- as the Secretary may require
+# tree_by = nschneid (2025-02-24)
+(Clause
+    :Mod (Clause
+        :Head (VP
+            :Marker (Sdr :t "to")
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :PredComp (AdjP
+                    :Head (Adj :t "eligible")
+                    :Comp (Clause
+                        :Head (VP
+                            :Marker (Sdr :t "to")
+                            :Head (VP
+                                :Head (V :t "receive" :xpos "VB")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "a"))
+                                    :Head (Nom
+                                        :Head (N :t "grant")
+                                        :Mod (PP
+                                            :Head (P :t "under")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "this"))
+                                                :Head (Nom
+                                                    :Head (N :t "paragraph" :p ",")))))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "an"))
+            :Head (Nom
+                :Mod (AdjP
+                    :Head (Adj :t "eligible"))
+                :Head (N :t "entity")))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (VP
+                        :Head (VP
+                            :Head (V :t "submit" :xpos "VB")
+                            :Obj (x / GAP)
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "Secretary")))))
+                        :Postnucleus (x / NP
+                            :Det (DP
+                                :Head (D :t "an"))
+                            :Head (Nom
+                                :Head (N :t "application"))))
+                    :Mod (PP
+                        :Head (Coordination
+                            :Coordinate (PP
+                                :Head (P :t "at")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "such"))
+                                            :Head (N :t "time" :p ","))
+                                        :Comp_ind (y / GAP))))
+                            :Coordinate (PP
+                                :Head (P :t "in")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "such"))
+                                            :Head (N :t "manner" :p ","))
+                                        :Comp_ind (y / GAP))))
+                            :Coordinate (Clause
+                                :Marker (Coordinator :t "and")
+                                :Head (Clause
+                                    :Head (VP
+                                        :Head (V :t "containing" :xpos "VBG")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "such"))
+                                                    :Head (N :t "information"))
+                                                :Comp_ind (y / GAP)))))))
+                        :Postnucleus (y / PP
+                            :Head (P :t "as")
+                            :Comp (Clause
+                                :Subj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "Secretary")))
+                                :Head (VP
+                                    :Head (V_aux :t "may" :xpos "MD")
+                                    :Comp (Clause
+                                        :Head (VP
+                                            :Head (V :t "require" :xpos "VB" :p "."))))))))))))
