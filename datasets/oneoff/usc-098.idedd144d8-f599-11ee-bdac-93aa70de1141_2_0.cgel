@@ -45,7 +45,7 @@
                                             :Head (N :t "chapter")))))))))))
     :Head (VP
         :Head (VP
-            :Head (V :t "shall" :xpos "MD")
+            :Head (V_aux :t "shall" :xpos "MD")
             :Mod (PP
                 :Head (P :t "in")
                 :Obj (NP
