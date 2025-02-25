@@ -1,7 +1,7 @@
 # sent_id = usc-071.iddf009d23-0944-11ef-bc85-893f21b52987_2_0
 # text = The Secretary of the Interior is authorized to pay from agency appropriations the travel expense of newly appointed special agents of the United States Fish and Wildlife Service and the transportation expense of household goods and personal effects from place of residence at time of selection to first duty station to the extent authorized by section 5724 of title 5 for all such special agents appointed after January 1, 1977.
 # sent = the Secretary of the Interior is authorized to pay -- from agency appropriations the travel expense of newly appointed special agents of the United States Fish and Wildlife Service and the transportation expense of household goods and personal effects from place of residence at time of selection to first duty station to the extent authorized by section 5724 of title 5 for all such special agents appointed after January 1 1977
-# tree_by = bwaldon (2025-02-25)
+# tree_by = bwaldon (2025-02-25) 
 (Clause
     :Subj (NP
         :Det (DP
