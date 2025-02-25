@@ -1,4 +1,99 @@
 # sent_id = usc-098.idedd144d8-f599-11ee-bdac-93aa70de1141_2_0
 # text = The authorization of the appropriation of Federal funds or their availability for expenditure under this chapter shall in no way infringe on the sovereign rights of the States to determine which projects shall be federally financed.
-# sent = the authorization of the appropriation of Federal funds or their availability for expenditure under this chapter shall in no way infringe on the sovereign rights of the States to determine which projects shall be federally financed
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the authorization of the appropriation of Federal funds or their availability for expenditure under this chapter shall in no way infringe on the sovereign rights of the States to determine which projects -- shall be federally financed
+# tree_by = nschneid (2025-02-25)
+(Clause
+    :Subj (Coordination
+        :Coordinate (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "authorization")
+                :Comp (PP
+                    :Head (P :t "of")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "appropriation")
+                            :Comp (PP
+                                :Head (P :t "of")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "Federal"))
+                                        :Head (N :t "funds" :l "fund")))))))))
+        :Coordinate (NP
+            :Marker (Coordinator :t "or")
+            :Head (NP
+                :Det (NP
+                    :Head (Nom
+                        :Head (N_pro :t "their")))
+                :Head (Nom
+                    :Head (N :t "availability")
+                    :Mod (PP
+                        :Head (P :t "for")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "expenditure")
+                                :Mod (PP
+                                    :Head (P :t "under")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "this"))
+                                        :Head (Nom
+                                            :Head (N :t "chapter")))))))))))
+    :Head (VP
+        :Head (VP
+            :Head (V :t "shall" :xpos "MD")
+            :Mod (PP
+                :Head (P :t "in")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "no"))
+                    :Head (Nom
+                        :Head (N :t "way")))))
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "infringe" :xpos "VB")
+                :Comp (PP
+                    :Head (P :t "on")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "sovereign"))
+                            :Head (Nom
+                                :Head (Nom
+                                    :Head (N :t "rights" :l "right")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "States" :l "state")))))
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Marker (Sdr :t "to")
+                                        :Head (VP
+                                            :Head (V :t "determine" :xpos "VB")
+                                            :Comp (Clause
+                                                :Prenucleus (x / NP
+                                                    :Det (NP
+                                                        :Head (Nom
+                                                            :Head (N_pro :t "which")))
+                                                    :Head (Nom
+                                                        :Head (N :t "projects" :l "project")))
+                                                :Head (Clause
+                                                    :Subj (x / GAP)
+                                                    :Head (VP
+                                                        :Head (V_aux :t "shall" :xpos "MD")
+                                                        :Comp (Clause
+                                                            :Head (VP
+                                                                :Head (V_aux :t "be" :xpos "VB")
+                                                                :PredComp (AdjP
+                                                                    :Mod (AdvP
+                                                                        :Head (Adv :t "federally"))
+                                                                    :Head (Adj :t "financed" :p "."))))))))))))))))))
