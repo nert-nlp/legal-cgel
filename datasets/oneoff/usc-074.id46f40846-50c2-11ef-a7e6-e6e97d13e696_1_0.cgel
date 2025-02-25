@@ -1,4 +1,92 @@
 # sent_id = usc-074.id46f40846-50c2-11ef-a7e6-e6e97d13e696_1_0
 # text = Whoever is convicted of any crime prohibited by this chapter, which has resulted in the death of any person, shall be subject also to the death penalty or to imprisonment for life.
-# sent = whoever is convicted of any crime prohibited by this chapter which has resulted in the death of any person shall be subject also to the death penalty or to imprisonment for life
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = whoever -- is convicted of any crime prohibited by this chapter which -- has resulted in the death of any person shall be subject also to the death penalty or to imprisonment for life
+# tree_by = nschneider (2025-02-23)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Mod (Clause_rel
+                :Head-Prenucleus (x / NP
+                    :Head (Nom
+                        :Head (N_pro :t "whoever")))
+                :Head (Clause_rel
+                    :Subj (x / GAP)
+                    :Head (VP
+                        :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V :t "convicted" :l "convict" :xpos "VBN")
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "any"))
+                                        :Head (Nom
+                                            :Head (Nom
+                                                :Head (N :t "crime")
+                                                :Mod (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "prohibited" :l "prohibit" :xpos "VBN")
+                                                        :Comp (PP
+                                                            :Head (P :t "by")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "this"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "chapter" :p ",")))))))
+                                            :Mod (Clause_rel
+                                                :Prenucleus (y / NP
+                                                    :Head (Nom
+                                                        :Head (N_pro :t "which")))
+                                                :Head (Clause_rel
+                                                    :Subj (y / GAP)
+                                                    :Head (VP
+                                                        :Head (V_aux :t "has" :l "have" :xpos "VBZ")
+                                                        :Comp (Clause
+                                                            :Head (VP
+                                                                :Head (V :t "resulted" :l "result" :xpos "VBN")
+                                                                :Comp (PP
+                                                                    :Head (P :t "in")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "the"))
+                                                                        :Head (Nom
+                                                                            :Head (N :t "death")
+                                                                            :Comp (PP
+                                                                                :Head (P :t "of")
+                                                                                :Obj (NP
+                                                                                    :Det (DP
+                                                                                        :Head (D :t "any"))
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "person" :p ","))))))))))))))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :PredComp (AdjP
+                    :Head (Adj :t "subject")
+                    :Supplement (AdvP
+                        :Head (Adv :t "also"))
+                    :Comp (Coordination
+                        :Coordinate (PP
+                            :Head (P :t "to")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "death"))
+                                    :Head (N :t "penalty"))))
+                        :Coordinate (PP
+                            :Marker (Coordinator :t "or")
+                            :Head (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (N :t "imprisonment")
+                                        :Mod (PP
+                                            :Head (P :t "for")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N :t "life" :p "."))))))))))))))
