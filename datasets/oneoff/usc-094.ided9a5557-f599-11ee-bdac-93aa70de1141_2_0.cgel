@@ -1,4 +1,88 @@
 # sent_id = usc-094.ided9a5557-f599-11ee-bdac-93aa70de1141_2_0
 # text = A State shall use any revenues received from the commercial activities in a rest area under this section to cover the costs of acquiring, constructing, operating, and maintaining rest areas in the State.
 # sent = a State shall use any revenues received from the commercial activities in a rest area under this section to cover the costs of acquiring constructing operating and maintaining rest areas in the State
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = nschneid (2025-02-26) rev. bwaldon (2025-02-26)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "a"))
+        :Head (Nom
+            :Head (N :t "State")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "use" :xpos "VB")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "any"))
+                    :Head (Nom
+                        :Head (N :t "revenues" :l "revenue")
+                        :Mod (Clause
+                            :Head (VP
+                                :Head (V :t "received" :l "receive" :xpos "VBN")
+                                :Comp (PP
+                                    :Head (P :t "from")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "commercial"))
+                                            :Head (Nom
+                                                :Head (N :t "activities" :l "activity")
+                                                :Mod (PP
+                                                    :Head (P :t "in")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "a"))
+                                                        :Head (Nom
+                                                            :Head (Nom
+                                                                :Mod (AdjP
+                                                                    :Head (Adj :t "rest"))
+                                                                :Head (N :t "area"))
+                                                            :Mod (PP
+                                                                :Head (P :t "under")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "this"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "section")))))))))))))))
+                :Comp (Clause
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (V :t "cover" :xpos "VB")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "costs" :l "cost")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Head (Coordination
+                                                    :Coordinate (VP
+                                                        :Head (V :t "acquiring" :l "acquire" :xpos "VBG" :p ","))
+                                                    :Coordinate (VP
+                                                        :Head (V :t "constructing" :l "construct" :xpos "VBG" :p ","))
+                                                    :Coordinate (VP
+                                                        :Head (V :t "operating" :l "operate" :xpos "VBG" :p ","))
+                                                    :Coordinate (VP
+                                                        :Marker (Coordinator :t "and")
+                                                        :Head (VP
+                                                            :Head (V :t "maintaining" :l "maintain" :xpos "VBG"))))
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "rest"))
+                                                            :Head (N :t "areas"))
+                                                        :Mod (PP
+                                                            :Head (P :t "in")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "the"))
+                                                                :Head (Nom
+                                                                    :Head (N :t "State" :p "."))))))))))))))))))
