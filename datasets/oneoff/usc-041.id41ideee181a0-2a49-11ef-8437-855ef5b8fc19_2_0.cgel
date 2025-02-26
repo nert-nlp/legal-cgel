@@ -1,4 +1,91 @@
 # sent_id = usc-041.id41ideee181a0-2a49-11ef-8437-855ef5b8fc19_2_0
 # text = The Secretary may prescribe such regulations as are appropriate (including regulations requiring reporting) to apply this subsection in the case of sales and exchanges by pass-thru entities and of interests in such entities.
-# sent = the Secretary may prescribe such regulations as are appropriate including regulations requiring reporting to apply this subsection in the case of sales and exchanges by passthru entities and of interests in such entities
-# tree_by = bwaldon (YYYY-MM-DD)
+# sent = the Secretary may prescribe such regulations as are appropriate including regulations requiring reporting to apply this subsection in the case of sales and exchanges by pass-thru entities and of interests in such entities
+# tree_by = bwaldon (2025-02-14)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "may" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "prescribe" :xpos "VB")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "such"))
+                                :Head (N :t "regulations" :l "regulation"))
+                            :Comp_ind (PP
+                                :Head (P :t "as")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                                        :PredComp (AdjP
+                                            :Head (Adj :t "appropriate")
+                                            :Supplement (PP
+                                                :Head (P :p "(" :t "including")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "regulations" :l "regulation")
+                                                        :Mod (Clause
+                                                            :Head (VP
+                                                                :Head (V :t "requiring" :l "require" :xpos "VBG")
+                                                                :Obj (NP
+                                                                    :Head (Nom
+                                                                        :Head (N :t "reporting" :p ")"))))))))
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Marker (Sdr :t "to")
+                                                    :Head (VP
+                                                        :Head (V :t "apply" :xpos "VB")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "this"))
+                                                            :Head (Nom
+                                                                :Head (N :t "subsection")))))))))))))))
+        :Mod (PP
+            :Head (P :t "in")
+            :Obj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (N :t "case")
+                    :Comp (Coordination
+                        :Coordinate (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Head (Coordination
+                                        :Coordinate (Nom
+                                            :Head (N :t "sales" :l "sale"))
+                                        :Coordinate (Nom
+                                            :Marker (Coordinator :t "and")
+                                            :Head (Nom
+                                                :Head (N :t "exchanges" :l "exchange"))))
+                                    :Comp (PP
+                                        :Head (P :t "by")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Mod (Nom
+                                                    :Head (N :t "pass-thru"))
+                                                :Head (N :t "entities" :l "entity")))))))
+                        :Coordinate (PP
+                            :Marker (Coordinator :t "and")
+                            :Head (PP
+                                :Head (P :t "of")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (N :t "interests" :l "interest")
+                                        :Comp (PP
+                                            :Head (P :t "in")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "such"))
+                                                :Head (Nom
+                                                    :Head (N :t "entities" :l "entity" :p "."))))))))))))))
+                                                    
