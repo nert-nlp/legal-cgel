@@ -1,4 +1,59 @@
 # sent_id = usc-084.id882c66da-4e86-11ef-8795-d6c340cedfe7_2_0
 # text = The Secretary shall notify the members of the authorizing committees 30 days prior to any modifications to an agreement under this section.
 # sent = the Secretary shall notify the members of the authorizing committees 30 days prior to any modifications to an agreement under this section
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = nschneid (2025-02-27)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "notify" :xpos "VB")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Head (N :t "members" :l "member")
+                            :Comp (PP
+                                :Head (P :t "of")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Mod (VP
+                                            :Head (V :t "authorizing" :l "authorize" :xpos "VBG"))
+                                        :Head (N :t "committees" :l "committee")))))))
+                :Mod (PP
+                    :Mod (NP
+                        :Det (DP
+                            :Head (D :t "30" :xpos "CD"))
+                        :Head (Nom
+                            :Head (N :t "days" :l "day")))
+                    :Head (PP
+                        :Head (P :t "prior")
+                        :Comp (PP
+                            :Head (P :t "to")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "any"))
+                                :Head (Nom
+                                    :Head (N :t "modifications" :l "modification")
+                                    :Comp (PP
+                                        :Head (P :t "to")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "an"))
+                                            :Head (Nom
+                                                :Head (N :t "agreement")
+                                                :Mod (PP
+                                                    :Head (P :t "under")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "this"))
+                                                        :Head (Nom
+                                                            :Head (N :t "section" :p "."))))))))))))))))
