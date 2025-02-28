@@ -1,6 +1,6 @@
 # sent_id = usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0
 # text = Whoever shall deprive or attempt to deprive any person of any right secured by section 10501, 10502, or 10503 of this title shall be fined not more than $5,000, or imprisoned not more than five years, or both.
-# sent = whoever shall deprive or attempt to deprive any person of any right secured by section 10501 10502 or 10503 of this title shall be fined not more than 5,000 $ or imprisoned not more than five years or both
+# sent = whoever -- shall deprive or attempt to deprive any person of any right secured by section 10501 10502 or 10503 of this title shall be fined not more than 5,000 $ or imprisoned not more than five years or both
 # tree_by = mebwells (2024-10-04) rev. nschneid+bwaldon+mebwells+devika-tiwari+m3ru (2024-12-20) rev. bwaldon+nschneid (2025-02-07)
 (Clause
     :Subj (NP
