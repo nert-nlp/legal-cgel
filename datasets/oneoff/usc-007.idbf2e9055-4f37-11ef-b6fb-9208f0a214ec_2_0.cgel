@@ -69,9 +69,9 @@
         :Comp (Clause
             :Head (VP
                 :Head (V_aux :t "be" :xpos "VB")
-                :Comp (Clause
-                    :Head (Coordination
-                        :Coordinate (VP
+                :Comp (Coordination
+                    :Coordinate (Clause
+                        :Head (VP
                             :Head (V :t "fined" :l "fine" :xpos "VBN")
                             :Obj (NP
                                 :Det (DP
@@ -86,9 +86,10 @@
                                                     :Det-Head (DP
                                                         :Head (D :t "5,000" :xpos "CD")))))))
                                 :Head (Nom
-                                    :Head (N :t "$" :p ","))))
-                        :Coordinate (VP
-                            :Marker (Coordinator :t "or")
+                                    :Head (N :t "$" :p ",")))))
+                    :Coordinate (Clause
+                        :Marker (Coordinator :t "or")
+                        :Head (Clause
                             :Head (VP
                                 :Head (V :t "imprisoned" :l "imprison" :xpos "VBN")
                                 :Obj (NP
@@ -104,9 +105,9 @@
                                                         :Det-Head (DP
                                                             :Head (D :t "five" :xpos "CD")))))))
                                     :Head (Nom
-                                        :Head (N :t "years" :l "year" :p ",")))))
-                        :Coordinate (Coordination
-                            :Marker (Coordinator :t "or")
-                            :Head (Coordination
-                                :Marker-Head (DP
-                                    :Head (D :t "both" :p "."))))))))))
+                                        :Head (N :t "years" :l "year" :p ","))))))
+                    :Coordinate (Coordination
+                        :Marker (Coordinator :t "or")
+                        :Head (Coordination
+                            :Marker-Head (DP
+                                :Head (D :t "both" :p ".")))))))))
