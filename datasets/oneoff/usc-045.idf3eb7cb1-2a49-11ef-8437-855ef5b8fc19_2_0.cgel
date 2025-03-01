@@ -1,7 +1,7 @@
 # sent_id = usc-045.idf3eb7cb1-2a49-11ef-8437-855ef5b8fc19_2_0
 # text = Any officer or employee of the Internal Revenue Service in connection with any in-person interview with any taxpayer relating to the determination or collection of any tax shall, upon advance request of such taxpayer, allow the taxpayer to make an audio recording of such interview at the taxpayer’s own expense and with the taxpayer’s own equipment.
-# sent = any officer or employee of the Internal Revenue Service in connection with any inperson interview with any taxpayer relating to the determination or collection of any tax shall upon advance request of such taxpayer allow the taxpayer to make an audio recording of such interview at the taxpayers own expense and with the taxpayers own equipment
-# tree_by = nschneid (2024-11-15) rev. bwaldon (2024-12-13)
+# sent = any officer or employee of the Internal Revenue Service in connection with any in-person interview with any taxpayer relating to the determination or collection of any tax shall upon advance request of such taxpayer allow the taxpayer to make an audio recording of such interview at the taxpayer’s own expense and with the taxpayer’s own equipment
+# tree_by = nschneid (2024-11-15) rev. bwaldon (2024-12-13) rev. nschneid (2025-03-01)
 (Clause
     :Subj (NP
         :Det (DP
@@ -122,7 +122,20 @@
                                     :Coordinate (PP
                                         :Head (P :t "at")
                                         :Obj (NP
+                                            :Det (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "taxpayer’s" :subt "taxpayer" :subt "’s")))
                                             :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "own"))
+                                                :Head (N :t "expense"))))
+                                    :Coordinate (PP
+                                        :Marker (Coordinator :t "and")
+                                        :Head (PP
+                                            :Head (P :t "with")
+                                            :Obj (NP
                                                 :Det (NP
                                                     :Det (DP
                                                         :Head (D :t "the"))
@@ -131,19 +144,4 @@
                                                 :Head (Nom
                                                     :Mod (AdjP
                                                         :Head (Adj :t "own"))
-                                                    :Head (N :t "expense")))))
-                                    :Coordinate (PP
-                                        :Marker (Coordinator :t "and")
-                                        :Head (PP
-                                            :Head (P :t "with")
-                                            :Obj (NP
-                                                :Head (Nom
-                                                    :Det (NP
-                                                        :Det (DP
-                                                            :Head (D :t "the"))
-                                                        :Head (Nom
-                                                            :Head (N :t "taxpayer’s" :subt "taxpayer" :subt "’s")))
-                                                    :Head (Nom
-                                                        :Mod (AdjP
-                                                            :Head (Adj :t "own"))
-                                                        :Head (N :t "equipment" :p ".")))))))))))))))
+                                                    :Head (N :t "equipment" :p "."))))))))))))))

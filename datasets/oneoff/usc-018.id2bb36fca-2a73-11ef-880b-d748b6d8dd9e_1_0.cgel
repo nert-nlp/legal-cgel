@@ -1,7 +1,7 @@
 # sent_id = usc-018.id2bb36fca-2a73-11ef-880b-d748b6d8dd9e_1_0
 # text = Proceeds of sales by the Department of the Army and the Department of the Air Force under this section shall be credited to the appropriations from which the property was purchased, shall not be covered into the Treasury, and may be used to replace property sold under this section.
 # sent = proceeds of sales by the Department of the Army and the Department of the Air Force under this section shall be credited to the appropriations from which the property was purchased -- shall not be covered into the Treasury and may be used to replace property sold under this section
-# tree_by = bwaldon (2024-11-15) rev. nschneid (2024-11-15)
+# tree_by = bwaldon (2024-11-15) rev. nschneid (2024-11-15) rev. nschneid (2025-03-01)
 (Clause
     :Subj (NP
         :Head (Nom
@@ -85,7 +85,7 @@
                                                             :Comp (x / GAP))))))))))))))
         :Coordinate (VP
             :Head (VP
-                :Head (V :t "shall" :xpos "MD")
+                :Head (V_aux :t "shall" :xpos "MD")
                 :Mod (AdvP
                     :Head (Adv :t "not")))
             :Comp (Clause

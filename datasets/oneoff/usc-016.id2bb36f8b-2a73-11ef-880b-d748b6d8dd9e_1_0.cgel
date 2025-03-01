@@ -1,7 +1,7 @@
 # sent_id = usc-016.id2bb36f8b-2a73-11ef-880b-d748b6d8dd9e_1_0
 # text = Civilian employees of the National Guard performing services for the Program and contractor personnel performing such services may be required, when appropriate to achieve the purposes of the Program, to be members of the National Guard and to wear the military uniform.
 # sent = civilian employees of the National Guard performing services for the Program and contractor personnel performing such services may be required when appropriate to achieve the purposes of the Program to be members of the National Guard and to wear the military uniform
-# tree_by = nschneid (2024-11-16) rev. bwaldon (2024-12-13) rev. nschneid (2024-12-27)
+# tree_by = nschneid (2024-11-16) rev. bwaldon (2024-12-13) rev. nschneid (2024-12-27) rev. nschneid (2025-03-01)
 (Clause
     :Subj (Coordination
         :Coordinate (NP
@@ -37,17 +37,18 @@
             :Marker (Coordinator :t "and")
             :Head (NP
                 :Head (Nom
-                    :Mod (Nom
-                        :Head (N :t "contractor"))
-                    :Head (N :t "personnel"))
-                :Mod (Clause
-                    :Head (VP
-                        :Head (V :t "performing" :l "perform" :xpos "VBG")
-                        :Obj (NP
-                            :Det (DP
-                                :Head (D :t "such"))
-                            :Head (Nom
-                                :Head (N :t "services" :l "service"))))))))
+                    :Head (Nom
+                        :Mod (Nom
+                            :Head (N :t "contractor"))
+                        :Head (N :t "personnel"))
+                    :Mod (Clause
+                        :Head (VP
+                            :Head (V :t "performing" :l "perform" :xpos "VBG")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "such"))
+                                :Head (Nom
+                                    :Head (N :t "services" :l "service")))))))))
     :Head (VP
         :Head (V_aux :t "may" :xpos "MD")
         :Comp (Clause
