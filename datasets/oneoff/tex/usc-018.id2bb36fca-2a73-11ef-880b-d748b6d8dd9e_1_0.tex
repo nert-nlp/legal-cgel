@@ -51,8 +51,8 @@
 
 % # sent_id = usc-018.id2bb36fca-2a73-11ef-880b-d748b6d8dd9e_1_0
 % # text = Proceeds of sales by the Department of the Army and the Department of the Air Force under this section shall be credited to the appropriations from which the property was purchased, shall not be covered into the Treasury, and may be used to replace property sold under this section.
-% # sent = proceeds of sales by the Department of the Army and the Department of the Air Force under this section shall be credited to the appropriations from which the property was purchased shall not be covered into the Treasury and may be used to replace property sold under this section
-% # tree_by = bwaldon (2024-11-15) rev. nschneid (2024-11-15)
+% # sent = proceeds of sales by the Department of the Army and the Department of the Air Force under this section shall be credited to the appropriations from which the property was purchased -- shall not be covered into the Treasury and may be used to replace property sold under this section
+% # tree_by = bwaldon (2024-11-15) rev. nschneid (2024-11-15) rev. nschneid (2025-03-01)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -144,7 +144,7 @@
                                                             [\Node{Comp}{GAP\idx{x}}[--]]]]]]]]]]]]]]]
         [\Node{Coordinate}{VP}
             [\Node{Head}{VP},edge={line width=1pt}
-                [\Node{Head}{V},edge={line width=1pt}[shall]]
+                [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
                 [\Node{Mod}{AdvP}
                     [\Node{Head}{Adv},edge={line width=1pt}[not]]]]
             [\Node{Comp}{Clause}
