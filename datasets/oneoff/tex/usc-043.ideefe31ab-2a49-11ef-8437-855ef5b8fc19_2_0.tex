@@ -51,8 +51,8 @@
 
 % # sent_id = usc-043.ideefe31ab-2a49-11ef-8437-855ef5b8fc19_2_0
 % # text = Any issuing authority which revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time and in such manner as the Secretary shall prescribe by regulations.
-% # sent = any issuing authority which -- revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time and in such manner as the Secretary shall prescribe by regulations
-% # tree_by = nschneid (2024-11-29)
+% # sent = any issuing authority which -- revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time -- and in such manner -- as the Secretary shall prescribe by regulations
+% # tree_by = nschneid (2024-11-29) rev. bwaldon (2024-12-06) rev. nschneid (2025-03-01)
 
         \begin{forest}
         where n children=0{% for each terminal node
@@ -110,20 +110,24 @@
                         [\Node{Coordinate}{PP}
                             [\Node{Head}{P},edge={line width=1pt}[at]]
                             [\Node{Obj}{NP}
-                                [\Node{Det}{DP}
-                                    [\Node{Head}{D},edge={line width=1pt}[such]]]
                                 [\Node{Head}{Nom},edge={line width=1pt}
-                                    [\Node{Head}{N},edge={line width=1pt}[time]]]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Mod}{AdjP}
+                                            [\Node{Head}{Adj},edge={line width=1pt}[such]]]
+                                        [\Node{Head}{N},edge={line width=1pt}[time]]]
+                                    [\Node{Comp\textsubscript{ind}}{GAP\idx{y}}[--]]]]]
                         [\Node{Coordinate}{PP}
                             [\Node{Marker}{Coordinator}[and]]
                             [\Node{Head}{PP},edge={line width=1pt}
                                 [\Node{Head}{P},edge={line width=1pt}[in]]
                                 [\Node{Obj}{NP}
-                                    [\Node{Mod}{DP}
-                                        [\Node{Head}{D},edge={line width=1pt}[such]]]
                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Head}{N},edge={line width=1pt}[manner]]]]]]]
-                    [\Node{Comp\textsubscript{ind}}{PP}
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Mod}{AdjP}
+                                                [\Node{Head}{Adj},edge={line width=1pt}[such]]]
+                                            [\Node{Head}{N},edge={line width=1pt}[manner]]]
+                                        [\Node{Comp\textsubscript{ind}}{GAP\idx{y}}[--]]]]]]]
+                    [\Node{Postnucleus}{PP\idx{y}}
                         [\Node{Head}{P},edge={line width=1pt}[as]]
                         [\Node{PredComp}{Clause}
                             [\Node{Subj}{NP}
