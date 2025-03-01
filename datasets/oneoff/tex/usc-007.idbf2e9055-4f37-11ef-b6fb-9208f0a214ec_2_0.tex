@@ -51,7 +51,7 @@
 
 % # sent_id = usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0
 % # text = Whoever shall deprive or attempt to deprive any person of any right secured by section 10501, 10502, or 10503 of this title shall be fined not more than $5,000, or imprisoned not more than five years, or both.
-% # sent = whoever shall deprive or attempt to deprive any person of any right secured by section 10501 10502 or 10503 of this title shall be fined not more than 5,000 $ or imprisoned not more than five years or both
+% # sent = whoever -- shall deprive or attempt to deprive any person of any right secured by section 10501 10502 or 10503 of this title shall be fined not more than 5,000 $ or imprisoned not more than five years or both
 % # tree_by = mebwells (2024-10-04) rev. nschneid+bwaldon+mebwells+devika-tiwari+m3ru (2024-12-20) rev. bwaldon+nschneid (2025-02-07)
 
         \begin{forest}
@@ -128,9 +128,9 @@
         [\Node{Comp}{Clause}
             [\Node{Head}{VP},edge={line width=1pt}
                 [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
-                [\Node{Comp}{Clause}
-                    [\Node{Head}{Coordination},edge={line width=1pt}
-                        [\Node{Coordinate}{VP}
+                [\Node{Comp}{Coordination}
+                    [\Node{Coordinate}{Clause}
+                        [\Node{Head}{VP},edge={line width=1pt}
                             [\Node{Head}{V},edge={line width=1pt}[fined]]
                             [\Node{Obj}{NP}
                                 [\Node{Det}{DP}
@@ -145,9 +145,10 @@
                                                     [\Node{Det-Head}{DP},no edge
                                                         [\Node{Head}{D},edge={line width=1pt}[5{,}000]]] { \draw[-] (!uu.south) -- (); \draw[-,line width=1pt] (!u.south) -- (); }]]]]]
                                 [\Node{Head}{Nom},edge={line width=1pt}
-                                    [\Node{Head}{N},edge={line width=1pt}[\$,label={right:\p{{,}}}]]]]]
-                        [\Node{Coordinate}{VP}
-                            [\Node{Marker}{Coordinator}[or]]
+                                    [\Node{Head}{N},edge={line width=1pt}[\$,label={right:\p{{,}}}]]]]]]
+                    [\Node{Coordinate}{Clause}
+                        [\Node{Marker}{Coordinator}[or]]
+                        [\Node{Head}{Clause},edge={line width=1pt}
                             [\Node{Head}{VP},edge={line width=1pt}
                                 [\Node{Head}{V},edge={line width=1pt}[imprisoned]]
                                 [\Node{Obj}{NP}
@@ -163,12 +164,12 @@
                                                         [\Node{Det-Head}{DP},no edge
                                                             [\Node{Head}{D},edge={line width=1pt}[five]]] { \draw[-] (!uu.south) -- (); \draw[-,line width=1pt] (!u.south) -- (); }]]]]]
                                     [\Node{Head}{Nom},edge={line width=1pt}
-                                        [\Node{Head}{N},edge={line width=1pt}[years,label={right:\p{{,}}}]]]]]]
-                        [\Node{Coordinate}{Coordination}
-                            [\Node{Marker}{Coordinator}[or]]
-                            [\Node{Head}{Coordination},edge={line width=1pt}, before drawing tree={x+=1.5em}
-                                [\Node{Marker-Head}{DP},no edge
-                                    [\Node{Head}{D},edge={line width=1pt}[both,label={right:\p{.}}]]] { \draw[-] (!uu.south) -- (); \draw[-,line width=1pt] (!u.south) -- (); }]]]]]]]]
+                                        [\Node{Head}{N},edge={line width=1pt}[years,label={right:\p{{,}}}]]]]]]]
+                    [\Node{Coordinate}{Coordination}
+                        [\Node{Marker}{Coordinator}[or]]
+                        [\Node{Head}{Coordination},edge={line width=1pt}, before drawing tree={x+=1.5em}
+                            [\Node{Marker-Head}{DP},no edge
+                                [\Node{Head}{D},edge={line width=1pt}[both,label={right:\p{.}}]]] { \draw[-] (!uu.south) -- (); \draw[-,line width=1pt] (!u.south) -- (); }]]]]]]]
 \node at (current bounding box.south)[yshift=-1cm]{
 (1) comparative degree determinative{,} CGEL p. 432};
         \end{forest}
