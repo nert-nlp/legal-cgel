@@ -1,6 +1,6 @@
 # CGELBank Statistics
 
-Analyzing 112 files:
+Analyzing 111 files:
 
 - [../datasets/congressnotes/12-3.cgel](../datasets/congressnotes/12-3.cgel)
 - [../datasets/congressnotes/13-1.cgel](../datasets/congressnotes/13-1.cgel)
@@ -113,58 +113,54 @@ Analyzing 112 files:
 - [../datasets/oneoff/usc-100.idedeb834f-f599-11ee-bdac-93aa70de1141_2_0.cgel](../datasets/oneoff/usc-100.idedeb834f-f599-11ee-bdac-93aa70de1141_2_0.cgel)
 - [../datasets/oneoff/usc-101.idee03519a-f599-11ee-bdac-93aa70de1141_2_0.cgel](../datasets/oneoff/usc-101.idee03519a-f599-11ee-bdac-93aa70de1141_2_0.cgel)
 - [../datasets/oneoff/usc-rule2002a.cgel](../datasets/oneoff/usc-rule2002a.cgel)
-- [../datasets/oneoff/usc.cgel](../datasets/oneoff/usc.cgel)
 
 ## Overview
 
-- Trees: 73
-- Nodes: 6615
-- Lexical Nodes: 2537 (34.8/tree)
-- Lexical Insertions (nodes where surface string is empty due to typo): 2
-- Gaps: 51
-- Punctuation Tokens: 214
-- Avg Tree Depth: 18.1
+- Trees: 46
+- Nodes: 4133
+- Lexical Nodes: 1585 (34.5/tree)
+- Lexical Insertions (nodes where surface string is empty due to typo): 1
+- Gaps: 34
+- Punctuation Tokens: 130
+- Avg Tree Depth: 17.9
 
 
 ## POS categories
 
 | POS         |   count |
 |:------------|--------:|
-| N           |     790 |
-| P           |     451 |
-| D           |     445 |
-| V           |     250 |
-| Adj         |     188 |
-| V_aux       |     154 |
-| Coordinator |      94 |
-| Sdr         |      66 |
-| Adv         |      60 |
-| N_pro       |      39 |
+| N           |     485 |
+| D           |     279 |
+| P           |     279 |
+| V           |     156 |
+| Adj         |     123 |
+| V_aux       |      99 |
+| Coordinator |      58 |
+| Sdr         |      42 |
+| Adv         |      38 |
+| N_pro       |      26 |
 
 ## Lemmas occurring >=5 times, by categories the lemma appears in
 
-- `{D}`: an any no the this
+- `{D}`: a an any the this
 - `{Coordinator}`: and or
 - `{V, V_aux}`: be have
-- `{V}`: authorize make prescribe provide require
+- `{V}`: authorize provide require
 - `{P}`: as at by for from in of on under with
-- `{D, N}`: a
-- `{N}`: Corporation Secretary State States accordance amount authority case chapter court expense manner officer paragraph person program purpose section subsection taxpayer time title uniform vehicle year
+- `{N}`: Secretary State amount chapter court paragraph person program section subsection time year
 - `{P, Sdr}`: to
 - `{D, Sdr}`: that
 - `{Adj, D}`: such
-- `{N, V}`: award credit grant use
-- `{N, N_pro}`: it
+- `{N, V}`: use
+- `{N_pro}`: it which
 - `{V_aux}`: may shall
 - `{Adv}`: not
-- `{Adj}`: General United applicable other
-- `{N_pro}`: which
 - `{Adj, V}`: appropriate
 
 ## All lexemes of closed-class categories
 
 - `D`: 30, 4, 5,000, 500,000,000, a, all, an, any, both, each, every, five, more, no, once, such, that, the, these, this, two
-- `N_pro`: it, statute, there, they, which, who, whoever, whose
+- `N_pro`: it, there, they, which, who, whoever, whose
 - `V_aux`: be, do, have, is, may, shall, will, would
 - `P`: after, against, as, as to, at, before, by, during, except, for, from, if, in, including, into, of, on, other than, out, prior, pursuant, than, thereof, throughout, to, under, unless, upon, when, whenever, where, with, within
 - `Sdr`: that, to, whether or not
@@ -174,107 +170,107 @@ Analyzing 112 files:
 
 | category     |   count |
 |:-------------|--------:|
-| Nom          |    1015 |
-| NP           |     731 |
-| VP           |     557 |
-| PP           |     472 |
-| DP           |     447 |
-| Clause       |     385 |
-| AdjP         |     196 |
-| Coordination |      94 |
-| Clause_rel   |      64 |
-| AdvP         |      62 |
-| GAP          |      51 |
-| N@flat       |       2 |
-| PP_strand    |       2 |
+| Nom          |     626 |
+| NP           |     453 |
+| VP           |     348 |
+| PP           |     293 |
+| DP           |     281 |
+| Clause       |     243 |
+| AdjP         |     129 |
+| Coordination |      58 |
+| Clause_rel   |      41 |
+| AdvP         |      40 |
+| GAP          |      34 |
+| N@flat       |       1 |
+| PP_strand    |       1 |
 
 ## Functions
 
 | function        |   count |
 |:----------------|--------:|
-| Head            |    3926 |
-| Mod             |     546 |
-| Obj             |     506 |
-| Comp            |     464 |
-| Det             |     446 |
-| Coordinate      |     206 |
-| Marker          |     160 |
-| Subj            |     134 |
-| (root)          |      73 |
-| Supplement      |      45 |
-| PredComp        |      39 |
-| Prenucleus      |      23 |
-| Comp_ind        |      13 |
-| Postnucleus     |      12 |
-| Flat            |       6 |
-| DisplacedSubj   |       4 |
-| Particle        |       4 |
+| Head            |    2450 |
+| Mod             |     343 |
+| Obj             |     317 |
+| Comp            |     286 |
+| Det             |     278 |
+| Coordinate      |     127 |
+| Marker          |     100 |
+| Subj            |      86 |
+| (root)          |      46 |
+| Supplement      |      27 |
+| PredComp        |      26 |
+| Prenucleus      |      14 |
+| Comp_ind        |      10 |
+| Postnucleus     |       8 |
+| DisplacedSubj   |       3 |
+| Flat            |       3 |
 | Det-Head        |       3 |
 | Head-Prenucleus |       2 |
-| Mod-Head        |       2 |
+| Particle        |       2 |
 | Marker-Head     |       1 |
+| Mod-Head        |       1 |
 
 ## High Valencies (ternary+, omitting Supplements and Coordinations)
 
 | valency                                         |   count |
 |:------------------------------------------------|--------:|
-| (VP :Head V :Obj NP :Comp PP)                   |      11 |
-| (VP :Head V :Obj GAP :Comp PP)                  |       8 |
-| (VP :Head V :Comp PP :Comp Clause)              |       2 |
-| (VP :Head V :Obj Coordination :Comp PP)         |       2 |
-| (VP :Head V :Particle PP :Comp PP)              |       2 |
-| (VP :Head V_aux :Comp Clause :DisplacedSubj NP) |       2 |
-| (VP :Head V :Particle PP :Obj NP)               |       2 |
+| (VP :Head V :Obj NP :Comp PP)                   |       6 |
+| (VP :Head V :Obj GAP :Comp PP)                  |       5 |
 | (VP :Head V :PredComp AdjP :Comp PP)            |       1 |
+| (VP :Head V :Comp PP :Comp Clause)              |       1 |
 | (VP :Head Coordination :Obj NP :Comp PP)        |       1 |
+| (VP :Head V :Obj Coordination :Comp PP)         |       1 |
+| (VP :Head V :Particle PP :Comp PP)              |       1 |
 | (VP :Head V :Obj Coordination :Comp Clause)     |       1 |
+| (VP :Head V_aux :Comp Clause :DisplacedSubj NP) |       1 |
+| (VP :Head V :Particle PP :Obj NP)               |       1 |
 | (VP :Head V :Obj NP :Comp Clause)               |       1 |
 
 ## Nonlexical Categories by Function (excluding nonce categories)
 
 |                 |   Nom |   NP |   VP |   PP |   DP |   Clause |   AdjP |   Coordination |   Clause_rel |   AdvP |   GAP |   PP_strand |
 |:----------------|------:|-----:|-----:|-----:|-----:|---------:|-------:|---------------:|-------------:|-------:|------:|------------:|
-| Head            |   859 |   30 |  511 |   19 |    2 |       39 |      8 |             50 |           33 |      2 |       |             |
-| Mod             |    99 |    4 |    7 |  132 |    6 |       54 |    152 |              9 |           27 |     56 |       |             |
-| Obj             |       |  480 |      |      |      |          |        |             14 |              |        |    12 |             |
-| Comp            |       |    1 |      |  252 |      |      193 |      6 |              7 |              |      2 |     1 |           2 |
-| Det             |       |   11 |      |      |  435 |          |        |                |              |        |       |             |
-| Coordinate      |    57 |   54 |   39 |   22 |      |       21 |      8 |              1 |            4 |        |       |             |
-| Subj            |       |   97 |      |      |      |          |        |              6 |              |        |    31 |             |
-| (root)          |       |      |      |      |      |       70 |        |              3 |              |        |       |             |
-| Supplement      |       |    2 |      |   31 |      |        6 |        |              4 |              |      2 |       |             |
-| PredComp        |       |   15 |      |    2 |      |        2 |     20 |                |              |        |       |             |
-| Prenucleus      |       |   22 |      |    1 |      |          |        |                |              |        |       |             |
-| Comp_ind        |       |      |      |    6 |      |          |        |                |              |        |     7 |             |
-| Postnucleus     |       |    9 |      |    3 |      |          |        |                |              |        |       |             |
-| DisplacedSubj   |       |    4 |      |      |      |          |        |                |              |        |       |             |
-| Particle        |       |      |      |    4 |      |          |        |                |              |        |       |             |
+| Head            |   533 |   17 |  317 |   12 |    2 |       26 |      6 |             31 |           21 |      2 |       |             |
+| Mod             |    60 |    3 |    4 |   82 |    3 |       34 |     99 |              5 |           18 |     35 |       |             |
+| Obj             |       |  302 |      |      |      |          |        |              8 |              |        |     7 |             |
+| Comp            |       |      |      |  155 |      |      120 |      3 |              5 |              |      1 |     1 |           1 |
+| Det             |       |    6 |      |      |  272 |          |        |                |              |        |       |             |
+| Coordinate      |    33 |   28 |   27 |   16 |      |       15 |      5 |              1 |            2 |        |       |             |
+| Subj            |       |   64 |      |      |      |          |        |              3 |              |        |    19 |             |
+| (root)          |       |      |      |      |      |       44 |        |              2 |              |        |       |             |
+| Supplement      |       |    1 |      |   18 |      |        3 |        |              3 |              |      2 |       |             |
+| PredComp        |       |    9 |      |    1 |      |        1 |     15 |                |              |        |       |             |
+| Prenucleus      |       |   13 |      |    1 |      |          |        |                |              |        |       |             |
+| Comp_ind        |       |      |      |    3 |      |          |        |                |              |        |     7 |             |
+| Postnucleus     |       |    5 |      |    3 |      |          |        |                |              |        |       |             |
 | Det-Head        |       |      |      |      |    3 |          |        |                |              |        |       |             |
-| Mod-Head        |       |      |      |      |      |          |      2 |                |              |        |       |             |
+| DisplacedSubj   |       |    3 |      |      |      |          |        |                |              |        |       |             |
 | Head-Prenucleus |       |    2 |      |      |      |          |        |                |              |        |       |             |
+| Particle        |       |      |      |    2 |      |          |        |                |              |        |       |             |
+| Mod-Head        |       |      |      |      |      |          |      1 |                |              |        |       |             |
 | Marker-Head     |       |      |      |      |    1 |          |        |                |              |        |       |             |
 
 ## Parent Categories by Function (excluding nonce categories and root)
 
 |                 |   Nom |   NP |   VP |   PP |   Clause |   DP |   AdjP |   Coordination |   Clause_rel |   AdvP |   N |   PP_strand |
 |:----------------|------:|-----:|-----:|-----:|---------:|-----:|-------:|---------------:|-------------:|-------:|----:|------------:|
-| Head            |  1008 |  731 |  557 |  472 |      385 |  447 |    196 |              2 |           64 |     62 |     |           2 |
-| Mod             |   399 |    6 |  102 |    7 |       18 |    4 |      8 |                |              |      2 |     |             |
-| Obj             |       |      |  112 |  394 |          |      |        |                |              |        |     |             |
-| Comp            |   173 |      |  228 |   40 |          |    2 |     20 |                |              |      1 |     |             |
-| Det             |     3 |  443 |      |      |          |      |        |                |              |        |     |             |
-| Coordinate      |       |      |      |      |          |      |        |            206 |              |        |     |             |
-| Marker          |    20 |   27 |   68 |   10 |       19 |      |      5 |              1 |           10 |        |     |             |
-| Subj            |       |      |      |      |      103 |      |        |                |           31 |        |     |             |
-| Supplement      |     5 |    7 |   12 |    3 |       12 |      |      2 |              2 |            2 |        |     |             |
-| PredComp        |       |      |   29 |   10 |          |      |        |                |              |        |     |             |
-| Prenucleus      |       |      |      |      |        2 |      |        |                |           21 |        |     |             |
-| Comp_ind        |    12 |      |      |    1 |          |      |        |                |              |        |     |             |
-| Postnucleus     |       |    1 |    3 |    3 |        4 |      |        |              1 |              |        |     |             |
-| Flat            |       |      |      |      |          |      |        |                |              |        |   6 |             |
-| DisplacedSubj   |       |      |    4 |      |          |      |        |                |              |        |     |             |
-| Particle        |       |      |    4 |      |          |      |        |                |              |        |     |             |
+| Head            |   620 |  453 |  348 |  293 |      243 |  281 |    129 |              1 |           41 |     40 |     |           1 |
+| Mod             |   252 |    4 |   59 |    4 |       12 |    3 |      7 |                |              |      2 |     |             |
+| Obj             |       |      |   72 |  245 |          |      |        |                |              |        |     |             |
+| Comp            |   103 |      |  141 |   25 |          |    2 |     14 |                |              |      1 |     |             |
+| Det             |       |  278 |      |      |          |      |        |                |              |        |     |             |
+| Coordinate      |       |      |      |      |          |      |        |            127 |              |        |     |             |
+| Marker          |    12 |   14 |   43 |    7 |       14 |      |      3 |              1 |            6 |        |     |             |
+| Subj            |       |      |      |      |       66 |      |        |                |           20 |        |     |             |
+| Supplement      |     3 |    4 |    7 |    2 |        7 |      |      2 |              1 |            1 |        |     |             |
+| PredComp        |       |      |   21 |    5 |          |      |        |                |              |        |     |             |
+| Prenucleus      |       |      |      |      |        1 |      |        |                |           13 |        |     |             |
+| Comp_ind        |    10 |      |      |      |          |      |        |                |              |        |     |             |
+| Postnucleus     |       |    1 |    2 |    3 |        2 |      |        |                |              |        |     |             |
+| DisplacedSubj   |       |      |    3 |      |          |      |        |                |              |        |     |             |
+| Flat            |       |      |      |      |          |      |        |                |              |        |   3 |             |
 | Det-Head        |     3 |      |      |      |          |      |        |                |              |        |     |             |
-| Mod-Head        |     2 |      |      |      |          |      |        |                |              |        |     |             |
+| Particle        |       |      |    2 |      |          |      |        |                |              |        |     |             |
 | Head-Prenucleus |       |      |      |      |          |      |        |                |            2 |        |     |             |
+| Mod-Head        |     1 |      |      |      |          |      |        |                |              |        |     |             |
 | Marker-Head     |       |      |      |      |          |      |        |              1 |              |        |     |             |

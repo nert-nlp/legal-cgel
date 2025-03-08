@@ -1,7 +1,7 @@
 # CGELBank Index
 
 
-112  files
+111  files
 
 Below are:
   - Per-file sentence listing with ID and |lexical node, gap| counts
@@ -391,98 +391,49 @@ See also: [STATS.md](STATS.md)
 
 - [usc-rule2002a](../datasets/oneoff/pdf/usc-rule2002a.pdf) |48, 0| Rule 2002(a) and this rule currently require notice to all creditors of a hearing on dismissal of a voluntary chapter 7 case for the debtor's failure to file a list of creditors, schedules, and statement of financial affairs within the time provided in §707(a)(3) of the Code.
 
-## [../oneoff/usc.cgel](../datasets/oneoff/usc.cgel)
-
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0` |27, 0| The Convention on the Recognition and Enforcement of Foreign Arbitral Awards of June 10, 1958, shall be enforced in United States courts in accordance with this chapter.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-003.ida377c234-f599-11ee-b05d-9a0a8a5eaa8d_2_0` |38, 0| The provisions of this section, or any failure by the Corporation to comply with such provisions, may not be used by any person to attack or defeat any title to property after it is conveyed by the Corporation.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0` |36, 1| the Attorney General may not award a grant under this subchapter to a nonprofit organization that holds money in offshore accounts for the purpose of avoiding paying the tax described in section 511(a) of title 26.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-005.id3aecf399-f59a-11ee-acce-fd4a4bf6eb64_2_1` |22, 0| This subsection does not prevent the payment of reasonable compensation to an officer in an amount approved by the board of directors.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-006.idbf22a95c-4f37-11ef-b6fb-9208f0a214ec_2_17` |28, 1| The court, or at its direction the voting referee, shall issue to each applicant so declared qualified a certificate identifying the holder thereof as a person so qualified.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-008.idbf4ffb44-4f37-11ef-b6fb-9208f0a214ec_1_0` |24, 0| Any vacancy occurring in the membership of the Commission shall be filled in the same manner as in the case of the original appointment.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-009.iddfbeb130-2a49-11ef-964b-eac34d51b403_2_0` |43, 0| The authority of the Directing Officer of the NBIC under this section shall not affect any authority or responsibility of any other department or agency of the Federal Government with respect to biosurveillance activities under any program administered by that department or agency.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-011.id903abf9b-0944-11ef-a2f2-985114e05c72_2_0` |25, 1| Any alien whose permanent resident status is terminated under paragraph (1) may request a review of such determination in a proceeding to remove the alien.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-012.id327c7597-f59a-11ee-9f93-9b257bd089f3_2_0` |69, 1| For purposes of this subsection, if, in the judgment of the Administrator, it is not feasible to prescribe or enforce a numerical limitation for a pollutant identified under paragraph (2), the Administrator may instead promulgate a design, equipment, management practice, or operational standard, or combination thereof, which in the Administrator’s judgment is adequate to protect public health and the environment from any reasonably anticipated adverse effects of such pollutant.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-013.idc030adf7-4368-11ef-aaaa-d7602e12ccfb_2_0` |54, 1| If the United States district court pursuant to subsection (f) determines that the surveillance was not lawfully authorized or conducted, it shall, in accordance with the requirements of law, suppress the evidence which was unlawfully obtained or derived from electronic surveillance of the aggrieved person or otherwise grant the motion of the aggrieved person.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-016.id2bb36f8b-2a73-11ef-880b-d748b6d8dd9e_1_0` |42, 0| Civilian employees of the National Guard performing services for the Program and contractor personnel performing such services may be required, when appropriate to achieve the purposes of the Program, to be members of the National Guard and to wear the military uniform.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-026.id5d437fa9-f599-11ee-babc-9b453f011230_2_0` |26, 2| Beginning with the 1995 crop year, the Corporation shall offer to producers additional prevented planting coverage that insures producers against losses in accordance with this paragraph.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-029.id88a874cb-4e86-11ef-8795-d6c340cedfe7_2_0` |22, 0| Where appropriate, the Secretary shall award grants under this section in consultation with the Attorney General and the Secretary of Homeland Security.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-032.id88aabf72-4e86-11ef-8795-d6c340cedfe7_2_1` |36, 1| The Secretary may waive, in whole or in part, the requirements for repayment of scholarship amounts on the basis of economic conditions which may affect the ability of scholarship recipients to find work as realtime writers.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-033.id88b1eae5-4e86-11ef-8795-d6c340cedfe7_2_0` |39, 0| The amount authorized to be appropriated for the period of automatic extension under subsection (a) of an applicable program shall be the amount authorized to be appropriated for such program for the terminal fiscal year of the applicable program.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-034.id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0` |42, 1| Funds obligated for any program year may be expended by the State during that program year and the two succeeding program years and no amount shall be deobligated on account of a rate of expenditure which is consistent with the program plan.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0` |50, 3| For the purpose of evaluating and reviewing programs established or provided for by this chapter, the Comptroller General shall have access to and the right to copy any books, accounts, records, correspondence, or other documents pertinent to such programs that are in the possession, custody, or control of the State.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-036.id430c44da-f59a-11ee-8591-ff101ca1cce5` |33, 1| The Secretary may pay an allowance under this section for the purchase of uniforms to any Department police officer who is required to wear a prescribed uniform in the performance of official duties.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-040.id43005d93-f59a-11ee-8591-ff101ca1cce5_1_0` |26, 0| The Secretary shall establish an advisory committee to be known as the Advisory Committee on Minority Veterans (hereinafter in this section referred to as “the Committee”).
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-042.ideef94fa8-2a49-11ef-8437-855ef5b8fc19_2_0` |28, 0| No credit shall be allowed under subsection (a) for any expense to the extent that funds for such expense are received under any Federal, State, or local program.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-043.ideefe31ab-2a49-11ef-8437-855ef5b8fc19_2_0` |30, 1| Any issuing authority which revokes any mortgage credit certificate shall notify the Secretary of such revocation at such time and in such manner as the Secretary shall prescribe by regulations.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2` |37, 2| The term “motor vehicle” means any vehicle which is manufactured primarily for use on public streets, roads, and highways (not including a vehicle operated exclusively on a rail or rails) and which has at least 4 wheels.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-045.idf3eb7cb1-2a49-11ef-8437-855ef5b8fc19_2_0` |56, 0| Any officer or employee of the Internal Revenue Service in connection with any in-person interview with any taxpayer relating to the determination or collection of any tax shall, upon advance request of such taxpayer, allow the taxpayer to make an audio recording of such interview at the taxpayer’s own expense and with the taxpayer’s own equipment.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-047.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0` |20, 1| Each State shall repay to the United States amounts found not to have been expended in accordance with this chapter.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-048.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_1` |15, 0| No such finding shall be made except after notice and opportunity for a fair hearing.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-049.id295a8bc5-2a73-11ef-ba6d-a9961dfb011e_0_0` |36, 0| There is authorized to be appropriated, out of any money in the Treasury not otherwise appropriated, such amounts from time to time as the Congress may deem necessary to carry out the purposes of this chapter.
-- [usc](../datasets/oneoff/pdf/usc.pdf) `usc-rule2002a` |48, 0| Rule 2002(a) and this rule currently require notice to all creditors of a hearing on dismissal of a voluntary chapter 7 case for the debtor's failure to file a list of creditors, schedules, and statement of financial affairs within the time provided in §707(a)(3) of the Code.
-
 
 # Sentence Metadata Fields
 
-- `text` (73/73)
-- `sent` (73/73)
-- `tree_by` (73/73)
-- `sent_id` (72/73)
+- `text` (46/46)
+- `sent` (46/46)
+- `tree_by` (46/46)
+- `sent_id` (45/46)
 
 # Node Notes
 
 - `AdjP` reduced clause <small>([usc-016.id2bb36f8b-2a73-11ef-880b-d748b6d8dd9e_1_0](../datasets/oneoff/pdf/usc-016.id2bb36f8b-2a73-11ef-880b-d748b6d8dd9e_1_0.pdf) `usc-016.id2bb36f8b-2a73-11ef-880b-d748b6d8dd9e_1_0`)</small>
-- `AdjP` reduced clause <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-016.id2bb36f8b-2a73-11ef-880b-d748b6d8dd9e_1_0`)</small>
 - `Clause` Encodes purpose/nature as a semantic argument - Decided on Comp over Mod <small>(`13-1`)</small>
 - `D` _more_  comparative degree determinative, CGEL p. 432 <small>([usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0](../datasets/oneoff/pdf/usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0.pdf) `usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0`)</small>
 - `D` _once_  Payne et al. (2007) Fusion of Functions paper discusses 'once' <small>([usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0](../datasets/oneoff/pdf/usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0.pdf) `usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0`)</small>
 - `N` _2002(a)_  TODO: xpos <small>([usc-rule2002a](../datasets/oneoff/pdf/usc-rule2002a.pdf))</small>
-- `N` _2002(a)_  TODO: xpos <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-rule2002a`)</small>
 - `N` _511(a)_  The compound constuction of this number may merit review of the CD tag <small>([usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0](../datasets/oneoff/pdf/usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0.pdf) `usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0`)</small>
-- `N` _511(a)_  The compound constuction of this number may merit review of the CD tag <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0`)</small>
 - `N` _funds_  assuming this is a pluralia tantum so 'funds' is also the lemma <small>([usc-034.id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0](../datasets/oneoff/pdf/usc-034.id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0.pdf) `usc-034.id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0`)</small>
-- `N` _funds_  assuming this is a pluralia tantum so 'funds' is also the lemma <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-034.id295a8bcc-2a73-11ef-ba6d-a9961dfb011e_0_0`)</small>
 - `N` _§707(a)(3)_  TODO: xpos <small>([usc-rule2002a](../datasets/oneoff/pdf/usc-rule2002a.pdf))</small>
-- `N` _§707(a)(3)_  TODO: xpos <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-rule2002a`)</small>
 - `NP` integrated appositive <small>([usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2](../datasets/oneoff/pdf/usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`)</small>
-- `NP` integrated appositive <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`)</small>
 - `Nom` enumerated proper name <small>([usc-rule2002a](../datasets/oneoff/pdf/usc-rule2002a.pdf))</small>
 - `Nom` enumerated proper name <small>([usc-rule2002a](../datasets/oneoff/pdf/usc-rule2002a.pdf))</small>
-- `Nom` enumerated proper name <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-rule2002a`)</small>
-- `Nom` enumerated proper name <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-rule2002a`)</small>
 - `Nom` metalinguistic mention <small>([usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2](../datasets/oneoff/pdf/usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`)</small>
-- `Nom` metalinguistic mention <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`)</small>
 - `P` _as_  indir. comp. licensed by 'such' <small>([usc-049.id295a8bc5-2a73-11ef-ba6d-a9961dfb011e_0_0](../datasets/oneoff/pdf/usc-049.id295a8bc5-2a73-11ef-ba6d-a9961dfb011e_0_0.pdf) `usc-049.id295a8bc5-2a73-11ef-ba6d-a9961dfb011e_0_0`)</small>
-- `P` _as_  indir. comp. licensed by 'such' <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-049.id295a8bc5-2a73-11ef-ba6d-a9961dfb011e_0_0`)</small>
 - `P` _as_  licensing Comp here not PredComp: https://github.com/nert-nlp/cgel/issues/144 <small>([usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0](../datasets/oneoff/pdf/usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0.pdf) `usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0`)</small>
 - `P` _by_  two possible attachment sites for the PP - attaching low by convention, negligible meaning change <small>(`13-4`)</small>
 - `P` _for_  [AMBIG] could plausibly apply just to 'opportunity' (neglible meaning difference) <small>([usc-048.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_1](../datasets/oneoff/pdf/usc-048.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_1.pdf) `usc-048.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_1`)</small>
 - `P` _in_  [AMBIG] does the review take place in a removal proceeding [this analysis], or does the request occur in a removal proceeding [higher attachment of PP]? <small>([usc-011.id903abf9b-0944-11ef-a2f2-985114e05c72_2_0](../datasets/oneoff/pdf/usc-011.id903abf9b-0944-11ef-a2f2-985114e05c72_2_0.pdf) `usc-011.id903abf9b-0944-11ef-a2f2-985114e05c72_2_0`)</small>
-- `P` _in_  [AMBIG] does the review take place in a removal proceeding [this analysis], or does the request occur in a removal proceeding [higher attachment of PP]? <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-011.id903abf9b-0944-11ef-a2f2-985114e05c72_2_0`)</small>
 - `P` _under_  [AMBIG] Attach @ grant = the grant would be defined by the subchapter. Attach @ award = this subchapter does not license the award of a grant. (possibly) attach @ may = this subchapter prohibits any award of a grant? <small>([usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0](../datasets/oneoff/pdf/usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0.pdf) `usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0`)</small>
-- `P` _under_  [AMBIG] Attach @ grant = the grant would be defined by the subchapter. Attach @ award = this subchapter does not license the award of a grant. (possibly) attach @ may = this subchapter prohibits any award of a grant? <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-004.id4eaa5dfe-50c2-11ef-9dd1-d8c68483f815_2_0`)</small>
 - `P` _where_  CGEL would analyze this as licensing a reduced clause (p. 1267), but CGELBank currently does not recognize verbless clauses <small>([usc-029.id88a874cb-4e86-11ef-8795-d6c340cedfe7_2_0](../datasets/oneoff/pdf/usc-029.id88a874cb-4e86-11ef-8795-d6c340cedfe7_2_0.pdf) `usc-029.id88a874cb-4e86-11ef-8795-d6c340cedfe7_2_0`)</small>
-- `P` _where_  CGEL would analyze this as licensing a reduced clause (p. 1267), but CGELBank currently does not recognize verbless clauses <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-029.id88a874cb-4e86-11ef-8795-d6c340cedfe7_2_0`)</small>
 - `PP` Attaches higher due to punctuation in the sentence <small>(`13-1`)</small>
-- `PP` [AMBIG] could plausibly apply just to 'opportunity' (neglible meaning difference) <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-048.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_1`)</small>
 - `Sdr` _that_  treating 'to the extent that' as an idiom w/ clausal complement <small>([usc-042.ideef94fa8-2a49-11ef-8437-855ef5b8fc19_2_0](../datasets/oneoff/pdf/usc-042.ideef94fa8-2a49-11ef-8437-855ef5b8fc19_2_0.pdf) `usc-042.ideef94fa8-2a49-11ef-8437-855ef5b8fc19_2_0`)</small>
-- `Sdr` _that_  treating 'to the extent that' as an idiom w/ clausal complement <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-042.ideef94fa8-2a49-11ef-8437-855ef5b8fc19_2_0`)</small>
 - `V` _authorized_  [SEM AMBIG] not lawfully [authorized or conducted] (neither nor) vs. [not lawfully] authorized or conducted (either or) <small>([usc-013.idc030adf7-4368-11ef-aaaa-d7602e12ccfb_2_0](../datasets/oneoff/pdf/usc-013.idc030adf7-4368-11ef-aaaa-d7602e12ccfb_2_0.pdf) `usc-013.idc030adf7-4368-11ef-aaaa-d7602e12ccfb_2_0`)</small>
-- `V` _authorized_  [SEM AMBIG] not lawfully [authorized or conducted] (neither nor) vs. [not lawfully] authorized or conducted (either or) <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-013.idc030adf7-4368-11ef-aaaa-d7602e12ccfb_2_0`)</small>
 - `V` _found_  verb licensing catenative complement (p. 1233), as opposed to predicative complement (p. 1255) <small>([usc-047.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0](../datasets/oneoff/pdf/usc-047.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0.pdf) `usc-047.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0`)</small>
-- `V` _found_  verb licensing catenative complement (p. 1233), as opposed to predicative complement (p. 1255) <small>([usc](../datasets/oneoff/pdf/usc.pdf) `usc-047.id295cfc29-2a73-11ef-ba6d-a9961dfb011e_0_0`)</small>
 
 # Infrequent Categories
 
-Of 73 trees, the following occurred in fewer than 5% (3):
+Of 46 trees, the following occurred in fewer than 5% (2):
 
-- `PP_strand` (2): <small>[usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0](../datasets/oneoff/pdf/usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0.pdf) `usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0`, [usc](../datasets/oneoff/pdf/usc.pdf) `usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0`</small>
+- `PP_strand` (1): <small>[usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0](../datasets/oneoff/pdf/usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0.pdf) `usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0`</small>
 
 # Infrequent Functions
 
-- `Flat` (2): <small>[usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0](../datasets/oneoff/pdf/usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0.pdf) `usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0`, [usc](../datasets/oneoff/pdf/usc.pdf) `usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0`</small>
-- `Head-Prenucleus` (2): <small>[usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0](../datasets/oneoff/pdf/usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0.pdf) `usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0`, [usc-074.id46f40846-50c2-11ef-a7e6-e6e97d13e696_1_0](../datasets/oneoff/pdf/usc-074.id46f40846-50c2-11ef-a7e6-e6e97d13e696_1_0.pdf) `usc-074.id46f40846-50c2-11ef-a7e6-e6e97d13e696_1_0`</small>
-- `Det-Head` (2): <small>[usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0](../datasets/oneoff/pdf/usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0.pdf) `usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0`, [usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0](../datasets/oneoff/pdf/usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0.pdf) `usc-039.id4309d44c-f59a-11ee-8591-ff101ca1cce5_2_0`</small>
+- `Flat` (1): <small>[usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0](../datasets/oneoff/pdf/usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0.pdf) `usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0`</small>
 - `Marker-Head` (1): <small>[usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0](../datasets/oneoff/pdf/usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0.pdf) `usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0`</small>
-- `Mod-Head` (2): <small>[usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2](../datasets/oneoff/pdf/usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`, [usc](../datasets/oneoff/pdf/usc.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`</small>
+- `Mod-Head` (1): <small>[usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2](../datasets/oneoff/pdf/usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`</small>
 
