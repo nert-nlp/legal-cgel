@@ -50,7 +50,7 @@
                                         :Det (DP
                                             :Head (D :t "a"))
                                         :Head (Nom
-                                            :Head (N_pro :t "statute" :p ","))))))))))
+                                            :Head (N :t "statute" :p ","))))))))))
         :Coordinate (Clause
             :Marker (Coordinator :t "and")
             :Head (Clause
