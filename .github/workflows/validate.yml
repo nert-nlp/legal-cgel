@@ -41,4 +41,3 @@ jobs:
             python cgel/validate_trees.py --punct $F
           fi
         done
-        ./build.sh
