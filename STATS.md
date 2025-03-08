@@ -1,4 +1,4 @@
-# CGELBank Statistics
+# Legal-CGEL Statistics
 
 Analyzing 111 files:
 
