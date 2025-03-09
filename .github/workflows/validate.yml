@@ -41,6 +41,12 @@ jobs:
             python cgel/validate_trees.py --punct $F
           fi
         done
+    - name: Config github actions bot
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Build (update stats, index, all.trees) 
       run: |
         ./build.sh
