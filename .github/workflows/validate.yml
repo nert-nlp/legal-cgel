@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Validate treebank
+name: Validate and build treebank
 
 on:
   push:
@@ -41,3 +41,13 @@ jobs:
             python cgel/validate_trees.py --punct $F
           fi
         done
+    - name: Build (update stats, index, all.trees) 
+      run: |
+        ./build.sh
+        git add INDEX.md
+        git add STATS.md
+        git add all.trees
+        git commit -m "build"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
