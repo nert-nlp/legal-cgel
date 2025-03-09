@@ -53,7 +53,7 @@ jobs:
         git add INDEX.md
         git add STATS.md
         git add all.trees
-        git commit -m "build"
+        git diff-index --quiet HEAD || git commit -m "build"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
