@@ -243,10 +243,10 @@ Analyzing 111 files:
 | Prenucleus      |       |   13 |      |    1 |      |          |        |                |              |        |       |             |
 | Comp_ind        |       |      |      |    3 |      |          |        |                |              |        |     7 |             |
 | Postnucleus     |       |    5 |      |    3 |      |          |        |                |              |        |       |             |
-| DisplacedSubj   |       |    3 |      |      |      |          |        |                |              |        |       |             |
 | Det-Head        |       |      |      |      |    3 |          |        |                |              |        |       |             |
-| Particle        |       |      |      |    2 |      |          |        |                |              |        |       |             |
+| DisplacedSubj   |       |    3 |      |      |      |          |        |                |              |        |       |             |
 | Head-Prenucleus |       |    2 |      |      |      |          |        |                |              |        |       |             |
+| Particle        |       |      |      |    2 |      |          |        |                |              |        |       |             |
 | Mod-Head        |       |      |      |      |      |          |      1 |                |              |        |       |             |
 | Marker-Head     |       |      |      |      |    1 |          |        |                |              |        |       |             |
 
@@ -267,10 +267,10 @@ Analyzing 111 files:
 | Prenucleus      |       |      |      |      |        1 |      |        |                |           13 |        |     |             |
 | Comp_ind        |    10 |      |      |      |          |      |        |                |              |        |     |             |
 | Postnucleus     |       |    1 |    2 |    3 |        2 |      |        |                |              |        |     |             |
-| DisplacedSubj   |       |      |    3 |      |          |      |        |                |              |        |     |             |
 | Flat            |       |      |      |      |          |      |        |                |              |        |   3 |             |
 | Det-Head        |     3 |      |      |      |          |      |        |                |              |        |     |             |
-| Particle        |       |      |    2 |      |          |      |        |                |              |        |     |             |
+| DisplacedSubj   |       |      |    3 |      |          |      |        |                |              |        |     |             |
 | Head-Prenucleus |       |      |      |      |          |      |        |                |            2 |        |     |             |
+| Particle        |       |      |    2 |      |          |      |        |                |              |        |     |             |
 | Marker-Head     |       |      |      |      |          |      |        |              1 |              |        |     |             |
 | Mod-Head        |     1 |      |      |      |          |      |        |                |              |        |     |             |
