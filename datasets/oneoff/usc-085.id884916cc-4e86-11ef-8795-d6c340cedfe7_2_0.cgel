@@ -1,4 +1,162 @@
 # sent_id = usc-085.id884916cc-4e86-11ef-8795-d6c340cedfe7_2_0
 # text = The Association may pay dividends in the form of cash or noncash distributions so long as at the time of the declaration of such dividends, after giving effect to the payment of such dividends as of the date of such declaration by the Board of Directors of the Association, the Association’s capital would be in compliance with the capital standards set forth in this section.
 # sent = the Association may pay dividends in the form of cash or noncash distributions so long as at the time of the declaration of such dividends after giving effect to the payment of such dividends as of the date of such declaration by the Board of Directors of the Association the Associations capital would be in compliance with the capital standards set forth in this section
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = nschneid (2025-03-18)
+(Clause
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "Association")))
+        :Head (VP
+            :Head (V_aux :t "may" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "pay" :xpos "VB")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "dividends" :l "dividend")
+                            :Mod (PP
+                                :Head (P :t "in")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "form")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Mod (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "cash"))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "or")
+                                                            :Head (Nom
+                                                                :Head (N :t "noncash"))))
+                                                    :Head (N :t "distributions" :l "distribution")))))))))))))
+    :Mod (PP
+        :Head (P :t "so long as" :subt "so" :subt "long" :subt "as")
+        :Comp (Clause
+            :Mod (PP
+                :Head (P :t "at")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Head (N :t "time")
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "declaration")
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "such"))
+                                            :Head (Nom
+                                                :Head (N :t "dividends" :l "dividend" :p ","))))))))))
+            :Head (Clause
+                :Mod (PP
+                    :Head (P :t "after")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "giving" :l "give" :xpos "VBG")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Head (N :t "effect")))
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (Nom
+                                            :Head (N :t "payment")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "such"))
+                                                    :Head (Nom
+                                                        :Head (N :t "dividends" :l "dividend")))))
+                                        :Mod (PP :note "TODO: attachment unclear"
+                                            :Head (P :t "as of" :subt "as" :subt "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "date")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "such"))
+                                                            :Head (Nom
+                                                                :Head (N :t "declaration")
+                                                                :Comp (PP
+                                                                    :Head (P :t "by")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "the"))
+                                                                        :Head (Nom
+                                                                            :Head (Nom
+                                                                                :Head (N :t "Board")
+                                                                                :Comp (PP
+                                                                                    :Head (P :t "of")
+                                                                                    :Obj (NP
+                                                                                        :Head (Nom
+                                                                                            :Head (N :t "Directors" :l "director")))))
+                                                                            :Mod (PP
+                                                                                :Head (P :t "of")
+                                                                                :Obj (NP
+                                                                                    :Det (DP
+                                                                                        :Head (D :t "the"))
+                                                                                    :Head (Nom
+                                                                                        :Head (N :t "Association" :p ",")))))))))))))))))))
+                :Head (Clause
+                    :Subj (NP
+                        :Det (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "Association’s" :l "Association" :subt "Association" :subt "’s")))
+                        :Head (Nom
+                            :Head (N :t "capital")))
+                    :Head (VP
+                        :Head (V_aux :t "would" :xpos "MD")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V_aux :t "be" :xpos "VB")
+                                :PredComp (PP
+                                    :Head (P :t "in")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N :t "compliance")
+                                            :Comp (PP
+                                                :Head (P :t "with")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (Nom
+                                                            :Mod (Nom
+                                                                :Head (N :t "capital"))
+                                                            :Head (N :t "standards" :l "standard"))
+                                                        :Mod (Clause
+                                                            :Head (VP
+                                                                :Head (VP
+                                                                    :Head (V :t "set" :xpos "VBN")
+                                                                    :Particle (PP
+                                                                        :Head (P :t "forth")))
+                                                                :Mod (PP
+                                                                    :Head (P :t "in")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "this"))
+                                                                        :Head (Nom
+                                                                            :Head (N :t "section" :p "."))))))))))))))))))))
