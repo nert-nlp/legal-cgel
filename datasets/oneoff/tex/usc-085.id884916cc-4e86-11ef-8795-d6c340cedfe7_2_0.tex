@@ -1,0 +1,228 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = usc-085.id884916cc-4e86-11ef-8795-d6c340cedfe7_2_0
+% # text = The Association may pay dividends in the form of cash or noncash distributions so long as at the time of the declaration of such dividends, after giving effect to the payment of such dividends as of the date of such declaration by the Board of Directors of the Association, the Association’s capital would be in compliance with the capital standards set forth in this section.
+% # sent = the Association may pay dividends in the form of cash or noncash distributions so long as at the time of the declaration of such dividends after giving effect to the payment of such dividends as of the date of such declaration by the Board of Directors of the Association the Associations capital would be in compliance with the capital standards set forth in this section
+% # tree_by = nschneid (2025-03-18)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Head}{Clause},edge={line width=1pt}
+        [\Node{Subj}{NP}
+            [\Node{Det}{DP}
+                [\Node{Head}{D},edge={line width=1pt}[the]]]
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N},edge={line width=1pt}[Association]]]]
+        [\Node{Head}{VP},edge={line width=1pt}
+            [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[may]]
+            [\Node{Comp}{Clause}
+                [\Node{Head}{VP},edge={line width=1pt}
+                    [\Node{Head}{V},edge={line width=1pt}[pay]]
+                    [\Node{Obj}{NP}
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{N},edge={line width=1pt}[dividends]]
+                            [\Node{Mod}{PP}
+                                [\Node{Head}{P},edge={line width=1pt}[in]]
+                                [\Node{Obj}{NP}
+                                    [\Node{Det}{DP}
+                                        [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N},edge={line width=1pt}[form]]
+                                        [\Node{Comp}{PP}
+                                            [\Node{Head}{P},edge={line width=1pt}[of]]
+                                            [\Node{Obj}{NP}
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Mod}{Coordination}
+                                                        [\Node{Coordinate}{Nom}
+                                                            [\Node{Head}{N},edge={line width=1pt}[cash]]]
+                                                        [\Node{Coordinate}{Nom}
+                                                            [\Node{Marker}{Coordinator}[or]]
+                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                [\Node{Head}{N},edge={line width=1pt}[noncash]]]]]
+                                                    [\Node{Head}{N},edge={line width=1pt}[distributions]]]]]]]]]]]]]]
+    [\Node{Mod}{PP}
+        [\Node{Head}{P},edge={line width=1pt}[so long as]]
+        [\Node{Comp}{Clause}
+            [\Node{Mod}{PP}
+                [\Node{Head}{P},edge={line width=1pt}[at]]
+                [\Node{Obj}{NP}
+                    [\Node{Det}{DP}
+                        [\Node{Head}{D},edge={line width=1pt}[the]]]
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Head}{N},edge={line width=1pt}[time]]
+                        [\Node{Comp}{PP}
+                            [\Node{Head}{P},edge={line width=1pt}[of]]
+                            [\Node{Obj}{NP}
+                                [\Node{Det}{DP}
+                                    [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Head}{N},edge={line width=1pt}[declaration]]
+                                    [\Node{Comp}{PP}
+                                        [\Node{Head}{P},edge={line width=1pt}[of]]
+                                        [\Node{Obj}{NP}
+                                            [\Node{Det}{DP}
+                                                [\Node{Head}{D},edge={line width=1pt}[such]]]
+                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                [\Node{Head}{N},edge={line width=1pt}[dividends,label={right:\p{{,}}}]]]]]]]]]]]
+            [\Node{Head}{Clause},edge={line width=1pt}
+                [\Node{Mod}{PP}
+                    [\Node{Head}{P},edge={line width=1pt}[after]]
+                    [\Node{Comp}{Clause}
+                        [\Node{Head}{VP},edge={line width=1pt}
+                            [\Node{Head}{V},edge={line width=1pt}[giving]]
+                            [\Node{Obj}{NP}
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Head}{N},edge={line width=1pt}[effect]]]]
+                            [\Node{Comp}{PP}
+                                [\Node{Head}{P},edge={line width=1pt}[to]]
+                                [\Node{Obj}{NP}
+                                    [\Node{Det}{DP}
+                                        [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[payment]]
+                                            [\Node{Comp}{PP}
+                                                [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                [\Node{Obj}{NP}
+                                                    [\Node{Det}{DP}
+                                                        [\Node{Head}{D},edge={line width=1pt}[such]]]
+                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                        [\Node{Head}{N},edge={line width=1pt}[dividends]]]]]]
+                                        [\Node{Mod}{PP} \hlgreen{\Info}
+                                            [\Node{Head}{P},edge={line width=1pt}[as of]]
+                                            [\Node{Obj}{NP}
+                                                [\Node{Det}{DP}
+                                                    [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Head}{N},edge={line width=1pt}[date]]
+                                                    [\Node{Comp}{PP}
+                                                        [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                        [\Node{Obj}{NP}
+                                                            [\Node{Det}{DP}
+                                                                [\Node{Head}{D},edge={line width=1pt}[such]]]
+                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                [\Node{Head}{N},edge={line width=1pt}[declaration]]
+                                                                [\Node{Comp}{PP}
+                                                                    [\Node{Head}{P},edge={line width=1pt}[by]]
+                                                                    [\Node{Obj}{NP}
+                                                                        [\Node{Det}{DP}
+                                                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                [\Node{Head}{N},edge={line width=1pt}[Board]]
+                                                                                [\Node{Comp}{PP}
+                                                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                                    [\Node{Obj}{NP}
+                                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                            [\Node{Head}{N},edge={line width=1pt}[Directors]]]]]]
+                                                                            [\Node{Mod}{PP}
+                                                                                [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                                [\Node{Obj}{NP}
+                                                                                    [\Node{Det}{DP}
+                                                                                        [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                                                        [\Node{Head}{N},edge={line width=1pt}[Association,label={right:\p{{,}}}]]]]]]]]]]]]]]]]]]]]
+                [\Node{Head}{Clause},edge={line width=1pt}
+                    [\Node{Subj}{NP}
+                        [\Node{Det}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[the]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{N},edge={line width=1pt}[Association{\textquoteright}s]]]]
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{N},edge={line width=1pt}[capital]]]]
+                    [\Node{Head}{VP},edge={line width=1pt}
+                        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[would]]
+                        [\Node{Comp}{Clause}
+                            [\Node{Head}{VP},edge={line width=1pt}
+                                [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[be]]
+                                [\Node{PredComp}{PP}
+                                    [\Node{Head}{P},edge={line width=1pt}[in]]
+                                    [\Node{Obj}{NP}
+                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                            [\Node{Head}{N},edge={line width=1pt}[compliance]]
+                                            [\Node{Comp}{PP}
+                                                [\Node{Head}{P},edge={line width=1pt}[with]]
+                                                [\Node{Obj}{NP}
+                                                    [\Node{Det}{DP}
+                                                        [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                            [\Node{Mod}{Nom}
+                                                                [\Node{Head}{N},edge={line width=1pt}[capital]]]
+                                                            [\Node{Head}{N},edge={line width=1pt}[standards]]]
+                                                        [\Node{Mod}{Clause}
+                                                            [\Node{Head}{VP},edge={line width=1pt}
+                                                                [\Node{Head}{VP},edge={line width=1pt}
+                                                                    [\Node{Head}{V},edge={line width=1pt}[set]]
+                                                                    [\Node{Particle}{PP}
+                                                                        [\Node{Head}{P},edge={line width=1pt}[forth]]]]
+                                                                [\Node{Mod}{PP}
+                                                                    [\Node{Head}{P},edge={line width=1pt}[in]]
+                                                                    [\Node{Obj}{NP}
+                                                                        [\Node{Det}{DP}
+                                                                            [\Node{Head}{D},edge={line width=1pt}[this]]]
+                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                            [\Node{Head}{N},edge={line width=1pt}[section,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]
+\node at (current bounding box.south)[yshift=-1cm]{
+(1) TODO: attachment unclear};
+        \end{forest}
+        
+
+\end{document}
+
