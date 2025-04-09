@@ -1,6 +1,6 @@
 # sent_id = usc-089.id88bb876f-4e86-11ef-8795-d6c340cedfe7
 # text = The Federal Government must be responsive to the growing needs of an increasingly diverse society.
-# sent = the federal government must be responsive to the growing needs of an increasingly diverse society
+# sent = the Federal Government must be responsive to the growing needs of an increasingly diverse society
 # tree_by = devika-tiwari (2025-02-28)
 (Clause
     :Subj (NP
@@ -8,8 +8,8 @@
             :Head (D :t "the"))
         :Head (Nom
             :Mod (AdjP
-                :Head (Adj :t "federal"))
-            :Head (N :t "government")))
+                :Head (Adj :t "Federal"))
+            :Head (N :t "Government")))
     :Head (VP
         :Head (V_aux :t "must" :xpos "MD")
         :Comp (Clause
@@ -23,9 +23,8 @@
                             :Det (DP
                                 :Head (D :t "the"))
                             :Head (Nom
-                                :Mod (Clause
-                                    :Head (VP
-                                        :Head (V :t "growing" :l "grow" :xpos "VBG")))
+                                :Mod (VP
+                                    :Head (V :t "growing" :l "grow" :xpos "VBG"))
                                 :Head (Nom
                                     :Head (N :t "needs" :l "need")
                                     :Comp (PP
@@ -38,4 +37,5 @@
                                                     :Mod (AdvP
                                                         :Head (Adv :t "increasingly"))
                                                     :Head (Adj :t "diverse"))
-                                                :Head (N :t "society.")))))))))))))
+                                                :Head (N :t "society" :p ".")))))))))))))
+
