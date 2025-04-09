@@ -10,7 +10,7 @@
             :Head (N :t "Secretary")))
     :Head (VP
         :Head (VP
-            :Head (V_aux :t "shall," :xpos "MD")
+            :Head (V_aux :t "shall" :xpos "MD" :p ",")
             :Supplement (PP
                 :Head (P :t "on")
                 :Obj (NP
@@ -19,7 +19,7 @@
                     :Head (Nom
                         :Mod (AdjP
                             :Head (Adj :t "regular"))
-                        :Head (N :t "basis,"))))
+                        :Head (N :t "basis" :p ","))))
             :Comp (Clause
                 :Head (VP
                     :Head (VP
@@ -46,7 +46,7 @@
                                 :Head (D :t "the"))
                             :Head (Nom
                                 :Head (N :t "Committee"))))
-                    :Comp (PP
+                    :Mod (PP
                         :Head (P :t "with")
                         :Obj (NP
                             :Head (Nom
@@ -57,30 +57,30 @@
                                         :Det (DP
                                             :Head (D :t "the"))
                                         :Head (Nom
-                                            :Head (N :t "provision")
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Head (N :t "provision")
+                                                    :Comp (PP
+                                                        :Head (P :t "by")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Head (N :t "Department")))))
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "benefits" :l "benefit"))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "and")
+                                                            :Head (Nom
+                                                                :Head (N :t "services" :l "service"))))))
                                             :Comp (PP
-                                                :Head (P :t "by")
+                                                :Head (P :t "to")
                                                 :Obj (NP
-                                                    :Det (DP
-                                                        :Head (D :t "the"))
                                                     :Head (Nom
-                                                        :Head (N :t "Department")
-                                                        :Comp (PP
-                                                            :Head (P :t "of")
-                                                            :Obj (NP
-                                                                :Head (Nom
-                                                                    :Head (Coordination
-                                                                        :Coordinate (Nom
-                                                                            :Head (N :t "benefits" :l "benefit"))
-                                                                        :Coordinate (Nom
-                                                                            :Marker (Coordinator :t "and")
-                                                                            :Head (Nom
-                                                                                :Head (N :t "services" :l "service"))))
-                                                                    :Comp (PP
-                                                                        :Head (P :t "to")
-                                                                        :Obj (NP
-                                                                            :Head (Nom
-                                                                                :Head (N :t "veterans" :l "veteran")))))))))))))))))))
+                                                        :Head (N :t "veterans" :l "veteran")))))))))))))
         :Mod (PP
             :Head (P :t "in order" :subt "in" :subt "order")
             :Comp (Clause
@@ -104,4 +104,4 @@
                                             :Head (Nom
                                                 :Mod (AdjP
                                                     :Head (Adj :t "civilian"))
-                                                :Head (N :t "life.")))))))))))))
+                                                :Head (N :t "life" :p ".")))))))))))))
