@@ -1,4 +1,107 @@
 # sent_id = usc-037.id4302a7b5-f59a-11ee-8591-ff101ca1cce5_1_0
 # text = The Secretary shall, on a regular basis, consult with and seek the advice of the Committee with respect to the provision by the Department of benefits and services to veterans in order to assist veterans in the readjustment to civilian life.
-# sent = the Secretary shall on a regular basis consult with and seek the advice of the Committee with respect to the provision by the Department of benefits and services to veterans in order to assist veterans in the readjustment to civilian life
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the Secretary shall on a regular basis consult with -- and seek the advice of -- the Committee with respect to the provision by the Department of benefits and services to veterans in order to assist veterans in the readjustment to civilian life
+# tree_by = devika-tiwari (2025-02-28)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD" :p ",")
+            :Supplement (PP
+                :Head (P :t "on")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Mod (AdjP
+                            :Head (Adj :t "regular"))
+                        :Head (N :t "basis" :p ","))))
+            :Comp (Clause
+                :Head (VP
+                    :Head (VP
+                        :Head (Coordination
+                            :Coordinate (VP
+                                :Head (V :t "consult" :xpos "VB")
+                                :Comp (PP
+                                    :Head (P :t "with")
+                                    :Obj (x / GAP)))
+                            :Coordinate (VP
+                                :Marker (Coordinator :t "and")
+                                :Head (VP
+                                    :Head (V :t "seek" :xpos "VB")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "advice")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (x / GAP)))))))
+                        :Postnucleus (x / NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Head (N :t "Committee"))))
+                    :Mod (PP
+                        :Head (P :t "with")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "respect")
+                                :Comp (PP
+                                    :Head (P :t "to")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Head (N :t "provision")
+                                                    :Comp (PP
+                                                        :Head (P :t "by")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Head (N :t "Department")))))
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (Coordination
+                                                        :Coordinate (Nom
+                                                            :Head (N :t "benefits" :l "benefit"))
+                                                        :Coordinate (Nom
+                                                            :Marker (Coordinator :t "and")
+                                                            :Head (Nom
+                                                                :Head (N :t "services" :l "service"))))))
+                                            :Comp (PP
+                                                :Head (P :t "to")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "veterans" :l "veteran")))))))))))))
+        :Mod (PP
+            :Head (P :t "in order" :subt "in" :subt "order")
+            :Comp (Clause
+                :Head (VP
+                    :Marker (Sdr :t "to")
+                    :Head (VP
+                        :Head (V :t "assist" :xpos "VB")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "veterans" :l "veteran")))
+                        :Comp (PP
+                            :Head (P :t "in")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (N :t "readjustment")
+                                    :Comp (PP
+                                        :Head (P :t "to")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "civilian"))
+                                                :Head (N :t "life" :p ".")))))))))))))
