@@ -179,6 +179,7 @@ See also: [STATS.md](STATS.md)
 
 ## [../oneoff/usc-037.id4302a7b5-f59a-11ee-8591-ff101ca1cce5_1_0.cgel](../datasets/oneoff/usc-037.id4302a7b5-f59a-11ee-8591-ff101ca1cce5_1_0.cgel)
 
+- [usc-037.id4302a7b5-f59a-11ee-8591-ff101ca1cce5_1_0](../datasets/oneoff/pdf/usc-037.id4302a7b5-f59a-11ee-8591-ff101ca1cce5_1_0.pdf) `usc-037.id4302a7b5-f59a-11ee-8591-ff101ca1cce5_1_0` |40, 2| The Secretary shall, on a regular basis, consult with and seek the advice of the Committee with respect to the provision by the Department of benefits and services to veterans in order to assist veterans in the readjustment to civilian life.
 
 ## [../oneoff/usc-038.id4309d3a3-f59a-11ee-8591-ff101ca1cce5_1_0.cgel](../datasets/oneoff/usc-038.id4309d3a3-f59a-11ee-8591-ff101ca1cce5_1_0.cgel)
 
@@ -348,6 +349,7 @@ See also: [STATS.md](STATS.md)
 
 ## [../oneoff/usc-089.id88bb876f-4e86-11ef-8795-d6c340cedfe7.cgel](../datasets/oneoff/usc-089.id88bb876f-4e86-11ef-8795-d6c340cedfe7.cgel)
 
+- [usc-089.id88bb876f-4e86-11ef-8795-d6c340cedfe7](../datasets/oneoff/pdf/usc-089.id88bb876f-4e86-11ef-8795-d6c340cedfe7.pdf) `usc-089.id88bb876f-4e86-11ef-8795-d6c340cedfe7` |15, 0| The Federal Government must be responsive to the growing needs of an increasingly diverse society.
 
 ## [../oneoff/usc-090.id2562c3e9-2a73-11ef-91df-a37dd62a7297.cgel](../datasets/oneoff/usc-090.id2562c3e9-2a73-11ef-91df-a37dd62a7297.cgel)
 
@@ -394,10 +396,10 @@ See also: [STATS.md](STATS.md)
 
 # Sentence Metadata Fields
 
-- `text` (46/46)
-- `sent` (46/46)
-- `tree_by` (46/46)
-- `sent_id` (45/46)
+- `text` (48/48)
+- `sent` (48/48)
+- `tree_by` (48/48)
+- `sent_id` (47/48)
 
 # Node Notes
 
@@ -427,7 +429,7 @@ See also: [STATS.md](STATS.md)
 
 # Infrequent Categories
 
-Of 46 trees, the following occurred in fewer than 5% (2):
+Of 48 trees, the following occurred in fewer than 5% (2):
 
 - `PP_strand` (1): <small>[usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0](../datasets/oneoff/pdf/usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0.pdf) `usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0`</small>
 
