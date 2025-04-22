@@ -318,6 +318,7 @@ See also: [STATS.md](STATS.md)
 
 ## [../oneoff/usc-079.id48146cb0-50c2-11ef-a7e6-e6e97d13e696_2_0.cgel](../datasets/oneoff/usc-079.id48146cb0-50c2-11ef-a7e6-e6e97d13e696_2_0.cgel)
 
+- [usc-079.id48146cb0-50c2-11ef-a7e6-e6e97d13e696_2_0](../datasets/oneoff/pdf/usc-079.id48146cb0-50c2-11ef-a7e6-e6e97d13e696_2_0.pdf) `usc-079.id48146cb0-50c2-11ef-a7e6-e6e97d13e696_2_0` |35, 0| In a Federal habeas corpus proceeding arising out of a State conviction, the court shall ensure that a crime victim is afforded the rights described in paragraphs (3), (4), (7), and (8) of subsection (a).
 
 ## [../oneoff/usc-080.id481e08e1-50c2-11ef-a7e6-e6e97d13e696_1_0.cgel](../datasets/oneoff/usc-080.id481e08e1-50c2-11ef-a7e6-e6e97d13e696_1_0.cgel)
 
@@ -396,10 +397,10 @@ See also: [STATS.md](STATS.md)
 
 # Sentence Metadata Fields
 
-- `text` (48/48)
-- `sent` (48/48)
-- `tree_by` (48/48)
-- `sent_id` (47/48)
+- `text` (49/49)
+- `sent` (49/49)
+- `tree_by` (49/49)
+- `sent_id` (48/49)
 
 # Node Notes
 
@@ -429,13 +430,12 @@ See also: [STATS.md](STATS.md)
 
 # Infrequent Categories
 
-Of 48 trees, the following occurred in fewer than 5% (2):
+Of 49 trees, the following occurred in fewer than 5% (2):
 
 - `PP_strand` (1): <small>[usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0](../datasets/oneoff/pdf/usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0.pdf) `usc-035.id295cfc28-2a73-11ef-ba6d-a9961dfb011e_0_0`</small>
 
 # Infrequent Functions
 
-- `Flat` (1): <small>[usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0](../datasets/oneoff/pdf/usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0.pdf) `usc-001.idc64b92f8-fcac-11ee-ae40-eb498a365d7d_2_0`</small>
 - `Marker-Head` (1): <small>[usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0](../datasets/oneoff/pdf/usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0.pdf) `usc-007.idbf2e9055-4f37-11ef-b6fb-9208f0a214ec_2_0`</small>
 - `Mod-Head` (1): <small>[usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2](../datasets/oneoff/pdf/usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2.pdf) `usc-044.idef0ed38f-2a49-11ef-8437-855ef5b8fc19_0_2`</small>
 
