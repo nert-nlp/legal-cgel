@@ -1,4 +1,136 @@
 # sent_id = usc-017.id2bb36fb7-2a73-11ef-880b-d748b6d8dd9e_2_0
 # text = So far as practicable, the same types of uniforms, arms, and equipment as are issued to the Army shall be issued to the Army National Guard, and the same types of uniforms, arms, and equipment as are issued to the Air Force shall be issued to the Air National Guard.
 # sent = so far as practicable the same types of uniforms arms and equipment as are issued to the Army shall be issued to the Army National Guard and the same types of uniforms arms and equipment as are issued to the Air Force shall be issued to the Air National Guard
-# tree_by = bwaldon (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-15)
+(Coordination
+    :Supplement (AdjP
+        :Head (AdjP
+            :Mod (AdvP
+                :Head (Adv :t "so" :note "'so far as' is sometimes treated as an idiomatic compound preposition (CGEL p. 1134), that's not the sense here."))
+            :Head (Adj :t "far"))
+        :Comp_ind (PP
+            :Head (P :t "as")
+            :PredComp (AdjP
+                :Head (Adj :t "practicable" :p ","))))
+    :Coordinate (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "same"))
+                    :Head (Nom
+                        :Head (N :t "types" :l "type")
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Comp (Coordination
+                                :Coordinate (NP
+                                    :Head (Nom
+                                        :Head (N :t "uniforms" :l "uniform" :p ",")))
+                                :Coordinate (NP
+                                    :Head (Nom
+                                        :Head (N :t "arms" :p "," :note "pluralia tantum")))
+                                :Coordinate (NP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (NP
+                                        :Head (Nom
+                                            :Head (N :t "equipment"))))))))
+                :Comp_ind (PP
+                    :Head (P :t "as")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (V :t "issued" :l "issue" :xpos "VBN")
+                                    :Comp (PP
+                                        :Head (P :t "to")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N_pro :t "Army")))))))))))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "issued" :l "issue" :xpos "VBN")
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Mod (Nom
+                                            :Head (N :t "Army"))
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "National"))
+                                            :Head (N :t "Guard" :p ",")))))))))))
+    :Coordinate (Clause
+        :Marker (Coordinator :t "and")
+        :Head (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (Nom
+                        :Mod (AdjP
+                            :Head (Adj :t "same"))
+                        :Head (Nom
+                            :Head (N :t "types" :l "type")
+                            :Comp (PP
+                                :Head (P :t "of")
+                                :Comp (Coordination
+                                    :Coordinate (NP
+                                        :Head (Nom
+                                            :Head (N :t "uniforms" :l "uniform" :p ",")))
+                                    :Coordinate (NP
+                                        :Head (Nom
+                                            :Head (N :t "arms" :p ",")))
+                                    :Coordinate (NP
+                                        :Marker (Coordinator :t "and")
+                                        :Head (NP
+                                            :Head (Nom
+                                                :Head (N :t "equipment"))))))))
+                    :Comp_ind (PP
+                        :Head (P :t "as")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V_aux :t "are" :l "be" :xpos "VBP")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (V_aux :t "issued" :l "issue" :xpos "VBN")
+                                        :Comp (PP
+                                            :Head (P :t "to")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Head (N :t "Air"))
+                                                    :Head (N :t "Force")))))))))))
+            :Head (VP
+                :Head (V_aux :t "shall" :xpos "MD")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V_aux :t "be" :xpos "VB")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V :t "issued" :l "issue" :xpos "VBN")
+                                :Mod (PP
+                                    :Head (P :t "to")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Mod (Nom
+                                                :Head (N :t "Air"))
+                                            :Head (Nom
+                                                :Mod (AdjP
+                                                    :Head (Adj :t "National"))
+                                                :Head (N :t "Guard" :p ".")))))))))))))
