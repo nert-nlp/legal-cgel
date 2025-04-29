@@ -1,4 +1,116 @@
 # sent_id = usc-066.iddef26c20-0944-11ef-bc85-893f21b52987_2_0
 # text = Until otherwise provided for in law enacted after December 2, 1980, all public lands within the coastal plain are withdrawn from all forms of entry or appropriation under the mining laws, and from operation of the mineral leasing laws, of the United States.
-# sent = until otherwise provided for in law enacted after December 2 1980 all public lands within the coastal plain are withdrawn from all forms of entry or appropriation under the mining laws and from operation of the mineral leasing laws of the United States
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = until otherwise provided for in law enacted after December 2 1980 all public lands within the coastal plain are withdrawn from all forms of entry or appropriation under the mining laws -- and from operation of the mineral leasing laws -- of the United States
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Mod (PP
+        :Head (P :t "until")
+        :Comp (Clause
+            :Head (VP
+                :Mod (AdvP
+                    :Head (Adv :t "otherwise"))
+                :Head (VP
+                    :Head (VP
+                        :Head (V :t "provided" :l "provide" :xpos "VBN")
+                        :Comp (PP_strand
+                            :Head (P :t "for")))
+                    :Mod (PP
+                        :Head (P :t "in")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "law")
+                                :Mod (Clause
+                                    :Head (VP
+                                        :Head (V :t "enacted" :l "enact" :xpos "VBN")
+                                        :Mod (PP
+                                            :Head (P :t "after")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N
+                                                        :Flat (N :t "December")
+                                                        :Flat (N :t "2" :p ",")
+                                                        :Flat (N :t "1980" :xpos "CD" :p ","))))))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "all"))
+            :Head (Nom
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "public"))
+                    :Head (N :t "lands" :l "land"))
+                :Mod (PP
+                    :Head (P :t "within")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "the"))
+                        :Head (Nom
+                            :Mod (AdjP
+                                :Head (Adj :t "coastal"))
+                            :Head (N :t "plain"))))))
+        :Head (VP
+            :Head (V_aux :t "are" :l "be" :xpos "VBP")
+            :PredComp (Clause
+                :Head (VP
+                    :Head (V :t "withdrawn" :l "withdraw" :xpos "VBN")
+                    :Comp (PP
+                        :Head (Coordination
+                            :Coordinate (PP
+                                :Head (P :t "from")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "all"))
+                                    :Head (Nom
+                                        :Head (N :t "forms" :l "form")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Head (Coordination
+                                                    :Coordinate (NP
+                                                        :Head (Nom
+                                                            :Head (N :t "entry")))
+                                                    :Coordinate (NP
+                                                        :Marker (Coordinator :t "or")
+                                                        :Head (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "appropriation")))))
+                                                :Mod (PP
+                                                    :Head (P :t "under")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Head (Nom
+                                                                :Mod (Nom
+                                                                    :Head (N :t "mining"))
+                                                                :Head (N :t "laws" :l "law" :p ","))
+                                                            :Mod (x / GAP)))))))))
+                            :Coordinate (PP
+                                :Marker (Coordinator :t "and")
+                                :Head (PP
+                                    :Head (P :t "from")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N :t "operation")
+                                            :Comp (PP
+                                                :Head (P :t "of")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (Nom
+                                                            :Mod (Nom
+                                                                :Mod (Nom
+                                                                    :Head (N :t "mineral"))
+                                                                :Head (N :t "leasing"))
+                                                            :Head (N :t "laws" :l "law" :p ","))
+                                                        :Mod (x / GAP)))))))))
+                        :Postnucleus (x / PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "United"))
+                                    :Head (N :t "States" :l "state" :p "."))))))))))
