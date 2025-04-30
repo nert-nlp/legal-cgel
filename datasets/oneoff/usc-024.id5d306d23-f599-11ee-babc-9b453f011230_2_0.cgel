@@ -1,4 +1,76 @@
 # sent_id = usc-024.id5d306d23-f599-11ee-babc-9b453f011230_2_0
 # text = Acreage included in the special program shall be in addition to any acreage included in any acreage set-aside, reduced acreage, or land diversion program otherwise provided for by law.
-# sent = acreage included in the special program shall be in addition to any acreage included in any acreage setaside reduced acreage or land diversion program otherwise provided for by law
-# tree_by = bwaldon (YYYY-MM-DD)
+# sent = acreage included in the special program shall be in addition to any acreage included in any acreage set-aside reduced acreage or land diversion program otherwise provided for by law
+# tree_by = bwaldon (2025-02-14)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N :t "acreage")
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "included" :l "include" :xpos "VBN")
+                    :Comp (PP
+                        :Head (P :t "in")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "the"))
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "special"))
+                                :Head (N :t "program"))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V_aux :t "be" :xpos "VB")
+                :PredComp (PP
+                    :Head (P :t "in")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "addition")
+                            :Comp (PP
+                                :Head (P :t "to")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "any"))
+                                    :Head (Nom
+                                        :Head (N :t "acreage")
+                                        :Mod (Clause
+                                            :Head (VP
+                                                :Head (V :t "included" :l "include" :xpos "VBN")
+                                                :Comp (PP
+                                                    :Head (P :t "in")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "any"))
+                                                        :Head (Nom
+                                                            :Head (Nom
+                                                                :Mod (Coordination
+                                                                    :Coordinate (Nom
+                                                                        :Mod (Nom
+                                                                            :Head (N :t "acreage"))
+                                                                        :Head (N :t "set-aside" :p ","))
+                                                                    :Coordinate (Nom
+                                                                        :Mod (AdjP
+                                                                            :Head (Adj :t "reduced"))
+                                                                        :Head (N :t "acreage" :p ","))
+                                                                    :Coordinate (Nom
+                                                                        :Marker (Coordinator :t "or")
+                                                                        :Head (Nom
+                                                                            :Mod (Nom
+                                                                                :Head (N :t "land"))
+                                                                            :Head (N :t "diversion"))))
+                                                                :Head (N :t "program"))
+                                                            :Mod (Clause
+                                                                :Head (VP
+                                                                    :Mod (AdvP
+                                                                        :Head (Adv :t "otherwise"))
+                                                                    :Head (VP
+                                                                        :Head (V :t "provided" :l "provide" :xpos "VBN")
+                                                                        :Comp (PP_strand
+                                                                            :Head (P :t "for"))
+                                                                        :Comp (PP
+                                                                            :Head (P :t "by")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "law" :p "."))))))))))))))))))))))
