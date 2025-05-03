@@ -1,4 +1,122 @@
 # sent_id = usc-054.idb8de713e-4368-11ef-91ba-f03f45d84bd5_2_1
 # text = To the maximum extent practicable, through the establishment of cofunding requirements applicable to each project, the costs of such activities shall be provided, in part, through contributions of cash, personnel, services, equipment, and other resources, by sources other than the recovery of expenses pursuant to this section.
 # sent = to the maximum extent practicable through the establishment of cofunding requirements applicable to each project the costs of such activities shall be provided in part through contributions of cash personnel services equipment and other resources by sources other than the recovery of expenses pursuant to this section
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-18)
+(Clause
+    :Mod (PP
+        :Head (P :t "to")
+        :Obj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (Nom
+                    :Mod (Nom
+                        :Head (N :t "maximum"))
+                    :Head (N :t "extent"))
+                :Mod (AdjP
+                    :Head (Adj :t "practicable" :p ",")))))
+    :Head (Clause
+        :Mod (PP
+            :Head (P :t "through")
+            :Obj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (N :t "establishment")
+                    :Comp (PP
+                        :Head (P :t "of")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (Nom
+                                    :Mod (Nom
+                                        :Head (N :t "cofunding"))
+                                    :Head (N :t "requirements" :l "requirement"))
+                                :Mod (AdjP
+                                    :Head (Adj :t "applicable")
+                                    :Comp (PP
+                                        :Head (P :t "to")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "each"))
+                                            :Head (Nom
+                                                :Head (N :t "project" :p ",")))))))))))
+        :Head (Clause
+            :Subj (NP
+                :Det (DP
+                    :Head (D :t "the"))
+                :Head (Nom
+                    :Head (N :t "costs" :l "cost")
+                    :Comp (PP
+                        :Head (P :t "of")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "such"))
+                            :Head (Nom
+                                :Head (N :t "activities" :l "activity"))))))
+            :Head (VP
+                :Head (V_aux :t "shall" :xpos "MD")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (V_aux :t "be" :xpos "VB")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (VP
+                                    :Head (V :t "provided" :l "provide" :xpos "VBN" :p ",")
+                                    :Supplement (PP
+                                        :Head (P :t "in")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "part" :p ","))))
+                                    :Mod (PP
+                                        :Head (P :t "through")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (N :t "contributions" :l "contribution")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (Coordination
+                                                        :Coordinate (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "cash" :p ",")))
+                                                        :Coordinate (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "personnel" :p ",")))
+                                                        :Coordinate (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "services" :l "service" :p ",")))
+                                                        :Coordinate (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "equipment" :p ",")))
+                                                        :Coordinate (NP
+                                                            :Marker (Coordinator :t "and")
+                                                            :Head (NP
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "other"))
+                                                                    :Head (N :t "resources" :l "resource" :p ","))))))))))
+                                :Comp (PP
+                                    :Head (P :t "by")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Head (N :t "sources" :l "source")
+                                            :Mod (PP
+                                                :Head (P :t "other than" :note "compound preposition, CGEL p. 1145")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "recovery")
+                                                        :Comp (PP
+                                                            :Head (P :t "of")
+                                                            :Obj (NP
+                                                                :Head (Nom
+                                                                    :Head (N :t "expenses" :l "expense")
+                                                                    :Mod (PP
+                                                                        :Head (P :t "pursuant" :note "[AMBIG] are the expenses pursuant to this section (this attachment), or is their recovery (higher attachment)? -- 'pursuant' is preposition (CGEL p. 639)")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "to")
+                                                                            :Obj (NP
+                                                                                :Det (DP
+                                                                                    :Head (D :t "this"))
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "section" :p "."))))))))))))))))))))))
