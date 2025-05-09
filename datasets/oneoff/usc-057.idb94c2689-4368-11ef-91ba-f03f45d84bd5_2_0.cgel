@@ -1,4 +1,95 @@
 # sent_id = usc-057.idb94c2689-4368-11ef-91ba-f03f45d84bd5_2_0
 # text = Each Federal agency shall consider having the data centers of the agency evaluated once every 4 years by energy practitioners certified pursuant to the program, whenever practicable using certified practitioners employed by the agency.
-# sent = each Federal agency shall consider having the data centers of the agency evaluated once every 4 years by energy practitioners certified pursuant to the program whenever practicable using certified practitioners employed by the agency
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = each Federal agency shall consider having the data centers of the agency evaluated -- once every 4 years by energy practitioners certified pursuant to the program whenever practicable using certified practitioners employed by the agency
+# tree_by = bwaldon (2025-02-19)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "each"))
+        :Head (Nom
+            :Mod (AdjP
+                :Head (Adj :t "Federal"))
+            :Head (N :t "agency")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "consider" :xpos "VB")
+                :Comp (Clause
+                    :Head (VP
+                        :Head (VP
+                            :Head (V :t "having" :l "have" :xpos "VBG" :note "causative dynamic 'have', CGEL p. 932. 'have' here is a catenative verb taking an object and a participial complement, CGEL p. 111.")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Mod (Nom
+                                            :Head (N :t "data"))
+                                        :Head (N :t "centers" :l "center"))
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "agency"))))))
+                            :Comp (Clause
+                                :Head (VP
+                                    :Head (VP
+                                        :Head (VP
+                                            :Head (V :t "evaluated" :l "evaluate" :xpos "VBN")
+                                            :Comp (x / GAP))
+                                        :Mod (NP
+                                            :Head (Nom
+                                                :Det-Head (DP
+                                                    :Head (D :t "once" :note "Payne et al. (2007, p. 565): 'once' in 'I only met her once' is an NP"))
+                                                :Mod (NP
+                                                    :Det (DP
+                                                        :Head (D :t "every"))
+                                                    :Head (Nom
+                                                        :Mod (DP
+                                                            :Head (D :t "4" :xpos "CD"))
+                                                        :Head (N :t "years" :l "year"))))))
+                                    :Postnucleus (x / PP
+                                        :Head (P :t "by")
+                                        :Obj (NP
+                                            :Head (Nom
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Head (N :t "energy"))
+                                                    :Head (N :t "practitioners" :l "practitioner"))
+                                                :Mod (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "certified" :l "certify" :xpos "VBN")
+                                                        :Mod (PP
+                                                            :Head (P :t "pursuant")
+                                                            :Comp (PP
+                                                                :Head (P :t "to")
+                                                                :Obj (NP
+                                                                    :Det (DP
+                                                                        :Head (D :t "the"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "program" :p ",")))))))))))))
+                        :Mod (Clause
+                            :Supplement (PP
+                                :Head (P :t "whenever")
+                                :Comp (AdjP
+                                    :Head (Adj :t "practicable")))
+                            :Head (VP
+                                :Head (V :t "using" :l "use" :xpos "VBG")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Mod (AdjP
+                                            :Head (Adj :t "certified"))
+                                        :Head (N :t "practitioners" :l "practitioner"))
+                                    :Mod (Clause
+                                        :Head (VP
+                                            :Head (V :t "employed" :l "employ" :xpos "VBN")
+                                            :Comp (PP
+                                                :Head (P :t "by")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "agency" :p ".")))))))))))))))
