@@ -83,8 +83,9 @@
                         :Head (V :t "computed" :l "compute" :xpos "VBN")
                         :Supplement (PP
                             :Head (P :t "as")
-                            :Comp (PP
-                                :Head (P :t "aforesaid")))))))
+                            :Comp (Clause
+                                    :Head (VP
+                                        :Head (V :t "aforesaid" :l "aforesaid" :xpos "VBN"))))))))
         :Head (VP
             :Head (V_aux :t "shall" :xpos "MD")
             :Comp (Clause
