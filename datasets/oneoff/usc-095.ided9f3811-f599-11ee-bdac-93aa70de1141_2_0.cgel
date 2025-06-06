@@ -1,4 +1,60 @@
 # sent_id = usc-095.ided9f3811-f599-11ee-bdac-93aa70de1141_2_0
 # text = There is established a nationally significant freight and highway projects program to provide financial assistance for projects of national or regional significance.
 # sent = there is established a nationally significant freight and highway projects program to provide financial assistance for projects of national or regional significance
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = devika-tiwari (2025-06-06)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N_pro :t "there")))
+    :Head (VP
+        :Head (VP
+            :Head (V_aux :t "is" :l "be" :xpos "VBZ")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V :t "established" :l "establish" :xpos "VBN")))
+            :DisplacedSubj (NP
+                :Det (DP
+                    :Head (D :t "a"))
+                :Head (Nom
+                    :Mod (AdjP
+                        :Mod (AdvP
+                            :Head (Adv :t "nationally"))
+                        :Head (Adj :t "significant"))
+                    :Head (Nom
+                        :Mod (Nom
+                            :Mod (Coordination
+                                :Coordinate (Nom
+                                    :Head (N :t "freight"))
+                                :Coordinate (Nom
+                                    :Marker (Coordinator :t "and")
+                                    :Head (Nom
+                                        :Head (N :t "highway"))))
+                            :Head (N :t "projects" :l "project"))
+                        :Head (N :t "program")))))
+        :Mod (Clause
+            :Head (VP
+                :Marker (Sdr :t "to")
+                :Head (VP
+                    :Head (V :t "provide" :xpos "VB")
+                    :Obj (NP
+                        :Mod (AdjP
+                            :Head (Adj :t "financial"))
+                        :Head (Nom
+                            :Head (N :t "assistance")))
+                    :Comp (PP
+                        :Head (P :t "for")
+                        :Obj (NP
+                            :Head (Nom
+                                :Head (N :t "projects" :l "project")
+                                :Comp (PP
+                                    :Head (P :t "of")
+                                    :Obj (NP
+                                        :Head (Nom
+                                            :Mod (Coordination
+                                                :Coordinate (AdjP
+                                                    :Head (Adj :t "national"))
+                                                :Coordinate (AdjP
+                                                    :Marker (Coordinator :t "or")
+                                                    :Head (AdjP
+                                                        :Head (Adj :t "regional"))))
+                                            :Head (N :t "significance" :p "."))))))))))))
