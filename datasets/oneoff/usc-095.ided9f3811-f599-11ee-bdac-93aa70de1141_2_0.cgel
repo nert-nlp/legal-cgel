@@ -37,24 +37,25 @@
                 :Head (VP
                     :Head (V :t "provide" :xpos "VB")
                     :Obj (NP
-                        :Mod (AdjP
-                            :Head (Adj :t "financial"))
                         :Head (Nom
-                            :Head (N :t "assistance")))
-                    :Comp (PP
-                        :Head (P :t "for")
-                        :Obj (NP
                             :Head (Nom
-                                :Head (N :t "projects" :l "project")
-                                :Comp (PP
-                                    :Head (P :t "of")
-                                    :Obj (NP
-                                        :Head (Nom
-                                            :Mod (Coordination
-                                                :Coordinate (AdjP
-                                                    :Head (Adj :t "national"))
-                                                :Coordinate (AdjP
-                                                    :Marker (Coordinator :t "or")
-                                                    :Head (AdjP
-                                                        :Head (Adj :t "regional"))))
-                                            :Head (N :t "significance" :p "."))))))))))))
+                                :Mod (AdjP
+                                    :Head (Adj :t "financial"))
+                                :Head (N :t "assistance"))
+                            :Comp (PP
+                                :Head (P :t "for")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (N :t "projects" :l "project")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Mod (Coordination
+                                                        :Coordinate (AdjP
+                                                            :Head (Adj :t "national"))
+                                                        :Coordinate (AdjP
+                                                            :Marker (Coordinator :t "or")
+                                                            :Head (AdjP
+                                                                :Head (Adj :t "regional"))))
+                                                    :Head (N :t "significance" :p "."))))))))))))))
