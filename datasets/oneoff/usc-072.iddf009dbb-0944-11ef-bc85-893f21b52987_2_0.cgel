@@ -1,4 +1,74 @@
 # sent_id = usc-072.iddf009dbb-0944-11ef-bc85-893f21b52987_2_0
 # text = A loan for a project made under this subchapter shall have a term of not more than 30 years after the date of completion of the project.
 # sent = a loan for a project made under this subchapter shall have a term of not more than 30 years after the date of completion of the project
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = nschneid (2025-02-23)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "a"))
+        :Head (Nom
+            :Head (Nom
+                :Head (N :t "loan")
+                :Comp (PP
+                    :Head (P :t "for")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "a"))
+                        :Head (Nom
+                            :Head (N :t "project")))))
+            :Mod (Clause
+                :Head (VP
+                    :Head (V :t "made" :l "make" :xpos "VBN")
+                    :Mod (PP
+                        :Head (P :t "under")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "this"))
+                            :Head (Nom
+                                :Head (N :t "subchapter"))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "have" :xpos "VB")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Head (N :t "term")
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (AdjP
+                                            :Mod (AdvP
+                                                :Head (Adv :t "not"))
+                                            :Head (Adj :t "more"))
+                                        :Comp (PP
+                                            :Head (P :t "than")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Det-Head (DP
+                                                        :Head (D :t "30" :xpos "CD"))))))
+                                    :Head (Nom
+                                        :Head (N :t "years" :l "year")
+                                        :Mod (PP
+                                            :Head (P :t "after")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "date")
+                                                    :Comp (PP
+                                                        :Head (P :t "of")
+                                                        :Obj (NP
+                                                            :Head (Nom
+                                                                :Head (N :t "completion")
+                                                                :Comp (PP
+                                                                    :Head (P :t "of")
+                                                                    :Obj (NP
+                                                                        :Det (DP
+                                                                            :Head (D :t "the"))
+                                                                        :Head (Nom
+                                                                            :Head (N :t "project" :p "."))))))))))))))))))))
