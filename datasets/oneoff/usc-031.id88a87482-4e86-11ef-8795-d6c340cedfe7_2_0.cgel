@@ -1,4 +1,104 @@
 # sent_id = usc-031.id88a87482-4e86-11ef-8795-d6c340cedfe7_2_0
 # text = The Secretary shall award grants under this subsection to eligible institutions to enable such institutions to provide additional monetary and nonmonetary support to eligible students to enable the eligible students to maintain enrollment and complete degree or certificate programs.
 # sent = the Secretary shall award grants under this subsection to eligible institutions to enable such institutions to provide additional monetary and nonmonetary support to eligible students to enable the eligible students to maintain enrollment and complete degree or certificate programs
-# tree_by = bwaldon (YYYY-MM-DD)
+# tree_by = bwaldon (2025-02-14)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "award" :xpos "VB")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "grants" :l "grant")
+                            :Mod (PP
+                                :Head (P :t "under")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "this"))
+                                    :Head (Nom
+                                        :Head (N :t "subsection"))))))
+                    :Comp (PP
+                        :Head (P :t "to")
+                        :Obj (NP
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "eligible"))
+                                :Head (N :t "institutions" :l "institution")))))
+                :Mod (Clause
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (V :t "enable" :xpos "VB")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "such"))
+                                :Head (Nom
+                                    :Head (N :t "institutions" :l "institution")))
+                            :Comp (Clause
+                                :Head (VP
+                                    :Marker (Sdr :t "to")
+                                    :Head (VP
+                                        :Head (VP
+                                            :Head (V :t "provide" :xpos "VB")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Mod (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "additional"))
+                                                        :Head (Coordination
+                                                            :Coordinate (AdjP
+                                                                :Head (Adj :t "monetary"))
+                                                            :Coordinate (AdjP
+                                                                :Marker (Coordinator :t "and")
+                                                                :Head (AdjP
+                                                                    :Head (Adj :t "nonmonetary")))))
+                                                    :Head (N :t "support")))
+                                            :Comp (PP
+                                                :Head (P :t "to")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "eligible"))
+                                                        :Head (N :t "students" :l "student")))))
+                                        :Mod (Clause
+                                            :Head (VP
+                                                :Marker (Sdr :t "to")
+                                                :Head (VP
+                                                    :Head (V :t "enable" :xpos "VB")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "eligible"))
+                                                            :Head (N :t "students" :l "student")))
+                                                    :Comp (Clause
+                                                        :Head (VP
+                                                            :Marker (Sdr :t "to")
+                                                            :Head (Coordination
+                                                                :Coordinate (VP
+                                                                    :Head (V :t "maintain" :xpos "VB")
+                                                                    :Obj (NP
+                                                                        :Head (Nom
+                                                                            :Head (N :t "enrollment"))))
+                                                                :Coordinate (VP
+                                                                    :Marker (Coordinator :t "and")
+                                                                    :Head (VP
+                                                                        :Head (V :t "complete")
+                                                                        :Obj (NP
+                                                                            :Head (Nom
+                                                                                :Mod (Coordination
+                                                                                    :Coordinate (Nom
+                                                                                        :Head (N :t "degree"))
+                                                                                    :Coordinate (Nom
+                                                                                        :Marker (Coordinator :t "or")
+                                                                                        :Head (Nom
+                                                                                            :Head (N :t "certificate"))))
+                                                                                :Head (N :t "programs" :l "program" :p ".")))))))))))))))))))))
