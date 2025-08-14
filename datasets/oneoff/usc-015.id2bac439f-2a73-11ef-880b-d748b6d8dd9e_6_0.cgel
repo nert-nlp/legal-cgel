@@ -1,4 +1,47 @@
 # sent_id = usc-015.id2bac439f-2a73-11ef-880b-d748b6d8dd9e_6_0
 # text = The official who would be authorized to appoint him shall give him a discharge certificate.
-# sent = the official who would be authorized to appoint him shall give him a discharge certificate
-# tree_by = bwaldon (YYYY-MM-DD)
+# sent = the official who -- would be authorized to appoint him shall give him a discharge certificate
+# tree_by = bwaldon (2025-02-11) 
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "official")
+            :Mod (Clause_rel
+                :Prenucleus (x / NP
+                    :Head (Nom
+                        :Head (N_pro :t "who")))
+                :Head (Clause_rel
+                    :Subj (x / GAP)
+                    :Head (VP
+                        :Head (V_aux :t "would" :xpos "MD")
+                        :Comp (Clause
+                            :Head (VP
+                                :Head (V_aux :t "be" :xpos "VB")
+                                :Comp (Clause
+                                    :Head (VP
+                                        :Head (V :t "authorized" :l "authorize" :xpos "VBN")
+                                        :Comp (Clause
+                                            :Head (VP
+                                                :Marker (Sdr :t "to")
+                                                :Head (VP
+                                                    :Head (V :t "appoint" :xpos "VB")
+                                                    :Obj (NP
+                                                        :Head (Nom
+                                                            :Head (N_pro :t "him")))))))))))))))
+    :Head (VP
+        :Head (V_aux :t "shall" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "give" :xpos "VB")
+                :Obj_ind (NP
+                    :Head (Nom
+                        :Head (N_pro :t "him")))
+                :Obj_dir (NP
+                    :Det (DP
+                        :Head (D :t "a"))
+                    :Head (Nom
+                        :Mod (Nom
+                            :Head (N :t "discharge"))
+                        :Head (N :t "certificate" :p ".")))))))
