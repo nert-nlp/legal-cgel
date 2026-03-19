@@ -1,4 +1,91 @@
 # sent_id = usc-057.idb94c2689-4368-11ef-91ba-f03f45d84bd5_2_0
 # text = Each Federal agency shall consider having the data centers of the agency evaluated once every 4 years by energy practitioners certified pursuant to the program, whenever practicable using certified practitioners employed by the agency.
 # sent = each Federal agency shall consider having the data centers of the agency evaluated once every 4 years by energy practitioners certified pursuant to the program whenever practicable using certified practitioners employed by the agency
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# tree_by = bwaldon (YYYY-MM-DD)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "each"))
+        :Head (Nom
+            :Mod (AdjP
+                :Head (Adj :t "Federal"))
+            :Head (N :t "agency")))
+    :Head (VP
+        :Head (V_aux :t "shall")
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (V :t "consider")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V_aux :t "having")
+                            :PredComp (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Mod (Nom
+                                            :Head (N :t "data"))
+                                        :Head (N :t "centers"))
+                                    :Comp (PP
+                                        :Head (P :t "of")
+                                        :Obj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "agency")
+                                                :Mod (Clause
+                                                    :Head (VP
+                                                        :Head (V :t "evaluated")
+                                                        :Comp (PP
+                                                            :Head (P :t "once")
+                                                            :Obj (NP
+                                                                :Det (DP
+                                                                    :Head (D :t "every"))
+                                                                :Head (Nom
+                                                                    :Mod (Nom
+                                                                        :Head (N :t "4"))
+                                                                    :Head (N :t "years"))))))))))))))
+                :Mod (PP
+                    :Head (P :t "by")
+                    :Comp (Clause
+                        :Subj (NP
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (N :t "energy"))
+                                :Head (N :t "practitioners")))
+                        :Head (VP
+                            :Head (V :t "certified")
+                            :Comp (PP
+                                :Head (P :t "pursuant")
+                                :Comp (Clause
+                                    :Marker (Sdr :t "to")
+                                    :Head (Clause
+                                        :Subj (NP
+                                            :Det (DP
+                                                :Head (D :t "the"))
+                                            :Head (Nom
+                                                :Head (N :t "program")
+                                                :Comp (PP
+                                                    :Head (P :t "whenever")
+                                                    :Obj (NP
+                                                        :Head (Nom
+                                                            :Head (N :t "practicable"))))))
+                                        :Head (VP
+                                            :Head (VP
+                                                :Head (V :t "using")
+                                                :Obj (NP
+                                                    :Head (Nom
+                                                        :Mod (AdjP
+                                                            :Head (Adj :t "certified"))
+                                                        :Head (N :t "practitioners"))))
+                                            :Mod (Clause
+                                                :Head (VP
+                                                    :Head (V :t "employed")
+                                                    :Comp (PP
+                                                        :Head (P :t "by")
+                                                        :Obj (NP
+                                                            :Det (DP
+                                                                :Head (D :t "the"))
+                                                            :Head (Nom
+                                                                :Head (N :t "agency")))))))))))))))))
