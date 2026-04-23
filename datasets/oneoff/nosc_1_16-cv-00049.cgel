@@ -2,3 +2,78 @@
 # text = [to be filled in]
 # sent = [to be filled in]
 # tree_by = bwaldon (YYYY-MM-DD)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Head (N :t "Secretary")
+            :Comp (PP
+                :Head (P :t "of")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "the"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Mod (Nom
+                                :Head (N :t "Military"))
+                            :Head (N :t "Department"))
+                        :Mod (Clause
+                            :Head (VP
+                                :Head (V :t "concerned"))))))))
+    :Head (VP
+        :Head (V_aux :t "may" :p ",")
+        :Supplement (PP
+            :Head (P :t "in")
+            :Obj (NP
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "unusual"))
+                    :Head (N :t "circumstances")))
+            :Supplement (PP
+                :Head (P :t "such_as")
+                :Comp (PP
+                    :Head (P :t "when")
+                    :Comp (Clause
+                        :Subj (NP
+                            :Det (DP
+                                :Head (D :t "an"))
+                            :Head (Nom
+                                :Mod (Nom
+                                    :Head (N :t "officer’s"))
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "official"))
+                                    :Head (Nom
+                                        :Mod (Nom
+                                            :Head (N :t "personnel"))
+                                        :Head (N :t "record")))))
+                        :Head (VP
+                            :Head (V :t "contains")
+                            :Obj (NP
+                                :Head (Nom
+                                    :Mod (AdjP
+                                        :Head (Adj :t "derogatory"))
+                                    :Head (N :t "information" :p ","))))))))
+        :Comp (Clause
+            :Head (VP
+                :Head (VP
+                    :Head (VP
+                        :Head (V :t "discharge")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "an"))
+                            :Head (Nom
+                                :Head (N :t "officer"))))
+                    :Mod (AdvP
+                        :Head (Adv :t "involuntarily")))
+                :Mod (PP
+                    :Head (P :t "in")
+                    :Obj (NP
+                        :Head (Nom
+                            :Head (N :t "accordance")
+                            :Comp (PP
+                                :Head (P :t "with")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (N :t "10_U.S.C._§-632")))))))))))
