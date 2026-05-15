@@ -1,4 +1,103 @@
 # sent_id = usc-014.id5d031b19-f599-11ee-babc-9b453f011230_1_3
 # text = Upon failure to store or deliver to the Secretary the farm marketing excess within such time as may be determined under regulations prescribed by the Secretary, the penalty computed as aforesaid shall be paid by the producer.
-# sent = upon failure to store or deliver to the Secretary the farm marketing excess within such time as may be determined under regulations prescribed by the Secretary the penalty computed as aforesaid shall be paid by the producer
-# tree_by devika-tiwari (YYYY-MM-DD)
+# sent = upon failure to store -- or deliver -- to the Secretary the farm marketing excess within such time as may be determined under regulations prescribed by the Secretary the penalty computed as aforesaid shall be paid by the producer
+# tree_by = devika-tiwari (2024-11-15) rev. bwaldon+nschneid (2025-02-07)
+(Clause
+    :Mod (PP
+        :Head (P :t "upon")
+        :Obj (NP
+            :Head (Nom
+                :Head (N :t "failure")
+                :Comp (Clause
+                    :Head (VP
+                        :Marker (Sdr :t "to")
+                        :Head (VP
+                            :Head (VP
+                                :Head (Coordination
+                                    :Coordinate (VP
+                                        :Head (V :t "store" :xpos "VB")
+                                        :Obj (x / GAP))
+                                    :Coordinate (VP
+                                        :Marker (Coordinator :t "or")
+                                        :Head (VP
+                                            :Head (V :t "deliver" :xpos "VB")
+                                            :Obj (x / GAP)
+                                            :Comp (PP
+                                                :Head (P :t "to")
+                                                :Obj (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Head (N :t "Secretary")))))))
+                                :Postnucleus (x / NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Mod (Nom
+                                            :Mod (Nom
+                                                :Head (N :t "farm"))
+                                            :Head (N :t "marketing"))
+                                        :Head (N :t "excess"))))
+                            :Mod (PP
+                                :Head (P :t "within")
+                                :Obj (NP
+                                    :Head (Nom
+                                        :Head (Nom
+                                            :Mod (AdjP
+                                                :Head (Adj :t "such"))
+                                            :Head (N :t "time"))
+                                        :Comp_ind (PP
+                                            :Head (P :t "as")
+                                            :Comp (Clause
+                                                :Head (VP
+                                                    :Head (V_aux :t "may" :xpos "MD")
+                                                    :Comp (Clause
+                                                        :Head (VP
+                                                            :Head (V_aux :t "be" :xpos "VB")
+                                                            :Comp (Clause
+                                                                :Head (VP
+                                                                    :Head (V :t "determined" :l "determine" :xpos "VBN")
+                                                                    :Mod (PP
+                                                                        :Head (P :t "under")
+                                                                        :Obj (NP
+                                                                            :Head (Nom
+                                                                                :Head (N :t "regulations" :l "regulation")
+                                                                                :Mod (Clause
+                                                                                    :Head (VP
+                                                                                        :Head (V :t "prescribed" :l "prescribe" :xpos "VBN")
+                                                                                        :Comp (PP
+                                                                                            :Head (P :t "by")
+                                                                                            :Obj (NP
+                                                                                                :Det (DP
+                                                                                                    :Head (D :t "the"))
+                                                                                                :Head (Nom
+                                                                                                    :Head (N :t "Secretary" :p ",")))))))))))))))))))))))))
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "penalty")
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "computed" :l "compute" :xpos "VBN")
+                        :Supplement (PP
+                            :Head (P :t "as")
+                            :Comp (Clause
+                                    :Head (VP
+                                        :Head (V :t "aforesaid" :l "aforesaid" :xpos "VBN"))))))))
+        :Head (VP
+            :Head (V_aux :t "shall" :xpos "MD")
+            :Comp (Clause
+                :Head (VP
+                    :Head (V_aux :t "be" :xpos "VB")
+                    :Comp (Clause
+                        :Head (VP
+                            :Head (V :t "paid" :l "pay" :xpos "VBN")
+                            :Comp (PP
+                                :Head (P :t "by")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "producer" :p ".")))))))))))
