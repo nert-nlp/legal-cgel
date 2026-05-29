@@ -1,4 +1,44 @@
 # sent_id = usc-020.id2bba9b5f-2a73-11ef-880b-d748b6d8dd9e_1_0
 # text = A payment under this section bars recovery by any other person of the amount paid.
-# sent = a payment under this section bars recovery by any other person of the amount paid
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = a payment under this section bars recovery -- by any other person of the amount paid
+# tree_by = devika-tiwari (2025-02-28)
+(Clause
+    :Head (Clause
+        :Subj (NP
+            :Det (DP
+                :Head (D :t "a"))
+            :Head (Nom
+                :Head (N :t "payment")
+                :Mod (PP
+                    :Head (P :t "under")
+                    :Obj (NP
+                        :Det (DP
+                            :Head (D :t "this"))
+                        :Head (Nom
+                            :Head (N :t "section"))))))
+        :Head (VP
+            :Head (V :t "bars" :l "bar" :xpos "VBZ")
+            :Obj (NP
+                :Head (Nom
+                    :Head (Nom
+                        :Head (N :t "recovery")
+                        :Comp (x / GAP))
+                    :Comp (PP
+                        :Head (P :t "by")
+                        :Obj (NP
+                            :Det (DP
+                                :Head (D :t "any"))
+                            :Head (Nom
+                                :Mod (AdjP
+                                    :Head (Adj :t "other"))
+                                :Head (N :t "person"))))))))
+    :Postnucleus (x / PP
+        :Head (P :t "of")
+        :Obj (NP
+            :Det (DP
+                :Head (D :t "the"))
+            :Head (Nom
+                :Head (N :t "amount")
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "paid." :l "pay" :xpos "VBN")))))))
