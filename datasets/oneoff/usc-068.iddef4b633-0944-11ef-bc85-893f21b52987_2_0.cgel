@@ -1,4 +1,122 @@
 # sent_id = usc-068.iddef4b633-0944-11ef-bc85-893f21b52987_2_0
 # text = There is hereby established a Federal Coordination Committee composed of the Secretaries (or their designees) of Agriculture, Energy, the Interior, and Transportation; the Administrators of the Environmental Protection Agency, and the National Oceanic and Atmospheric Administration; and the Federal and State Cochairmen of the Council.
-# sent = there is hereby established a Federal Coordination Committee composed of the Secretaries or their designees of Agriculture Energy the Interior and Transportation the Administrators of the Environmental Protection Agency and the National Oceanic and Atmospheric Administration and the Federal and State Cochairmen of the Council
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = there is hereby established a Federal Coordination Committee composed of the Secretaries -- or their designees of Agriculture Energy the Interior and Transportation the Administrators of the Environmental Protection Agency and the National Oceanic and Atmospheric Administration and the Federal and State Cochairmen of the Council
+# tree_by = bwaldon (2025-02-20)
+(Clause
+    :Subj (NP
+        :Head (Nom
+            :Head (N_pro :t "there")))
+    :Head (VP
+        :Head (V_aux :t "is" :l "be" :xpos "VBN")
+        :Comp (Clause
+            :Head (VP
+                :Mod (AdvP
+                    :Head (Adv :t "hereby"))
+                :Head (V :t "established" :l "establish" :xpos "VBN")))
+        :DisplacedSubj (NP
+            :Det (DP
+                :Head (D :t "a"))
+            :Head (Nom
+                :Head (Nom
+                    :Mod (AdjP
+                        :Head (Adj :t "Federal"))
+                    :Head (Nom
+                        :Mod (Nom
+                            :Head (N :t "Coordination"))
+                        :Head (N :t "Committee")))
+                :Mod (Clause
+                    :Head (VP
+                        :Head (V :t "composed" :l "compose" :xpos "VBN")
+                        :Comp (PP
+                            :Head (P :t "of")
+                            :Obj (Coordination
+                                :Coordinate (NP
+                                    :Head (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Head (N :t "Secretaries" :l "secretary")
+                                            :Comp (x / GAP)))
+                                    :Supplement (NP
+                                        :Marker (Coordinator :p "(" :t "or" :note "coordinator-marker of non-coordinate supplement, as in cgel/datasets/oneoff/uniform.cgel")
+                                        :Head (NP
+                                            :Det (NP
+                                                :Head (Nom
+                                                    :Head (N_pro :t "their")))
+                                            :Head (Nom
+                                                :Head (N :t "designees" :l "designee" :p ")"))))
+                                    :Postnucleus (x / PP
+                                        :Head (P :t "of")
+                                        :Obj (Coordination
+                                            :Coordinate (NP
+                                                :Head (Nom
+                                                    :Head (N :t "Agriculture" :p ",")))
+                                            :Coordinate (NP
+                                                :Head (Nom
+                                                    :Head (N :t "Energy" :p ",")))
+                                            :Coordinate (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Head (N :t "Interior" :p ",")))
+                                            :Coordinate (NP
+                                                :Marker (Coordinator :t "and")
+                                                :Head (NP
+                                                    :Head (Nom
+                                                        :Head (N :t "Transportation" :p ";")))))))
+                                :Coordinate (NP
+                                    :Det (DP
+                                        :Head (D :t "the"))
+                                    :Head (Nom
+                                        :Head (N :t "Administrators" :l "administrator")
+                                        :Comp (PP
+                                            :Head (P :t "of")
+                                            :Obj (Coordination
+                                                :Coordinate (NP
+                                                    :Det (DP
+                                                        :Head (D :t "the"))
+                                                    :Head (Nom
+                                                        :Mod (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "Environmental"))
+                                                            :Head (N :t "Protection"))
+                                                        :Head (N :t "Agency" :p ",")))
+                                                :Coordinate (NP
+                                                    :Marker (Coordinator :t "and")
+                                                    :Head (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Mod (AdjP
+                                                                :Head (Adj :t "National"))
+                                                            :Head (Nom
+                                                                :Mod (Coordination
+                                                                    :Coordinate (AdjP
+                                                                        :Head (Adj :t "Oceanic"))
+                                                                    :Coordinate (AdjP
+                                                                        :Marker (Coordinator :t "and")
+                                                                        :Head (AdjP
+                                                                            :Head (Adj :t "Atmospheric"))))
+                                                                :Head (N :t "Administration" :p ";")))))))))
+                                :Coordinate (NP
+                                    :Marker (Coordinator :t "and")
+                                    :Head (NP
+                                        :Det (DP
+                                            :Head (D :t "the"))
+                                        :Head (Nom
+                                            :Mod (Coordination
+                                                :Coordinate (AdjP
+                                                    :Head (Adj :t "Federal"))
+                                                :Coordinate (Nom
+                                                    :Marker (Coordinator :t "and")
+                                                    :Head (Nom
+                                                        :Head (N :t "State"))))
+                                            :Head (Nom
+                                                :Head (N :t "Cochairmen" :l "cochairman")
+                                                :Comp (PP
+                                                    :Head (P :t "of")
+                                                    :Obj (NP
+                                                        :Det (DP
+                                                            :Head (D :t "the"))
+                                                        :Head (Nom
+                                                            :Head (N :t "Council" :p "."))))))))))))))))
