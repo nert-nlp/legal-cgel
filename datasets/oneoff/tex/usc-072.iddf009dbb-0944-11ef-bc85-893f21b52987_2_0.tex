@@ -1,0 +1,138 @@
+
+\documentclass[tikz,border=12pt]{standalone}
+\usepackage[linguistics]{forest}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[T1]{fontenc}
+\usepackage{marvosym}
+
+\definecolor{orange}{HTML}{FFCCFF}
+\definecolor{ltyellow}{HTML}{FFFFAA}
+\definecolor{cgelblue}{HTML}{009EE0}
+
+% text highlight color
+% https://tex.stackexchange.com/a/352959
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\hlgreen}[2][green]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+\newcommand{\p}[1]{%
+    \sethlcolor{white}\color{gray}\hl{#1}%
+}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------
+% Node labels in CGEL trees are defined with \Node,
+% which is defined so that \Node{Abcd}{Xyz} yields
+% a label with the function Abcd on the top, in small
+% sanserif font, followed by a colon, and the category
+% Xyz on the bottom.
+\newcommand{\Node}[2]{\small\textsf{#1:}\\{#2}}
+% For commonly used functions this is defined with \(function)
+\newcommand{\Head}[1]{\Node{Head}{#1}}
+\newcommand{\Subj}[1]{\Node{Subj}{#1}}
+\newcommand{\Comp}[1]{\Node{Comp}{#1}}
+\newcommand{\Mod}[1]{\Node{Mod}{#1}}
+\newcommand{\Det}[1]{\Node{Det}{#1}}
+\newcommand{\PredComp}[1]{\Node{PredComp}{#1}}
+\newcommand{\Crd}[1]{\Node{Coordinate}{#1}}
+\newcommand{\Mk}[1]{\Node{Marker}{#1}}
+\newcommand{\Obj}[1]{\Node{Obj}{#1}}
+\newcommand{\Sup}[1]{\Node{Supplement}{#1}}
+\newcommand{\idx}[1]{\textsubscript{\fcolorbox{red}{white}{\textcolor{red}{#1}}}}
+%----------------------------------------------------------------------
+\begin{document}
+
+% # sent_id = usc-072.iddf009dbb-0944-11ef-bc85-893f21b52987_2_0
+% # text = A loan for a project made under this subchapter shall have a term of not more than 30 years after the date of completion of the project.
+% # sent = a loan for a project made under this subchapter shall have a term of not more than 30 years after the date of completion of the project
+% # tree_by = nschneid (2025-02-23)
+
+        \begin{forest}
+        where n children=0{% for each terminal node
+            font=\sffamily,
+            fill=ltyellow,
+            %tier=word          			% align at the "word" tier (bottom)
+          }{%								% no false conditions, so empty
+          },
+        [Clause
+    [\Node{Subj}{NP}
+        [\Node{Det}{DP}
+            [\Node{Head}{D},edge={line width=1pt}[a]]]
+        [\Node{Head}{Nom},edge={line width=1pt}
+            [\Node{Head}{Nom},edge={line width=1pt}
+                [\Node{Head}{N},edge={line width=1pt}[loan]]
+                [\Node{Comp}{PP}
+                    [\Node{Head}{P},edge={line width=1pt}[for]]
+                    [\Node{Obj}{NP}
+                        [\Node{Det}{DP}
+                            [\Node{Head}{D},edge={line width=1pt}[a]]]
+                        [\Node{Head}{Nom},edge={line width=1pt}
+                            [\Node{Head}{N},edge={line width=1pt}[project]]]]]]
+            [\Node{Mod}{Clause}
+                [\Node{Head}{VP},edge={line width=1pt}
+                    [\Node{Head}{V},edge={line width=1pt}[made]]
+                    [\Node{Mod}{PP}
+                        [\Node{Head}{P},edge={line width=1pt}[under]]
+                        [\Node{Obj}{NP}
+                            [\Node{Det}{DP}
+                                [\Node{Head}{D},edge={line width=1pt}[this]]]
+                            [\Node{Head}{Nom},edge={line width=1pt}
+                                [\Node{Head}{N},edge={line width=1pt}[subchapter]]]]]]]]]
+    [\Node{Head}{VP},edge={line width=1pt}
+        [\Node{Head}{V\textsubscript{aux}},edge={line width=1pt}[shall]]
+        [\Node{Comp}{Clause}
+            [\Node{Head}{VP},edge={line width=1pt}
+                [\Node{Head}{V},edge={line width=1pt}[have]]
+                [\Node{Obj}{NP}
+                    [\Node{Det}{DP}
+                        [\Node{Head}{D},edge={line width=1pt}[a]]]
+                    [\Node{Head}{Nom},edge={line width=1pt}
+                        [\Node{Head}{N},edge={line width=1pt}[term]]
+                        [\Node{Comp}{PP}
+                            [\Node{Head}{P},edge={line width=1pt}[of]]
+                            [\Node{Obj}{NP}
+                                [\Node{Head}{Nom},edge={line width=1pt}
+                                    [\Node{Mod}{AdjP}
+                                        [\Node{Head}{AdjP},edge={line width=1pt}
+                                            [\Node{Mod}{AdvP}
+                                                [\Node{Head}{Adv},edge={line width=1pt}[not]]]
+                                            [\Node{Head}{Adj},edge={line width=1pt}[more]]]
+                                        [\Node{Comp}{PP}
+                                            [\Node{Head}{P},edge={line width=1pt}[than]]
+                                            [\Node{Obj}{NP}
+                                                [\Node{Head}{Nom},edge={line width=1pt}, before drawing tree={x+=1.5em}
+                                                    [\Node{Det-Head}{DP},no edge
+                                                        [\Node{Head}{D},edge={line width=1pt}[30]]] { \draw[-] (!uu.south) -- (); \draw[-,line width=1pt] (!u.south) -- (); }]]]]
+                                    [\Node{Head}{Nom},edge={line width=1pt}
+                                        [\Node{Head}{N},edge={line width=1pt}[years]]
+                                        [\Node{Mod}{PP}
+                                            [\Node{Head}{P},edge={line width=1pt}[after]]
+                                            [\Node{Obj}{NP}
+                                                [\Node{Det}{DP}
+                                                    [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                [\Node{Head}{Nom},edge={line width=1pt}
+                                                    [\Node{Head}{N},edge={line width=1pt}[date]]
+                                                    [\Node{Comp}{PP}
+                                                        [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                        [\Node{Obj}{NP}
+                                                            [\Node{Head}{Nom},edge={line width=1pt}
+                                                                [\Node{Head}{N},edge={line width=1pt}[completion]]
+                                                                [\Node{Comp}{PP}
+                                                                    [\Node{Head}{P},edge={line width=1pt}[of]]
+                                                                    [\Node{Obj}{NP}
+                                                                        [\Node{Det}{DP}
+                                                                            [\Node{Head}{D},edge={line width=1pt}[the]]]
+                                                                        [\Node{Head}{Nom},edge={line width=1pt}
+                                                                            [\Node{Head}{N},edge={line width=1pt}[project,label={right:\p{.}}]]]]]]]]]]]]]]]]]]]]]
+        \end{forest}
+        
+
+\end{document}
+
