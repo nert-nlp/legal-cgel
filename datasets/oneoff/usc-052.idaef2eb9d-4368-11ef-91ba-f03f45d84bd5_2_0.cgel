@@ -1,4 +1,93 @@
 # sent_id = usc-052.idaef2eb9d-4368-11ef-91ba-f03f45d84bd5_2_0
 # text = The United States may maintain an action under this paragraph against such person in the district court of the United States in which such person resides or has its principal place of business.
-# sent = the United States may maintain an action under this paragraph against such person in the district court of the United States in which such person resides or has its principal place of business
-# tree_by = NOT_ASSIGNED (YYYY-MM-DD)
+# sent = the United States may maintain an action under this paragraph against such person in the district court of the United States in which such person resides or has its principal place of business --
+# tree_by = bwaldon (2025-02-18)
+(Clause
+    :Subj (NP
+        :Det (DP
+            :Head (D :t "the"))
+        :Head (Nom
+            :Mod (AdjP
+                :Head (Adj :t "United"))
+            :Head (N :t "States")))
+    :Head (VP
+        :Head (V_aux :t "may" :xpos "MD")
+        :Comp (Clause
+            :Head (VP
+                :Head (V :t "maintain" :xpos "VB")
+                :Obj (NP
+                    :Det (DP
+                        :Head (D :t "an"))
+                    :Head (Nom
+                        :Head (Nom
+                            :Head (Nom
+                                :Head (N :t "action")
+                                :Mod (PP
+                                    :Head (P :t "under")
+                                    :Obj (NP
+                                        :Det (DP
+                                            :Head (D :t "this"))
+                                        :Head (Nom
+                                            :Head (N :t "paragraph")))))
+                            :Comp (PP
+                                :Head (P :t "against")
+                                :Obj (NP
+                                    :Det (DP
+                                        :Head (D :t "such"))
+                                    :Head (Nom
+                                        :Head (N :t "person")))))
+                        :Mod (PP
+                            :Head (P :t "in")
+                            :Obj (NP
+                                :Det (DP
+                                    :Head (D :t "the"))
+                                :Head (Nom
+                                    :Head (Nom
+                                        :Head (Nom
+                                            :Mod (Nom
+                                                :Head (N :t "district"))
+                                            :Head (N :t "court"))
+                                        :Mod (PP
+                                            :Head (P :t "of")
+                                            :Obj (NP
+                                                :Det (DP
+                                                    :Head (D :t "the"))
+                                                :Head (Nom
+                                                    :Mod (AdjP
+                                                        :Head (Adj :t "United"))
+                                                    :Head (N :t "States" :l "state")))))
+                                    :Mod (Clause_rel
+                                        :Prenucleus (x / PP
+                                            :Head (P :t "in")
+                                            :Obj (NP
+                                                :Head (Nom
+                                                    :Head (N_pro :t "which"))))
+                                        :Head (Clause_rel
+                                            :Subj (NP
+                                                :Det (DP
+                                                    :Head (D :t "such"))
+                                                :Head (Nom
+                                                    :Head (N :t "person")))
+                                            :Head (VP
+                                                :Head (Coordination
+                                                    :Coordinate (VP
+                                                        :Head (V :t "resides" :l "reside" :xpos "VBZ"))
+                                                    :Coordinate (VP
+                                                        :Marker (Coordinator :t "or")
+                                                        :Head (VP
+                                                            :Head (V :t "has" :l "have" :xpos "VBZ")
+                                                            :Obj (NP
+                                                                :Det (NP
+                                                                    :Head (Nom
+                                                                        :Head (N_pro :t "its")))
+                                                                :Head (Nom
+                                                                    :Mod (AdjP
+                                                                        :Head (Adj :t "principal"))
+                                                                    :Head (Nom
+                                                                        :Head (N :t "place")
+                                                                        :Comp (PP
+                                                                            :Head (P :t "of")
+                                                                            :Obj (NP
+                                                                                :Head (Nom
+                                                                                    :Head (N :t "business" :p "."))))))))))
+                                                :Mod (x / GAP)))))))))))))
